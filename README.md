@@ -7,7 +7,7 @@ The app.tss file was created with [this converter](https://github.com/macCesar/t
 I have also included all of [FontAwesome's](https://fontawesome.com) icon definitions in order to use them in Buttons and/or Labels.
 
 ## Examples
-### 'Card' example
+### 'Customer Support' example
 ```xml
 <Alloy>
     <View class="w-screen mt-4 mx-4 bg-white rounded-lg border-gray-300 shadow-lg vertical">
@@ -23,7 +23,9 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 </Alloy>
 ```
 
-### 'Card 2' Example
+![alt text](app/assets/images/customer-support.png "iOS Screen - Customer Support")
+
+### 'Card' Example
 ```xml
 <Alloy>
     <View class="w-11/12 mt-4 bg-white rounded-lg border-gray-300 vertical clip-enabled">
@@ -42,6 +44,8 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
     </View>
 </Alloy>
 ```
+
+![alt text](app/assets/images/card-content.png "iOS Screen - Card Content")
 
 ### 'House' Example
 ```xml
@@ -84,6 +88,8 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
     </View>
 </Alloy>
 ```
+
+![alt text](app/assets/images/detached-house.png "iOS Screen - Detached House")
 
 ### 'Projects' Example
 ```xml
@@ -156,6 +162,8 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 </Alloy>
 ```
 
+![alt text](app/assets/images/projects.png "iOS Screen - Projects")
+
 ### 'Private Villa' Example
 ```xml
 <Alloy>
@@ -171,5 +179,6 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
         </View>
     </View>
 </Alloy>
-
 ```
+
+![alt text](app/assets/images/private-villa.png "iOS Screen - Private Villa")

@@ -3,7 +3,7 @@
 		<Window id="win2" title="tailwind tss">
 			<ScrollableView class="bg-white" showPagingControl="true" pagingControlColor="#cecece">
 
-				<Require src="samples/card" />
+				<Require src="samples/customer" />
 
 				<Require src="samples/villa" />
 
