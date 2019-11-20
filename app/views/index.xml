@@ -1,0 +1,18 @@
+<Alloy>
+	<NavigationWindow id="win1">
+		<Window id="win2" title="tailwind tss">
+			<ScrollableView class="bg-white" showPagingControl="true" pagingControlColor="#cecece">
+
+				<Require src="samples/card" />
+
+				<Require src="samples/villa" />
+
+				<Require src="samples/card2" />
+
+				<Require src="samples/projects" />
+
+				<Require src="samples/house" />
+			</ScrollableView>
+		</Window>
+	</NavigationWindow>
+</Alloy>

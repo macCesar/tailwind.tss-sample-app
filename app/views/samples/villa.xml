@@ -1,0 +1,13 @@
+<Alloy>
+	<View class="w-screen mt-4 mx-4 bg-white vertical">
+		<View class="vertical">
+			<ImageView class="rounded-lg w-screen" image="https://images.unsplash.com/photo-1452784444945-3f422708fe5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=512&q=80" />
+
+			<View class="vertical w-screen mt-2">
+				<Label class="ml-0 text-xs text-gray-600 uppercase font-bold">PRIVATE VILLA</Label>
+				<Label class="ml-0 font-bold text-gray-700">Relaxing All-Inclusive Resort in Cancun</Label>
+				<Label class="ml-0 text-sm text-gray-600">$299 USD per night</Label>
+			</View>
+		</View>
+	</View>
+</Alloy>

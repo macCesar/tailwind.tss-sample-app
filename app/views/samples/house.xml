@@ -1,0 +1,38 @@
+<Alloy>
+	<View class="w-11/12 mt-4 mb-4 bg-white rounded-lg border-gray-300 vertical clip-enabled">
+		<ImageView class="w-screen" image="https://via.placeholder.com/450x350" />
+
+		<View class="m-4 w-screen vertical">
+			<Label class="ml-0 text-sm font-bold text-gray-700">Detached house • 5y old</Label>
+			<Label class="ml-0 text-3xl text-gray-900">$750,000</Label>
+			<Label class="ml-0 text-gray-700">742 Evergreen Terrace</Label>
+		</View>
+
+		<View class="h-px w-screen bg-gray-200"></View>
+		<View class="horizontal">
+			<View class="w-auto h-20 horizontal mr-2">
+				<Label class="h-20 fa fa-bed text-gray-800" />
+				<Label class="h-20 ml-1 text-gray-800 font-bold ">3 Bedrooms</Label>
+			</View>
+
+			<View class="w-auto h-20 horizontal ml-2">
+				<Label class="h-20 fa fa-bath text-gray-800" />
+				<Label class="h-20 ml-1 text-gray-800 font-bold">2 Bathrooms</Label>
+			</View>
+		</View>
+
+		<View class="h-px w-screen bg-gray-200"></View>
+		<View class="bg-gray-100 vertical w-screen">
+			<Label class="mx-4 mt-3 text-xs font-bold text-gray-600">REALTOR</Label>
+
+			<View class="m-4 horizontal">
+				<ImageView class="w-10 h-10 rounded-10" image="https://randomuser.me/api/portraits/women/17.jpg" />
+
+				<View class="vertical w-screen">
+					<Label class="ml-3 font-bold text-gray-900">Catherine Heffner</Label>
+					<Label class="ml-3 text-sm text-gray-700">(111) 111-1111</Label>
+				</View>
+			</View>
+		</View>
+	</View>
+</Alloy>
