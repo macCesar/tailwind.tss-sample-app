@@ -1,0 +1,18 @@
+<Alloy>
+	<ScrollView>
+		<View class="w-11/12 mt-4 bg-white rounded-lg border-gray-300 vertical clip-enabled">
+			<ImageView class="shadow-md" image="https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80" />
+
+			<View class="m-3 text-gray-600 h-auto vertical">
+				<View class="w-screen horizontal">
+					<Label class="text-gray-600 text-2xl font-thin">Card Content</Label>
+					<Label class="ml-2 text-sm text-gray-500 font-semibold">Nov 3rd, 2019</Label>
+				</View>
+
+				<Label class="text-gray-500 font-normal w-screen">This is some card content to demonstrate how the cards work.</Label>
+
+				<Button class="mt-2 w-1/2 h-8 rounded-8 bg-gray-500 text-white">Read More</Button>
+			</View>
+		</View>
+	</ScrollView>
+</Alloy>

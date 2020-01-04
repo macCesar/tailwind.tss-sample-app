@@ -7,7 +7,7 @@
 
 				<Require src="samples/villa" />
 
-				<Require src="samples/card2" />
+				<Require src="samples/card" />
 
 				<Require src="samples/projects" />
 
