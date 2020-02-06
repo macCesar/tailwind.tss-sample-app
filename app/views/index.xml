@@ -2,16 +2,17 @@
 	<NavigationWindow id="win1">
 		<Window id="win2" title="tailwind tss">
 			<ScrollableView class="bg-white" showPagingControl="true" pagingControlColor="#cecece">
+				<Require src="examples/register" />
 
-				<Require src="samples/customer" />
+				<Require src="examples/customer" />
 
-				<Require src="samples/villa" />
+				<Require src="examples/villa" />
 
-				<Require src="samples/card" />
+				<Require src="examples/card" />
 
-				<Require src="samples/projects" />
+				<Require src="examples/projects" />
 
-				<Require src="samples/house" />
+				<Require src="examples/house" />
 			</ScrollableView>
 		</Window>
 	</NavigationWindow>
