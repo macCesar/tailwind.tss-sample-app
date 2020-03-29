@@ -1,32 +1,31 @@
 <Alloy>
-	<ScrollView class="bg-white">
+	<ScrollView>
 		<View class="vertical mx-8">
 			<ImageView class="mt-3 w-56" image="/images/welcome.png" />
 
-			<Label class="text-left w-full ml-1 mt-4 text-sm text-gray-900">Your Login</Label>
-			<TextField class="mt-1 text-base h-10 w-screen pl-2 rounded-lg border-gray-400 text-gray-800 bg-gray-100" returnKeyType="Ti.UI.RETURNKEY_NEXT" hintText="Username/Email" />
+			<Label class="w-full ml-1 mt-4 text-sm text-left text-gray-900">Your Login</Label>
+			<TextField class="w-screen h-10 mt-1 pl-2 text-base text-gray-800 bg-gray-100 border-gray-400 rounded-md" returnKeyType="Ti.UI.RETURNKEY_NEXT" hintText="Username/Email" />
 
-			<Label class="text-left w-full ml-1 mt-4 text-sm text-gray-900">Your Password</Label>
-			<TextField class="mt-1 text-base h-10 w-screen pl-2 rounded-lg border-gray-400 text-gray-800 password bg-gray-100" returnKeyType="Ti.UI.RETURNKEY_NEXT" hintText="Password" />
+			<Label class="w-full ml-1 mt-4 text-sm text-left text-gray-900">Your Password</Label>
+			<TextField class="w-screen h-10 mt-1 pl-2 text-base text-gray-800 bg-gray-100 border-gray-400 rounded-md password" returnKeyType="Ti.UI.RETURNKEY_NEXT" hintText="Password" />
 
-			<Button class="mt-4 h-10 text-white text-base rounded-lg bg-gray-800 w-screen">Login</Button>
+			<Button class="w-screen h-10 mt-4 text-base text-white bg-gray-800 rounded-md">Login</Button>
 
-			<View class="w-screen horizontal mt-2">
-				<View class="w-1/2 mx-0 horizontal" onClick="changeActive">
-					<Button id="rememberMe" class="far fa-square text-gray-800" active='false' />
-					<Button class="text-sm text-gray-800 ml-0">Remember me</Button>
+			<View class="horizontal w-screen mt-2">
+				<View class="horizontal w-1/2 mx-0" onClick="changeActive">
+					<Button class="far fa-square text-gray-800" id="rememberMe" active='false' />
+					<Button class="ml-0 text-sm text-gray-800">Remember me</Button>
 				</View>
 
-				<View class="w-1/2 mx-0 horizontal">
-					<Button class="text-sm w-screen text-right text-gray-800">Forgot password?</Button>
+				<View class="horizontal w-1/2 mx-0">
+					<Button class="w-screen text-sm text-right text-gray-800">Forgot password?</Button>
 				</View>
 			</View>
 
-			<View class="bg-gray-100 w-screen h-auto vertical rounded-lg mt-2 mb-8">
-				<Label class="h-auto ml-3 mr-3 mt-2 text-xs text-gray-600 text-center">By creating an account you agree to our</Label>
-				<Button class="h-auto ml-3 mr-3 mb-1 text-xs text-gray-800 text-center">Terms and Conditions</Button>
+			<View class="vertical w-screen h-auto mt-2 mb-8 bg-gray-100 rounded-md">
+				<Label class="h-auto ml-3 mr-3 mt-2 text-xs text-center text-gray-600">By creating an account you agree to our</Label>
+				<Button class="h-auto ml-3 mr-3 mb-1 text-xs text-center text-gray-800 font-semibold">Terms and Conditions</Button>
 			</View>
 		</View>
-
 	</ScrollView>
 </Alloy>

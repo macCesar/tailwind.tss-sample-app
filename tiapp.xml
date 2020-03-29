@@ -16,12 +16,13 @@
 	<property name="run-on-main-thread" type="bool">true</property>
 
 	<ios>
+		<use-app-thinning>true</use-app-thinning>
 		<use-jscore-framework>true</use-jscore-framework>
 		<enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
-		<use-app-thinning>true</use-app-thinning>
 		<plist>
 			<dict>
 				<key>UISupportedInterfaceOrientations~iphone</key>
+
 				<array>
 					<string>UIInterfaceOrientationPortrait</string>
 					<string>UIInterfaceOrientationLandscapeLeft</string>
@@ -35,12 +36,16 @@
 					<string>UIInterfaceOrientationLandscapeLeft</string>
 					<string>UIInterfaceOrientationLandscapeRight</string>
 				</array>
+
 				<key>UIRequiresPersistentWiFi</key>
 				<false/>
+
 				<key>UIPrerenderedIcon</key>
 				<false/>
+
 				<key>UIStatusBarHidden</key>
 				<false/>
+
 				<key>UIStatusBarStyle</key>
 				<string>UIStatusBarStyleDefault</string>
 			</dict>
@@ -56,9 +61,9 @@
 	</modules>
 
 	<deployment-targets>
-		<target device="android">true</target>
 		<target device="ipad">true</target>
 		<target device="iphone">true</target>
+		<target device="android">true</target>
 	</deployment-targets>
 
 	<sdk-version>8.3.1.GA</sdk-version>
