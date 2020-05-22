@@ -1,6 +1,6 @@
 <Alloy>
-	<NavigationWindow id="win1">
-		<Window id="win2" title="tailwind tss">
+	<NavigationWindow id="navWindow">
+		<Window title="tailwind tss">
 			<ScrollableView class="bg-white" showPagingControl="true" pagingControlColor="#cecece">
 				<Require src="examples/register" />
 

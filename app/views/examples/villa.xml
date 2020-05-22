@@ -6,7 +6,7 @@
 
 				<View class="w-screen mt-2 vertical">
 					<Label class="ml-0 text-xs text-gray-600 font-bold">PRIVATE VILLA</Label>
-					<Label class="ml-0 font-bold text-gray-700">Relaxing All-Inclusive Resort in Cancun</Label>
+					<Label class="ml-0 font-bold text-gray-700 text-base">Relaxing All-Inclusive Resort in Cancun</Label>
 					<Label class="ml-0 text-sm text-gray-600">$299 USD per night</Label>
 				</View>
 			</View>

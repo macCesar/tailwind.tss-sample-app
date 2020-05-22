@@ -1,7 +1,24 @@
+/**
+* Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
+* License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+*/
 
-/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-readers do not read off random characters that represent icons */
-module.exports = {
+function getIcon(selector) {
+	return fontawesome[selector];
+}
+exports.getIcon = getIcon;
+
+function setTitle(selector, object) {
+	object.title = fontawesome[selector];
+}
+exports.setTitle = setTitle;
+
+function setText(selector, object) {
+	object.text = fontawesome[selector];
+}
+exports.setText = setText;
+
+const fontawesome = {
 	'fa-500px': '\uf26e',
 	'fa-accessible-icon': '\uf368',
 	'fa-accusoft': '\uf369',
@@ -417,7 +434,7 @@ module.exports = {
 	'fa-empire': '\uf1d1',
 	'fa-envelope': '\uf0e0',
 	'fa-envelope-open': '\uf2b6',
-	title: '\uf658',
+	'fa-envelope-open-text': '\uf658',
 	'fa-envelope-square': '\uf199',
 	'fa-envira': '\uf299',
 	'fa-equals': '\uf52c',
@@ -1238,8 +1255,8 @@ module.exports = {
 	'fa-tencent-weibo': '\uf1d5',
 	'fa-tenge': '\uf7d7',
 	'fa-terminal': '\uf120',
-	title: '\uf034',
-	title: '\uf035',
+	'fa-text-height': '\uf034',
+	'fa-text-width': '\uf035',
 	'fa-th': '\uf00a',
 	'fa-th-large': '\uf009',
 	'fa-th-list': '\uf00b',
@@ -1439,5 +1456,5 @@ module.exports = {
 	'fa-yoast': '\uf2b1',
 	'fa-youtube': '\uf167',
 	'fa-youtube-square': '\uf431',
-	'fa-zhihu': '\uf63f'
-}
+	'fa-zhihu': '\uf63f',
+};
