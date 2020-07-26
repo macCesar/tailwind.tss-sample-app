@@ -1,6 +1,6 @@
 # tailwind tss
 
-Tailwindcss styles applied in a Titanium App.
+[Tailwind CSS](https://tailwindcss.com/) in your [Titanium App](https://www.appcelerator.com/mobile-app-development-products/) styles applied in a Titanium App.
 
 The app.tss file was created with [this converter](https://github.com/macCesar/tailwind-tss-color-generator).
 
