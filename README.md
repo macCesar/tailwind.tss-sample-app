@@ -25,7 +25,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 </Alloy>
 ```
 
-![iOS Screen - Customer Support](app/assets/images/customer-support-3.png "iOS Screen - Customer Support")
+<img src="app/assets/images/customer-support-3.png" width="375" alt="iOS Screen - Customer Support" >
 
 ### 'Card' Example
 ```xml
@@ -49,7 +49,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 </Alloy>
 ```
 
-![iOS Screen - Card Content](app/assets/images/card-content-3.png "iOS Screen - Card Content")
+<img src="app/assets/images/card-content-3.png" width="375" alt="iOS Screen - Card Content" >
 
 ### 'Nike' Example
 ```xml
@@ -77,7 +77,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 
 ```
 
-![iOS Screen - Nike](app/assets/images/nike-3.png "iOS Screen - Nike")
+<img src="app/assets/images/nike-3.png" width="375" alt="iOS Screen - Nike" >
 
 ### 'Politico' Example
 ```xml
@@ -137,7 +137,7 @@ Although elected officials averse to mask mandates argue Americans should be abl
 </Alloy>
 ```
 
-![iOS Screen - Politico](app/assets/images/politico-3.png "iOS Screen - Politico")
+<img src="app/assets/images/politico-3.png" width="375" alt="iOS Screen - Politico" >
 
 ### 'House' Example
 ```xml
@@ -183,7 +183,7 @@ Although elected officials averse to mask mandates argue Americans should be abl
 </Alloy>
 ```
 
-![iOS Screen - Detached House](app/assets/images/detached-house-3.png "iOS Screen - Detached House")
+<img src="app/assets/images/detached-house-3.png" width="375" alt="iOS Screen - Detached House" >
 
 ### 'Projects' Example
 ```xml
@@ -258,7 +258,7 @@ Although elected officials averse to mask mandates argue Americans should be abl
 </Alloy>
 ```
 
-![iOS Screen - Projects](app/assets/images/projects-3.png "iOS Screen - Projects")
+<img src="app/assets/images/projects-3.png" width="375" alt="iOS Screen - Projects" >
 
 ### 'Private Villa' Example
 ```xml
@@ -279,7 +279,7 @@ Although elected officials averse to mask mandates argue Americans should be abl
 </Alloy>
 ```
 
-![iOS Screen - Private Villa](app/assets/images/private-villa-3.png "iOS Screen - Private Villa")
+<img src="app/assets/images/private-villa-3.png" width="375" alt="iOS Screen - Private Villa" >
 
 ### 'Login Form' Example
 ```xml
@@ -317,4 +317,4 @@ Although elected officials averse to mask mandates argue Americans should be abl
 </Alloy>
 ```
 
-![iOS Screen - Login Form](app/assets/images/login-form-3.png "iOS Screen - Login Form")
+<img src="app/assets/images/login-form-3.png" width="375" alt="iOS Screen - Login Form" >
