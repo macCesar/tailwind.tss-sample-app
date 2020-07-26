@@ -84,10 +84,10 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
     <ScrollView >
         <View class="vertical mx-4">
             <View class="mt-4">
-                <Label class="w-screen text-sm text-red-600 font-bold tracking-widest">CORONAVIRUS</Label>
+                <Label class="w-screen text-sm text-red-600 font-bold">CORONAVIRUS</Label>
             </View>
 
-            <Label class="w-full text-gray-800 text-4xl font-bold leading-none">Kemp and Bottoms hurl insults at each other in Georgia mask feud</Label>
+            <Label class="w-full text-gray-800 text-4xl font-bold">Kemp and Bottoms hurl insults at each other in Georgia mask feud</Label>
 
             <Label class="w-full text-gray-500 mt-2">The war of words comes after the governor sued the Atlanta mayor over her city’s mask mandate.</Label>
 
