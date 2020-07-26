@@ -1,4 +1,4 @@
-# tailwind tss
+# tailwindTSS Sample App
 
 [Tailwind CSS](https://tailwindcss.com/) styles applied in a [Titanium App](https://www.appcelerator.com/mobile-app-development-products/).
 
