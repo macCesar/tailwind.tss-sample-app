@@ -26,7 +26,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 </Alloy>
 ```
 
-![iOS Screen - Customer Support](app/assets/images/customer-support.png "iOS Screen - Customer Support")
+![iOS Screen - Customer Support](app/assets/images/customer-support-2.png "iOS Screen - Customer Support")
 
 ### 'Card' Example
 ```xml
@@ -50,7 +50,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 </Alloy>
 ```
 
-![iOS Screen - Card Content](app/assets/images/card-content.png "iOS Screen - Card Content")
+![iOS Screen - Card Content](app/assets/images/card-content-2.png "iOS Screen - Card Content")
 
 ### 'Nike' Example
 ```xml
@@ -77,7 +77,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 </Alloy>
 ```
 
-![iOS Screen - Nike](app/assets/images/nike.png "iOS Screen - Nike")
+![iOS Screen - Nike](app/assets/images/nike-2.png "iOS Screen - Nike")
 
 ### 'Politico' Example
 ```xml
@@ -123,7 +123,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 </Alloy>
 ```
 
-![iOS Screen - Politico](app/assets/images/politico.png "iOS Screen - Politico")
+![iOS Screen - Politico](app/assets/images/politico-2.png "iOS Screen - Politico")
 
 ### 'House' Example
 ```xml
@@ -169,7 +169,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 </Alloy>
 ```
 
-![iOS Screen - Detached House](app/assets/images/detached-house.png "iOS Screen - Detached House")
+![iOS Screen - Detached House](app/assets/images/detached-house-2.png "iOS Screen - Detached House")
 
 ### 'Projects' Example
 ```xml
@@ -244,7 +244,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 </Alloy>
 ```
 
-![iOS Screen - Projects](app/assets/images/projects.png "iOS Screen - Projects")
+![iOS Screen - Projects](app/assets/images/projects-2.png "iOS Screen - Projects")
 
 ### 'Private Villa' Example
 ```xml
@@ -265,4 +265,4 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 </Alloy>
 ```
 
-![iOS Screen - Private Villa](app/assets/images/private-villa.png "iOS Screen - Private Villa")
+![iOS Screen - Private Villa](app/assets/images/private-villa-2.png "iOS Screen - Private Villa")
