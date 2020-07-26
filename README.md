@@ -2,11 +2,30 @@
 
 [Tailwind CSS](https://tailwindcss.com/) styles applied in a [Titanium App](https://www.appcelerator.com/mobile-app-development-products/).
 
-The app.tss file was created with [this converter](https://github.com/macCesar/tailwind-tss-color-generator).
+## UPDATE!!!
+Please use [`purgeTSS`](https://github.com/macCesar/purgeTSS) available via a Command Line Interface.
 
-I have also included all of [FontAwesome's](https://fontawesome.com) icon definitions in order to use them in Buttons and/or Labels.
+It analyzes your views and will purge all unused classes from the included `tailwind.tss` file into a new `app.tss` file, resulting in the smallest file size possible.
 
-## Examples
+Just install it globally on your machine.
+```bash
+[sudo] npm i -g purgetss
+```
+
+Run it inside your project’s root folder before compiling your App.
+```bash
+purgetss [ -d, --dev ] [ --vendor ]
+```
+
+**And as simple as that, you’ll have a purged file with only the styles used in your App.**
+
+**Important Notice:** The script will back up your current `app.tss` file into `_app.tss`.
+
+From now on, please use this file to add, update or delete your custom classes.
+
+Remember to re-run the script to update `app.tss` if you make changes to your views or your cutoms classes.
+
+## Examples Views
 ### 'Customer Support' example
 ```xml
 <Alloy>
