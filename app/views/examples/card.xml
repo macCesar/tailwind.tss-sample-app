@@ -1,6 +1,6 @@
 <Alloy>
 	<ScrollView>
-		<View class="w-11/12 bg-white rounded-lg border-gray-300 vertical clip-enabled">
+		<View class="w-11/12 bg-white rounded-lg border-gray-400 vertical clip-enabled">
 			<ImageView class="shadow-md" image="https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-1.2.1&#x26;ixid=eyJhcHBfaWQiOjEyMDd9&#x26;auto=format&#x26;fit=crop&#x26;w=3300&#x26;q=80" />
 
 			<View class="m-3 text-gray-600 h-auto vertical">

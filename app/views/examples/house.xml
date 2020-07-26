@@ -1,6 +1,6 @@
 <Alloy>
 	<ScrollView>
-		<View class="w-11/12 bg-white rounded-lg border-gray-300 vertical clip-enabled">
+		<View class="w-11/12 bg-white rounded-lg border-gray-400 vertical clip-enabled">
 			<ImageView class="w-screen" image="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3067&amp;q=80" />
 
 			<View class="m-4 w-screen vertical">
@@ -9,7 +9,7 @@
 				<Label class="ml-0 text-gray-700">742 Evergreen Terrace</Label>
 			</View>
 
-			<View class="h-px w-screen bg-gray-200"></View>
+			<View class="h-px w-screen bg-gray-300"></View>
 			<View class="horizontal">
 				<View class="w-auto h-20 horizontal mr-2">
 					<Label class="h-20 fa fa-bed text-gray-800" />
@@ -22,7 +22,7 @@
 				</View>
 			</View>
 
-			<View class="h-px w-screen bg-gray-200"></View>
+			<View class="h-px w-screen bg-gray-300"></View>
 			<View class="bg-gray-100 vertical w-screen">
 				<Label class="mx-4 mt-3 text-xs font-bold text-gray-600">REALTOR</Label>
 

@@ -1,64 +1,64 @@
 <Alloy>
 	<ScrollView>
-		<View class="w-screen mx-4 bg-white border-gray-300 rounded-lg vertical clip-enabled">
-			<View class="w-screen bg-gray-200">
-				<Label class="h-10 m-4 text-3xl text-gray-900 font-semibold">Projects</Label>
+		<View class="w-screen mx-4 bg-white border-gray-500 rounded-lg vertical clip-enabled">
+			<View class="w-screen bg-gray-500">
+				<Label class="h-auto mx-3 my-2 text-xl text-white font-semibold">PROJECTS</Label>
 			</View>
 
-			<View class="w-screen h-px bg-gray-200"></View>
+			<View class="w-screen h-px bg-gray-500"></View>
 			<View class="w-screen m-4 horizontal">
 				<View class="w-1/5 mt-0">
 					<Button class="w-12 h-12 ml-0 text-2xl text-white bg-indigo-500 rounded-12 fa fa-code"></Button>
 				</View>
 
 				<View class="w-4/5 vertical">
-					<Label class="w-screen text-sm text-gray-600">Engineering</Label>
+					<Label class="w-screen text-sm text-gray-500">Engineering</Label>
 					<Label class="w-screen mt-1 text-base font-semibold text-gray-900">GraphQL API</Label>
-					<TextArea class="w-screen -ml-1 -mr-1 text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic, porro voluptatem totam nulla suscipit!</TextArea>
+					<TextArea class="w-screen -ml-1 -mr-1 text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic, porro voluptatem totam nulla suscipit!</TextArea>
 
 					<View class="w-screen horizontal">
 						<View class="w-1/3 h-6 horizontal">
-							<Button class="w-6 text-gray-600 far fa-user"/>
+							<Button class="w-6 text-gray-500 far fa-user"/>
 							<Label class="ml-1 text-sm font-bold text-gray-700">4</Label>
 						</View>
 
 						<View class="w-1/3 h-6 horizontal">
-							<Button class="w-6 text-gray-600 far fa-comment-alt"/>
+							<Button class="w-6 text-gray-500 far fa-comment-alt"/>
 							<Label class="ml-1 text-sm font-bold text-gray-700">12</Label>
 						</View>
 
 						<View class="w-1/3 h-6 horizontal">
-							<Button class="w-6 text-gray-600 fa fa-align-left"/>
+							<Button class="w-6 text-gray-500 fa fa-align-left"/>
 							<Label class="ml-1 text-sm font-bold text-gray-700">20</Label>
 						</View>
 					</View>
 				</View>
 			</View>
 
-			<View class="w-screen h-px bg-gray-200"></View>
+			<View class="w-screen h-px bg-gray-500"></View>
 			<View class="w-screen m-4 horizontal">
 				<View class="w-1/5 mt-0">
 					<Button class="w-12 h-12 ml-0 text-2xl text-white bg-green-500 rounded-12 fa fa-suitcase"></Button>
 				</View>
 
 				<View class="w-4/5 vertical">
-					<Label class="w-screen text-sm text-gray-600">Human Resources</Label>
+					<Label class="w-screen text-sm text-gray-500">Human Resources</Label>
 					<Label class="w-screen mt-1 text-base font-semibold text-gray-900">Profit sharing program</Label>
-					<TextArea class="w-screen -ml-1 -mr-1 text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic, porro voluptatem totam nulla suscipit!</TextArea>
+					<TextArea class="w-screen -ml-1 -mr-1 text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic, porro voluptatem totam nulla suscipit!</TextArea>
 
 					<View class="w-screen horizontal">
 						<View class="w-1/3 h-6 horizontal">
-							<Button class="w-6 text-gray-600 far fa-user"/>
+							<Button class="w-6 text-gray-500 far fa-user"/>
 							<Label class="ml-1 text-sm font-bold text-gray-700">6</Label>
 						</View>
 
 						<View class="w-1/3 h-6 horizontal">
-							<Button class="w-6 text-gray-600 far fa-comment-alt"/>
+							<Button class="w-6 text-gray-500 far fa-comment-alt"/>
 							<Label class="ml-1 text-sm font-bold text-gray-700">5</Label>
 						</View>
 
 						<View class="w-1/3 h-6 horizontal">
-							<Button class="w-6 text-gray-600 fa fa-align-left"/>
+							<Button class="w-6 text-gray-500 fa fa-align-left"/>
 							<Label class="ml-1 text-sm font-bold text-gray-700">30</Label>
 						</View>
 					</View>

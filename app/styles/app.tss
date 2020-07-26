@@ -20,8 +20,11 @@
 // This is my original app.tss file
 'ScrollView': {
 	contentWidth: Ti.UI.FILL,
-	contentHeight: Ti.UI.SIZE,
-	// showVerticalScrollIndicator: true
+	contentHeight: Ti.UI.SIZE
+}
+
+'ScrollView[plaform=android]': {
+	scrollType: 'vertical'
 }
 
 'Button[platform=android]': {
@@ -81,6 +84,7 @@
 '.bg-gray-50': { backgroundColor: '#f9fafb' }
 '.bg-gray-100': { backgroundColor: '#f4f5f7' }
 '.bg-gray-200': { backgroundColor: '#e5e7eb' }
+'.bg-gray-300': { backgroundColor: '#d2d6dc' }
 '.bg-gray-500': { backgroundColor: '#6b7280' }
 '.bg-gray-800': { backgroundColor: '#252f3f' }
 '.bg-gray-900': { backgroundColor: '#161e2e' }
@@ -91,8 +95,8 @@
 '.bg-blue-700': { backgroundColor: '#1a56db' }
 '.bg-blue-900': { backgroundColor: '#233876' }
 '.bg-indigo-500': { backgroundColor: '#6875f5' }
-'.border-gray-300': { borderColor: '#d2d6dc' }
 '.border-gray-400': { borderColor: '#9fa6b2' }
+'.border-gray-500': { borderColor: '#6b7280' }
 '.border-blue-600': { borderColor: '#1c64f2' }
 '.border-blue-800': { borderColor: '#1e429f' }
 '.text-xs': { font: { fontSize: 12 } }
@@ -172,7 +176,7 @@
 '.h-12': { height: 48 }
 '.h-16': { height: 64 }
 '.h-20': { height: 80 }
-'.h-px': { height: 1 }
+'.h-px': { height: '1px' }
 '.h-auto': { height: Ti.UI.SIZE }
 '.shadow-xs': { viewShadowOffset: { x: 0, y: 0 }, viewShadowRadius: 1, viewShadowColor: '#77000000' }
 '.shadow-sm': { viewShadowOffset: { x: 0, y: 1 }, viewShadowRadius: 1, viewShadowColor: '#77000000' }

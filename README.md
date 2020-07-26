@@ -11,7 +11,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 ```xml
 <Alloy>
     <ScrollView>
-        <View class="w-screen mx-4 bg-white rounded-lg border-gray-300 shadow-lg vertical">
+        <View class="w-screen mx-4 bg-white rounded-lg border-gray-400 shadow-lg vertical">
             <ImageView class="mt-3 h-16 w-16 rounded-16 mx-auto" image="https://randomuser.me/api/portraits/women/17.jpg" />
 
             <View class="mt-3 mb-3 vertical">
@@ -31,7 +31,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 ```xml
 <Alloy>
     <ScrollView>
-        <View class="w-11/12 bg-white rounded-lg border-gray-300 vertical clip-enabled">
+        <View class="w-11/12 bg-white rounded-lg border-gray-400 vertical clip-enabled">
             <ImageView class="shadow-md" image="https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-1.2.1&#x26;ixid=eyJhcHBfaWQiOjEyMDd9&#x26;auto=format&#x26;fit=crop&#x26;w=3300&#x26;q=80" />
 
             <View class="m-3 text-gray-600 h-auto vertical">
@@ -56,7 +56,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 <Alloy>
     <ScrollView>
         <View class="shadow-lg mx-10">
-            <View class="vertical bg-white rounded-lg border-gray-300 clip-enabled">
+            <View class="vertical bg-white rounded-lg border-gray-400 clip-enabled">
                 <View class="vertical mx-4 my-2 ">
                     <Label class="w-full text-gray-900 font-bold text-3xl">NIKE AIR</Label>
                     <Label class="w-full text-gray-600 text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</Label>
@@ -74,6 +74,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
         </View>
     </ScrollView>
 </Alloy>
+
 ```
 
 ![iOS Screen - Nike](app/assets/images/nike-2.png "iOS Screen - Nike")
@@ -81,7 +82,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 ### 'Politico' Example
 ```xml
 <Alloy>
-    <ScrollView >
+    <ScrollView>
         <View class="vertical mx-4">
             <View class="mt-4">
                 <Label class="w-screen text-sm text-red-600 font-bold">CORONAVIRUS</Label>
@@ -142,7 +143,7 @@ Although elected officials averse to mask mandates argue Americans should be abl
 ```xml
 <Alloy>
     <ScrollView>
-        <View class="w-11/12 bg-white rounded-lg border-gray-300 vertical clip-enabled">
+        <View class="w-11/12 bg-white rounded-lg border-gray-400 vertical clip-enabled">
             <ImageView class="w-screen" image="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3067&amp;q=80" />
 
             <View class="m-4 w-screen vertical">
@@ -151,7 +152,7 @@ Although elected officials averse to mask mandates argue Americans should be abl
                 <Label class="ml-0 text-gray-700">742 Evergreen Terrace</Label>
             </View>
 
-            <View class="h-px w-screen bg-gray-200"></View>
+            <View class="h-px w-screen bg-gray-300"></View>
             <View class="horizontal">
                 <View class="w-auto h-20 horizontal mr-2">
                     <Label class="h-20 fa fa-bed text-gray-800" />
@@ -164,7 +165,7 @@ Although elected officials averse to mask mandates argue Americans should be abl
                 </View>
             </View>
 
-            <View class="h-px w-screen bg-gray-200"></View>
+            <View class="h-px w-screen bg-gray-300"></View>
             <View class="bg-gray-100 vertical w-screen">
                 <Label class="mx-4 mt-3 text-xs font-bold text-gray-600">REALTOR</Label>
 
@@ -188,65 +189,65 @@ Although elected officials averse to mask mandates argue Americans should be abl
 ```xml
 <Alloy>
     <ScrollView>
-        <View class="w-screen mx-4 bg-white border-gray-300 rounded-lg vertical clip-enabled">
-            <View class="w-screen bg-gray-200">
-                <Label class="h-10 m-4 text-3xl text-gray-900 font-semibold">Projects</Label>
+        <View class="w-screen mx-4 bg-white border-gray-500 rounded-lg vertical clip-enabled">
+            <View class="w-screen bg-gray-500">
+                <Label class="h-auto mx-3 my-2 text-xl text-white font-semibold">PROJECTS</Label>
             </View>
 
-            <View class="w-screen h-px bg-gray-200"></View>
+            <View class="w-screen h-px bg-gray-500"></View>
             <View class="w-screen m-4 horizontal">
                 <View class="w-1/5 mt-0">
                     <Button class="w-12 h-12 ml-0 text-2xl text-white bg-indigo-500 rounded-12 fa fa-code"></Button>
                 </View>
 
                 <View class="w-4/5 vertical">
-                    <Label class="w-screen text-sm text-gray-600">Engineering</Label>
+                    <Label class="w-screen text-sm text-gray-500">Engineering</Label>
                     <Label class="w-screen mt-1 text-base font-semibold text-gray-900">GraphQL API</Label>
-                    <TextArea class="w-screen -ml-1 -mr-1 text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic, porro voluptatem totam nulla suscipit!</TextArea>
+                    <TextArea class="w-screen -ml-1 -mr-1 text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic, porro voluptatem totam nulla suscipit!</TextArea>
 
                     <View class="w-screen horizontal">
                         <View class="w-1/3 h-6 horizontal">
-                            <Button class="w-6 text-gray-600 far fa-user"/>
+                            <Button class="w-6 text-gray-500 far fa-user"/>
                             <Label class="ml-1 text-sm font-bold text-gray-700">4</Label>
                         </View>
 
                         <View class="w-1/3 h-6 horizontal">
-                            <Button class="w-6 text-gray-600 far fa-comment-alt"/>
+                            <Button class="w-6 text-gray-500 far fa-comment-alt"/>
                             <Label class="ml-1 text-sm font-bold text-gray-700">12</Label>
                         </View>
 
                         <View class="w-1/3 h-6 horizontal">
-                            <Button class="w-6 text-gray-600 fa fa-align-left"/>
+                            <Button class="w-6 text-gray-500 fa fa-align-left"/>
                             <Label class="ml-1 text-sm font-bold text-gray-700">20</Label>
                         </View>
                     </View>
                 </View>
             </View>
 
-            <View class="w-screen h-px bg-gray-200"></View>
+            <View class="w-screen h-px bg-gray-500"></View>
             <View class="w-screen m-4 horizontal">
                 <View class="w-1/5 mt-0">
                     <Button class="w-12 h-12 ml-0 text-2xl text-white bg-green-500 rounded-12 fa fa-suitcase"></Button>
                 </View>
 
                 <View class="w-4/5 vertical">
-                    <Label class="w-screen text-sm text-gray-600">Human Resources</Label>
+                    <Label class="w-screen text-sm text-gray-500">Human Resources</Label>
                     <Label class="w-screen mt-1 text-base font-semibold text-gray-900">Profit sharing program</Label>
-                    <TextArea class="w-screen -ml-1 -mr-1 text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic, porro voluptatem totam nulla suscipit!</TextArea>
+                    <TextArea class="w-screen -ml-1 -mr-1 text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic, porro voluptatem totam nulla suscipit!</TextArea>
 
                     <View class="w-screen horizontal">
                         <View class="w-1/3 h-6 horizontal">
-                            <Button class="w-6 text-gray-600 far fa-user"/>
+                            <Button class="w-6 text-gray-500 far fa-user"/>
                             <Label class="ml-1 text-sm font-bold text-gray-700">6</Label>
                         </View>
 
                         <View class="w-1/3 h-6 horizontal">
-                            <Button class="w-6 text-gray-600 far fa-comment-alt"/>
+                            <Button class="w-6 text-gray-500 far fa-comment-alt"/>
                             <Label class="ml-1 text-sm font-bold text-gray-700">5</Label>
                         </View>
 
                         <View class="w-1/3 h-6 horizontal">
-                            <Button class="w-6 text-gray-600 fa fa-align-left"/>
+                            <Button class="w-6 text-gray-500 fa fa-align-left"/>
                             <Label class="ml-1 text-sm font-bold text-gray-700">30</Label>
                         </View>
                     </View>

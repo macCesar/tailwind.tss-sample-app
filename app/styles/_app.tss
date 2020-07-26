@@ -1,8 +1,11 @@
 // This is my original app.tss file
 'ScrollView': {
 	contentWidth: Ti.UI.FILL,
-	contentHeight: Ti.UI.SIZE,
-	// showVerticalScrollIndicator: true
+	contentHeight: Ti.UI.SIZE
+}
+
+'ScrollView[plaform=android]': {
+	scrollType: 'vertical'
 }
 
 'Button[platform=android]': {

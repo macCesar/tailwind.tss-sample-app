@@ -1,5 +1,5 @@
 <Alloy>
-	<ScrollView >
+	<ScrollView>
 		<View class="vertical mx-4">
 			<View class="mt-4">
 				<Label class="w-screen text-sm text-red-600 font-bold">CORONAVIRUS</Label>
