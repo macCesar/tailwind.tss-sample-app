@@ -1,7 +1,7 @@
 <Alloy>
 	<ScrollView>
 		<View class="shadow-lg mx-10">
-			<View class="vertical bg-white rounded-lg clip-enabled">
+			<View class="vertical bg-white rounded-lg border-gray-900 clip-enabled">
 				<View class="vertical mx-4 my-2 ">
 					<Label class="w-full text-gray-900 font-bold text-3xl">NIKE AIR</Label>
 					<Label class="w-full text-gray-600 text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</Label>

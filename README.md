@@ -12,13 +12,12 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 <Alloy>
     <ScrollView>
         <View class="w-screen mx-4 bg-white rounded-lg border-gray-300 shadow-lg vertical">
-
             <ImageView class="mt-3 h-16 w-16 rounded-16 mx-auto" image="https://randomuser.me/api/portraits/women/17.jpg" />
 
             <View class="mt-3 mb-3 vertical">
                 <Label class="text-xl text-gray-800">Erin Lindford</Label>
                 <Label class="text-base text-purple-500">Customer Support</Label>
-                <Label class="text-base text-graya-600">erinlindford@example.com</Label>
+                <Label class="text-base text-gray-600">erinlindford@example.com</Label>
                 <Label class="text-base text-gray-600">(555) 765-4321</Label>
             </View>
         </View>
@@ -57,7 +56,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 <Alloy>
     <ScrollView>
         <View class="shadow-lg mx-10">
-            <View class="vertical bg-white rounded-lg clip-enabled">
+            <View class="vertical bg-white rounded-lg border-gray-900 clip-enabled">
                 <View class="vertical mx-4 my-2 ">
                     <Label class="w-full text-gray-900 font-bold text-3xl">NIKE AIR</Label>
                     <Label class="w-full text-gray-600 text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</Label>
@@ -101,22 +100,22 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
             <Label class="font-thin text-sm italic w-screen text-gray-600">Updated: 07/17/2020 10:33 AM EDT</Label>
 
             <View class="w-screen mx-auto vertical h-auto mb-4">
-                <Label class="font-thin mt-4 text-sm">Georgia Gov. Brian Kemp and Atlanta Mayor Keisha Lance Bottoms hurled insults at one another Friday, as their legal battle over whether to mandate masks in the state’s capital city entered its second day.</Label>
-                <Label class="font-thin mt-4 text-sm">During dueling appearances at a Capitol news briefing and in an interview with CNN, the Republican governor and the Democratic mayor both accused the other’s office of playing politics amid a pandemic that continues to ravage communities across Georgia.</Label>
-                <Label class="font-thin mt-4 text-sm">Updating members of the media on the state’s coronavirus response, Kemp defended his decision to sue Atlanta’s mayor and city council in an effort to block local officials there from enforcing an order requiring residents to wear a mask in public.</Label>
-                <Label class="font-thin mt-4 text-sm">“Mayor Bottoms’ mask mandate cannot be enforced, but her decision to shutter businesses and undermine economic growth is devastating,” Kemp told reporters in Atlanta, likening his administration’s legal action to “sending in the National Guard.”</Label>
-                <Label class="font-thin mt-4 text-sm">“I refuse to sit back and watch as disastrous policies threaten the lives and livelihoods of our citizens,” he said. “We will fight to stop reckless actions and put people over pandemic politics.”</Label>
-                <Label class="font-thin mt-4 text-sm">Meanwhile, on CNN, Bottoms dismissed Kemp’s unfolding criticism as “propaganda” and “completely inaccurate,” and called the escalating controversy over face coverings “very bizarre, quite frankly.”</Label>
-                <Label class="font-thin mt-4 text-sm">Bottoms also charged that the governor’s lawsuit was politically motivated, remarking that she did not “think it was happenstance” that Kemp pursued litigation one day after President Donald Trump visited Atlanta.</Label>
-                <Label class="font-thin mt-4 text-sm">Furthermore, Bottoms alleged the lawsuit represented an act of “personal retaliation.” She noted that other Georgia cities had imposed similar mask orders, and said the governor “sued us personally. He did not sue the city of Atlanta. He filed suit against mtself and our city council personally.”</Label>
-                <Label class="font-thin mt-4 text-sm">The high-profile clash between two of Georgia’s top leaders came after Kemp issued a statewide order Wednesday banning local mask mandates. But Bottoms said her city’s order requiring face coverings would continue to apply, provoking Kemp to file his lawsuit in state court Thursday.</Label>
-                <Label class="font-thin mt-4 text-sm">The feud has served to further elevate the national profile of Bottoms, who revealed this month that she had tested positive for Covid-19 and has attained greater public prominence due to reports that she is being vetted for the role of running mate to presumptive Democratic presidential nominee Joe Biden.</Label>
-                <Label class="font-thin mt-4 text-sm">As for Kemp, the rift with Bottoms has dredged up earlier criticisms of his management of Georgia’s coronavirus outbreak.</Label>
-                <Label class="font-thin mt-4 text-sm">The governor lifted his stay-at-home order at the end of April after memorably admitting earlier in the month that he had just learned asymptomatic infected people could spread the disease, and state officials were caught misrepresenting Covid-19 reporting data in May.</Label>
-                <Label class="font-thin mt-4 text-sm">Kemp’s latest opposition to Bottoms’ order, at a time when even the Trump administration is encouraging deference to local coronavirus directives, has drawn significant criticism. It also Viewerges from the approaches of Republican governors in Southern states including Alabama, Arkansas and Texas, who have issued statewide mask mandates in recent days.</Label>
-                <Label class="font-thin mt-4 text-sm">Kemp’s own lieutenant governor, Republican Geoff Duncan, appeared reluctant to offer a full-throated defense of the governor’s lawsuit Friday, instead repeatedly emphasizing the importance of mask-wearing.</Label>
-                <Label class="font-thin mt-4 text-sm">“I hope we move past it,” Duncan told CNN of the ongoing controversy, adding that the “whole conversation around the mandate doesn’t help us get through this. It becomes a distraction [from] the health and well-being of 11 million Georgians.”</Label>
-                <Label class="font-thin mt-4 text-sm">Although elected officials averse to mask mandates argue Americans should be able to make their own assessments regarding their safety, public health experts have warned that Covid-19 remains a highly contagious disease — and that those not wearing masks risk infecting other, potentially more vulnerable, people.</Label>
+                <Label class="font-thin mt-4 text-sm text-gray-600">Georgia Gov. Brian Kemp and Atlanta Mayor Keisha Lance Bottoms hurled insults at one another Friday, as their legal battle over whether to mandate masks in the state’s capital city entered its second day.</Label>
+                <Label class="font-thin mt-4 text-sm text-gray-600">During dueling appearances at a Capitol news briefing and in an interview with CNN, the Republican governor and the Democratic mayor both accused the other’s office of playing politics amid a pandemic that continues to ravage communities across Georgia.</Label>
+                <Label class="font-thin mt-4 text-sm text-gray-600">Updating members of the media on the state’s coronavirus response, Kemp defended his decision to sue Atlanta’s mayor and city council in an effort to block local officials there from enforcing an order requiring residents to wear a mask in public.</Label>
+                <Label class="font-thin mt-4 text-sm text-gray-600">“Mayor Bottoms’ mask mandate cannot be enforced, but her decision to shutter businesses and undermine economic growth is devastating,” Kemp told reporters in Atlanta, likening his administration’s legal action to “sending in the National Guard.”</Label>
+                <Label class="font-thin mt-4 text-sm text-gray-600">“I refuse to sit back and watch as disastrous policies threaten the lives and livelihoods of our citizens,” he said. “We will fight to stop reckless actions and put people over pandemic politics.”</Label>
+                <Label class="font-thin mt-4 text-sm text-gray-600">Meanwhile, on CNN, Bottoms dismissed Kemp’s unfolding criticism as “propaganda” and “completely inaccurate,” and called the escalating controversy over face coverings “very bizarre, quite frankly.”</Label>
+                <Label class="font-thin mt-4 text-sm text-gray-600">Bottoms also charged that the governor’s lawsuit was politically motivated, remarking that she did not “think it was happenstance” that Kemp pursued litigation one day after President Donald Trump visited Atlanta.</Label>
+                <Label class="font-thin mt-4 text-sm text-gray-600">Furthermore, Bottoms alleged the lawsuit represented an act of “personal retaliation.” She noted that other Georgia cities had imposed similar mask orders, and said the governor “sued us personally. He did not sue the city of Atlanta. He filed suit against mtself and our city council personally.”</Label>
+                <Label class="font-thin mt-4 text-sm text-gray-600">The high-profile clash between two of Georgia’s top leaders came after Kemp issued a statewide order Wednesday banning local mask mandates. But Bottoms said her city’s order requiring face coverings would continue to apply, provoking Kemp to file his lawsuit in state court Thursday.</Label>
+                <Label class="font-thin mt-4 text-sm text-gray-600">The feud has served to further elevate the national profile of Bottoms, who revealed this month that she had tested positive for Covid-19 and has attained greater public prominence due to reports that she is being vetted for the role of running mate to presumptive Democratic presidential nominee Joe Biden.</Label>
+                <Label class="font-thin mt-4 text-sm text-gray-600">As for Kemp, the rift with Bottoms has dredged up earlier criticisms of his management of Georgia’s coronavirus outbreak.</Label>
+                <Label class="font-thin mt-4 text-sm text-gray-600">The governor lifted his stay-at-home order at the end of April after memorably admitting earlier in the month that he had just learned asymptomatic infected people could spread the disease, and state officials were caught misrepresenting Covid-19 reporting data in May.</Label>
+                <Label class="font-thin mt-4 text-sm text-gray-600">Kemp’s latest opposition to Bottoms’ order, at a time when even the Trump administration is encouraging deference to local coronavirus directives, has drawn significant criticism. It also Viewerges from the approaches of Republican governors in Southern states including Alabama, Arkansas and Texas, who have issued statewide mask mandates in recent days.</Label>
+                <Label class="font-thin mt-4 text-sm text-gray-600">Kemp’s own lieutenant governor, Republican Geoff Duncan, appeared reluctant to offer a full-throated defense of the governor’s lawsuit Friday, instead repeatedly emphasizing the importance of mask-wearing.</Label>
+                <Label class="font-thin mt-4 text-sm text-gray-600">“I hope we move past it,” Duncan told CNN of the ongoing controversy, adding that the “whole conversation around the mandate doesn’t help us get through this. It becomes a distraction [from] the health and well-being of 11 million Georgians.”</Label>
+                <Label class="font-thin mt-4 text-sm text-gray-600">Although elected officials averse to mask mandates argue Americans should be able to make their own assessments regarding their safety, public health experts have warned that Covid-19 remains a highly contagious disease — and that those not wearing masks risk infecting other, potentially more vulnerable, people.</Label>
             </View>
         </View>
     </ScrollView>
@@ -129,7 +128,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 ```xml
 <Alloy>
     <ScrollView>
-        <View class="w-11/12 mb-4 bg-white rounded-lg border-gray-300 vertical clip-enabled">
+        <View class="w-11/12 bg-white rounded-lg border-gray-300 vertical clip-enabled">
             <ImageView class="w-screen" image="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3067&amp;q=80" />
 
             <View class="m-4 w-screen vertical">
@@ -177,33 +176,33 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
     <ScrollView>
         <View class="w-screen mx-4 bg-white border-gray-300 rounded-lg vertical clip-enabled">
             <View class="w-screen bg-gray-200">
-                <Label class="h-10 m-4 text-3xl font-semibold">Projects</Label>
+                <Label class="h-10 m-4 text-3xl text-gray-900 font-semibold">Projects</Label>
             </View>
 
             <View class="w-screen h-px bg-gray-200"></View>
             <View class="w-screen m-4 horizontal">
-                <View class="w-16 mt-0">
+                <View class="w-1/5 mt-0">
                     <Button class="w-12 h-12 ml-0 text-2xl text-white bg-indigo-500 rounded-12 fa fa-code"></Button>
                 </View>
 
-                <View class="w-auto vertical">
+                <View class="w-4/5 vertical">
                     <Label class="w-screen text-sm text-gray-600">Engineering</Label>
-                    <Label class="w-screen mt-1 text-base font-semibold">GraphQL API</Label>
+                    <Label class="w-screen mt-1 text-base font-semibold text-gray-900">GraphQL API</Label>
                     <TextArea class="w-screen -ml-1 -mr-1 text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic, porro voluptatem totam nulla suscipit!</TextArea>
 
                     <View class="w-screen horizontal">
                         <View class="w-1/3 h-6 horizontal">
-                            <Button class="text-gray-600 far fa-user"/>
+                            <Button class="w-6 text-gray-600 far fa-user"/>
                             <Label class="ml-1 text-sm font-bold text-gray-700">4</Label>
                         </View>
 
                         <View class="w-1/3 h-6 horizontal">
-                            <Button class="text-gray-600 far fa-comment-alt"/>
+                            <Button class="w-6 text-gray-600 far fa-comment-alt"/>
                             <Label class="ml-1 text-sm font-bold text-gray-700">12</Label>
                         </View>
 
                         <View class="w-1/3 h-6 horizontal">
-                            <Button class="text-gray-600 fa fa-align-left"/>
+                            <Button class="w-6 text-gray-600 fa fa-align-left"/>
                             <Label class="ml-1 text-sm font-bold text-gray-700">20</Label>
                         </View>
                     </View>
@@ -212,28 +211,28 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 
             <View class="w-screen h-px bg-gray-200"></View>
             <View class="w-screen m-4 horizontal">
-                <View class="w-16 mt-0">
+                <View class="w-1/5 mt-0">
                     <Button class="w-12 h-12 ml-0 text-2xl text-white bg-green-500 rounded-12 fa fa-suitcase"></Button>
                 </View>
 
-                <View class="w-auto vertical">
+                <View class="w-4/5 vertical">
                     <Label class="w-screen text-sm text-gray-600">Human Resources</Label>
-                    <Label class="w-screen mt-1 text-base font-semibold">Profit sharing program</Label>
+                    <Label class="w-screen mt-1 text-base font-semibold text-gray-900">Profit sharing program</Label>
                     <TextArea class="w-screen -ml-1 -mr-1 text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic, porro voluptatem totam nulla suscipit!</TextArea>
 
                     <View class="w-screen horizontal">
                         <View class="w-1/3 h-6 horizontal">
-                            <Button class="text-gray-600 far fa-user"/>
+                            <Button class="w-6 text-gray-600 far fa-user"/>
                             <Label class="ml-1 text-sm font-bold text-gray-700">6</Label>
                         </View>
 
                         <View class="w-1/3 h-6 horizontal">
-                            <Button class="text-gray-600 far fa-comment-alt"/>
+                            <Button class="w-6 text-gray-600 far fa-comment-alt"/>
                             <Label class="ml-1 text-sm font-bold text-gray-700">5</Label>
                         </View>
 
                         <View class="w-1/3 h-6 horizontal">
-                            <Button class="text-gray-600 fa fa-align-left"/>
+                            <Button class="w-6 text-gray-600 fa fa-align-left"/>
                             <Label class="ml-1 text-sm font-bold text-gray-700">30</Label>
                         </View>
                     </View>
@@ -266,3 +265,41 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 ```
 
 ![iOS Screen - Private Villa](app/assets/images/private-villa-2.png "iOS Screen - Private Villa")
+
+### 'Login Form' Example
+```xml
+<Alloy>
+    <ScrollView>
+        <View class="vertical mx-8">
+            <ImageView class="mt-3 w-56" image="/images/welcome.png" />
+
+            <Label class="w-full ml-1 mt-2 text-sm text-left text-gray-900">Your Login</Label>
+            <TextField class="w-screen h-10 mt-1 pl-2 text-base text-gray-800 bg-gray-50 border-gray-400 rounded-md" returnKeyType="Ti.UI.RETURNKEY_NEXT" keyboardType="Ti.UI.KEYBOARD_TYPE_EMAIL" hintText="Email" />
+
+            <Label class="w-full ml-1 mt-4 text-sm text-left text-gray-900">Your Password</Label>
+            <TextField class="w-screen h-10 mt-1 pl-2 text-base text-gray-800 bg-gray-50 border-gray-400 rounded-md" returnKeyType="Ti.UI.RETURNKEY_NEXT" hintText="Password" passwordMask="true" />
+
+            <Button class="w-screen h-10 mt-4 text-base text-white bg-gray-800 rounded-md">Login</Button>
+
+            <View class="horizontal w-screen mt-2">
+                <View class="horizontal w-1/2 mx-0" onClick="changeActive">
+                    <Button class="w-6 far fa-check-square fa-square text-gray-800" id="rememberMe" active='false' />
+                    <Button class="ml-0 text-sm text-gray-800">Remember me</Button>
+                </View>
+
+                <View class="horizontal w-1/2 mx-0">
+                    <Button class="w-screen text-sm text-right text-gray-800">Forgot password?</Button>
+                </View>
+            </View>
+
+            <View class="vertical w-screen h-auto mt-2 mb-8 bg-gray-100 rounded-md">
+                <Label class="h-auto ml-3 mr-3 mt-2 text-xs text-center text-gray-600">By creating an account you agree to our</Label>
+
+                <Button class="h-auto ml-3 mr-3 mb-1 text-xs text-center text-gray-800 font-semibold">Terms and Conditions</Button>
+            </View>
+        </View>
+    </ScrollView>
+</Alloy>
+```
+
+![iOS Screen - Login Form](app/assets/images/login-form-2.png "iOS Screen - Login Form")

@@ -5,6 +5,10 @@
 	// showVerticalScrollIndicator: true
 }
 
+'Button[platform=android]': {
+	backgroundColor: 'transparent'
+}
+
 '.custoClass': {
 	color: '#cecece'
 }
