@@ -25,7 +25,7 @@ I have also included all of [FontAwesome's](https://fontawesome.com) icon defini
 </Alloy>
 ```
 
-![iOS Screen - Customer Support](app/assets/images/customer-support-3.png=375x "iOS Screen - Customer Support")
+![iOS Screen - Customer Support](app/assets/images/customer-support-3.png "iOS Screen - Customer Support")
 
 ### 'Card' Example
 ```xml
