@@ -1,6 +1,6 @@
 <Alloy>
 	<ScrollView>
-		<View class="w-screen mx-4 mt-4 bg-white border-gray-300 rounded-lg vertical clip-enabled">
+		<View class="w-screen mx-4 bg-white border-gray-300 rounded-lg vertical clip-enabled">
 			<View class="w-screen bg-gray-200">
 				<Label class="h-10 m-4 text-3xl font-semibold">Projects</Label>
 			</View>
@@ -18,7 +18,7 @@
 
 					<View class="w-screen horizontal">
 						<View class="w-1/3 h-6 horizontal">
-							<Button class="text-gray-600 fas fa-lungs-virus"/>
+							<Button class="text-gray-600 far fa-user"/>
 							<Label class="ml-1 text-sm font-bold text-gray-700">4</Label>
 						</View>
 

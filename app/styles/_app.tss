@@ -1,0 +1,21 @@
+// This is my original app.tss file
+'ScrollView': {
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	// showVerticalScrollIndicator: true
+}
+
+'.custoClass': {
+	color: '#cecece'
+}
+
+'.anottherCustoClass': {
+	backgroundColor: 'red'
+}
+
+'.isPlaceHolder': {
+	color: '#e5e7eb',
+	title: '#e5e7eb',
+	borderColor: '#e5e7eb',
+	backgroundColor: '#e5e7eb'
+}

@@ -1,4 +1,5 @@
 {
+	"autoStyle": true,
 	"global": {},
 	"env:development": {},
 	"env:test": {},

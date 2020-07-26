@@ -10,6 +10,10 @@
 
 				<Require src="examples/card" />
 
+				<Require src="examples/nike" />
+
+				<Require src="examples/politico" />
+
 				<Require src="examples/projects" />
 
 				<Require src="examples/house" />

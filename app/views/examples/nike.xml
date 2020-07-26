@@ -1,0 +1,21 @@
+<Alloy>
+	<ScrollView>
+		<View class="shadow-lg mx-10">
+			<View class="vertical bg-white rounded-lg clip-enabled">
+				<View class="vertical mx-4 my-2 ">
+					<Label class="w-full text-gray-900 font-bold text-3xl">NIKE AIR</Label>
+					<Label class="w-full text-gray-600 text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</Label>
+				</View>
+
+				<ImageView class="h-auto w-full mt-2" image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80" alt="NIKE AIR"/>
+
+				<View class="bg-gray-900 w-screen">
+					<View class="mx-2 my-2 w-screen">
+						<Label class="ml-0 text-gray-200 font-bold text-xl">$129</Label>
+						<Button class="mr-0 w-24 bg-gray-200 text-sm text-gray-900 font-semibold rounded">Add to cart</Button>
+					</View>
+				</View>
+			</View>
+		</View>
+	</ScrollView>
+</Alloy>

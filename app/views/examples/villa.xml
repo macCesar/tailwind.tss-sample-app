@@ -1,8 +1,8 @@
 <Alloy>
 	<ScrollView>
-		<View class="w-screen mt-4 mx-4 bg-white vertical">
+		<View class="w-screen mx-4 bg-white vertical">
 			<View class="vertical">
-				<ImageView class="rounded-lg w-screen" image="https://images.unsplash.com/photo-1452784444945-3f422708fe5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=512&q=80" />
+				<ImageView class="rounded-lg w-screen" image="https://images.unsplash.com/photo-1452784444945-3f422708fe5e?ixlib=rb-1.2.1&#x26;ixid=eyJhcHBfaWQiOjEyMDd9&#x26;auto=format&#x26;fit=crop&#x26;w=512&#x26;q=80" />
 
 				<View class="w-screen mt-2 vertical">
 					<Label class="ml-0 text-xs text-gray-600 font-bold">PRIVATE VILLA</Label>
