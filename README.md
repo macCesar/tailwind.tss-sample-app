@@ -1,6 +1,6 @@
 # tailwindTSS Sample App
 
-[Tailwind CSS](https://tailwindcss.com/) styles applied in a [Titanium App](https://www.appcelerator.com/mobile-app-development-products/).
+A [Titanium App](https://www.appcelerator.com/mobile-app-development-products/) showcasing [Tailwind CSS](https://tailwindcss.com/) styles applied with [tailwindTSS](https://github.com/macCesar/tailwind-tss-color-generator).
 
 ## UPDATE!!!
 Please use [`purgeTSS`](https://github.com/macCesar/purgeTSS) available via a Command Line Interface.
