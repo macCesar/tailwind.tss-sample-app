@@ -93,7 +93,6 @@
 '.bg-indigo-500': { backgroundColor: '#6875f5' }
 '.border-gray-300': { borderColor: '#d2d6dc' }
 '.border-gray-400': { borderColor: '#9fa6b2' }
-'.border-gray-900': { borderColor: '#161e2e' }
 '.border-blue-600': { borderColor: '#1c64f2' }
 '.border-blue-800': { borderColor: '#1e429f' }
 '.text-xs': { font: { fontSize: 12 } }
