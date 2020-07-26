@@ -9,11 +9,19 @@
 	backgroundColor: 'transparent'
 }
 
-'.custoClass': {
+'Label': {
+	touchEnabled: false
+}
+
+'TextArea': {
+	touchEnabled: false
+}
+
+'.customClass': {
 	color: '#cecece'
 }
 
-'.anottherCustoClass': {
+'.anotherCustomClass': {
 	backgroundColor: 'red'
 }
 
