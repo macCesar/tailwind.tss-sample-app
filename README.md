@@ -24,7 +24,7 @@ purgetss [ -d, --dev ] [ --vendor ]
 > 
 > From now on, please use this file to add, update or delete your custom classes.
 > 
-> Remember to re-run the script to update `app.tss` if you make changes to your views or your cutoms classes.
+> **Remember to re-run the script if you make changes to your views or your cutoms classes.**
 
 ## Example Views
 ### 'Customer Support' example
