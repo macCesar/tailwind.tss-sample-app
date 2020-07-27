@@ -5,7 +5,7 @@ A [Titanium App](https://www.appcelerator.com/mobile-app-development-products/) 
 ## UPDATE!!!
 Please use [`purgeTSS`](https://github.com/macCesar/purgeTSS) available via a Command Line Interface.
 
-It analyzes your views and will purge all unused classes from the included `tailwind.tss` file into a new `app.tss` file, resulting in the smallest file size possible.
+It analyzes your views and will purge all unused classes from the included `tailwind.tss` and `fontawesome.tss` files into a new `app.tss` file, resulting in the smallest file size possible.
 
 Just install it globally on your machine.
 ```bash
