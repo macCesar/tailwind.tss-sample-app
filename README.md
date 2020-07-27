@@ -3,16 +3,14 @@
 A [Titanium App](https://www.appcelerator.com/mobile-app-development-products/) showcasing [Tailwind CSS](https://tailwindcss.com/) styles applied with [tailwindTSS](https://github.com/macCesar/tailwind-tss-color-generator).
 
 ## UPDATE!!!
-Please use [`purgeTSS`](https://github.com/macCesar/purgeTSS) available via a Command Line Interface.
-
-It analyzes your views and will purge all unused classes from the included `tailwind.tss` and `fontawesome.tss` files into a new `app.tss` file, resulting in the smallest file size possible.
+Please checkout my new [`purgeTSS`](https://github.com/macCesar/purgeTSS) CLI.
 
 1. Just install it globally on your machine.
 ```bash
 [sudo] npm i -g purgetss
 ```
 
-2. Use any `tailwind.tss` or `fontawesome.tss` classes in your views.
+2. Use any [`tailwind.tss`](https://github.com/macCesar/tailwind-tss-color-generator/blob/master/app/styles/tailwind.tss) or [`fontawesome.tss`](https://github.com/macCesar/tailwind-tss-color-generator/blob/master/app/styles/fontawesome.tss) classes in your views.
 
 3. Run `purgetss` inside your project’s root folder before compiling your App.
 ```bash
@@ -27,6 +25,8 @@ purgetss [ -d, --dev ] [ --vendor ]
 > From now on, please use this file to add, update or delete your custom classes.
 > 
 > **Remember to re-run the script if you make changes to your views or your custom classes.**
+
+**For more info check the [official repository](https://github.com/macCesar/purgeTSS)**
 
 ## Example Views
 ### 'Customer Support' example
