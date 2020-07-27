@@ -7,17 +7,19 @@ Please use [`purgeTSS`](https://github.com/macCesar/purgeTSS) available via a Co
 
 It analyzes your views and will purge all unused classes from the included `tailwind.tss` and `fontawesome.tss` files into a new `app.tss` file, resulting in the smallest file size possible.
 
-Just install it globally on your machine.
+1. Just install it globally on your machine.
 ```bash
 [sudo] npm i -g purgetss
 ```
 
-Run it inside your project’s root folder before compiling your App.
+2. Use any `tailwind.tss` or `fontawesome.tss` classes in your views.
+
+3. Run `purgetss` inside your project’s root folder before compiling your App.
 ```bash
 purgetss [ -d, --dev ] [ --vendor ]
 ```
 
-**And as simple as that, you’ll have a purged file with only the styles used in your App.**
+4. **And as simple as that, you’ll have a purged file with only the styles used in your App.**
 
 ## Important Notice
 > The script will back up your current `app.tss` file into `_app.tss`.
