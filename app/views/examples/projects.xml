@@ -2,7 +2,7 @@
 	<ScrollView>
 		<View class="w-screen mx-4 bg-white border-gray-500 rounded-lg vertical clip-enabled">
 			<View class="w-screen bg-gray-500">
-				<Label class="h-auto mx-3 my-2 text-xl text-white font-semibold">PROJECTS</Label>
+				<Label class="h-auto mx-3 my-2 text-xl font-semibold text-white">PROJECTS</Label>
 			</View>
 
 			<View class="w-screen h-px bg-gray-500"></View>

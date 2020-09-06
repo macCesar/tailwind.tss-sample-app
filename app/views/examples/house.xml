@@ -1,35 +1,35 @@
 <Alloy>
 	<ScrollView>
-		<View class="w-11/12 bg-white rounded-lg border-gray-400 vertical clip-enabled">
+		<View class="w-11/12 bg-white border-gray-400 rounded-lg vertical clip-enabled">
 			<ImageView class="w-screen" image="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3067&amp;q=80" />
 
-			<View class="m-4 w-screen vertical">
+			<View class="w-screen m-4 vertical">
 				<Label class="ml-0 text-sm font-bold text-gray-700">Detached house • 5y old</Label>
 				<Label class="ml-0 text-3xl text-gray-900">$750,000</Label>
 				<Label class="ml-0 text-gray-700">742 Evergreen Terrace</Label>
 			</View>
 
-			<View class="h-px w-screen bg-gray-300"></View>
+			<View class="w-screen h-px bg-gray-300"></View>
 			<View class="horizontal">
-				<View class="w-auto h-20 horizontal mr-2">
-					<Label class="h-20 fa fa-bed text-gray-800" />
-					<Label class="h-20 ml-1 text-gray-800 font-bold ">3 Bedrooms</Label>
+				<View class="w-auto h-20 mr-2 horizontal">
+					<Label class="h-20 text-gray-800 lni lni-pizza" />
+					<Label class="h-20 ml-1 font-bold text-gray-800 ">3 Bedrooms</Label>
 				</View>
 
-				<View class="w-auto h-20 horizontal ml-2">
-					<Label class="h-20 fa fa-bath text-gray-800" />
-					<Label class="h-20 ml-1 text-gray-800 font-bold">2 Bathrooms</Label>
+				<View class="w-auto h-20 ml-2 horizontal">
+					<Label class="h-20 text-gray-800 fa fa-bath" />
+					<Label class="h-20 ml-1 font-bold text-gray-800">2 Bathrooms</Label>
 				</View>
 			</View>
 
-			<View class="h-px w-screen bg-gray-300"></View>
-			<View class="bg-gray-100 vertical w-screen">
+			<View class="w-screen h-px bg-gray-300"></View>
+			<View class="w-screen bg-gray-100 vertical">
 				<Label class="mx-4 mt-3 text-xs font-bold text-gray-600">REALTOR</Label>
 
 				<View class="m-4 horizontal">
 					<ImageView class="w-10 h-10 rounded-10" image="https://randomuser.me/api/portraits/women/17.jpg" />
 
-					<View class="vertical w-screen">
+					<View class="w-screen vertical">
 						<Label class="ml-3 font-bold text-gray-900">Catherine Heffner</Label>
 						<Label class="ml-3 text-sm text-gray-700">(111) 111-1111</Label>
 					</View>

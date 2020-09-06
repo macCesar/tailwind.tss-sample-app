@@ -1,6 +1,6 @@
 # tailwindTSS Sample App
 
-A [Titanium App](https://www.appcelerator.com/mobile-app-development-products/) showcasing [Tailwind CSS](https://tailwindcss.com/) styles applied with [tailwindTSS](https://github.com/macCesar/tailwind-tss-color-generator).
+A [Titanium App](https://www.appcelerator.com/mobile-app-development-products/) showcasing [Tailwind CSS](https://tailwindcss.com/) styles applied with [purgeTSS](https://github.com/macCesar/purgeTSS/).
 
 ## UPDATE!!!
 Please checkout my new [`purgeTSS`](https://github.com/macCesar/purgeTSS) CLI.
@@ -10,7 +10,7 @@ Please checkout my new [`purgeTSS`](https://github.com/macCesar/purgeTSS) CLI.
 [sudo] npm i -g purgetss
 ```
 
-2. Use any [`tailwind.tss`](https://github.com/macCesar/tailwind-tss-color-generator/blob/master/app/styles/tailwind.tss) or [`fontawesome.tss`](https://github.com/macCesar/tailwind-tss-color-generator/blob/master/app/styles/fontawesome.tss) classes in your views.
+2. Use any [`tailwind.tss`](https://github.com/macCesar/purgeTSS/blob/master/tss/tailwind.tss), [`fontawesome.tss`](https://github.com/macCesar/purgeTSS/blob/master/tss/fontawesome.tss) or [`lineicons.tss`](https://github.com/macCesar/purgeTSS/blob/master/tss/lineicons.tss) classes in your views.
 
 3. Run `purgetss` inside your project’s root folder before compiling your App.
 ```bash
@@ -21,9 +21,9 @@ purgetss [ -d, --dev ] [ --vendor ]
 
 ### Important Notice!
 > When you run `purgeTSS` for the first time it will back up your current `app.tss` file into `_app.tss`.
-> 
+>
 > From now on, please use this file to add, update or delete your custom classes.
-> 
+>
 > **Remember to re-run the script if you make changes to your views or your custom classes.**
 
 **For more info check the [official repository](https://github.com/macCesar/purgeTSS)**
@@ -33,8 +33,8 @@ purgetss [ -d, --dev ] [ --vendor ]
 ```xml
 <Alloy>
     <ScrollView>
-        <View class="w-screen mx-4 bg-white rounded-lg border-gray-400 shadow-lg vertical">
-            <ImageView class="mt-3 h-16 w-16 rounded-16 mx-auto" image="https://randomuser.me/api/portraits/women/17.jpg" />
+        <View class="w-screen mx-4 bg-white border-gray-400 rounded-lg shadow-lg vertical">
+            <ImageView class="w-16 h-16 mx-auto mt-3 rounded-16" image="https://randomuser.me/api/portraits/women/17.jpg" />
 
             <View class="mt-3 mb-3 vertical">
                 <Label class="text-xl text-gray-800">Erin Lindford</Label>
@@ -53,18 +53,18 @@ purgetss [ -d, --dev ] [ --vendor ]
 ```xml
 <Alloy>
     <ScrollView>
-        <View class="w-11/12 bg-white rounded-lg border-gray-400 vertical clip-enabled">
+        <View class="w-11/12 bg-white border-gray-400 rounded-lg vertical clip-enabled">
             <ImageView class="shadow-md" image="https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-1.2.1&#x26;ixid=eyJhcHBfaWQiOjEyMDd9&#x26;auto=format&#x26;fit=crop&#x26;w=3300&#x26;q=80" />
 
-            <View class="m-3 text-gray-600 h-auto vertical">
+            <View class="h-auto m-3 text-gray-600 vertical">
                 <View class="w-screen horizontal">
-                    <Label class="text-gray-600 text-2xl font-thin">Card Content</Label>
-                    <Label class="ml-2 text-sm text-gray-500 font-semibold">Nov 3rd, 2019</Label>
+                    <Label class="text-2xl font-thin text-gray-600">Card Content</Label>
+                    <Label class="ml-2 text-sm font-semibold text-gray-500">Nov 3rd, 2019</Label>
                 </View>
 
-                <Label class="text-gray-500 font-normal w-screen">This is some card content to demonstrate how the cards work.</Label>
+                <Label class="w-screen font-normal text-gray-500">This is some card content to demonstrate how the cards work.</Label>
 
-                <Button class="mt-2 w-1/2 h-8 rounded-8 bg-gray-500 text-white">Read More</Button>
+                <Button class="w-1/2 h-8 mt-2 text-white bg-gray-500 rounded-8">Read More</Button>
             </View>
         </View>
     </ScrollView>
@@ -77,19 +77,19 @@ purgetss [ -d, --dev ] [ --vendor ]
 ```xml
 <Alloy>
     <ScrollView>
-        <View class="shadow-lg mx-10">
-            <View class="vertical bg-white rounded-lg border-gray-400 clip-enabled">
-                <View class="vertical mx-4 my-2 ">
-                    <Label class="w-full text-gray-900 font-bold text-3xl">NIKE AIR</Label>
-                    <Label class="w-full text-gray-600 text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</Label>
+        <View class="mx-10 shadow-lg">
+            <View class="bg-white border-gray-400 rounded-lg vertical clip-enabled">
+                <View class="mx-4 my-2 vertical ">
+                    <Label class="w-full text-3xl font-bold text-gray-900">NIKE AIR</Label>
+                    <Label class="w-full mt-1 text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</Label>
                 </View>
 
-                <ImageView class="h-auto w-full mt-2" image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80" alt="NIKE AIR"/>
+                <ImageView class="w-full h-auto mt-2" image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80" alt="NIKE AIR"/>
 
-                <View class="bg-gray-900 w-screen">
-                    <View class="mx-2 my-2 w-screen">
-                        <Label class="ml-0 text-gray-200 font-bold text-xl">$129</Label>
-                        <Button class="mr-0 w-24 bg-gray-200 text-sm text-gray-900 font-semibold rounded">Add to cart</Button>
+                <View class="w-screen bg-gray-900">
+                    <View class="w-screen mx-2 my-2">
+                        <Label class="ml-0 text-xl font-bold text-gray-200">$129</Label>
+                        <Button class="w-24 mr-0 text-sm font-semibold text-gray-900 bg-gray-200 rounded">Add to cart</Button>
                     </View>
                 </View>
             </View>
@@ -105,26 +105,26 @@ purgetss [ -d, --dev ] [ --vendor ]
 ```xml
 <Alloy>
     <ScrollView>
-        <View class="vertical mx-4">
+        <View class="mx-4 vertical">
             <View class="mt-4">
-                <Label class="w-screen text-sm text-red-600 font-bold">CORONAVIRUS</Label>
+                <Label class="w-screen text-sm font-bold text-red-600">CORONAVIRUS</Label>
             </View>
 
-            <Label class="w-full text-gray-800 text-4xl font-bold">Kemp and Bottoms hurl insults at each other in Georgia mask feud</Label>
+            <Label class="w-full text-4xl font-bold text-gray-800">Kemp and Bottoms hurl insults at each other in Georgia mask feud</Label>
 
-            <Label class="w-full text-gray-500 mt-2">The war of words comes after the governor sued the Atlanta mayor over her city’s mask mandate.</Label>
+            <Label class="w-full mt-2 text-gray-500">The war of words comes after the governor sued the Atlanta mayor over her city’s mask mandate.</Label>
 
             <ImageView class="mt-2" image="https://static.politico.com/dims4/default/fcd6d6a/2147483647/resize/1920x/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F22%2F87%2F2259ffd444678054896b9fa32b4d%2Fgettyimages-1221513169.jpg" />
 
-            <Label class="w-screen text-gray-600 text-normal border-b h-auto my-2 text-sm">Georgia Gov. Brian Kemp speaks to the media during a press conference. | Kevin C. Cox/Getty Images</Label>
+            <Label class="w-screen h-auto my-2 text-sm text-gray-600 border-b text-normal">Georgia Gov. Brian Kemp speaks to the media during a press conference. | Kevin C. Cox/Getty Images</Label>
 
-            <TextArea class="font-thin text-xs italic w-screen text-gray-600 -mx-1">
+            <TextArea class="w-screen -mx-1 text-xs italic font-thin text-gray-600">
                 By Quint Forgey
                 07/17/2020 09:57 AM EDT
                 Updated: 07/17/2020 10:33 AM EDT
             </TextArea>
 
-            <TextArea class="w-screen mx-auto h-auto mb-4 font-thin -mx-1 text-sm text-gray-600">
+            <TextArea class="w-screen h-auto mx-auto mb-4 -mx-1 text-sm font-thin text-gray-600">
                 Georgia Gov. Brian Kemp and Atlanta Mayor Keisha Lance Bottoms hurled insults at one another Friday, as their legal battle over whether to mandate masks in the state’s capital city entered its second day.
 
                 During dueling appearances at a Capitol news briefing and in an interview with CNN, the Republican governor and the Democratic mayor both accused the other’s office of playing politics amid a pandemic that continues to ravage communities across Georgia.
@@ -168,36 +168,36 @@ purgetss [ -d, --dev ] [ --vendor ]
 ```xml
 <Alloy>
     <ScrollView>
-        <View class="w-11/12 bg-white rounded-lg border-gray-400 vertical clip-enabled">
+        <View class="w-11/12 bg-white border-gray-400 rounded-lg vertical clip-enabled">
             <ImageView class="w-screen" image="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3067&amp;q=80" />
 
-            <View class="m-4 w-screen vertical">
+            <View class="w-screen m-4 vertical">
                 <Label class="ml-0 text-sm font-bold text-gray-700">Detached house • 5y old</Label>
                 <Label class="ml-0 text-3xl text-gray-900">$750,000</Label>
                 <Label class="ml-0 text-gray-700">742 Evergreen Terrace</Label>
             </View>
 
-            <View class="h-px w-screen bg-gray-300"></View>
+            <View class="w-screen h-px bg-gray-300"></View>
             <View class="horizontal">
-                <View class="w-auto h-20 horizontal mr-2">
-                    <Label class="h-20 fa fa-bed text-gray-800" />
-                    <Label class="h-20 ml-1 text-gray-800 font-bold ">3 Bedrooms</Label>
+                <View class="w-auto h-20 mr-2 horizontal">
+                    <Label class="h-20 text-gray-800 fa fa-bed" />
+                    <Label class="h-20 ml-1 font-bold text-gray-800 ">3 Bedrooms</Label>
                 </View>
 
-                <View class="w-auto h-20 horizontal ml-2">
-                    <Label class="h-20 fa fa-bath text-gray-800" />
-                    <Label class="h-20 ml-1 text-gray-800 font-bold">2 Bathrooms</Label>
+                <View class="w-auto h-20 ml-2 horizontal">
+                    <Label class="h-20 text-gray-800 fa fa-bath" />
+                    <Label class="h-20 ml-1 font-bold text-gray-800">2 Bathrooms</Label>
                 </View>
             </View>
 
-            <View class="h-px w-screen bg-gray-300"></View>
-            <View class="bg-gray-100 vertical w-screen">
+            <View class="w-screen h-px bg-gray-300"></View>
+            <View class="w-screen bg-gray-100 vertical">
                 <Label class="mx-4 mt-3 text-xs font-bold text-gray-600">REALTOR</Label>
 
                 <View class="m-4 horizontal">
                     <ImageView class="w-10 h-10 rounded-10" image="https://randomuser.me/api/portraits/women/17.jpg" />
 
-                    <View class="vertical w-screen">
+                    <View class="w-screen vertical">
                         <Label class="ml-3 font-bold text-gray-900">Catherine Heffner</Label>
                         <Label class="ml-3 text-sm text-gray-700">(111) 111-1111</Label>
                     </View>
@@ -216,7 +216,7 @@ purgetss [ -d, --dev ] [ --vendor ]
     <ScrollView>
         <View class="w-screen mx-4 bg-white border-gray-500 rounded-lg vertical clip-enabled">
             <View class="w-screen bg-gray-500">
-                <Label class="h-auto mx-3 my-2 text-xl text-white font-semibold">PROJECTS</Label>
+                <Label class="h-auto mx-3 my-2 text-xl font-semibold text-white">PROJECTS</Label>
             </View>
 
             <View class="w-screen h-px bg-gray-500"></View>
@@ -291,11 +291,11 @@ purgetss [ -d, --dev ] [ --vendor ]
     <ScrollView>
         <View class="w-screen mx-4 bg-white vertical">
             <View class="vertical">
-                <ImageView class="rounded-lg w-screen" image="https://images.unsplash.com/photo-1452784444945-3f422708fe5e?ixlib=rb-1.2.1&#x26;ixid=eyJhcHBfaWQiOjEyMDd9&#x26;auto=format&#x26;fit=crop&#x26;w=512&#x26;q=80" />
+                <ImageView class="w-screen rounded-lg" image="https://images.unsplash.com/photo-1452784444945-3f422708fe5e?ixlib=rb-1.2.1&#x26;ixid=eyJhcHBfaWQiOjEyMDd9&#x26;auto=format&#x26;fit=crop&#x26;w=512&#x26;q=80" />
 
                 <View class="w-screen mt-2 vertical">
-                    <Label class="ml-0 text-xs text-gray-600 font-bold">PRIVATE VILLA</Label>
-                    <Label class="ml-0 font-bold text-gray-700 text-base">Relaxing All-Inclusive Resort in Cancun</Label>
+                    <Label class="ml-0 text-xs font-bold text-gray-600">PRIVATE VILLA</Label>
+                    <Label class="ml-0 text-base font-bold text-gray-700">Relaxing All-Inclusive Resort in Cancun</Label>
                     <Label class="ml-0 text-sm text-gray-600">$299 USD per night</Label>
                 </View>
             </View>
@@ -310,32 +310,32 @@ purgetss [ -d, --dev ] [ --vendor ]
 ```xml
 <Alloy>
     <ScrollView>
-        <View class="vertical mx-8">
-            <ImageView class="mt-3 w-56" image="/images/welcome.png" />
+        <View class="mx-8 vertical">
+            <ImageView class="w-56 mt-3" image="/images/welcome.png" />
 
-            <Label class="w-full ml-1 mt-2 text-sm text-left text-gray-900">Your Login</Label>
-            <TextField class="w-screen h-10 mt-1 pl-2 text-base text-gray-800 bg-gray-50 border-gray-400 rounded-md" returnKeyType="Ti.UI.RETURNKEY_NEXT" keyboardType="Ti.UI.KEYBOARD_TYPE_EMAIL" hintText="Email" />
+            <Label class="w-full mt-2 ml-1 text-sm text-left text-gray-900">Your Login</Label>
+            <TextField class="w-screen h-10 pl-2 mt-1 text-base text-gray-800 border-gray-400 rounded-md bg-gray-50" returnKeyType="Ti.UI.RETURNKEY_NEXT" keyboardType="Ti.UI.KEYBOARD_TYPE_EMAIL" hintText="Email" />
 
-            <Label class="w-full ml-1 mt-4 text-sm text-left text-gray-900">Your Password</Label>
-            <TextField class="w-screen h-10 mt-1 pl-2 text-base text-gray-800 bg-gray-50 border-gray-400 rounded-md" returnKeyType="Ti.UI.RETURNKEY_NEXT" hintText="Password" passwordMask="true" />
+            <Label class="w-full mt-4 ml-1 text-sm text-left text-gray-900">Your Password</Label>
+            <TextField class="w-screen h-10 pl-2 mt-1 text-base text-gray-800 border-gray-400 rounded-md bg-gray-50" returnKeyType="Ti.UI.RETURNKEY_NEXT" hintText="Password" passwordMask="true" />
 
             <Button class="w-screen h-10 mt-4 text-base text-white bg-gray-800 rounded-md">Login</Button>
 
-            <View class="horizontal w-screen mt-2">
-                <View class="horizontal w-1/2 mx-0" onClick="changeActive">
-                    <Button class="w-6 far fa-check-square fa-square text-gray-800" id="rememberMe" active='false' />
+            <View class="w-screen mt-2 horizontal">
+                <View class="w-1/2 mx-0 horizontal" onClick="changeActive">
+                    <Button class="w-6 text-gray-800 far fa-check-square fa-square" id="rememberMe" active='false' />
                     <Button class="ml-0 text-sm text-gray-800">Remember me</Button>
                 </View>
 
-                <View class="horizontal w-1/2 mx-0">
+                <View class="w-1/2 mx-0 horizontal">
                     <Button class="w-screen text-sm text-right text-gray-800">Forgot password?</Button>
                 </View>
             </View>
 
-            <View class="vertical w-screen h-auto mt-2 mb-8 bg-gray-100 rounded-md">
-                <Label class="h-auto ml-3 mr-3 mt-2 text-xs text-center text-gray-600">By creating an account you agree to our</Label>
+            <View class="w-screen h-auto mt-2 mb-8 bg-gray-100 rounded-md vertical">
+                <Label class="h-auto mt-2 ml-3 mr-3 text-xs text-center text-gray-600">By creating an account you agree to our</Label>
 
-                <Button class="h-auto ml-3 mr-3 mb-1 text-xs text-center text-gray-800 font-semibold">Terms and Conditions</Button>
+                <Button class="h-auto mb-1 ml-3 mr-3 text-xs font-semibold text-center text-gray-800">Terms and Conditions</Button>
             </View>
         </View>
     </ScrollView>

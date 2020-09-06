@@ -1,10 +1,6 @@
-// Tailwind CSS: A utility-first CSS framework for rapidly building custom designs. ( https://tailwindcss.com )
-// Tailwind UI Plugin ( https://www.npmjs.com/package/@tailwindcss/ui ).
-// Created by Adam Wathan ( https://twitter.com/adamwathan ).
-
-// Tailwind TSS Generator
+// purgeTSS
 // Created by César Estrada
-// https://github.com/macCesar/tailwind-tss-color-generator
+// https://github.com/macCesar/purgeTSS
 
 // Reset Styles
 'Window': { backgroundColor: '#ffffff' }
@@ -54,20 +50,9 @@
 	backgroundColor: '#e5e7eb'
 }
 
-// *** Font Awesome Styles ***
-'.far': { font: { fontFamily: 'FontAwesome5Free-Regular' } }
-'.fa':{ font: { fontFamily: 'FontAwesome5Free-Solid' } }
-'.fa-align-left': { text: '\uf036', title: '\uf036' }
-'.fa-bath': { text: '\uf2cd', title: '\uf2cd' }
-'.fa-bed': { text: '\uf236', title: '\uf236' }
-'.fa-check-square': { text: '\uf14a', title: '\uf14a' }
-'.fa-code': { text: '\uf121', title: '\uf121' }
-'.fa-comment-alt': { text: '\uf27a', title: '\uf27a' }
-'.fa-square': { text: '\uf0c8', title: '\uf0c8' }
-'.fa-suitcase': { text: '\uf0f2', title: '\uf0f2' }
-'.fa-user': { text: '\uf007', title: '\uf007' }
-
-// *** Tailwind Styles ***
+// Tailwind CSS: A utility-first CSS framework for rapidly building custom designs. ( https://tailwindcss.com )
+// Tailwind UI Plugin ( https://www.npmjs.com/package/@tailwindcss/ui ).
+// Created by Adam Wathan ( https://twitter.com/adamwathan ).
 '.text-white': { color: '#ffffff' }
 '.text-gray-200': { color: '#e5e7eb' }
 '.text-gray-500': { color: '#6b7280' }
@@ -192,3 +177,23 @@
 '.opacity-50': { opacity: 0.5 }
 '.opacity-75': { opacity: 0.75 }
 '.opacity-100': { opacity: 1 }
+
+// Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
+// License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+
+// Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen readers do not read off random characters that represent icons
+'.far': { font: { fontFamily: 'FontAwesome5Free-Regular' } }
+'.fa':{ font: { fontFamily: 'FontAwesome5Free-Solid' } }
+'.fa-align-left': { text: '\uf036', title: '\uf036' }
+'.fa-bath': { text: '\uf2cd', title: '\uf2cd' }
+'.fa-check-square': { text: '\uf14a', title: '\uf14a' }
+'.fa-code': { text: '\uf121', title: '\uf121' }
+'.fa-comment-alt': { text: '\uf27a', title: '\uf27a' }
+'.fa-square': { text: '\uf0c8', title: '\uf0c8' }
+'.fa-suitcase': { text: '\uf0f2', title: '\uf0f2' }
+'.fa-user': { text: '\uf007', title: '\uf007' }
+
+// LineIcons Free Web Font - https://lineicons.com/free/
+// License - https://lineicons.com/license/
+'.lni': { font: { fontFamily: 'LineIcons' } }
+'.lni-pizza': { text: '\ueb59', title: '\ueb59' }
