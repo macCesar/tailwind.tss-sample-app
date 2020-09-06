@@ -50,8 +50,8 @@
 	backgroundColor: '#e5e7eb'
 }
 
-// Tailwind CSS: A utility-first CSS framework for rapidly building custom designs. ( https://tailwindcss.com )
-// Tailwind UI Plugin ( https://www.npmjs.com/package/@tailwindcss/ui ).
+// Tailwind CSS v1.8.2: A utility-first CSS framework for rapidly building custom designs. ( https://tailwindcss.com )
+// Tailwind UI Plugin v0.4.0 ( https://www.npmjs.com/package/@tailwindcss/ui ).
 // Created by Adam Wathan ( https://twitter.com/adamwathan ).
 '.text-white': { color: '#ffffff' }
 '.text-gray-200': { color: '#e5e7eb' }
@@ -186,14 +186,10 @@
 '.fa':{ font: { fontFamily: 'FontAwesome5Free-Solid' } }
 '.fa-align-left': { text: '\uf036', title: '\uf036' }
 '.fa-bath': { text: '\uf2cd', title: '\uf2cd' }
+'.fa-bed': { text: '\uf236', title: '\uf236' }
 '.fa-check-square': { text: '\uf14a', title: '\uf14a' }
 '.fa-code': { text: '\uf121', title: '\uf121' }
 '.fa-comment-alt': { text: '\uf27a', title: '\uf27a' }
 '.fa-square': { text: '\uf0c8', title: '\uf0c8' }
 '.fa-suitcase': { text: '\uf0f2', title: '\uf0f2' }
 '.fa-user': { text: '\uf007', title: '\uf007' }
-
-// LineIcons Free Web Font - https://lineicons.com/free/
-// License - https://lineicons.com/license/
-'.lni': { font: { fontFamily: 'LineIcons' } }
-'.lni-pizza': { text: '\ueb59', title: '\ueb59' }

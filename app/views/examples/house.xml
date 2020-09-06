@@ -12,7 +12,7 @@
 			<View class="w-screen h-px bg-gray-300"></View>
 			<View class="horizontal">
 				<View class="w-auto h-20 mr-2 horizontal">
-					<Label class="h-20 text-gray-800 lni lni-pizza" />
+					<Label class="h-20 text-gray-800 fa fa-bed" />
 					<Label class="h-20 ml-1 font-bold text-gray-800 ">3 Bedrooms</Label>
 				</View>
 
