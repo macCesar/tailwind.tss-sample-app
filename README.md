@@ -5,12 +5,12 @@ A [Titanium App](https://www.appcelerator.com/mobile-app-development-products/) 
 ## UPDATE!!!
 Please checkout my new [`purgeTSS`](https://github.com/macCesar/purgeTSS) CLI.
 
-1. Just install it globally on your machine.
+1. Install it globally on your machine.
 ```bash
 > [sudo] npm i -g purgetss
 ```
 
-2. Use any [`tailwind.tss`](https://github.com/macCesar/purgeTSS/blob/master/tss/tailwind.tss), [`fontawesome.tss`](https://github.com/macCesar/purgeTSS/blob/master/tss/fontawesome.tss) or [`lineicons.tss`](https://github.com/macCesar/purgeTSS/blob/master/tss/lineicons.tss) classes in your views.
+2. Use any [tailwind.tss](https://github.com/macCesar/purgeTSS/blob/master/tss/tailwind.tss), [fontawesome.tss](https://github.com/macCesar/purgeTSS/blob/master/tss/fontawesome.tss), [materialicons.tss](https://github.com/macCesar/purgeTSS/blob/master/tss/materialicons.tss), [lineicons.tss](https://github.com/macCesar/purgeTSS/blob/master/tss/lineicons.tss) or your [custom.tss](https://github.com/macCesar/purgeTSS/blob/master/configuring-guide.md) classes in your views.
 
 3. Run `purgetss` inside your project’s root folder before compiling your App.
 ```bash
