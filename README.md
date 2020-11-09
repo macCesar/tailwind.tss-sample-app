@@ -20,11 +20,11 @@ purgetss [ -d, --dev ] [ --vendor ]
 4. **And as simple as that, you’ll have a purged `app.tss` file with only the styles used in your App.**
 
 ### Important Notice!
-> When you run `purgeTSS` for the first time it will back up your current `app.tss` file into `_app.tss`.
+> When you run `purgeTSS` for the first time, it will backup your `app.tss` file to `_app.tss`.
 >
-> From now on, please use this file to add, update or delete your custom classes.
+> It will use it together with `tailwind.tss`,` fontawesome.tss`, `materialicons.tss`,` lineicons.tss` and your `custom.tss` file to create a new purged ʻapp.tss` file.
 >
-> **Remember to re-run the script if you make changes to your views or your custom classes.**
+> From now on, add, update or remove your custom classes in `_app.tss.`
 
 **For more info check the [official repository](https://github.com/macCesar/purgeTSS)**
 
