@@ -7,7 +7,7 @@ Please checkout my new [`purgeTSS`](https://github.com/macCesar/purgeTSS) CLI.
 
 1. Just install it globally on your machine.
 ```bash
-[sudo] npm i -g purgetss
+> [sudo] npm i -g purgetss
 ```
 
 2. Use any [`tailwind.tss`](https://github.com/macCesar/purgeTSS/blob/master/tss/tailwind.tss), [`fontawesome.tss`](https://github.com/macCesar/purgeTSS/blob/master/tss/fontawesome.tss) or [`lineicons.tss`](https://github.com/macCesar/purgeTSS/blob/master/tss/lineicons.tss) classes in your views.
@@ -17,12 +17,12 @@ Please checkout my new [`purgeTSS`](https://github.com/macCesar/purgeTSS) CLI.
 > purgetss
 ```
 
-4. **And as simple as that, you’ll have a purged `app.tss` file with only the styles used in your App.**
+4. **And as simple as that, you'll have a purged `app.tss` file with only the styles used in your XML files.**
 
 ### Important Notice!
 > When you run `purgeTSS` for the first time, it will backup your `app.tss` file to `_app.tss`.
 >
-> It will use it together with `tailwind.tss`,` fontawesome.tss`, `materialicons.tss`,` lineicons.tss` and your `custom.tss` file to create a new purged ʻapp.tss` file.
+> It will use it together with `tailwind.tss`, `fontawesome.tss`, `materialicons.tss`, `lineicons.tss` and your `custom.tss` file to create a new purged `app.tss` file.
 >
 > From now on, add, update or remove your custom classes in `_app.tss.`
 
