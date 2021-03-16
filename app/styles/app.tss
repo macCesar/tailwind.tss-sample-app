@@ -2,24 +2,14 @@
 // Created by César Estrada
 // https://github.com/macCesar/purgeTSS
 
-// Reset Styles
-'Window': { backgroundColor: '#ffffff' }
-'ImageView[platform=ios]': { hires: true }
-'View': { width: Ti.UI.SIZE, height: Ti.UI.SIZE }
-'.vertical': { layout: 'vertical' }
-'.horizontal': { layout: 'horizontal' }
-'.vertical[platform=ios]': { clipMode: Ti.UI.iOS.CLIP_MODE_DISABLED }
-'.horizontal[platform=ios]': { clipMode: Ti.UI.iOS.CLIP_MODE_DISABLED }
-'.clip-enabled[platform=ios]': { clipMode: Ti.UI.iOS.CLIP_MODE_ENABLED }
-
-// *** _app.tss Styles ***
+// Styles from _app.tss
 // This is my original app.tss file
 'ScrollView': {
 	contentWidth: Ti.UI.FILL,
 	contentHeight: Ti.UI.SIZE
 }
 
-'ScrollView[plaform=android]': {
+'ScrollView[platform=android]': {
 	scrollType: 'vertical'
 }
 
@@ -50,40 +40,44 @@
 	backgroundColor: '#e5e7eb'
 }
 
-// Tailwind CSS v1.8.2: A utility-first CSS framework for rapidly building custom designs. ( https://tailwindcss.com )
-// Tailwind UI Plugin v0.4.0 ( https://www.npmjs.com/package/@tailwindcss/ui ).
-// Created by Adam Wathan ( https://twitter.com/adamwathan ).
-'.text-white': { color: '#ffffff' }
-'.text-gray-200': { color: '#e5e7eb' }
-'.text-gray-500': { color: '#6b7280' }
-'.text-gray-600': { color: '#4b5563' }
-'.text-gray-700': { color: '#374151' }
-'.text-gray-800': { color: '#252f3f' }
-'.text-gray-900': { color: '#161e2e' }
-'.text-red-600': { color: '#e02424' }
-'.text-red-700': { color: '#c81e1e' }
-'.text-blue-700': { color: '#1a56db' }
-'.text-indigo-700': { color: '#5145cd' }
-'.text-purple-500': { color: '#9061f9' }
+// Custom Tailwind Styles
+'.clip-enabled[platform=ios]': { clipMode: Ti.UI.iOS.CLIP_MODE_ENABLED }
+'.horizontal': { layout: 'horizontal' }
+'.horizontal[platform=ios]': { clipMode: Ti.UI.iOS.CLIP_MODE_DISABLED }
+'.vertical': { layout: 'vertical' }
+'.vertical[platform=ios]': { clipMode: Ti.UI.iOS.CLIP_MODE_DISABLED }
+'ImageView[platform=ios]': { hires: true }
+'View': { width: Ti.UI.SIZE, height: Ti.UI.SIZE }
+'Window': { backgroundColor: '#ffffff' }
 '.bg-white': { backgroundColor: '#ffffff' }
-'.bg-gray-50': { backgroundColor: '#f9fafb' }
-'.bg-gray-100': { backgroundColor: '#f4f5f7' }
-'.bg-gray-200': { backgroundColor: '#e5e7eb' }
-'.bg-gray-300': { backgroundColor: '#d2d6dc' }
-'.bg-gray-500': { backgroundColor: '#6b7280' }
-'.bg-gray-800': { backgroundColor: '#252f3f' }
-'.bg-gray-900': { backgroundColor: '#161e2e' }
-'.bg-orange-100': { backgroundColor: '#feecdc' }
-'.bg-green-500': { backgroundColor: '#0e9f6e' }
-'.bg-blue-200': { backgroundColor: '#c3ddfd' }
-'.bg-blue-500': { backgroundColor: '#3f83f8' }
-'.bg-blue-700': { backgroundColor: '#1a56db' }
-'.bg-blue-900': { backgroundColor: '#233876' }
-'.bg-indigo-500': { backgroundColor: '#6875f5' }
-'.border-gray-400': { borderColor: '#9fa6b2' }
-'.border-gray-500': { borderColor: '#6b7280' }
-'.border-blue-600': { borderColor: '#1c64f2' }
-'.border-blue-800': { borderColor: '#1e429f' }
+'.bg-indigo-500': { backgroundColor: '#6366f1' }
+'.bg-blue-200': { backgroundColor: '#bfdbfe' }
+'.bg-blue-500': { backgroundColor: '#3b82f6' }
+'.bg-blue-700': { backgroundColor: '#1d4ed8' }
+'.bg-blue-900': { backgroundColor: '#1e3a8a' }
+'.bg-green-500': { backgroundColor: '#22c55e' }
+'.bg-orange-100': { backgroundColor: '#ffedd5' }
+'.bg-gray-50': { backgroundColor: '#fafafa' }
+'.bg-gray-100': { backgroundColor: '#f4f4f5' }
+'.bg-gray-200': { backgroundColor: '#e4e4e7' }
+'.bg-gray-300': { backgroundColor: '#d4d4d8' }
+'.bg-gray-500': { backgroundColor: '#71717a' }
+'.bg-gray-800': { backgroundColor: '#27272a' }
+'.bg-gray-900': { backgroundColor: '#18181b' }
+'.border-blue-600': { borderColor: '#2563eb' }
+'.border-blue-800': { borderColor: '#1e40af' }
+'.border-gray-400': { borderColor: '#a1a1aa' }
+'.border-gray-500': { borderColor: '#71717a' }
+'.rounded-8': { borderRadius: 16 }
+'.rounded-10': { borderRadius: 20 }
+'.rounded-12': { borderRadius: 24 }
+'.rounded-16': { borderRadius: 32 }
+'.rounded': { borderRadius: 4 }
+'.rounded-md': { borderRadius: 3 }
+'.rounded-lg': { borderRadius: 4 }
+'.border-2': { borderWidth: 2 }
+'.border-4': { borderWidth: 4 }
+'.block': { visible: true }
 '.text-xs': { font: { fontSize: 12 } }
 '.text-sm': { font: { fontSize: 14 } }
 '.text-base': { font: { fontSize: 16 } }
@@ -96,18 +90,14 @@
 '.font-normal': { font: { fontWeight: 'normal' } }
 '.font-semibold': { font: { fontWeight: 'semibold' } }
 '.font-bold': { font: { fontWeight: 'bold' } }
-'.text-left': { textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT }
-'.text-right': { textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT }
-'.text-center': { textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER }
-'.rounded': { borderRadius: 4 }
-'.rounded-md': { borderRadius: 6 }
-'.rounded-lg': { borderRadius: 8 }
-'.rounded-8': { borderRadius: 16 }
-'.rounded-10': { borderRadius: 20 }
-'.rounded-12': { borderRadius: 24 }
-'.rounded-16': { borderRadius: 32 }
-'.border-2': { borderWidth: 2 }
-'.border-4': { borderWidth: 4 }
+'.h-6': { height: 24 }
+'.h-8': { height: 32 }
+'.h-10': { height: 40 }
+'.h-12': { height: 48 }
+'.h-16': { height: 64 }
+'.h-20': { height: 80 }
+'.h-px': { height: '1px' }
+'.h-auto': { height: Ti.UI.SIZE }
 '.m-3': { top: 12, right: 12, bottom: 12, left: 12 }
 '.m-4': { top: 16, right: 16, bottom: 16, left: 16 }
 '.my-2': { top: 8, bottom: 8 }
@@ -117,7 +107,6 @@
 '.mx-4': { right: 16, left: 16 }
 '.mx-8': { right: 32, left: 32 }
 '.mx-10': { right: 40, left: 40 }
-'.mx-auto': { right: null, left: null }
 '.-mx-1': { right: -4, left: -4 }
 '.mt-0': { top: 0 }
 '.mt-1': { top: 4 }
@@ -139,30 +128,11 @@
 '.ml-3': { left: 12 }
 '.ml-4': { left: 16 }
 '.-ml-1': { left: -4 }
+'.opacity-25': { opacity: 0.25 }
+'.opacity-50': { opacity: 0.5 }
+'.opacity-75': { opacity: 0.75 }
+'.opacity-100': { opacity: 1 }
 '.pl-2': { padding: { left: 8 } }
-'.w-6': { width: 24 }
-'.w-10': { width: 40 }
-'.w-12': { width: 48 }
-'.w-16': { width: 64 }
-'.w-24': { width: 96 }
-'.w-56': { width: 224 }
-'.w-auto': { width: Ti.UI.SIZE }
-'.w-1/2': { width: '50%' }
-'.w-1/3': { width: '33.333333%' }
-'.w-1/4': { width: '25%' }
-'.w-1/5': { width: '20%' }
-'.w-4/5': { width: '80%' }
-'.w-11/12': { width: '91.666667%' }
-'.w-full': { width: '100%' }
-'.w-screen': { width: Ti.UI.FILL }
-'.h-6': { height: 24 }
-'.h-8': { height: 32 }
-'.h-10': { height: 40 }
-'.h-12': { height: 48 }
-'.h-16': { height: 64 }
-'.h-20': { height: 80 }
-'.h-px': { height: '1px' }
-'.h-auto': { height: Ti.UI.SIZE }
 '.shadow-xs': { viewShadowOffset: { x: 0, y: 0 }, viewShadowRadius: 1, viewShadowColor: '#77000000' }
 '.shadow-sm': { viewShadowOffset: { x: 0, y: 1 }, viewShadowRadius: 1, viewShadowColor: '#77000000' }
 '.shadow': { viewShadowOffset: { x: 0, y: 2 }, viewShadowRadius: 2, viewShadowColor: '#77000000' }
@@ -173,17 +143,38 @@
 '.shadow-inner': { viewShadowOffset: { x: 0, y: 0 }, viewShadowRadius: null, viewShadowColor: null }
 '.shadow-outline': { viewShadowOffset: { x: 0, y: 0 }, viewShadowRadius: 2, viewShadowColor: '#77000000' }
 '.shadow-none': { viewShadowOffset: { x: 0, y: 0 }, viewShadowRadius: null, viewShadowColor: null }
-'.opacity-25': { opacity: 0.25 }
-'.opacity-50': { opacity: 0.5 }
-'.opacity-75': { opacity: 0.75 }
-'.opacity-100': { opacity: 1 }
-
-// Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
-// License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
-
-// Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen readers do not read off random characters that represent icons
-'.far': { font: { fontFamily: 'FontAwesome5Free-Regular' } }
+'.text-left': { textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT }
+'.text-right': { textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT }
+'.text-center': { textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER }
+'.text-white': { color: '#ffffff' }
+'.text-purple-500': { color: '#a855f7' }
+'.text-indigo-700': { color: '#4338ca' }
+'.text-blue-700': { color: '#1d4ed8' }
+'.text-red-600': { color: '#dc2626' }
+'.text-red-700': { color: '#b91c1c' }
+'.text-gray-200': { color: '#e4e4e7' }
+'.text-gray-500': { color: '#71717a' }
+'.text-gray-600': { color: '#52525b' }
+'.text-gray-700': { color: '#3f3f46' }
+'.text-gray-800': { color: '#27272a' }
+'.text-gray-900': { color: '#18181b' }
+'.w-6': { width: 24 }
+'.w-10': { width: 40 }
+'.w-12': { width: 48 }
+'.w-16': { width: 64 }
+'.w-24': { width: 96 }
+'.w-56': { width: 224 }
+'.w-1/2': { width: '50%' }
+'.w-1/3': { width: '33.333333%' }
+'.w-1/4': { width: '25%' }
+'.w-1/5': { width: '20%' }
+'.w-4/5': { width: '80%' }
+'.w-11/12': { width: '91.666667%' }
+'.w-full': { width: '100%' }
+'.w-auto': { width: Ti.UI.SIZE }
+'.w-screen': { width: Ti.UI.FILL }
 '.fa':{ font: { fontFamily: 'FontAwesome5Free-Solid' } }
+'.far': { font: { fontFamily: 'FontAwesome5Free-Regular' } }
 '.fa-align-left': { text: '\uf036', title: '\uf036' }
 '.fa-bath': { text: '\uf2cd', title: '\uf2cd' }
 '.fa-bed': { text: '\uf236', title: '\uf236' }

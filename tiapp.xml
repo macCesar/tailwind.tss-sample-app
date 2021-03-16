@@ -54,6 +54,9 @@
 
 	<android xmlns:android="http://schemas.android.com/apk/res/android">
 		<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1">
+			<uses-sdk android:minSdkVersion="21"/>
+			<uses-sdk android:targetSdkVersion="29"/>
+			<supports-screens android:anyDensity="true"/>
 		</manifest>
 	</android>
 
@@ -66,7 +69,7 @@
 		<target device="android">true</target>
 	</deployment-targets>
 
-	<sdk-version>9.0.3.GA</sdk-version>
+	<sdk-version>9.3.2.GA</sdk-version>
 
 	<plugins>
 		<plugin version="1.0">ti.alloy</plugin>
