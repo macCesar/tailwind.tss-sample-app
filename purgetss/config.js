@@ -5,11 +5,11 @@ module.exports = {
 
 		// These options are passed through directly to purgeTSS
 		options: {
-			safelist: [],
+			safelist: [ 'Window', 'View', 'ImageView' ],
 		}
 	},
 	theme: {
 		extend: {}
 	},
-	corePlugins: {}
+	corePlugins: {},
 };

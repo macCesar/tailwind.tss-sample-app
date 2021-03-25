@@ -1,4 +1,4 @@
-// Tailwind CSS v2.0.3: A utility-first CSS framework for rapidly building custom designs. ( https://tailwindcss.com )
+// Tailwind CSS v2.0.4: A utility-first CSS framework for rapidly building custom designs. ( https://tailwindcss.com )
 // Tailwind UI Plugin v0.7.2 ( https://www.npmjs.com/package/@tailwindcss/ui ).
 // Created by Adam Wathan ( https://twitter.com/adamwathan ).
 
@@ -10,9 +10,7 @@
 '.clip-disabled[platform=ios]': { clipMode: Ti.UI.iOS.CLIP_MODE_DISABLED }
 '.clip-enabled[platform=ios]': { clipMode: Ti.UI.iOS.CLIP_MODE_ENABLED }
 '.horizontal': { layout: 'horizontal' }
-'.horizontal[platform=ios]': { clipMode: Ti.UI.iOS.CLIP_MODE_DISABLED }
 '.vertical': { layout: 'vertical' }
-'.vertical[platform=ios]': { clipMode: Ti.UI.iOS.CLIP_MODE_DISABLED }
 'ImageView[platform=ios]': { hires: true }
 'View': { width: Ti.UI.SIZE, height: Ti.UI.SIZE }
 'Window': { backgroundColor: '#ffffff' }
@@ -512,13 +510,13 @@
 '.rounded-80': { borderRadius: 160 }
 '.rounded-96': { borderRadius: 192 }
 '.rounded-none': { borderRadius: 0 }
-'.rounded-sm': { borderRadius: 1 }
+'.rounded-sm': { borderRadius: 2 }
 '.rounded': { borderRadius: 4 }
-'.rounded-md': { borderRadius: 3 }
-'.rounded-lg': { borderRadius: 4 }
-'.rounded-xl': { borderRadius: 6 }
-'.rounded-2xl': { borderRadius: 8 }
-'.rounded-3xl': { borderRadius: 12 }
+'.rounded-md': { borderRadius: 6 }
+'.rounded-lg': { borderRadius: 8 }
+'.rounded-xl': { borderRadius: 12 }
+'.rounded-2xl': { borderRadius: 16 }
+'.rounded-3xl': { borderRadius: 24 }
 '.rounded-px': { borderRadius: '1px' }
 '.rounded-0.5': { borderRadius: 1 }
 '.rounded-1.5': { borderRadius: 3 }

@@ -1,10 +1,10 @@
 <Alloy>
 	<ScrollView>
-		<View class="w-11/12 bg-white border-gray-400 rounded-lg vertical clip-enabled">
+		<View class="w-11/12 h-auto bg-white border-gray-400 rounded-lg vertical clip-enabled">
 			<ImageView class="shadow-md" image="https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-1.2.1&#x26;ixid=eyJhcHBfaWQiOjEyMDd9&#x26;auto=format&#x26;fit=crop&#x26;w=3300&#x26;q=80" />
 
 			<View class="h-auto m-3 text-gray-600 vertical">
-				<View class="w-screen horizontal">
+				<View class="w-screen h-auto horizontal">
 					<Label class="text-2xl font-thin text-gray-600">Card Content</Label>
 					<Label class="ml-2 text-sm font-semibold text-gray-500">Nov 3rd, 2019</Label>
 				</View>
