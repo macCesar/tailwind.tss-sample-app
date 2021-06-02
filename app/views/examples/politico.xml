@@ -13,11 +13,11 @@
 
 			<Label class="w-screen h-auto my-2 text-sm text-gray-600 border-b text-normal">Georgia Gov. Brian Kemp speaks to the media during a press conference. | Kevin C. Cox/Getty Images</Label>
 
-			<TextArea class="w-screen -mx-1 text-xs italic font-thin text-gray-600">By Quint Forgey
+			<TextArea class="w-screen -mx-1 text-xs italic font-thin text-gray-600 bg-white">By Quint Forgey
 07/17/2020 09:57 AM EDT
 Updated: 07/17/2020 10:33 AM EDT</TextArea>
 
-			<TextArea class="w-screen h-auto mb-4 -mx-1 text-sm font-thin text-gray-600">Georgia Gov. Brian Kemp and Atlanta Mayor Keisha Lance Bottoms hurled insults at one another Friday, as their legal battle over whether to mandate masks in the state’s capital city entered its second day.
+			<TextArea class="w-screen h-auto mb-4 -mx-1 text-sm font-thin text-gray-600 bg-white">Georgia Gov. Brian Kemp and Atlanta Mayor Keisha Lance Bottoms hurled insults at one another Friday, as their legal battle over whether to mandate masks in the state’s capital city entered its second day.
 
 During dueling appearances at a Capitol news briefing and in an interview with CNN, the Republican governor and the Democratic mayor both accused the other’s office of playing politics amid a pandemic that continues to ravage communities across Georgia.
 

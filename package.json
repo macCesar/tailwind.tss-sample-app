@@ -19,6 +19,7 @@
   "homepage": "https://github.com/macCesar/tailwind.tss-sample-app#readme",
   "dependencies": {
     "@tailwindcss/ui": "^0.7.2",
-    "tailwindcss": "^1.9.6"
+    "autoprefixer": "^10.2.5",
+    "tailwindcss": "^2.1.2"
   }
 }
