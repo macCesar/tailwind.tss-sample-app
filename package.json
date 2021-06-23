@@ -20,6 +20,6 @@
   "dependencies": {
     "@tailwindcss/ui": "^0.7.2",
     "autoprefixer": "^10.2.5",
-    "tailwindcss": "^2.1.2"
+    "tailwindcss": "^2.2.2"
   }
 }
