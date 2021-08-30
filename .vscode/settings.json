@@ -4,7 +4,7 @@
 		"i18n/": true,
 		"platform/": true,
 		"Resources/": true,
-		"node_modules/": true,
+		"node_modules/": false,
 		"package-lock.json": true
 	},
 	"search.exclude": {

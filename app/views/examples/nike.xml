@@ -2,7 +2,7 @@
 	<ScrollView>
 		<View class="mx-10 shadow-lg">
 			<View class="bg-white border-gray-400 rounded-lg vertical clip-enabled">
-				<View class="mx-4 my-2 vertical ">
+				<View class="h-auto mx-4 my-2 vertical">
 					<Label class="w-full text-3xl font-bold text-gray-900">NIKE AIR</Label>
 					<Label class="w-full mt-1 text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</Label>
 				</View>

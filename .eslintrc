@@ -1,5 +1,45 @@
 {
 	"extends": [
 		"axway/env-alloy"
-	]
+	],
+	"globals": {
+		// declare globals here...
+	},
+	"rules": {
+		// project specific overrides...
+		"curly": [
+			"warn",
+			"multi-line"
+		],
+		// /* eslint-disable computed-property-spacing */
+		"computed-property-spacing": [
+			0,
+			"never"
+		],
+		"array-bracket-spacing": [
+			0,
+			"never"
+		],
+		// /* Missing space before function parentheses.eslintspace-before-function-paren */
+		"space-before-function-paren": [
+			0,
+			"never"
+		],
+		"alloy/no-unused-vars": [
+			0,
+			"never"
+		],
+		"security/detect-non-literal-require": [
+			0,
+			"never"
+		],
+		"no-undef": [
+			0,
+			{
+				"ignoreBuiltinGlobals": [
+					"$model"
+				]
+			}
+		]
+	}
 }

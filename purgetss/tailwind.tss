@@ -1,19 +1,20 @@
-// Tailwind CSS v2.1.2: A utility-first CSS framework for rapidly building custom designs. ( https://tailwindcss.com )
+// Tailwind CSS v2.2.8: A utility-first CSS framework for rapidly building custom designs. ( https://tailwindcss.com )
 // Tailwind UI Plugin v0.7.2 ( https://www.npmjs.com/package/@tailwindcss/ui ).
 // Created by Adam Wathan ( https://twitter.com/adamwathan ).
 
 // Custom Tailwind Styles
 // Generated with purgetss
 // https://github.com/macCesar/purgeTSS
+// Updated At: Thu Aug 05 2021 17:34:22 GMT-0500 (hora de verano central)
 
 // Custom Styles and Resets
-'.clip-disabled[platform=ios]': { clipMode: Ti.UI.iOS.CLIP_MODE_DISABLED }
-'.clip-enabled[platform=ios]': { clipMode: Ti.UI.iOS.CLIP_MODE_ENABLED }
-'.horizontal': { layout: 'horizontal' }
-'.vertical': { layout: 'vertical' }
 'ImageView[platform=ios]': { hires: true }
 'View': { width: Ti.UI.SIZE, height: Ti.UI.SIZE }
 'Window': { backgroundColor: '#ffffff' }
+
+// autoreverse Property
+'.autoreverse': { autoreverse: true }
+'.no-autoreverse': { autoreverse: false }
 
 // backgroundColor Property
 '.bg-transparent': { backgroundColor: 'transparent' }
@@ -89,16 +90,16 @@
 '.bg-blue-700': { backgroundColor: '#1d4ed8' }
 '.bg-blue-800': { backgroundColor: '#1e40af' }
 '.bg-blue-900': { backgroundColor: '#1e3a8a' }
-'.bg-lightBlue-50': { backgroundColor: '#f0f9ff' }
-'.bg-lightBlue-100': { backgroundColor: '#e0f2fe' }
-'.bg-lightBlue-200': { backgroundColor: '#bae6fd' }
-'.bg-lightBlue-300': { backgroundColor: '#7dd3fc' }
-'.bg-lightBlue-400': { backgroundColor: '#38bdf8' }
-'.bg-lightBlue-500': { backgroundColor: '#0ea5e9' }
-'.bg-lightBlue-600': { backgroundColor: '#0284c7' }
-'.bg-lightBlue-700': { backgroundColor: '#0369a1' }
-'.bg-lightBlue-800': { backgroundColor: '#075985' }
-'.bg-lightBlue-900': { backgroundColor: '#0c4a6e' }
+'.bg-sky-50': { backgroundColor: '#f0f9ff' }
+'.bg-sky-100': { backgroundColor: '#e0f2fe' }
+'.bg-sky-200': { backgroundColor: '#bae6fd' }
+'.bg-sky-300': { backgroundColor: '#7dd3fc' }
+'.bg-sky-400': { backgroundColor: '#38bdf8' }
+'.bg-sky-500': { backgroundColor: '#0ea5e9' }
+'.bg-sky-600': { backgroundColor: '#0284c7' }
+'.bg-sky-700': { backgroundColor: '#0369a1' }
+'.bg-sky-800': { backgroundColor: '#075985' }
+'.bg-sky-900': { backgroundColor: '#0c4a6e' }
 '.bg-cyan-50': { backgroundColor: '#ecfeff' }
 '.bg-cyan-100': { backgroundColor: '#cffafe' }
 '.bg-cyan-200': { backgroundColor: '#a5f3fc' }
@@ -239,17 +240,16 @@
 '.bg-blueGray-700': { backgroundColor: '#334155' }
 '.bg-blueGray-800': { backgroundColor: '#1e293b' }
 '.bg-blueGray-900': { backgroundColor: '#0f172a' }
-
-// backgroundGradient Property
-'.bg-none': { backgroundGradient: { type: 'linear', startPoint: { x: '0%', y: '0%' }, endPoint: { x: '0%', y: '0%' }, backFillStart: true } }
-'.bg-gradient-to-t': { backgroundGradient: { type: 'linear', startPoint: { x: '0%', y: '0%' }, endPoint: { x: '0%', y: '100%' }, backFillStart: true } }
-'.bg-gradient-to-tr': { backgroundGradient: { type: 'linear', startPoint: { x: '100%', y: '0%' }, endPoint: { x: '0%', y: '100%' }, backFillStart: true } }
-'.bg-gradient-to-r': { backgroundGradient: { type: 'linear', startPoint: { x: '100%', y: '0%' }, endPoint: { x: '0%', y: '0%' }, backFillStart: true } }
-'.bg-gradient-to-br': { backgroundGradient: { type: 'linear', startPoint: { x: '100%', y: '100%' }, endPoint: { x: '0%', y: '0%' }, backFillStart: true } }
-'.bg-gradient-to-b': { backgroundGradient: { type: 'linear', startPoint: { x: '100%', y: '100%' }, endPoint: { x: '100%', y: '0%' }, backFillStart: true } }
-'.bg-gradient-to-bl': { backgroundGradient: { type: 'linear', startPoint: { x: '0%', y: '100%' }, endPoint: { x: '100%', y: '0%' }, backFillStart: true } }
-'.bg-gradient-to-l': { backgroundGradient: { type: 'linear', startPoint: { x: '0%', y: '0%' }, endPoint: { x: '100%', y: '0%' }, backFillStart: true } }
-'.bg-gradient-to-tl': { backgroundGradient: { type: 'linear', startPoint: { x: '0%', y: '0%' }, endPoint: { x: '100%', y: '100%' }, backFillStart: true } }
+'.bg-rojo': { backgroundColor: '#b0100f' }
+'.bg-beige': { backgroundColor: '#f9f5ec' }
+'.bg-marron': { backgroundColor: '#800020' }
+'.bg-grisNeutroClaro': { backgroundColor: '#CCCCCC' }
+'.bg-grisNeutroMediano': { backgroundColor: '#d6d9e8' }
+'.bg-grisNeutroOscuro': { backgroundColor: '#d6d9e8' }
+'.bg-fondoMenus': { backgroundColor: '#2C2F32' }
+'.bg-fondoTablero': { backgroundColor: '#4E5356' }
+'.bg-labelTablero': { backgroundColor: '#2C2F32' }
+'.bg-fondoVentanaMenus': { backgroundColor: '#3D4144' }
 
 // backgroundSelectedColor Property
 '.bg-selected-transparent': { backgroundSelectedColor: 'transparent' }
@@ -325,16 +325,16 @@
 '.bg-selected-blue-700': { backgroundSelectedColor: '#1d4ed8' }
 '.bg-selected-blue-800': { backgroundSelectedColor: '#1e40af' }
 '.bg-selected-blue-900': { backgroundSelectedColor: '#1e3a8a' }
-'.bg-selected-lightBlue-50': { backgroundSelectedColor: '#f0f9ff' }
-'.bg-selected-lightBlue-100': { backgroundSelectedColor: '#e0f2fe' }
-'.bg-selected-lightBlue-200': { backgroundSelectedColor: '#bae6fd' }
-'.bg-selected-lightBlue-300': { backgroundSelectedColor: '#7dd3fc' }
-'.bg-selected-lightBlue-400': { backgroundSelectedColor: '#38bdf8' }
-'.bg-selected-lightBlue-500': { backgroundSelectedColor: '#0ea5e9' }
-'.bg-selected-lightBlue-600': { backgroundSelectedColor: '#0284c7' }
-'.bg-selected-lightBlue-700': { backgroundSelectedColor: '#0369a1' }
-'.bg-selected-lightBlue-800': { backgroundSelectedColor: '#075985' }
-'.bg-selected-lightBlue-900': { backgroundSelectedColor: '#0c4a6e' }
+'.bg-selected-sky-50': { backgroundSelectedColor: '#f0f9ff' }
+'.bg-selected-sky-100': { backgroundSelectedColor: '#e0f2fe' }
+'.bg-selected-sky-200': { backgroundSelectedColor: '#bae6fd' }
+'.bg-selected-sky-300': { backgroundSelectedColor: '#7dd3fc' }
+'.bg-selected-sky-400': { backgroundSelectedColor: '#38bdf8' }
+'.bg-selected-sky-500': { backgroundSelectedColor: '#0ea5e9' }
+'.bg-selected-sky-600': { backgroundSelectedColor: '#0284c7' }
+'.bg-selected-sky-700': { backgroundSelectedColor: '#0369a1' }
+'.bg-selected-sky-800': { backgroundSelectedColor: '#075985' }
+'.bg-selected-sky-900': { backgroundSelectedColor: '#0c4a6e' }
 '.bg-selected-cyan-50': { backgroundSelectedColor: '#ecfeff' }
 '.bg-selected-cyan-100': { backgroundSelectedColor: '#cffafe' }
 '.bg-selected-cyan-200': { backgroundSelectedColor: '#a5f3fc' }
@@ -475,6 +475,16 @@
 '.bg-selected-blueGray-700': { backgroundSelectedColor: '#334155' }
 '.bg-selected-blueGray-800': { backgroundSelectedColor: '#1e293b' }
 '.bg-selected-blueGray-900': { backgroundSelectedColor: '#0f172a' }
+'.bg-selected-rojo': { backgroundSelectedColor: '#b0100f' }
+'.bg-selected-beige': { backgroundSelectedColor: '#f9f5ec' }
+'.bg-selected-marron': { backgroundSelectedColor: '#800020' }
+'.bg-selected-grisNeutroClaro': { backgroundSelectedColor: '#CCCCCC' }
+'.bg-selected-grisNeutroMediano': { backgroundSelectedColor: '#d6d9e8' }
+'.bg-selected-grisNeutroOscuro': { backgroundSelectedColor: '#d6d9e8' }
+'.bg-selected-fondoMenus': { backgroundSelectedColor: '#2C2F32' }
+'.bg-selected-fondoTablero': { backgroundSelectedColor: '#4E5356' }
+'.bg-selected-labelTablero': { backgroundSelectedColor: '#2C2F32' }
+'.bg-selected-fondoVentanaMenus': { backgroundSelectedColor: '#3D4144' }
 
 // borderColor Property
 '.border-transparent': { borderColor: 'transparent' }
@@ -550,16 +560,16 @@
 '.border-blue-700': { borderColor: '#1d4ed8' }
 '.border-blue-800': { borderColor: '#1e40af' }
 '.border-blue-900': { borderColor: '#1e3a8a' }
-'.border-lightBlue-50': { borderColor: '#f0f9ff' }
-'.border-lightBlue-100': { borderColor: '#e0f2fe' }
-'.border-lightBlue-200': { borderColor: '#bae6fd' }
-'.border-lightBlue-300': { borderColor: '#7dd3fc' }
-'.border-lightBlue-400': { borderColor: '#38bdf8' }
-'.border-lightBlue-500': { borderColor: '#0ea5e9' }
-'.border-lightBlue-600': { borderColor: '#0284c7' }
-'.border-lightBlue-700': { borderColor: '#0369a1' }
-'.border-lightBlue-800': { borderColor: '#075985' }
-'.border-lightBlue-900': { borderColor: '#0c4a6e' }
+'.border-sky-50': { borderColor: '#f0f9ff' }
+'.border-sky-100': { borderColor: '#e0f2fe' }
+'.border-sky-200': { borderColor: '#bae6fd' }
+'.border-sky-300': { borderColor: '#7dd3fc' }
+'.border-sky-400': { borderColor: '#38bdf8' }
+'.border-sky-500': { borderColor: '#0ea5e9' }
+'.border-sky-600': { borderColor: '#0284c7' }
+'.border-sky-700': { borderColor: '#0369a1' }
+'.border-sky-800': { borderColor: '#075985' }
+'.border-sky-900': { borderColor: '#0c4a6e' }
 '.border-cyan-50': { borderColor: '#ecfeff' }
 '.border-cyan-100': { borderColor: '#cffafe' }
 '.border-cyan-200': { borderColor: '#a5f3fc' }
@@ -700,8 +710,18 @@
 '.border-blueGray-700': { borderColor: '#334155' }
 '.border-blueGray-800': { borderColor: '#1e293b' }
 '.border-blueGray-900': { borderColor: '#0f172a' }
+'.border-rojo': { borderColor: '#b0100f' }
+'.border-beige': { borderColor: '#f9f5ec' }
+'.border-marron': { borderColor: '#800020' }
+'.border-grisNeutroClaro': { borderColor: '#CCCCCC' }
+'.border-grisNeutroMediano': { borderColor: '#d6d9e8' }
+'.border-grisNeutroOscuro': { borderColor: '#d6d9e8' }
+'.border-fondoMenus': { borderColor: '#2C2F32' }
+'.border-fondoTablero': { borderColor: '#4E5356' }
+'.border-labelTablero': { borderColor: '#2C2F32' }
+'.border-fondoVentanaMenus': { borderColor: '#3D4144' }
 
-// borderRadius Property - ( With Extra Styles )
+// borderRadius - ( With Extra Styles ) Property
 '.rounded-0': { borderRadius: 0 }
 '.rounded-1': { borderRadius: 2 }
 '.rounded-2': { borderRadius: 4 }
@@ -755,9 +775,268 @@
 '.border-8': { borderWidth: 8 }
 '.border': { borderWidth: 1 }
 
+// disableBounce Property
+'.enable-bounce': { disableBounce: false }
+'.disable-bounce': { disableBounce: true }
+
+// clipMode Property
+'.clip-enabled[platform=ios]': { clipMode: Ti.UI.iOS.CLIP_MODE_ENABLED }
+'.clip-disabled[platform=ios]': { clipMode: Ti.UI.iOS.CLIP_MODE_DISABLED }
+
+// currentPageIndicatorColor Property
+'.current-page-transparent': { currentPageIndicatorColor: 'transparent' }
+'.current-page-black': { currentPageIndicatorColor: '#000000' }
+'.current-page-white': { currentPageIndicatorColor: '#ffffff' }
+'.current-page-rose-50': { currentPageIndicatorColor: '#fff1f2' }
+'.current-page-rose-100': { currentPageIndicatorColor: '#ffe4e6' }
+'.current-page-rose-200': { currentPageIndicatorColor: '#fecdd3' }
+'.current-page-rose-300': { currentPageIndicatorColor: '#fda4af' }
+'.current-page-rose-400': { currentPageIndicatorColor: '#fb7185' }
+'.current-page-rose-500': { currentPageIndicatorColor: '#f43f5e' }
+'.current-page-rose-600': { currentPageIndicatorColor: '#e11d48' }
+'.current-page-rose-700': { currentPageIndicatorColor: '#be123c' }
+'.current-page-rose-800': { currentPageIndicatorColor: '#9f1239' }
+'.current-page-rose-900': { currentPageIndicatorColor: '#881337' }
+'.current-page-pink-50': { currentPageIndicatorColor: '#fdf2f8' }
+'.current-page-pink-100': { currentPageIndicatorColor: '#fce7f3' }
+'.current-page-pink-200': { currentPageIndicatorColor: '#fbcfe8' }
+'.current-page-pink-300': { currentPageIndicatorColor: '#f9a8d4' }
+'.current-page-pink-400': { currentPageIndicatorColor: '#f472b6' }
+'.current-page-pink-500': { currentPageIndicatorColor: '#ec4899' }
+'.current-page-pink-600': { currentPageIndicatorColor: '#db2777' }
+'.current-page-pink-700': { currentPageIndicatorColor: '#be185d' }
+'.current-page-pink-800': { currentPageIndicatorColor: '#9d174d' }
+'.current-page-pink-900': { currentPageIndicatorColor: '#831843' }
+'.current-page-fuchsia-50': { currentPageIndicatorColor: '#fdf4ff' }
+'.current-page-fuchsia-100': { currentPageIndicatorColor: '#fae8ff' }
+'.current-page-fuchsia-200': { currentPageIndicatorColor: '#f5d0fe' }
+'.current-page-fuchsia-300': { currentPageIndicatorColor: '#f0abfc' }
+'.current-page-fuchsia-400': { currentPageIndicatorColor: '#e879f9' }
+'.current-page-fuchsia-500': { currentPageIndicatorColor: '#d946ef' }
+'.current-page-fuchsia-600': { currentPageIndicatorColor: '#c026d3' }
+'.current-page-fuchsia-700': { currentPageIndicatorColor: '#a21caf' }
+'.current-page-fuchsia-800': { currentPageIndicatorColor: '#86198f' }
+'.current-page-fuchsia-900': { currentPageIndicatorColor: '#701a75' }
+'.current-page-purple-50': { currentPageIndicatorColor: '#faf5ff' }
+'.current-page-purple-100': { currentPageIndicatorColor: '#f3e8ff' }
+'.current-page-purple-200': { currentPageIndicatorColor: '#e9d5ff' }
+'.current-page-purple-300': { currentPageIndicatorColor: '#d8b4fe' }
+'.current-page-purple-400': { currentPageIndicatorColor: '#c084fc' }
+'.current-page-purple-500': { currentPageIndicatorColor: '#a855f7' }
+'.current-page-purple-600': { currentPageIndicatorColor: '#9333ea' }
+'.current-page-purple-700': { currentPageIndicatorColor: '#7e22ce' }
+'.current-page-purple-800': { currentPageIndicatorColor: '#6b21a8' }
+'.current-page-purple-900': { currentPageIndicatorColor: '#581c87' }
+'.current-page-violet-50': { currentPageIndicatorColor: '#f5f3ff' }
+'.current-page-violet-100': { currentPageIndicatorColor: '#ede9fe' }
+'.current-page-violet-200': { currentPageIndicatorColor: '#ddd6fe' }
+'.current-page-violet-300': { currentPageIndicatorColor: '#c4b5fd' }
+'.current-page-violet-400': { currentPageIndicatorColor: '#a78bfa' }
+'.current-page-violet-500': { currentPageIndicatorColor: '#8b5cf6' }
+'.current-page-violet-600': { currentPageIndicatorColor: '#7c3aed' }
+'.current-page-violet-700': { currentPageIndicatorColor: '#6d28d9' }
+'.current-page-violet-800': { currentPageIndicatorColor: '#5b21b6' }
+'.current-page-violet-900': { currentPageIndicatorColor: '#4c1d95' }
+'.current-page-indigo-50': { currentPageIndicatorColor: '#eef2ff' }
+'.current-page-indigo-100': { currentPageIndicatorColor: '#e0e7ff' }
+'.current-page-indigo-200': { currentPageIndicatorColor: '#c7d2fe' }
+'.current-page-indigo-300': { currentPageIndicatorColor: '#a5b4fc' }
+'.current-page-indigo-400': { currentPageIndicatorColor: '#818cf8' }
+'.current-page-indigo-500': { currentPageIndicatorColor: '#6366f1' }
+'.current-page-indigo-600': { currentPageIndicatorColor: '#4f46e5' }
+'.current-page-indigo-700': { currentPageIndicatorColor: '#4338ca' }
+'.current-page-indigo-800': { currentPageIndicatorColor: '#3730a3' }
+'.current-page-indigo-900': { currentPageIndicatorColor: '#312e81' }
+'.current-page-blue-50': { currentPageIndicatorColor: '#eff6ff' }
+'.current-page-blue-100': { currentPageIndicatorColor: '#dbeafe' }
+'.current-page-blue-200': { currentPageIndicatorColor: '#bfdbfe' }
+'.current-page-blue-300': { currentPageIndicatorColor: '#93c5fd' }
+'.current-page-blue-400': { currentPageIndicatorColor: '#60a5fa' }
+'.current-page-blue-500': { currentPageIndicatorColor: '#3b82f6' }
+'.current-page-blue-600': { currentPageIndicatorColor: '#2563eb' }
+'.current-page-blue-700': { currentPageIndicatorColor: '#1d4ed8' }
+'.current-page-blue-800': { currentPageIndicatorColor: '#1e40af' }
+'.current-page-blue-900': { currentPageIndicatorColor: '#1e3a8a' }
+'.current-page-sky-50': { currentPageIndicatorColor: '#f0f9ff' }
+'.current-page-sky-100': { currentPageIndicatorColor: '#e0f2fe' }
+'.current-page-sky-200': { currentPageIndicatorColor: '#bae6fd' }
+'.current-page-sky-300': { currentPageIndicatorColor: '#7dd3fc' }
+'.current-page-sky-400': { currentPageIndicatorColor: '#38bdf8' }
+'.current-page-sky-500': { currentPageIndicatorColor: '#0ea5e9' }
+'.current-page-sky-600': { currentPageIndicatorColor: '#0284c7' }
+'.current-page-sky-700': { currentPageIndicatorColor: '#0369a1' }
+'.current-page-sky-800': { currentPageIndicatorColor: '#075985' }
+'.current-page-sky-900': { currentPageIndicatorColor: '#0c4a6e' }
+'.current-page-cyan-50': { currentPageIndicatorColor: '#ecfeff' }
+'.current-page-cyan-100': { currentPageIndicatorColor: '#cffafe' }
+'.current-page-cyan-200': { currentPageIndicatorColor: '#a5f3fc' }
+'.current-page-cyan-300': { currentPageIndicatorColor: '#67e8f9' }
+'.current-page-cyan-400': { currentPageIndicatorColor: '#22d3ee' }
+'.current-page-cyan-500': { currentPageIndicatorColor: '#06b6d4' }
+'.current-page-cyan-600': { currentPageIndicatorColor: '#0891b2' }
+'.current-page-cyan-700': { currentPageIndicatorColor: '#0e7490' }
+'.current-page-cyan-800': { currentPageIndicatorColor: '#155e75' }
+'.current-page-cyan-900': { currentPageIndicatorColor: '#164e63' }
+'.current-page-teal-50': { currentPageIndicatorColor: '#f0fdfa' }
+'.current-page-teal-100': { currentPageIndicatorColor: '#ccfbf1' }
+'.current-page-teal-200': { currentPageIndicatorColor: '#99f6e4' }
+'.current-page-teal-300': { currentPageIndicatorColor: '#5eead4' }
+'.current-page-teal-400': { currentPageIndicatorColor: '#2dd4bf' }
+'.current-page-teal-500': { currentPageIndicatorColor: '#14b8a6' }
+'.current-page-teal-600': { currentPageIndicatorColor: '#0d9488' }
+'.current-page-teal-700': { currentPageIndicatorColor: '#0f766e' }
+'.current-page-teal-800': { currentPageIndicatorColor: '#115e59' }
+'.current-page-teal-900': { currentPageIndicatorColor: '#134e4a' }
+'.current-page-emerald-50': { currentPageIndicatorColor: '#ecfdf5' }
+'.current-page-emerald-100': { currentPageIndicatorColor: '#d1fae5' }
+'.current-page-emerald-200': { currentPageIndicatorColor: '#a7f3d0' }
+'.current-page-emerald-300': { currentPageIndicatorColor: '#6ee7b7' }
+'.current-page-emerald-400': { currentPageIndicatorColor: '#34d399' }
+'.current-page-emerald-500': { currentPageIndicatorColor: '#10b981' }
+'.current-page-emerald-600': { currentPageIndicatorColor: '#059669' }
+'.current-page-emerald-700': { currentPageIndicatorColor: '#047857' }
+'.current-page-emerald-800': { currentPageIndicatorColor: '#065f46' }
+'.current-page-emerald-900': { currentPageIndicatorColor: '#064e3b' }
+'.current-page-green-50': { currentPageIndicatorColor: '#f0fdf4' }
+'.current-page-green-100': { currentPageIndicatorColor: '#dcfce7' }
+'.current-page-green-200': { currentPageIndicatorColor: '#bbf7d0' }
+'.current-page-green-300': { currentPageIndicatorColor: '#86efac' }
+'.current-page-green-400': { currentPageIndicatorColor: '#4ade80' }
+'.current-page-green-500': { currentPageIndicatorColor: '#22c55e' }
+'.current-page-green-600': { currentPageIndicatorColor: '#16a34a' }
+'.current-page-green-700': { currentPageIndicatorColor: '#15803d' }
+'.current-page-green-800': { currentPageIndicatorColor: '#166534' }
+'.current-page-green-900': { currentPageIndicatorColor: '#14532d' }
+'.current-page-lime-50': { currentPageIndicatorColor: '#f7fee7' }
+'.current-page-lime-100': { currentPageIndicatorColor: '#ecfccb' }
+'.current-page-lime-200': { currentPageIndicatorColor: '#d9f99d' }
+'.current-page-lime-300': { currentPageIndicatorColor: '#bef264' }
+'.current-page-lime-400': { currentPageIndicatorColor: '#a3e635' }
+'.current-page-lime-500': { currentPageIndicatorColor: '#84cc16' }
+'.current-page-lime-600': { currentPageIndicatorColor: '#65a30d' }
+'.current-page-lime-700': { currentPageIndicatorColor: '#4d7c0f' }
+'.current-page-lime-800': { currentPageIndicatorColor: '#3f6212' }
+'.current-page-lime-900': { currentPageIndicatorColor: '#365314' }
+'.current-page-yellow-50': { currentPageIndicatorColor: '#fefce8' }
+'.current-page-yellow-100': { currentPageIndicatorColor: '#fef9c3' }
+'.current-page-yellow-200': { currentPageIndicatorColor: '#fef08a' }
+'.current-page-yellow-300': { currentPageIndicatorColor: '#fde047' }
+'.current-page-yellow-400': { currentPageIndicatorColor: '#facc15' }
+'.current-page-yellow-500': { currentPageIndicatorColor: '#eab308' }
+'.current-page-yellow-600': { currentPageIndicatorColor: '#ca8a04' }
+'.current-page-yellow-700': { currentPageIndicatorColor: '#a16207' }
+'.current-page-yellow-800': { currentPageIndicatorColor: '#854d0e' }
+'.current-page-yellow-900': { currentPageIndicatorColor: '#713f12' }
+'.current-page-amber-50': { currentPageIndicatorColor: '#fffbeb' }
+'.current-page-amber-100': { currentPageIndicatorColor: '#fef3c7' }
+'.current-page-amber-200': { currentPageIndicatorColor: '#fde68a' }
+'.current-page-amber-300': { currentPageIndicatorColor: '#fcd34d' }
+'.current-page-amber-400': { currentPageIndicatorColor: '#fbbf24' }
+'.current-page-amber-500': { currentPageIndicatorColor: '#f59e0b' }
+'.current-page-amber-600': { currentPageIndicatorColor: '#d97706' }
+'.current-page-amber-700': { currentPageIndicatorColor: '#b45309' }
+'.current-page-amber-800': { currentPageIndicatorColor: '#92400e' }
+'.current-page-amber-900': { currentPageIndicatorColor: '#78350f' }
+'.current-page-orange-50': { currentPageIndicatorColor: '#fff7ed' }
+'.current-page-orange-100': { currentPageIndicatorColor: '#ffedd5' }
+'.current-page-orange-200': { currentPageIndicatorColor: '#fed7aa' }
+'.current-page-orange-300': { currentPageIndicatorColor: '#fdba74' }
+'.current-page-orange-400': { currentPageIndicatorColor: '#fb923c' }
+'.current-page-orange-500': { currentPageIndicatorColor: '#f97316' }
+'.current-page-orange-600': { currentPageIndicatorColor: '#ea580c' }
+'.current-page-orange-700': { currentPageIndicatorColor: '#c2410c' }
+'.current-page-orange-800': { currentPageIndicatorColor: '#9a3412' }
+'.current-page-orange-900': { currentPageIndicatorColor: '#7c2d12' }
+'.current-page-red-50': { currentPageIndicatorColor: '#fef2f2' }
+'.current-page-red-100': { currentPageIndicatorColor: '#fee2e2' }
+'.current-page-red-200': { currentPageIndicatorColor: '#fecaca' }
+'.current-page-red-300': { currentPageIndicatorColor: '#fca5a5' }
+'.current-page-red-400': { currentPageIndicatorColor: '#f87171' }
+'.current-page-red-500': { currentPageIndicatorColor: '#ef4444' }
+'.current-page-red-600': { currentPageIndicatorColor: '#dc2626' }
+'.current-page-red-700': { currentPageIndicatorColor: '#b91c1c' }
+'.current-page-red-800': { currentPageIndicatorColor: '#991b1b' }
+'.current-page-red-900': { currentPageIndicatorColor: '#7f1d1d' }
+'.current-page-warmGray-50': { currentPageIndicatorColor: '#fafaf9' }
+'.current-page-warmGray-100': { currentPageIndicatorColor: '#f5f5f4' }
+'.current-page-warmGray-200': { currentPageIndicatorColor: '#e7e5e4' }
+'.current-page-warmGray-300': { currentPageIndicatorColor: '#d6d3d1' }
+'.current-page-warmGray-400': { currentPageIndicatorColor: '#a8a29e' }
+'.current-page-warmGray-500': { currentPageIndicatorColor: '#78716c' }
+'.current-page-warmGray-600': { currentPageIndicatorColor: '#57534e' }
+'.current-page-warmGray-700': { currentPageIndicatorColor: '#44403c' }
+'.current-page-warmGray-800': { currentPageIndicatorColor: '#292524' }
+'.current-page-warmGray-900': { currentPageIndicatorColor: '#1c1917' }
+'.current-page-trueGray-50': { currentPageIndicatorColor: '#fafafa' }
+'.current-page-trueGray-100': { currentPageIndicatorColor: '#f5f5f5' }
+'.current-page-trueGray-200': { currentPageIndicatorColor: '#e5e5e5' }
+'.current-page-trueGray-300': { currentPageIndicatorColor: '#d4d4d4' }
+'.current-page-trueGray-400': { currentPageIndicatorColor: '#a3a3a3' }
+'.current-page-trueGray-500': { currentPageIndicatorColor: '#737373' }
+'.current-page-trueGray-600': { currentPageIndicatorColor: '#525252' }
+'.current-page-trueGray-700': { currentPageIndicatorColor: '#404040' }
+'.current-page-trueGray-800': { currentPageIndicatorColor: '#262626' }
+'.current-page-trueGray-900': { currentPageIndicatorColor: '#171717' }
+'.current-page-gray-50': { currentPageIndicatorColor: '#fafafa' }
+'.current-page-gray-100': { currentPageIndicatorColor: '#f4f4f5' }
+'.current-page-gray-200': { currentPageIndicatorColor: '#e4e4e7' }
+'.current-page-gray-300': { currentPageIndicatorColor: '#d4d4d8' }
+'.current-page-gray-400': { currentPageIndicatorColor: '#a1a1aa' }
+'.current-page-gray-500': { currentPageIndicatorColor: '#71717a' }
+'.current-page-gray-600': { currentPageIndicatorColor: '#52525b' }
+'.current-page-gray-700': { currentPageIndicatorColor: '#3f3f46' }
+'.current-page-gray-800': { currentPageIndicatorColor: '#27272a' }
+'.current-page-gray-900': { currentPageIndicatorColor: '#18181b' }
+'.current-page-coolGray-50': { currentPageIndicatorColor: '#f9fafb' }
+'.current-page-coolGray-100': { currentPageIndicatorColor: '#f3f4f6' }
+'.current-page-coolGray-200': { currentPageIndicatorColor: '#e5e7eb' }
+'.current-page-coolGray-300': { currentPageIndicatorColor: '#d1d5db' }
+'.current-page-coolGray-400': { currentPageIndicatorColor: '#9ca3af' }
+'.current-page-coolGray-500': { currentPageIndicatorColor: '#6b7280' }
+'.current-page-coolGray-600': { currentPageIndicatorColor: '#4b5563' }
+'.current-page-coolGray-700': { currentPageIndicatorColor: '#374151' }
+'.current-page-coolGray-800': { currentPageIndicatorColor: '#1f2937' }
+'.current-page-coolGray-900': { currentPageIndicatorColor: '#111827' }
+'.current-page-blueGray-50': { currentPageIndicatorColor: '#f8fafc' }
+'.current-page-blueGray-100': { currentPageIndicatorColor: '#f1f5f9' }
+'.current-page-blueGray-200': { currentPageIndicatorColor: '#e2e8f0' }
+'.current-page-blueGray-300': { currentPageIndicatorColor: '#cbd5e1' }
+'.current-page-blueGray-400': { currentPageIndicatorColor: '#94a3b8' }
+'.current-page-blueGray-500': { currentPageIndicatorColor: '#64748b' }
+'.current-page-blueGray-600': { currentPageIndicatorColor: '#475569' }
+'.current-page-blueGray-700': { currentPageIndicatorColor: '#334155' }
+'.current-page-blueGray-800': { currentPageIndicatorColor: '#1e293b' }
+'.current-page-blueGray-900': { currentPageIndicatorColor: '#0f172a' }
+'.current-page-rojo': { currentPageIndicatorColor: '#b0100f' }
+'.current-page-beige': { currentPageIndicatorColor: '#f9f5ec' }
+'.current-page-marron': { currentPageIndicatorColor: '#800020' }
+'.current-page-grisNeutroClaro': { currentPageIndicatorColor: '#CCCCCC' }
+'.current-page-grisNeutroMediano': { currentPageIndicatorColor: '#d6d9e8' }
+'.current-page-grisNeutroOscuro': { currentPageIndicatorColor: '#d6d9e8' }
+'.current-page-fondoMenus': { currentPageIndicatorColor: '#2C2F32' }
+'.current-page-fondoTablero': { currentPageIndicatorColor: '#4E5356' }
+'.current-page-labelTablero': { currentPageIndicatorColor: '#2C2F32' }
+'.current-page-fondoVentanaMenus': { currentPageIndicatorColor: '#3D4144' }
+
+// preventDefaultImage Property
+'.prevent-default-image[platform=ios]': { preventDefaultImage: true }
+'.display-default-image[platform=ios]': { preventDefaultImage: false }
+
 // Display
 '.block': { visible: true }
 '.hidden': { visible: false }
+
+// Constraint Property
+'.vertical-constraint': { constraint: 'vertical' }
+'.horizontal-constraint': { constraint: 'horizontal' }
+
+// draggingType Property
+'.drag-apply': { draggingType: 'apply' }
+'.drag-animate': { draggingType: 'animate' }
+
+// exitOnClose Property
+'.exit-on-close[platform=android]': { exitOnClose: true }
+'.dont-exit-on-close[platform=android]': { exitOnClose: false }
 
 // fontSize Property
 '.text-xs': { font: { fontSize: 12 } }
@@ -788,6 +1067,281 @@
 '.font-bold': { font: { fontWeight: 'bold' } }
 '.font-extrabold': { font: { fontWeight: 'bold' } }
 '.font-black': { font: { fontWeight: 'bold' } }
+
+// Gaps Property
+'.gap-0': { top: 0, right: 0, bottom: 0, left: 0 }
+'.gap-1': { top: 4, right: 4, bottom: 4, left: 4 }
+'.gap-2': { top: 8, right: 8, bottom: 8, left: 8 }
+'.gap-3': { top: 12, right: 12, bottom: 12, left: 12 }
+'.gap-4': { top: 16, right: 16, bottom: 16, left: 16 }
+'.gap-5': { top: 20, right: 20, bottom: 20, left: 20 }
+'.gap-6': { top: 24, right: 24, bottom: 24, left: 24 }
+'.gap-7': { top: 28, right: 28, bottom: 28, left: 28 }
+'.gap-8': { top: 32, right: 32, bottom: 32, left: 32 }
+'.gap-9': { top: 36, right: 36, bottom: 36, left: 36 }
+'.gap-10': { top: 40, right: 40, bottom: 40, left: 40 }
+'.gap-11': { top: 44, right: 44, bottom: 44, left: 44 }
+'.gap-12': { top: 48, right: 48, bottom: 48, left: 48 }
+'.gap-13': { top: 52, right: 52, bottom: 52, left: 52 }
+'.gap-14': { top: 56, right: 56, bottom: 56, left: 56 }
+'.gap-15': { top: 60, right: 60, bottom: 60, left: 60 }
+'.gap-16': { top: 64, right: 64, bottom: 64, left: 64 }
+'.gap-20': { top: 80, right: 80, bottom: 80, left: 80 }
+'.gap-24': { top: 96, right: 96, bottom: 96, left: 96 }
+'.gap-28': { top: 112, right: 112, bottom: 112, left: 112 }
+'.gap-32': { top: 128, right: 128, bottom: 128, left: 128 }
+'.gap-36': { top: 144, right: 144, bottom: 144, left: 144 }
+'.gap-40': { top: 160, right: 160, bottom: 160, left: 160 }
+'.gap-44': { top: 176, right: 176, bottom: 176, left: 176 }
+'.gap-48': { top: 192, right: 192, bottom: 192, left: 192 }
+'.gap-52': { top: 208, right: 208, bottom: 208, left: 208 }
+'.gap-56': { top: 224, right: 224, bottom: 224, left: 224 }
+'.gap-60': { top: 240, right: 240, bottom: 240, left: 240 }
+'.gap-64': { top: 256, right: 256, bottom: 256, left: 256 }
+'.gap-72': { top: 288, right: 288, bottom: 288, left: 288 }
+'.gap-80': { top: 320, right: 320, bottom: 320, left: 320 }
+'.gap-96': { top: 384, right: 384, bottom: 384, left: 384 }
+'.gap-px': { top: '1px', right: '1px', bottom: '1px', left: '1px' }
+'.gap-0.5': { top: 2, right: 2, bottom: 2, left: 2 }
+'.gap-1.5': { top: 6, right: 6, bottom: 6, left: 6 }
+'.gap-2.5': { top: 10, right: 10, bottom: 10, left: 10 }
+'.gap-3.5': { top: 14, right: 14, bottom: 14, left: 14 }
+'.gap-full': { top: '100%', right: '100%', bottom: '100%', left: '100%' }
+'.gap-auto': { top: Ti.UI.SIZE, right: Ti.UI.SIZE, bottom: Ti.UI.SIZE, left: Ti.UI.SIZE }
+'.gap-b-0': { bottom: 0 }
+'.gap-b-1': { bottom: 4 }
+'.gap-b-2': { bottom: 8 }
+'.gap-b-3': { bottom: 12 }
+'.gap-b-4': { bottom: 16 }
+'.gap-b-5': { bottom: 20 }
+'.gap-b-6': { bottom: 24 }
+'.gap-b-7': { bottom: 28 }
+'.gap-b-8': { bottom: 32 }
+'.gap-b-9': { bottom: 36 }
+'.gap-b-10': { bottom: 40 }
+'.gap-b-11': { bottom: 44 }
+'.gap-b-12': { bottom: 48 }
+'.gap-b-13': { bottom: 52 }
+'.gap-b-14': { bottom: 56 }
+'.gap-b-15': { bottom: 60 }
+'.gap-b-16': { bottom: 64 }
+'.gap-b-20': { bottom: 80 }
+'.gap-b-24': { bottom: 96 }
+'.gap-b-28': { bottom: 112 }
+'.gap-b-32': { bottom: 128 }
+'.gap-b-36': { bottom: 144 }
+'.gap-b-40': { bottom: 160 }
+'.gap-b-44': { bottom: 176 }
+'.gap-b-48': { bottom: 192 }
+'.gap-b-52': { bottom: 208 }
+'.gap-b-56': { bottom: 224 }
+'.gap-b-60': { bottom: 240 }
+'.gap-b-64': { bottom: 256 }
+'.gap-b-72': { bottom: 288 }
+'.gap-b-80': { bottom: 320 }
+'.gap-b-96': { bottom: 384 }
+'.gap-b-px': { bottom: '1px' }
+'.gap-b-0.5': { bottom: 2 }
+'.gap-b-1.5': { bottom: 6 }
+'.gap-b-2.5': { bottom: 10 }
+'.gap-b-3.5': { bottom: 14 }
+'.gap-b-full': { bottom: '100%' }
+'.gap-b-auto': { bottom: Ti.UI.SIZE }
+'.gap-l-0': { left: 0 }
+'.gap-l-1': { left: 4 }
+'.gap-l-2': { left: 8 }
+'.gap-l-3': { left: 12 }
+'.gap-l-4': { left: 16 }
+'.gap-l-5': { left: 20 }
+'.gap-l-6': { left: 24 }
+'.gap-l-7': { left: 28 }
+'.gap-l-8': { left: 32 }
+'.gap-l-9': { left: 36 }
+'.gap-l-10': { left: 40 }
+'.gap-l-11': { left: 44 }
+'.gap-l-12': { left: 48 }
+'.gap-l-13': { left: 52 }
+'.gap-l-14': { left: 56 }
+'.gap-l-15': { left: 60 }
+'.gap-l-16': { left: 64 }
+'.gap-l-20': { left: 80 }
+'.gap-l-24': { left: 96 }
+'.gap-l-28': { left: 112 }
+'.gap-l-32': { left: 128 }
+'.gap-l-36': { left: 144 }
+'.gap-l-40': { left: 160 }
+'.gap-l-44': { left: 176 }
+'.gap-l-48': { left: 192 }
+'.gap-l-52': { left: 208 }
+'.gap-l-56': { left: 224 }
+'.gap-l-60': { left: 240 }
+'.gap-l-64': { left: 256 }
+'.gap-l-72': { left: 288 }
+'.gap-l-80': { left: 320 }
+'.gap-l-96': { left: 384 }
+'.gap-l-px': { left: '1px' }
+'.gap-l-0.5': { left: 2 }
+'.gap-l-1.5': { left: 6 }
+'.gap-l-2.5': { left: 10 }
+'.gap-l-3.5': { left: 14 }
+'.gap-l-full': { left: '100%' }
+'.gap-l-auto': { left: Ti.UI.SIZE }
+'.gap-r-0': { right: 0 }
+'.gap-r-1': { right: 4 }
+'.gap-r-2': { right: 8 }
+'.gap-r-3': { right: 12 }
+'.gap-r-4': { right: 16 }
+'.gap-r-5': { right: 20 }
+'.gap-r-6': { right: 24 }
+'.gap-r-7': { right: 28 }
+'.gap-r-8': { right: 32 }
+'.gap-r-9': { right: 36 }
+'.gap-r-10': { right: 40 }
+'.gap-r-11': { right: 44 }
+'.gap-r-12': { right: 48 }
+'.gap-r-13': { right: 52 }
+'.gap-r-14': { right: 56 }
+'.gap-r-15': { right: 60 }
+'.gap-r-16': { right: 64 }
+'.gap-r-20': { right: 80 }
+'.gap-r-24': { right: 96 }
+'.gap-r-28': { right: 112 }
+'.gap-r-32': { right: 128 }
+'.gap-r-36': { right: 144 }
+'.gap-r-40': { right: 160 }
+'.gap-r-44': { right: 176 }
+'.gap-r-48': { right: 192 }
+'.gap-r-52': { right: 208 }
+'.gap-r-56': { right: 224 }
+'.gap-r-60': { right: 240 }
+'.gap-r-64': { right: 256 }
+'.gap-r-72': { right: 288 }
+'.gap-r-80': { right: 320 }
+'.gap-r-96': { right: 384 }
+'.gap-r-px': { right: '1px' }
+'.gap-r-0.5': { right: 2 }
+'.gap-r-1.5': { right: 6 }
+'.gap-r-2.5': { right: 10 }
+'.gap-r-3.5': { right: 14 }
+'.gap-r-full': { right: '100%' }
+'.gap-r-auto': { right: Ti.UI.SIZE }
+'.gap-t-0': { top: 0 }
+'.gap-t-1': { top: 4 }
+'.gap-t-2': { top: 8 }
+'.gap-t-3': { top: 12 }
+'.gap-t-4': { top: 16 }
+'.gap-t-5': { top: 20 }
+'.gap-t-6': { top: 24 }
+'.gap-t-7': { top: 28 }
+'.gap-t-8': { top: 32 }
+'.gap-t-9': { top: 36 }
+'.gap-t-10': { top: 40 }
+'.gap-t-11': { top: 44 }
+'.gap-t-12': { top: 48 }
+'.gap-t-13': { top: 52 }
+'.gap-t-14': { top: 56 }
+'.gap-t-15': { top: 60 }
+'.gap-t-16': { top: 64 }
+'.gap-t-20': { top: 80 }
+'.gap-t-24': { top: 96 }
+'.gap-t-28': { top: 112 }
+'.gap-t-32': { top: 128 }
+'.gap-t-36': { top: 144 }
+'.gap-t-40': { top: 160 }
+'.gap-t-44': { top: 176 }
+'.gap-t-48': { top: 192 }
+'.gap-t-52': { top: 208 }
+'.gap-t-56': { top: 224 }
+'.gap-t-60': { top: 240 }
+'.gap-t-64': { top: 256 }
+'.gap-t-72': { top: 288 }
+'.gap-t-80': { top: 320 }
+'.gap-t-96': { top: 384 }
+'.gap-t-px': { top: '1px' }
+'.gap-t-0.5': { top: 2 }
+'.gap-t-1.5': { top: 6 }
+'.gap-t-2.5': { top: 10 }
+'.gap-t-3.5': { top: 14 }
+'.gap-t-full': { top: '100%' }
+'.gap-t-auto': { top: Ti.UI.SIZE }
+'.gap-x-0': { right: 0, left: 0 }
+'.gap-x-1': { right: 4, left: 4 }
+'.gap-x-2': { right: 8, left: 8 }
+'.gap-x-3': { right: 12, left: 12 }
+'.gap-x-4': { right: 16, left: 16 }
+'.gap-x-5': { right: 20, left: 20 }
+'.gap-x-6': { right: 24, left: 24 }
+'.gap-x-7': { right: 28, left: 28 }
+'.gap-x-8': { right: 32, left: 32 }
+'.gap-x-9': { right: 36, left: 36 }
+'.gap-x-10': { right: 40, left: 40 }
+'.gap-x-11': { right: 44, left: 44 }
+'.gap-x-12': { right: 48, left: 48 }
+'.gap-x-13': { right: 52, left: 52 }
+'.gap-x-14': { right: 56, left: 56 }
+'.gap-x-15': { right: 60, left: 60 }
+'.gap-x-16': { right: 64, left: 64 }
+'.gap-x-20': { right: 80, left: 80 }
+'.gap-x-24': { right: 96, left: 96 }
+'.gap-x-28': { right: 112, left: 112 }
+'.gap-x-32': { right: 128, left: 128 }
+'.gap-x-36': { right: 144, left: 144 }
+'.gap-x-40': { right: 160, left: 160 }
+'.gap-x-44': { right: 176, left: 176 }
+'.gap-x-48': { right: 192, left: 192 }
+'.gap-x-52': { right: 208, left: 208 }
+'.gap-x-56': { right: 224, left: 224 }
+'.gap-x-60': { right: 240, left: 240 }
+'.gap-x-64': { right: 256, left: 256 }
+'.gap-x-72': { right: 288, left: 288 }
+'.gap-x-80': { right: 320, left: 320 }
+'.gap-x-96': { right: 384, left: 384 }
+'.gap-x-px': { right: '1px', left: '1px' }
+'.gap-x-0.5': { right: 2, left: 2 }
+'.gap-x-1.5': { right: 6, left: 6 }
+'.gap-x-2.5': { right: 10, left: 10 }
+'.gap-x-3.5': { right: 14, left: 14 }
+'.gap-x-full': { right: '100%', left: '100%' }
+'.gap-x-auto': { right: Ti.UI.SIZE, left: Ti.UI.SIZE }
+'.gap-y-0': { top: 0, bottom: 0 }
+'.gap-y-1': { top: 4, bottom: 4 }
+'.gap-y-2': { top: 8, bottom: 8 }
+'.gap-y-3': { top: 12, bottom: 12 }
+'.gap-y-4': { top: 16, bottom: 16 }
+'.gap-y-5': { top: 20, bottom: 20 }
+'.gap-y-6': { top: 24, bottom: 24 }
+'.gap-y-7': { top: 28, bottom: 28 }
+'.gap-y-8': { top: 32, bottom: 32 }
+'.gap-y-9': { top: 36, bottom: 36 }
+'.gap-y-10': { top: 40, bottom: 40 }
+'.gap-y-11': { top: 44, bottom: 44 }
+'.gap-y-12': { top: 48, bottom: 48 }
+'.gap-y-13': { top: 52, bottom: 52 }
+'.gap-y-14': { top: 56, bottom: 56 }
+'.gap-y-15': { top: 60, bottom: 60 }
+'.gap-y-16': { top: 64, bottom: 64 }
+'.gap-y-20': { top: 80, bottom: 80 }
+'.gap-y-24': { top: 96, bottom: 96 }
+'.gap-y-28': { top: 112, bottom: 112 }
+'.gap-y-32': { top: 128, bottom: 128 }
+'.gap-y-36': { top: 144, bottom: 144 }
+'.gap-y-40': { top: 160, bottom: 160 }
+'.gap-y-44': { top: 176, bottom: 176 }
+'.gap-y-48': { top: 192, bottom: 192 }
+'.gap-y-52': { top: 208, bottom: 208 }
+'.gap-y-56': { top: 224, bottom: 224 }
+'.gap-y-60': { top: 240, bottom: 240 }
+'.gap-y-64': { top: 256, bottom: 256 }
+'.gap-y-72': { top: 288, bottom: 288 }
+'.gap-y-80': { top: 320, bottom: 320 }
+'.gap-y-96': { top: 384, bottom: 384 }
+'.gap-y-px': { top: '1px', bottom: '1px' }
+'.gap-y-0.5': { top: 2, bottom: 2 }
+'.gap-y-1.5': { top: 6, bottom: 6 }
+'.gap-y-2.5': { top: 10, bottom: 10 }
+'.gap-y-3.5': { top: 14, bottom: 14 }
+'.gap-y-full': { top: '100%', bottom: '100%' }
+'.gap-y-auto': { top: Ti.UI.SIZE, bottom: Ti.UI.SIZE }
 
 // Gradient Color Stops
 // From Color
@@ -864,16 +1418,16 @@
 '.from-blue-700': { backgroundGradient: { colors: [ '#001d4ed8', '#1d4ed8' ] } }
 '.from-blue-800': { backgroundGradient: { colors: [ '#001e40af', '#1e40af' ] } }
 '.from-blue-900': { backgroundGradient: { colors: [ '#001e3a8a', '#1e3a8a' ] } }
-'.from-lightBlue-50': { backgroundGradient: { colors: [ '#00f0f9ff', '#f0f9ff' ] } }
-'.from-lightBlue-100': { backgroundGradient: { colors: [ '#00e0f2fe', '#e0f2fe' ] } }
-'.from-lightBlue-200': { backgroundGradient: { colors: [ '#00bae6fd', '#bae6fd' ] } }
-'.from-lightBlue-300': { backgroundGradient: { colors: [ '#007dd3fc', '#7dd3fc' ] } }
-'.from-lightBlue-400': { backgroundGradient: { colors: [ '#0038bdf8', '#38bdf8' ] } }
-'.from-lightBlue-500': { backgroundGradient: { colors: [ '#000ea5e9', '#0ea5e9' ] } }
-'.from-lightBlue-600': { backgroundGradient: { colors: [ '#000284c7', '#0284c7' ] } }
-'.from-lightBlue-700': { backgroundGradient: { colors: [ '#000369a1', '#0369a1' ] } }
-'.from-lightBlue-800': { backgroundGradient: { colors: [ '#00075985', '#075985' ] } }
-'.from-lightBlue-900': { backgroundGradient: { colors: [ '#000c4a6e', '#0c4a6e' ] } }
+'.from-sky-50': { backgroundGradient: { colors: [ '#00f0f9ff', '#f0f9ff' ] } }
+'.from-sky-100': { backgroundGradient: { colors: [ '#00e0f2fe', '#e0f2fe' ] } }
+'.from-sky-200': { backgroundGradient: { colors: [ '#00bae6fd', '#bae6fd' ] } }
+'.from-sky-300': { backgroundGradient: { colors: [ '#007dd3fc', '#7dd3fc' ] } }
+'.from-sky-400': { backgroundGradient: { colors: [ '#0038bdf8', '#38bdf8' ] } }
+'.from-sky-500': { backgroundGradient: { colors: [ '#000ea5e9', '#0ea5e9' ] } }
+'.from-sky-600': { backgroundGradient: { colors: [ '#000284c7', '#0284c7' ] } }
+'.from-sky-700': { backgroundGradient: { colors: [ '#000369a1', '#0369a1' ] } }
+'.from-sky-800': { backgroundGradient: { colors: [ '#00075985', '#075985' ] } }
+'.from-sky-900': { backgroundGradient: { colors: [ '#000c4a6e', '#0c4a6e' ] } }
 '.from-cyan-50': { backgroundGradient: { colors: [ '#00ecfeff', '#ecfeff' ] } }
 '.from-cyan-100': { backgroundGradient: { colors: [ '#00cffafe', '#cffafe' ] } }
 '.from-cyan-200': { backgroundGradient: { colors: [ '#00a5f3fc', '#a5f3fc' ] } }
@@ -1014,6 +1568,16 @@
 '.from-blueGray-700': { backgroundGradient: { colors: [ '#00334155', '#334155' ] } }
 '.from-blueGray-800': { backgroundGradient: { colors: [ '#001e293b', '#1e293b' ] } }
 '.from-blueGray-900': { backgroundGradient: { colors: [ '#000f172a', '#0f172a' ] } }
+'.from-rojo': { backgroundGradient: { colors: [ '#00b0100f', '#b0100f' ] } }
+'.from-beige': { backgroundGradient: { colors: [ '#00f9f5ec', '#f9f5ec' ] } }
+'.from-marron': { backgroundGradient: { colors: [ '#00800020', '#800020' ] } }
+'.from-grisNeutroClaro': { backgroundGradient: { colors: [ '#00CCCCCC', '#CCCCCC' ] } }
+'.from-grisNeutroMediano': { backgroundGradient: { colors: [ '#00d6d9e8', '#d6d9e8' ] } }
+'.from-grisNeutroOscuro': { backgroundGradient: { colors: [ '#00d6d9e8', '#d6d9e8' ] } }
+'.from-fondoMenus': { backgroundGradient: { colors: [ '#002C2F32', '#2C2F32' ] } }
+'.from-fondoTablero': { backgroundGradient: { colors: [ '#004E5356', '#4E5356' ] } }
+'.from-labelTablero': { backgroundGradient: { colors: [ '#002C2F32', '#2C2F32' ] } }
+'.from-fondoVentanaMenus': { backgroundGradient: { colors: [ '#003D4144', '#3D4144' ] } }
 
 // To Color
 '.to-transparent': { backgroundGradient: { colors: [ 'transparent' ] } }
@@ -1089,16 +1653,16 @@
 '.to-blue-700': { backgroundGradient: { colors: [ '#1d4ed8' ] } }
 '.to-blue-800': { backgroundGradient: { colors: [ '#1e40af' ] } }
 '.to-blue-900': { backgroundGradient: { colors: [ '#1e3a8a' ] } }
-'.to-lightBlue-50': { backgroundGradient: { colors: [ '#f0f9ff' ] } }
-'.to-lightBlue-100': { backgroundGradient: { colors: [ '#e0f2fe' ] } }
-'.to-lightBlue-200': { backgroundGradient: { colors: [ '#bae6fd' ] } }
-'.to-lightBlue-300': { backgroundGradient: { colors: [ '#7dd3fc' ] } }
-'.to-lightBlue-400': { backgroundGradient: { colors: [ '#38bdf8' ] } }
-'.to-lightBlue-500': { backgroundGradient: { colors: [ '#0ea5e9' ] } }
-'.to-lightBlue-600': { backgroundGradient: { colors: [ '#0284c7' ] } }
-'.to-lightBlue-700': { backgroundGradient: { colors: [ '#0369a1' ] } }
-'.to-lightBlue-800': { backgroundGradient: { colors: [ '#075985' ] } }
-'.to-lightBlue-900': { backgroundGradient: { colors: [ '#0c4a6e' ] } }
+'.to-sky-50': { backgroundGradient: { colors: [ '#f0f9ff' ] } }
+'.to-sky-100': { backgroundGradient: { colors: [ '#e0f2fe' ] } }
+'.to-sky-200': { backgroundGradient: { colors: [ '#bae6fd' ] } }
+'.to-sky-300': { backgroundGradient: { colors: [ '#7dd3fc' ] } }
+'.to-sky-400': { backgroundGradient: { colors: [ '#38bdf8' ] } }
+'.to-sky-500': { backgroundGradient: { colors: [ '#0ea5e9' ] } }
+'.to-sky-600': { backgroundGradient: { colors: [ '#0284c7' ] } }
+'.to-sky-700': { backgroundGradient: { colors: [ '#0369a1' ] } }
+'.to-sky-800': { backgroundGradient: { colors: [ '#075985' ] } }
+'.to-sky-900': { backgroundGradient: { colors: [ '#0c4a6e' ] } }
 '.to-cyan-50': { backgroundGradient: { colors: [ '#ecfeff' ] } }
 '.to-cyan-100': { backgroundGradient: { colors: [ '#cffafe' ] } }
 '.to-cyan-200': { backgroundGradient: { colors: [ '#a5f3fc' ] } }
@@ -1239,6 +1803,77 @@
 '.to-blueGray-700': { backgroundGradient: { colors: [ '#334155' ] } }
 '.to-blueGray-800': { backgroundGradient: { colors: [ '#1e293b' ] } }
 '.to-blueGray-900': { backgroundGradient: { colors: [ '#0f172a' ] } }
+'.to-rojo': { backgroundGradient: { colors: [ '#b0100f' ] } }
+'.to-beige': { backgroundGradient: { colors: [ '#f9f5ec' ] } }
+'.to-marron': { backgroundGradient: { colors: [ '#800020' ] } }
+'.to-grisNeutroClaro': { backgroundGradient: { colors: [ '#CCCCCC' ] } }
+'.to-grisNeutroMediano': { backgroundGradient: { colors: [ '#d6d9e8' ] } }
+'.to-grisNeutroOscuro': { backgroundGradient: { colors: [ '#d6d9e8' ] } }
+'.to-fondoMenus': { backgroundGradient: { colors: [ '#2C2F32' ] } }
+'.to-fondoTablero': { backgroundGradient: { colors: [ '#4E5356' ] } }
+'.to-labelTablero': { backgroundGradient: { colors: [ '#2C2F32' ] } }
+'.to-fondoVentanaMenus': { backgroundGradient: { colors: [ '#3D4144' ] } }
+
+// Grid Column Start / End Property
+'.col-span-1': { width: '8.333334%' }
+'.col-span-2': { width: '16.666667%' }
+'.col-span-3': { width: '25%' }
+'.col-span-4': { width: '33.333334%' }
+'.col-span-5': { width: '41.666667%' }
+'.col-span-6': { width: '50%' }
+'.col-span-7': { width: '58.333334%' }
+'.col-span-8': { width: '66.666667%' }
+'.col-span-9': { width: '75%' }
+'.col-span-10': { width: '83.333334%' }
+'.col-span-11': { width: '91.666667%' }
+'.col-span-12': { width: '100%' }
+
+// Grid Row Start / End Property
+'.row-span-1': { height: '8.333334%' }
+'.row-span-2': { height: '16.666667%' }
+'.row-span-3': { height: '25%' }
+'.row-span-4': { height: '33.333334%' }
+'.row-span-5': { height: '41.666667%' }
+'.row-span-6': { height: '50%' }
+'.row-span-7': { height: '58.333334%' }
+'.row-span-8': { height: '66.666667%' }
+'.row-span-9': { height: '75%' }
+'.row-span-10': { height: '83.333334%' }
+'.row-span-11': { height: '91.666667%' }
+'.row-span-12': { height: '100%' }
+
+// grid and gridFlow Property
+'.grid': { layout: 'horizontal' }
+'.grid-flow-col': { layout: 'horizontal' }
+'.grid-flow-row': { layout: 'vertical' }
+
+// Grid Template Columns Property
+'.grid-cols-1': { width: '100%' }
+'.grid-cols-2': { width: '50%' }
+'.grid-cols-3': { width: '33.333334%' }
+'.grid-cols-4': { width: '25%' }
+'.grid-cols-5': { width: '20%' }
+'.grid-cols-6': { width: '16.666667%' }
+'.grid-cols-7': { width: '14.285714%' }
+'.grid-cols-8': { width: '12.5%' }
+'.grid-cols-9': { width: '11.111111%' }
+'.grid-cols-10': { width: '10%' }
+'.grid-cols-11': { width: '9.090909%' }
+'.grid-cols-12': { width: '8.333334%' }
+
+// Grid Template Rows Property
+'.grid-rows-1': { height: '100%' }
+'.grid-rows-2': { height: '50%' }
+'.grid-rows-3': { height: '33.333334%' }
+'.grid-rows-4': { height: '25%' }
+'.grid-rows-5': { height: '20%' }
+'.grid-rows-6': { height: '16.666667%' }
+'.grid-rows-7': { height: '14.285714%' }
+'.grid-rows-8': { height: '12.5%' }
+'.grid-rows-9': { height: '11.111111%' }
+'.grid-rows-10': { height: '10%' }
+'.grid-rows-11': { height: '9.090909%' }
+'.grid-rows-12': { height: '8.333334%' }
 
 // height Property
 '.h-0': { height: 0 }
@@ -1279,7 +1914,7 @@
 '.h-2.5': { height: 10 }
 '.h-3.5': { height: 14 }
 '.h-1/2': { height: '50%' }
-'.h-1/3': { height: '33.333333%' }
+'.h-1/3': { height: '33.333334%' }
 '.h-2/3': { height: '66.666667%' }
 '.h-1/4': { height: '25%' }
 '.h-2/4': { height: '50%' }
@@ -1289,30 +1924,56 @@
 '.h-3/5': { height: '60%' }
 '.h-4/5': { height: '80%' }
 '.h-1/6': { height: '16.666667%' }
-'.h-2/6': { height: '33.333333%' }
+'.h-2/6': { height: '33.333334%' }
 '.h-3/6': { height: '50%' }
 '.h-4/6': { height: '66.666667%' }
-'.h-5/6': { height: '83.333333%' }
-'.h-1/12': { height: '8.333333%' }
+'.h-5/6': { height: '83.333334%' }
+'.h-1/12': { height: '8.333334%' }
 '.h-2/12': { height: '16.666667%' }
 '.h-3/12': { height: '25%' }
-'.h-4/12': { height: '33.333333%' }
+'.h-4/12': { height: '33.333334%' }
 '.h-5/12': { height: '41.666667%' }
 '.h-6/12': { height: '50%' }
-'.h-7/12': { height: '58.333333%' }
+'.h-7/12': { height: '58.333334%' }
 '.h-8/12': { height: '66.666667%' }
 '.h-9/12': { height: '75%' }
-'.h-10/12': { height: '83.333333%' }
+'.h-10/12': { height: '83.333334%' }
 '.h-11/12': { height: '91.666667%' }
 '.h-full': { height: '100%' }
 '.h-auto': { height: Ti.UI.SIZE }
 '.h-screen': { height: Ti.UI.FILL }
 
 // touchEnabled Property
-'.pointer-events-none': { touchEnabled: false }
+'.touch-enabled': { touchEnabled: true }
+'.touch-disabled': { touchEnabled: false }
 '.pointer-events-auto': { touchEnabled: true }
+'.pointer-events-none': { touchEnabled: false }
 
-// Margin
+// items Property
+'.items-start': { top: 0 }
+'.items-end': { bottom: 0 }
+'.items-center': { width: Ti.UI.FILL, height: Ti.UI.FILL }
+
+// keepScreenOn Property
+'.keep-screen-on[platform=android]': { keepScreenOn: true }
+'.keep-screen-off[platform=android]': { keepScreenOn: false }
+
+// layout Property
+'.vertical': { layout: 'vertical' }
+'.horizontal': { layout: 'horizontal' }
+
+// Linear backgroundGradient Property
+'.bg-linear': { backgroundGradient: { type: 'linear', startPoint: { x: '50%', y: '100%' }, endPoint: { x: '50%', y: '0%' }, backfillStart: true } }
+'.bg-linear-to-t': { backgroundGradient: { type: 'linear', startPoint: { x: '0%', y: '0%' }, endPoint: { x: '0%', y: '100%' }, backfillStart: true } }
+'.bg-linear-to-tr': { backgroundGradient: { type: 'linear', startPoint: { x: '100%', y: '0%' }, endPoint: { x: '0%', y: '100%' }, backfillStart: true } }
+'.bg-linear-to-r': { backgroundGradient: { type: 'linear', startPoint: { x: '100%', y: '0%' }, endPoint: { x: '0%', y: '0%' }, backfillStart: true } }
+'.bg-linear-to-br': { backgroundGradient: { type: 'linear', startPoint: { x: '100%', y: '100%' }, endPoint: { x: '0%', y: '0%' }, backfillStart: true } }
+'.bg-linear-to-b': { backgroundGradient: { type: 'linear', startPoint: { x: '100%', y: '100%' }, endPoint: { x: '100%', y: '0%' }, backfillStart: true } }
+'.bg-linear-to-bl': { backgroundGradient: { type: 'linear', startPoint: { x: '0%', y: '100%' }, endPoint: { x: '100%', y: '0%' }, backfillStart: true } }
+'.bg-linear-to-l': { backgroundGradient: { type: 'linear', startPoint: { x: '0%', y: '0%' }, endPoint: { x: '100%', y: '0%' }, backfillStart: true } }
+'.bg-linear-to-tl': { backgroundGradient: { type: 'linear', startPoint: { x: '0%', y: '0%' }, endPoint: { x: '100%', y: '100%' }, backfillStart: true } }
+
+// Margin Property
 '.m-0': { top: 0, right: 0, bottom: 0, left: 0 }
 '.m-1': { top: 4, right: 4, bottom: 4, left: 4 }
 '.m-2': { top: 8, right: 8, bottom: 8, left: 8 }
@@ -1351,7 +2012,7 @@
 '.m-2.5': { top: 10, right: 10, bottom: 10, left: 10 }
 '.m-3.5': { top: 14, right: 14, bottom: 14, left: 14 }
 '.m-1/2': { top: '50%', right: '50%', bottom: '50%', left: '50%' }
-'.m-1/3': { top: '33.333333%', right: '33.333333%', bottom: '33.333333%', left: '33.333333%' }
+'.m-1/3': { top: '33.333334%', right: '33.333334%', bottom: '33.333334%', left: '33.333334%' }
 '.m-2/3': { top: '66.666667%', right: '66.666667%', bottom: '66.666667%', left: '66.666667%' }
 '.m-1/4': { top: '25%', right: '25%', bottom: '25%', left: '25%' }
 '.m-2/4': { top: '50%', right: '50%', bottom: '50%', left: '50%' }
@@ -1361,86 +2022,23 @@
 '.m-3/5': { top: '60%', right: '60%', bottom: '60%', left: '60%' }
 '.m-4/5': { top: '80%', right: '80%', bottom: '80%', left: '80%' }
 '.m-1/6': { top: '16.666667%', right: '16.666667%', bottom: '16.666667%', left: '16.666667%' }
-'.m-2/6': { top: '33.333333%', right: '33.333333%', bottom: '33.333333%', left: '33.333333%' }
+'.m-2/6': { top: '33.333334%', right: '33.333334%', bottom: '33.333334%', left: '33.333334%' }
 '.m-3/6': { top: '50%', right: '50%', bottom: '50%', left: '50%' }
 '.m-4/6': { top: '66.666667%', right: '66.666667%', bottom: '66.666667%', left: '66.666667%' }
-'.m-5/6': { top: '83.333333%', right: '83.333333%', bottom: '83.333333%', left: '83.333333%' }
-'.m-1/12': { top: '8.333333%', right: '8.333333%', bottom: '8.333333%', left: '8.333333%' }
+'.m-5/6': { top: '83.333334%', right: '83.333334%', bottom: '83.333334%', left: '83.333334%' }
+'.m-1/12': { top: '8.333334%', right: '8.333334%', bottom: '8.333334%', left: '8.333334%' }
 '.m-2/12': { top: '16.666667%', right: '16.666667%', bottom: '16.666667%', left: '16.666667%' }
 '.m-3/12': { top: '25%', right: '25%', bottom: '25%', left: '25%' }
-'.m-4/12': { top: '33.333333%', right: '33.333333%', bottom: '33.333333%', left: '33.333333%' }
+'.m-4/12': { top: '33.333334%', right: '33.333334%', bottom: '33.333334%', left: '33.333334%' }
 '.m-5/12': { top: '41.666667%', right: '41.666667%', bottom: '41.666667%', left: '41.666667%' }
 '.m-6/12': { top: '50%', right: '50%', bottom: '50%', left: '50%' }
-'.m-7/12': { top: '58.333333%', right: '58.333333%', bottom: '58.333333%', left: '58.333333%' }
+'.m-7/12': { top: '58.333334%', right: '58.333334%', bottom: '58.333334%', left: '58.333334%' }
 '.m-8/12': { top: '66.666667%', right: '66.666667%', bottom: '66.666667%', left: '66.666667%' }
 '.m-9/12': { top: '75%', right: '75%', bottom: '75%', left: '75%' }
-'.m-10/12': { top: '83.333333%', right: '83.333333%', bottom: '83.333333%', left: '83.333333%' }
+'.m-10/12': { top: '83.333334%', right: '83.333334%', bottom: '83.333334%', left: '83.333334%' }
 '.m-11/12': { top: '91.666667%', right: '91.666667%', bottom: '91.666667%', left: '91.666667%' }
 '.m-full': { top: '100%', right: '100%', bottom: '100%', left: '100%' }
 '.m-auto': { top: null, right: null, bottom: null, left: null }
-'.-m-1': { top: -4, right: -4, bottom: -4, left: -4 }
-'.-m-2': { top: -8, right: -8, bottom: -8, left: -8 }
-'.-m-3': { top: -12, right: -12, bottom: -12, left: -12 }
-'.-m-4': { top: -16, right: -16, bottom: -16, left: -16 }
-'.-m-5': { top: -20, right: -20, bottom: -20, left: -20 }
-'.-m-6': { top: -24, right: -24, bottom: -24, left: -24 }
-'.-m-7': { top: -28, right: -28, bottom: -28, left: -28 }
-'.-m-8': { top: -32, right: -32, bottom: -32, left: -32 }
-'.-m-9': { top: -36, right: -36, bottom: -36, left: -36 }
-'.-m-10': { top: -40, right: -40, bottom: -40, left: -40 }
-'.-m-11': { top: -44, right: -44, bottom: -44, left: -44 }
-'.-m-12': { top: -48, right: -48, bottom: -48, left: -48 }
-'.-m-13': { top: -52, right: -52, bottom: -52, left: -52 }
-'.-m-14': { top: -56, right: -56, bottom: -56, left: -56 }
-'.-m-15': { top: -60, right: -60, bottom: -60, left: -60 }
-'.-m-16': { top: -64, right: -64, bottom: -64, left: -64 }
-'.-m-20': { top: -80, right: -80, bottom: -80, left: -80 }
-'.-m-24': { top: -96, right: -96, bottom: -96, left: -96 }
-'.-m-28': { top: -112, right: -112, bottom: -112, left: -112 }
-'.-m-32': { top: -128, right: -128, bottom: -128, left: -128 }
-'.-m-36': { top: -144, right: -144, bottom: -144, left: -144 }
-'.-m-40': { top: -160, right: -160, bottom: -160, left: -160 }
-'.-m-44': { top: -176, right: -176, bottom: -176, left: -176 }
-'.-m-48': { top: -192, right: -192, bottom: -192, left: -192 }
-'.-m-52': { top: -208, right: -208, bottom: -208, left: -208 }
-'.-m-56': { top: -224, right: -224, bottom: -224, left: -224 }
-'.-m-60': { top: -240, right: -240, bottom: -240, left: -240 }
-'.-m-64': { top: -256, right: -256, bottom: -256, left: -256 }
-'.-m-72': { top: -288, right: -288, bottom: -288, left: -288 }
-'.-m-80': { top: -320, right: -320, bottom: -320, left: -320 }
-'.-m-96': { top: -384, right: -384, bottom: -384, left: -384 }
-'.-m-px': { top: '-1px', right: '-1px', bottom: '-1px', left: '-1px' }
-'.-m-0.5': { top: -2, right: -2, bottom: -2, left: -2 }
-'.-m-1.5': { top: -6, right: -6, bottom: -6, left: -6 }
-'.-m-2.5': { top: -10, right: -10, bottom: -10, left: -10 }
-'.-m-3.5': { top: -14, right: -14, bottom: -14, left: -14 }
-'.-m-1/2': { top: '-50%', right: '-50%', bottom: '-50%', left: '-50%' }
-'.-m-1/3': { top: '-33.333333%', right: '-33.333333%', bottom: '-33.333333%', left: '-33.333333%' }
-'.-m-2/3': { top: '-66.666667%', right: '-66.666667%', bottom: '-66.666667%', left: '-66.666667%' }
-'.-m-1/4': { top: '-25%', right: '-25%', bottom: '-25%', left: '-25%' }
-'.-m-2/4': { top: '-50%', right: '-50%', bottom: '-50%', left: '-50%' }
-'.-m-3/4': { top: '-75%', right: '-75%', bottom: '-75%', left: '-75%' }
-'.-m-1/5': { top: '-20%', right: '-20%', bottom: '-20%', left: '-20%' }
-'.-m-2/5': { top: '-40%', right: '-40%', bottom: '-40%', left: '-40%' }
-'.-m-3/5': { top: '-60%', right: '-60%', bottom: '-60%', left: '-60%' }
-'.-m-4/5': { top: '-80%', right: '-80%', bottom: '-80%', left: '-80%' }
-'.-m-1/6': { top: '-16.666667%', right: '-16.666667%', bottom: '-16.666667%', left: '-16.666667%' }
-'.-m-2/6': { top: '-33.333333%', right: '-33.333333%', bottom: '-33.333333%', left: '-33.333333%' }
-'.-m-3/6': { top: '-50%', right: '-50%', bottom: '-50%', left: '-50%' }
-'.-m-4/6': { top: '-66.666667%', right: '-66.666667%', bottom: '-66.666667%', left: '-66.666667%' }
-'.-m-5/6': { top: '-83.333333%', right: '-83.333333%', bottom: '-83.333333%', left: '-83.333333%' }
-'.-m-1/12': { top: '-8.333333%', right: '-8.333333%', bottom: '-8.333333%', left: '-8.333333%' }
-'.-m-2/12': { top: '-16.666667%', right: '-16.666667%', bottom: '-16.666667%', left: '-16.666667%' }
-'.-m-3/12': { top: '-25%', right: '-25%', bottom: '-25%', left: '-25%' }
-'.-m-4/12': { top: '-33.333333%', right: '-33.333333%', bottom: '-33.333333%', left: '-33.333333%' }
-'.-m-5/12': { top: '-41.666667%', right: '-41.666667%', bottom: '-41.666667%', left: '-41.666667%' }
-'.-m-6/12': { top: '-50%', right: '-50%', bottom: '-50%', left: '-50%' }
-'.-m-7/12': { top: '-58.333333%', right: '-58.333333%', bottom: '-58.333333%', left: '-58.333333%' }
-'.-m-8/12': { top: '-66.666667%', right: '-66.666667%', bottom: '-66.666667%', left: '-66.666667%' }
-'.-m-9/12': { top: '-75%', right: '-75%', bottom: '-75%', left: '-75%' }
-'.-m-10/12': { top: '-83.333333%', right: '-83.333333%', bottom: '-83.333333%', left: '-83.333333%' }
-'.-m-11/12': { top: '-91.666667%', right: '-91.666667%', bottom: '-91.666667%', left: '-91.666667%' }
-'.-m-full': { top: '-100%', right: '-100%', bottom: '-100%', left: '-100%' }
 '.my-0': { top: 0, bottom: 0 }
 '.my-1': { top: 4, bottom: 4 }
 '.my-2': { top: 8, bottom: 8 }
@@ -1479,7 +2077,7 @@
 '.my-2.5': { top: 10, bottom: 10 }
 '.my-3.5': { top: 14, bottom: 14 }
 '.my-1/2': { top: '50%', bottom: '50%' }
-'.my-1/3': { top: '33.333333%', bottom: '33.333333%' }
+'.my-1/3': { top: '33.333334%', bottom: '33.333334%' }
 '.my-2/3': { top: '66.666667%', bottom: '66.666667%' }
 '.my-1/4': { top: '25%', bottom: '25%' }
 '.my-2/4': { top: '50%', bottom: '50%' }
@@ -1489,86 +2087,23 @@
 '.my-3/5': { top: '60%', bottom: '60%' }
 '.my-4/5': { top: '80%', bottom: '80%' }
 '.my-1/6': { top: '16.666667%', bottom: '16.666667%' }
-'.my-2/6': { top: '33.333333%', bottom: '33.333333%' }
+'.my-2/6': { top: '33.333334%', bottom: '33.333334%' }
 '.my-3/6': { top: '50%', bottom: '50%' }
 '.my-4/6': { top: '66.666667%', bottom: '66.666667%' }
-'.my-5/6': { top: '83.333333%', bottom: '83.333333%' }
-'.my-1/12': { top: '8.333333%', bottom: '8.333333%' }
+'.my-5/6': { top: '83.333334%', bottom: '83.333334%' }
+'.my-1/12': { top: '8.333334%', bottom: '8.333334%' }
 '.my-2/12': { top: '16.666667%', bottom: '16.666667%' }
 '.my-3/12': { top: '25%', bottom: '25%' }
-'.my-4/12': { top: '33.333333%', bottom: '33.333333%' }
+'.my-4/12': { top: '33.333334%', bottom: '33.333334%' }
 '.my-5/12': { top: '41.666667%', bottom: '41.666667%' }
 '.my-6/12': { top: '50%', bottom: '50%' }
-'.my-7/12': { top: '58.333333%', bottom: '58.333333%' }
+'.my-7/12': { top: '58.333334%', bottom: '58.333334%' }
 '.my-8/12': { top: '66.666667%', bottom: '66.666667%' }
 '.my-9/12': { top: '75%', bottom: '75%' }
-'.my-10/12': { top: '83.333333%', bottom: '83.333333%' }
+'.my-10/12': { top: '83.333334%', bottom: '83.333334%' }
 '.my-11/12': { top: '91.666667%', bottom: '91.666667%' }
 '.my-full': { top: '100%', bottom: '100%' }
 '.my-auto': { top: null, bottom: null }
-'.-my-1': { top: -4, bottom: -4 }
-'.-my-2': { top: -8, bottom: -8 }
-'.-my-3': { top: -12, bottom: -12 }
-'.-my-4': { top: -16, bottom: -16 }
-'.-my-5': { top: -20, bottom: -20 }
-'.-my-6': { top: -24, bottom: -24 }
-'.-my-7': { top: -28, bottom: -28 }
-'.-my-8': { top: -32, bottom: -32 }
-'.-my-9': { top: -36, bottom: -36 }
-'.-my-10': { top: -40, bottom: -40 }
-'.-my-11': { top: -44, bottom: -44 }
-'.-my-12': { top: -48, bottom: -48 }
-'.-my-13': { top: -52, bottom: -52 }
-'.-my-14': { top: -56, bottom: -56 }
-'.-my-15': { top: -60, bottom: -60 }
-'.-my-16': { top: -64, bottom: -64 }
-'.-my-20': { top: -80, bottom: -80 }
-'.-my-24': { top: -96, bottom: -96 }
-'.-my-28': { top: -112, bottom: -112 }
-'.-my-32': { top: -128, bottom: -128 }
-'.-my-36': { top: -144, bottom: -144 }
-'.-my-40': { top: -160, bottom: -160 }
-'.-my-44': { top: -176, bottom: -176 }
-'.-my-48': { top: -192, bottom: -192 }
-'.-my-52': { top: -208, bottom: -208 }
-'.-my-56': { top: -224, bottom: -224 }
-'.-my-60': { top: -240, bottom: -240 }
-'.-my-64': { top: -256, bottom: -256 }
-'.-my-72': { top: -288, bottom: -288 }
-'.-my-80': { top: -320, bottom: -320 }
-'.-my-96': { top: -384, bottom: -384 }
-'.-my-px': { top: '-1px', bottom: '-1px' }
-'.-my-0.5': { top: -2, bottom: -2 }
-'.-my-1.5': { top: -6, bottom: -6 }
-'.-my-2.5': { top: -10, bottom: -10 }
-'.-my-3.5': { top: -14, bottom: -14 }
-'.-my-1/2': { top: '-50%', bottom: '-50%' }
-'.-my-1/3': { top: '-33.333333%', bottom: '-33.333333%' }
-'.-my-2/3': { top: '-66.666667%', bottom: '-66.666667%' }
-'.-my-1/4': { top: '-25%', bottom: '-25%' }
-'.-my-2/4': { top: '-50%', bottom: '-50%' }
-'.-my-3/4': { top: '-75%', bottom: '-75%' }
-'.-my-1/5': { top: '-20%', bottom: '-20%' }
-'.-my-2/5': { top: '-40%', bottom: '-40%' }
-'.-my-3/5': { top: '-60%', bottom: '-60%' }
-'.-my-4/5': { top: '-80%', bottom: '-80%' }
-'.-my-1/6': { top: '-16.666667%', bottom: '-16.666667%' }
-'.-my-2/6': { top: '-33.333333%', bottom: '-33.333333%' }
-'.-my-3/6': { top: '-50%', bottom: '-50%' }
-'.-my-4/6': { top: '-66.666667%', bottom: '-66.666667%' }
-'.-my-5/6': { top: '-83.333333%', bottom: '-83.333333%' }
-'.-my-1/12': { top: '-8.333333%', bottom: '-8.333333%' }
-'.-my-2/12': { top: '-16.666667%', bottom: '-16.666667%' }
-'.-my-3/12': { top: '-25%', bottom: '-25%' }
-'.-my-4/12': { top: '-33.333333%', bottom: '-33.333333%' }
-'.-my-5/12': { top: '-41.666667%', bottom: '-41.666667%' }
-'.-my-6/12': { top: '-50%', bottom: '-50%' }
-'.-my-7/12': { top: '-58.333333%', bottom: '-58.333333%' }
-'.-my-8/12': { top: '-66.666667%', bottom: '-66.666667%' }
-'.-my-9/12': { top: '-75%', bottom: '-75%' }
-'.-my-10/12': { top: '-83.333333%', bottom: '-83.333333%' }
-'.-my-11/12': { top: '-91.666667%', bottom: '-91.666667%' }
-'.-my-full': { top: '-100%', bottom: '-100%' }
 '.mx-0': { right: 0, left: 0 }
 '.mx-1': { right: 4, left: 4 }
 '.mx-2': { right: 8, left: 8 }
@@ -1607,7 +2142,7 @@
 '.mx-2.5': { right: 10, left: 10 }
 '.mx-3.5': { right: 14, left: 14 }
 '.mx-1/2': { right: '50%', left: '50%' }
-'.mx-1/3': { right: '33.333333%', left: '33.333333%' }
+'.mx-1/3': { right: '33.333334%', left: '33.333334%' }
 '.mx-2/3': { right: '66.666667%', left: '66.666667%' }
 '.mx-1/4': { right: '25%', left: '25%' }
 '.mx-2/4': { right: '50%', left: '50%' }
@@ -1617,86 +2152,23 @@
 '.mx-3/5': { right: '60%', left: '60%' }
 '.mx-4/5': { right: '80%', left: '80%' }
 '.mx-1/6': { right: '16.666667%', left: '16.666667%' }
-'.mx-2/6': { right: '33.333333%', left: '33.333333%' }
+'.mx-2/6': { right: '33.333334%', left: '33.333334%' }
 '.mx-3/6': { right: '50%', left: '50%' }
 '.mx-4/6': { right: '66.666667%', left: '66.666667%' }
-'.mx-5/6': { right: '83.333333%', left: '83.333333%' }
-'.mx-1/12': { right: '8.333333%', left: '8.333333%' }
+'.mx-5/6': { right: '83.333334%', left: '83.333334%' }
+'.mx-1/12': { right: '8.333334%', left: '8.333334%' }
 '.mx-2/12': { right: '16.666667%', left: '16.666667%' }
 '.mx-3/12': { right: '25%', left: '25%' }
-'.mx-4/12': { right: '33.333333%', left: '33.333333%' }
+'.mx-4/12': { right: '33.333334%', left: '33.333334%' }
 '.mx-5/12': { right: '41.666667%', left: '41.666667%' }
 '.mx-6/12': { right: '50%', left: '50%' }
-'.mx-7/12': { right: '58.333333%', left: '58.333333%' }
+'.mx-7/12': { right: '58.333334%', left: '58.333334%' }
 '.mx-8/12': { right: '66.666667%', left: '66.666667%' }
 '.mx-9/12': { right: '75%', left: '75%' }
-'.mx-10/12': { right: '83.333333%', left: '83.333333%' }
+'.mx-10/12': { right: '83.333334%', left: '83.333334%' }
 '.mx-11/12': { right: '91.666667%', left: '91.666667%' }
 '.mx-full': { right: '100%', left: '100%' }
 '.mx-auto': { right: null, left: null }
-'.-mx-1': { right: -4, left: -4 }
-'.-mx-2': { right: -8, left: -8 }
-'.-mx-3': { right: -12, left: -12 }
-'.-mx-4': { right: -16, left: -16 }
-'.-mx-5': { right: -20, left: -20 }
-'.-mx-6': { right: -24, left: -24 }
-'.-mx-7': { right: -28, left: -28 }
-'.-mx-8': { right: -32, left: -32 }
-'.-mx-9': { right: -36, left: -36 }
-'.-mx-10': { right: -40, left: -40 }
-'.-mx-11': { right: -44, left: -44 }
-'.-mx-12': { right: -48, left: -48 }
-'.-mx-13': { right: -52, left: -52 }
-'.-mx-14': { right: -56, left: -56 }
-'.-mx-15': { right: -60, left: -60 }
-'.-mx-16': { right: -64, left: -64 }
-'.-mx-20': { right: -80, left: -80 }
-'.-mx-24': { right: -96, left: -96 }
-'.-mx-28': { right: -112, left: -112 }
-'.-mx-32': { right: -128, left: -128 }
-'.-mx-36': { right: -144, left: -144 }
-'.-mx-40': { right: -160, left: -160 }
-'.-mx-44': { right: -176, left: -176 }
-'.-mx-48': { right: -192, left: -192 }
-'.-mx-52': { right: -208, left: -208 }
-'.-mx-56': { right: -224, left: -224 }
-'.-mx-60': { right: -240, left: -240 }
-'.-mx-64': { right: -256, left: -256 }
-'.-mx-72': { right: -288, left: -288 }
-'.-mx-80': { right: -320, left: -320 }
-'.-mx-96': { right: -384, left: -384 }
-'.-mx-px': { right: '-1px', left: '-1px' }
-'.-mx-0.5': { right: -2, left: -2 }
-'.-mx-1.5': { right: -6, left: -6 }
-'.-mx-2.5': { right: -10, left: -10 }
-'.-mx-3.5': { right: -14, left: -14 }
-'.-mx-1/2': { right: '-50%', left: '-50%' }
-'.-mx-1/3': { right: '-33.333333%', left: '-33.333333%' }
-'.-mx-2/3': { right: '-66.666667%', left: '-66.666667%' }
-'.-mx-1/4': { right: '-25%', left: '-25%' }
-'.-mx-2/4': { right: '-50%', left: '-50%' }
-'.-mx-3/4': { right: '-75%', left: '-75%' }
-'.-mx-1/5': { right: '-20%', left: '-20%' }
-'.-mx-2/5': { right: '-40%', left: '-40%' }
-'.-mx-3/5': { right: '-60%', left: '-60%' }
-'.-mx-4/5': { right: '-80%', left: '-80%' }
-'.-mx-1/6': { right: '-16.666667%', left: '-16.666667%' }
-'.-mx-2/6': { right: '-33.333333%', left: '-33.333333%' }
-'.-mx-3/6': { right: '-50%', left: '-50%' }
-'.-mx-4/6': { right: '-66.666667%', left: '-66.666667%' }
-'.-mx-5/6': { right: '-83.333333%', left: '-83.333333%' }
-'.-mx-1/12': { right: '-8.333333%', left: '-8.333333%' }
-'.-mx-2/12': { right: '-16.666667%', left: '-16.666667%' }
-'.-mx-3/12': { right: '-25%', left: '-25%' }
-'.-mx-4/12': { right: '-33.333333%', left: '-33.333333%' }
-'.-mx-5/12': { right: '-41.666667%', left: '-41.666667%' }
-'.-mx-6/12': { right: '-50%', left: '-50%' }
-'.-mx-7/12': { right: '-58.333333%', left: '-58.333333%' }
-'.-mx-8/12': { right: '-66.666667%', left: '-66.666667%' }
-'.-mx-9/12': { right: '-75%', left: '-75%' }
-'.-mx-10/12': { right: '-83.333333%', left: '-83.333333%' }
-'.-mx-11/12': { right: '-91.666667%', left: '-91.666667%' }
-'.-mx-full': { right: '-100%', left: '-100%' }
 '.mt-0': { top: 0 }
 '.mt-1': { top: 4 }
 '.mt-2': { top: 8 }
@@ -1735,7 +2207,7 @@
 '.mt-2.5': { top: 10 }
 '.mt-3.5': { top: 14 }
 '.mt-1/2': { top: '50%' }
-'.mt-1/3': { top: '33.333333%' }
+'.mt-1/3': { top: '33.333334%' }
 '.mt-2/3': { top: '66.666667%' }
 '.mt-1/4': { top: '25%' }
 '.mt-2/4': { top: '50%' }
@@ -1745,86 +2217,23 @@
 '.mt-3/5': { top: '60%' }
 '.mt-4/5': { top: '80%' }
 '.mt-1/6': { top: '16.666667%' }
-'.mt-2/6': { top: '33.333333%' }
+'.mt-2/6': { top: '33.333334%' }
 '.mt-3/6': { top: '50%' }
 '.mt-4/6': { top: '66.666667%' }
-'.mt-5/6': { top: '83.333333%' }
-'.mt-1/12': { top: '8.333333%' }
+'.mt-5/6': { top: '83.333334%' }
+'.mt-1/12': { top: '8.333334%' }
 '.mt-2/12': { top: '16.666667%' }
 '.mt-3/12': { top: '25%' }
-'.mt-4/12': { top: '33.333333%' }
+'.mt-4/12': { top: '33.333334%' }
 '.mt-5/12': { top: '41.666667%' }
 '.mt-6/12': { top: '50%' }
-'.mt-7/12': { top: '58.333333%' }
+'.mt-7/12': { top: '58.333334%' }
 '.mt-8/12': { top: '66.666667%' }
 '.mt-9/12': { top: '75%' }
-'.mt-10/12': { top: '83.333333%' }
+'.mt-10/12': { top: '83.333334%' }
 '.mt-11/12': { top: '91.666667%' }
 '.mt-full': { top: '100%' }
 '.mt-auto': { top: null }
-'.-mt-1': { top: -4 }
-'.-mt-2': { top: -8 }
-'.-mt-3': { top: -12 }
-'.-mt-4': { top: -16 }
-'.-mt-5': { top: -20 }
-'.-mt-6': { top: -24 }
-'.-mt-7': { top: -28 }
-'.-mt-8': { top: -32 }
-'.-mt-9': { top: -36 }
-'.-mt-10': { top: -40 }
-'.-mt-11': { top: -44 }
-'.-mt-12': { top: -48 }
-'.-mt-13': { top: -52 }
-'.-mt-14': { top: -56 }
-'.-mt-15': { top: -60 }
-'.-mt-16': { top: -64 }
-'.-mt-20': { top: -80 }
-'.-mt-24': { top: -96 }
-'.-mt-28': { top: -112 }
-'.-mt-32': { top: -128 }
-'.-mt-36': { top: -144 }
-'.-mt-40': { top: -160 }
-'.-mt-44': { top: -176 }
-'.-mt-48': { top: -192 }
-'.-mt-52': { top: -208 }
-'.-mt-56': { top: -224 }
-'.-mt-60': { top: -240 }
-'.-mt-64': { top: -256 }
-'.-mt-72': { top: -288 }
-'.-mt-80': { top: -320 }
-'.-mt-96': { top: -384 }
-'.-mt-px': { top: '-1px' }
-'.-mt-0.5': { top: -2 }
-'.-mt-1.5': { top: -6 }
-'.-mt-2.5': { top: -10 }
-'.-mt-3.5': { top: -14 }
-'.-mt-1/2': { top: '-50%' }
-'.-mt-1/3': { top: '-33.333333%' }
-'.-mt-2/3': { top: '-66.666667%' }
-'.-mt-1/4': { top: '-25%' }
-'.-mt-2/4': { top: '-50%' }
-'.-mt-3/4': { top: '-75%' }
-'.-mt-1/5': { top: '-20%' }
-'.-mt-2/5': { top: '-40%' }
-'.-mt-3/5': { top: '-60%' }
-'.-mt-4/5': { top: '-80%' }
-'.-mt-1/6': { top: '-16.666667%' }
-'.-mt-2/6': { top: '-33.333333%' }
-'.-mt-3/6': { top: '-50%' }
-'.-mt-4/6': { top: '-66.666667%' }
-'.-mt-5/6': { top: '-83.333333%' }
-'.-mt-1/12': { top: '-8.333333%' }
-'.-mt-2/12': { top: '-16.666667%' }
-'.-mt-3/12': { top: '-25%' }
-'.-mt-4/12': { top: '-33.333333%' }
-'.-mt-5/12': { top: '-41.666667%' }
-'.-mt-6/12': { top: '-50%' }
-'.-mt-7/12': { top: '-58.333333%' }
-'.-mt-8/12': { top: '-66.666667%' }
-'.-mt-9/12': { top: '-75%' }
-'.-mt-10/12': { top: '-83.333333%' }
-'.-mt-11/12': { top: '-91.666667%' }
-'.-mt-full': { top: '-100%' }
 '.mr-0': { right: 0 }
 '.mr-1': { right: 4 }
 '.mr-2': { right: 8 }
@@ -1863,7 +2272,7 @@
 '.mr-2.5': { right: 10 }
 '.mr-3.5': { right: 14 }
 '.mr-1/2': { right: '50%' }
-'.mr-1/3': { right: '33.333333%' }
+'.mr-1/3': { right: '33.333334%' }
 '.mr-2/3': { right: '66.666667%' }
 '.mr-1/4': { right: '25%' }
 '.mr-2/4': { right: '50%' }
@@ -1873,86 +2282,23 @@
 '.mr-3/5': { right: '60%' }
 '.mr-4/5': { right: '80%' }
 '.mr-1/6': { right: '16.666667%' }
-'.mr-2/6': { right: '33.333333%' }
+'.mr-2/6': { right: '33.333334%' }
 '.mr-3/6': { right: '50%' }
 '.mr-4/6': { right: '66.666667%' }
-'.mr-5/6': { right: '83.333333%' }
-'.mr-1/12': { right: '8.333333%' }
+'.mr-5/6': { right: '83.333334%' }
+'.mr-1/12': { right: '8.333334%' }
 '.mr-2/12': { right: '16.666667%' }
 '.mr-3/12': { right: '25%' }
-'.mr-4/12': { right: '33.333333%' }
+'.mr-4/12': { right: '33.333334%' }
 '.mr-5/12': { right: '41.666667%' }
 '.mr-6/12': { right: '50%' }
-'.mr-7/12': { right: '58.333333%' }
+'.mr-7/12': { right: '58.333334%' }
 '.mr-8/12': { right: '66.666667%' }
 '.mr-9/12': { right: '75%' }
-'.mr-10/12': { right: '83.333333%' }
+'.mr-10/12': { right: '83.333334%' }
 '.mr-11/12': { right: '91.666667%' }
 '.mr-full': { right: '100%' }
 '.mr-auto': { right: null }
-'.-mr-1': { right: -4 }
-'.-mr-2': { right: -8 }
-'.-mr-3': { right: -12 }
-'.-mr-4': { right: -16 }
-'.-mr-5': { right: -20 }
-'.-mr-6': { right: -24 }
-'.-mr-7': { right: -28 }
-'.-mr-8': { right: -32 }
-'.-mr-9': { right: -36 }
-'.-mr-10': { right: -40 }
-'.-mr-11': { right: -44 }
-'.-mr-12': { right: -48 }
-'.-mr-13': { right: -52 }
-'.-mr-14': { right: -56 }
-'.-mr-15': { right: -60 }
-'.-mr-16': { right: -64 }
-'.-mr-20': { right: -80 }
-'.-mr-24': { right: -96 }
-'.-mr-28': { right: -112 }
-'.-mr-32': { right: -128 }
-'.-mr-36': { right: -144 }
-'.-mr-40': { right: -160 }
-'.-mr-44': { right: -176 }
-'.-mr-48': { right: -192 }
-'.-mr-52': { right: -208 }
-'.-mr-56': { right: -224 }
-'.-mr-60': { right: -240 }
-'.-mr-64': { right: -256 }
-'.-mr-72': { right: -288 }
-'.-mr-80': { right: -320 }
-'.-mr-96': { right: -384 }
-'.-mr-px': { right: '-1px' }
-'.-mr-0.5': { right: -2 }
-'.-mr-1.5': { right: -6 }
-'.-mr-2.5': { right: -10 }
-'.-mr-3.5': { right: -14 }
-'.-mr-1/2': { right: '-50%' }
-'.-mr-1/3': { right: '-33.333333%' }
-'.-mr-2/3': { right: '-66.666667%' }
-'.-mr-1/4': { right: '-25%' }
-'.-mr-2/4': { right: '-50%' }
-'.-mr-3/4': { right: '-75%' }
-'.-mr-1/5': { right: '-20%' }
-'.-mr-2/5': { right: '-40%' }
-'.-mr-3/5': { right: '-60%' }
-'.-mr-4/5': { right: '-80%' }
-'.-mr-1/6': { right: '-16.666667%' }
-'.-mr-2/6': { right: '-33.333333%' }
-'.-mr-3/6': { right: '-50%' }
-'.-mr-4/6': { right: '-66.666667%' }
-'.-mr-5/6': { right: '-83.333333%' }
-'.-mr-1/12': { right: '-8.333333%' }
-'.-mr-2/12': { right: '-16.666667%' }
-'.-mr-3/12': { right: '-25%' }
-'.-mr-4/12': { right: '-33.333333%' }
-'.-mr-5/12': { right: '-41.666667%' }
-'.-mr-6/12': { right: '-50%' }
-'.-mr-7/12': { right: '-58.333333%' }
-'.-mr-8/12': { right: '-66.666667%' }
-'.-mr-9/12': { right: '-75%' }
-'.-mr-10/12': { right: '-83.333333%' }
-'.-mr-11/12': { right: '-91.666667%' }
-'.-mr-full': { right: '-100%' }
 '.mb-0': { bottom: 0 }
 '.mb-1': { bottom: 4 }
 '.mb-2': { bottom: 8 }
@@ -1991,7 +2337,7 @@
 '.mb-2.5': { bottom: 10 }
 '.mb-3.5': { bottom: 14 }
 '.mb-1/2': { bottom: '50%' }
-'.mb-1/3': { bottom: '33.333333%' }
+'.mb-1/3': { bottom: '33.333334%' }
 '.mb-2/3': { bottom: '66.666667%' }
 '.mb-1/4': { bottom: '25%' }
 '.mb-2/4': { bottom: '50%' }
@@ -2001,86 +2347,23 @@
 '.mb-3/5': { bottom: '60%' }
 '.mb-4/5': { bottom: '80%' }
 '.mb-1/6': { bottom: '16.666667%' }
-'.mb-2/6': { bottom: '33.333333%' }
+'.mb-2/6': { bottom: '33.333334%' }
 '.mb-3/6': { bottom: '50%' }
 '.mb-4/6': { bottom: '66.666667%' }
-'.mb-5/6': { bottom: '83.333333%' }
-'.mb-1/12': { bottom: '8.333333%' }
+'.mb-5/6': { bottom: '83.333334%' }
+'.mb-1/12': { bottom: '8.333334%' }
 '.mb-2/12': { bottom: '16.666667%' }
 '.mb-3/12': { bottom: '25%' }
-'.mb-4/12': { bottom: '33.333333%' }
+'.mb-4/12': { bottom: '33.333334%' }
 '.mb-5/12': { bottom: '41.666667%' }
 '.mb-6/12': { bottom: '50%' }
-'.mb-7/12': { bottom: '58.333333%' }
+'.mb-7/12': { bottom: '58.333334%' }
 '.mb-8/12': { bottom: '66.666667%' }
 '.mb-9/12': { bottom: '75%' }
-'.mb-10/12': { bottom: '83.333333%' }
+'.mb-10/12': { bottom: '83.333334%' }
 '.mb-11/12': { bottom: '91.666667%' }
 '.mb-full': { bottom: '100%' }
 '.mb-auto': { bottom: null }
-'.-mb-1': { bottom: -4 }
-'.-mb-2': { bottom: -8 }
-'.-mb-3': { bottom: -12 }
-'.-mb-4': { bottom: -16 }
-'.-mb-5': { bottom: -20 }
-'.-mb-6': { bottom: -24 }
-'.-mb-7': { bottom: -28 }
-'.-mb-8': { bottom: -32 }
-'.-mb-9': { bottom: -36 }
-'.-mb-10': { bottom: -40 }
-'.-mb-11': { bottom: -44 }
-'.-mb-12': { bottom: -48 }
-'.-mb-13': { bottom: -52 }
-'.-mb-14': { bottom: -56 }
-'.-mb-15': { bottom: -60 }
-'.-mb-16': { bottom: -64 }
-'.-mb-20': { bottom: -80 }
-'.-mb-24': { bottom: -96 }
-'.-mb-28': { bottom: -112 }
-'.-mb-32': { bottom: -128 }
-'.-mb-36': { bottom: -144 }
-'.-mb-40': { bottom: -160 }
-'.-mb-44': { bottom: -176 }
-'.-mb-48': { bottom: -192 }
-'.-mb-52': { bottom: -208 }
-'.-mb-56': { bottom: -224 }
-'.-mb-60': { bottom: -240 }
-'.-mb-64': { bottom: -256 }
-'.-mb-72': { bottom: -288 }
-'.-mb-80': { bottom: -320 }
-'.-mb-96': { bottom: -384 }
-'.-mb-px': { bottom: '-1px' }
-'.-mb-0.5': { bottom: -2 }
-'.-mb-1.5': { bottom: -6 }
-'.-mb-2.5': { bottom: -10 }
-'.-mb-3.5': { bottom: -14 }
-'.-mb-1/2': { bottom: '-50%' }
-'.-mb-1/3': { bottom: '-33.333333%' }
-'.-mb-2/3': { bottom: '-66.666667%' }
-'.-mb-1/4': { bottom: '-25%' }
-'.-mb-2/4': { bottom: '-50%' }
-'.-mb-3/4': { bottom: '-75%' }
-'.-mb-1/5': { bottom: '-20%' }
-'.-mb-2/5': { bottom: '-40%' }
-'.-mb-3/5': { bottom: '-60%' }
-'.-mb-4/5': { bottom: '-80%' }
-'.-mb-1/6': { bottom: '-16.666667%' }
-'.-mb-2/6': { bottom: '-33.333333%' }
-'.-mb-3/6': { bottom: '-50%' }
-'.-mb-4/6': { bottom: '-66.666667%' }
-'.-mb-5/6': { bottom: '-83.333333%' }
-'.-mb-1/12': { bottom: '-8.333333%' }
-'.-mb-2/12': { bottom: '-16.666667%' }
-'.-mb-3/12': { bottom: '-25%' }
-'.-mb-4/12': { bottom: '-33.333333%' }
-'.-mb-5/12': { bottom: '-41.666667%' }
-'.-mb-6/12': { bottom: '-50%' }
-'.-mb-7/12': { bottom: '-58.333333%' }
-'.-mb-8/12': { bottom: '-66.666667%' }
-'.-mb-9/12': { bottom: '-75%' }
-'.-mb-10/12': { bottom: '-83.333333%' }
-'.-mb-11/12': { bottom: '-91.666667%' }
-'.-mb-full': { bottom: '-100%' }
 '.ml-0': { left: 0 }
 '.ml-1': { left: 4 }
 '.ml-2': { left: 8 }
@@ -2119,7 +2402,7 @@
 '.ml-2.5': { left: 10 }
 '.ml-3.5': { left: 14 }
 '.ml-1/2': { left: '50%' }
-'.ml-1/3': { left: '33.333333%' }
+'.ml-1/3': { left: '33.333334%' }
 '.ml-2/3': { left: '66.666667%' }
 '.ml-1/4': { left: '25%' }
 '.ml-2/4': { left: '50%' }
@@ -2129,23 +2412,403 @@
 '.ml-3/5': { left: '60%' }
 '.ml-4/5': { left: '80%' }
 '.ml-1/6': { left: '16.666667%' }
-'.ml-2/6': { left: '33.333333%' }
+'.ml-2/6': { left: '33.333334%' }
 '.ml-3/6': { left: '50%' }
 '.ml-4/6': { left: '66.666667%' }
-'.ml-5/6': { left: '83.333333%' }
-'.ml-1/12': { left: '8.333333%' }
+'.ml-5/6': { left: '83.333334%' }
+'.ml-1/12': { left: '8.333334%' }
 '.ml-2/12': { left: '16.666667%' }
 '.ml-3/12': { left: '25%' }
-'.ml-4/12': { left: '33.333333%' }
+'.ml-4/12': { left: '33.333334%' }
 '.ml-5/12': { left: '41.666667%' }
 '.ml-6/12': { left: '50%' }
-'.ml-7/12': { left: '58.333333%' }
+'.ml-7/12': { left: '58.333334%' }
 '.ml-8/12': { left: '66.666667%' }
 '.ml-9/12': { left: '75%' }
-'.ml-10/12': { left: '83.333333%' }
+'.ml-10/12': { left: '83.333334%' }
 '.ml-11/12': { left: '91.666667%' }
 '.ml-full': { left: '100%' }
 '.ml-auto': { left: null }
+
+// Negative Margins Property
+'.-m-1': { top: -4, right: -4, bottom: -4, left: -4 }
+'.-m-2': { top: -8, right: -8, bottom: -8, left: -8 }
+'.-m-3': { top: -12, right: -12, bottom: -12, left: -12 }
+'.-m-4': { top: -16, right: -16, bottom: -16, left: -16 }
+'.-m-5': { top: -20, right: -20, bottom: -20, left: -20 }
+'.-m-6': { top: -24, right: -24, bottom: -24, left: -24 }
+'.-m-7': { top: -28, right: -28, bottom: -28, left: -28 }
+'.-m-8': { top: -32, right: -32, bottom: -32, left: -32 }
+'.-m-9': { top: -36, right: -36, bottom: -36, left: -36 }
+'.-m-10': { top: -40, right: -40, bottom: -40, left: -40 }
+'.-m-11': { top: -44, right: -44, bottom: -44, left: -44 }
+'.-m-12': { top: -48, right: -48, bottom: -48, left: -48 }
+'.-m-13': { top: -52, right: -52, bottom: -52, left: -52 }
+'.-m-14': { top: -56, right: -56, bottom: -56, left: -56 }
+'.-m-15': { top: -60, right: -60, bottom: -60, left: -60 }
+'.-m-16': { top: -64, right: -64, bottom: -64, left: -64 }
+'.-m-20': { top: -80, right: -80, bottom: -80, left: -80 }
+'.-m-24': { top: -96, right: -96, bottom: -96, left: -96 }
+'.-m-28': { top: -112, right: -112, bottom: -112, left: -112 }
+'.-m-32': { top: -128, right: -128, bottom: -128, left: -128 }
+'.-m-36': { top: -144, right: -144, bottom: -144, left: -144 }
+'.-m-40': { top: -160, right: -160, bottom: -160, left: -160 }
+'.-m-44': { top: -176, right: -176, bottom: -176, left: -176 }
+'.-m-48': { top: -192, right: -192, bottom: -192, left: -192 }
+'.-m-52': { top: -208, right: -208, bottom: -208, left: -208 }
+'.-m-56': { top: -224, right: -224, bottom: -224, left: -224 }
+'.-m-60': { top: -240, right: -240, bottom: -240, left: -240 }
+'.-m-64': { top: -256, right: -256, bottom: -256, left: -256 }
+'.-m-72': { top: -288, right: -288, bottom: -288, left: -288 }
+'.-m-80': { top: -320, right: -320, bottom: -320, left: -320 }
+'.-m-96': { top: -384, right: -384, bottom: -384, left: -384 }
+'.-m-px': { top: '-1px', right: '-1px', bottom: '-1px', left: '-1px' }
+'.-m-0.5': { top: -2, right: -2, bottom: -2, left: -2 }
+'.-m-1.5': { top: -6, right: -6, bottom: -6, left: -6 }
+'.-m-2.5': { top: -10, right: -10, bottom: -10, left: -10 }
+'.-m-3.5': { top: -14, right: -14, bottom: -14, left: -14 }
+'.-m-1/2': { top: '-50%', right: '-50%', bottom: '-50%', left: '-50%' }
+'.-m-1/3': { top: '-33.333334%', right: '-33.333334%', bottom: '-33.333334%', left: '-33.333334%' }
+'.-m-2/3': { top: '-66.666667%', right: '-66.666667%', bottom: '-66.666667%', left: '-66.666667%' }
+'.-m-1/4': { top: '-25%', right: '-25%', bottom: '-25%', left: '-25%' }
+'.-m-2/4': { top: '-50%', right: '-50%', bottom: '-50%', left: '-50%' }
+'.-m-3/4': { top: '-75%', right: '-75%', bottom: '-75%', left: '-75%' }
+'.-m-1/5': { top: '-20%', right: '-20%', bottom: '-20%', left: '-20%' }
+'.-m-2/5': { top: '-40%', right: '-40%', bottom: '-40%', left: '-40%' }
+'.-m-3/5': { top: '-60%', right: '-60%', bottom: '-60%', left: '-60%' }
+'.-m-4/5': { top: '-80%', right: '-80%', bottom: '-80%', left: '-80%' }
+'.-m-1/6': { top: '-16.666667%', right: '-16.666667%', bottom: '-16.666667%', left: '-16.666667%' }
+'.-m-2/6': { top: '-33.333334%', right: '-33.333334%', bottom: '-33.333334%', left: '-33.333334%' }
+'.-m-3/6': { top: '-50%', right: '-50%', bottom: '-50%', left: '-50%' }
+'.-m-4/6': { top: '-66.666667%', right: '-66.666667%', bottom: '-66.666667%', left: '-66.666667%' }
+'.-m-5/6': { top: '-83.333334%', right: '-83.333334%', bottom: '-83.333334%', left: '-83.333334%' }
+'.-m-1/12': { top: '-8.333334%', right: '-8.333334%', bottom: '-8.333334%', left: '-8.333334%' }
+'.-m-2/12': { top: '-16.666667%', right: '-16.666667%', bottom: '-16.666667%', left: '-16.666667%' }
+'.-m-3/12': { top: '-25%', right: '-25%', bottom: '-25%', left: '-25%' }
+'.-m-4/12': { top: '-33.333334%', right: '-33.333334%', bottom: '-33.333334%', left: '-33.333334%' }
+'.-m-5/12': { top: '-41.666667%', right: '-41.666667%', bottom: '-41.666667%', left: '-41.666667%' }
+'.-m-6/12': { top: '-50%', right: '-50%', bottom: '-50%', left: '-50%' }
+'.-m-7/12': { top: '-58.333334%', right: '-58.333334%', bottom: '-58.333334%', left: '-58.333334%' }
+'.-m-8/12': { top: '-66.666667%', right: '-66.666667%', bottom: '-66.666667%', left: '-66.666667%' }
+'.-m-9/12': { top: '-75%', right: '-75%', bottom: '-75%', left: '-75%' }
+'.-m-10/12': { top: '-83.333334%', right: '-83.333334%', bottom: '-83.333334%', left: '-83.333334%' }
+'.-m-11/12': { top: '-91.666667%', right: '-91.666667%', bottom: '-91.666667%', left: '-91.666667%' }
+'.-m-full': { top: '-100%', right: '-100%', bottom: '-100%', left: '-100%' }
+'.-my-1': { top: -4, bottom: -4 }
+'.-my-2': { top: -8, bottom: -8 }
+'.-my-3': { top: -12, bottom: -12 }
+'.-my-4': { top: -16, bottom: -16 }
+'.-my-5': { top: -20, bottom: -20 }
+'.-my-6': { top: -24, bottom: -24 }
+'.-my-7': { top: -28, bottom: -28 }
+'.-my-8': { top: -32, bottom: -32 }
+'.-my-9': { top: -36, bottom: -36 }
+'.-my-10': { top: -40, bottom: -40 }
+'.-my-11': { top: -44, bottom: -44 }
+'.-my-12': { top: -48, bottom: -48 }
+'.-my-13': { top: -52, bottom: -52 }
+'.-my-14': { top: -56, bottom: -56 }
+'.-my-15': { top: -60, bottom: -60 }
+'.-my-16': { top: -64, bottom: -64 }
+'.-my-20': { top: -80, bottom: -80 }
+'.-my-24': { top: -96, bottom: -96 }
+'.-my-28': { top: -112, bottom: -112 }
+'.-my-32': { top: -128, bottom: -128 }
+'.-my-36': { top: -144, bottom: -144 }
+'.-my-40': { top: -160, bottom: -160 }
+'.-my-44': { top: -176, bottom: -176 }
+'.-my-48': { top: -192, bottom: -192 }
+'.-my-52': { top: -208, bottom: -208 }
+'.-my-56': { top: -224, bottom: -224 }
+'.-my-60': { top: -240, bottom: -240 }
+'.-my-64': { top: -256, bottom: -256 }
+'.-my-72': { top: -288, bottom: -288 }
+'.-my-80': { top: -320, bottom: -320 }
+'.-my-96': { top: -384, bottom: -384 }
+'.-my-px': { top: '-1px', bottom: '-1px' }
+'.-my-0.5': { top: -2, bottom: -2 }
+'.-my-1.5': { top: -6, bottom: -6 }
+'.-my-2.5': { top: -10, bottom: -10 }
+'.-my-3.5': { top: -14, bottom: -14 }
+'.-my-1/2': { top: '-50%', bottom: '-50%' }
+'.-my-1/3': { top: '-33.333334%', bottom: '-33.333334%' }
+'.-my-2/3': { top: '-66.666667%', bottom: '-66.666667%' }
+'.-my-1/4': { top: '-25%', bottom: '-25%' }
+'.-my-2/4': { top: '-50%', bottom: '-50%' }
+'.-my-3/4': { top: '-75%', bottom: '-75%' }
+'.-my-1/5': { top: '-20%', bottom: '-20%' }
+'.-my-2/5': { top: '-40%', bottom: '-40%' }
+'.-my-3/5': { top: '-60%', bottom: '-60%' }
+'.-my-4/5': { top: '-80%', bottom: '-80%' }
+'.-my-1/6': { top: '-16.666667%', bottom: '-16.666667%' }
+'.-my-2/6': { top: '-33.333334%', bottom: '-33.333334%' }
+'.-my-3/6': { top: '-50%', bottom: '-50%' }
+'.-my-4/6': { top: '-66.666667%', bottom: '-66.666667%' }
+'.-my-5/6': { top: '-83.333334%', bottom: '-83.333334%' }
+'.-my-1/12': { top: '-8.333334%', bottom: '-8.333334%' }
+'.-my-2/12': { top: '-16.666667%', bottom: '-16.666667%' }
+'.-my-3/12': { top: '-25%', bottom: '-25%' }
+'.-my-4/12': { top: '-33.333334%', bottom: '-33.333334%' }
+'.-my-5/12': { top: '-41.666667%', bottom: '-41.666667%' }
+'.-my-6/12': { top: '-50%', bottom: '-50%' }
+'.-my-7/12': { top: '-58.333334%', bottom: '-58.333334%' }
+'.-my-8/12': { top: '-66.666667%', bottom: '-66.666667%' }
+'.-my-9/12': { top: '-75%', bottom: '-75%' }
+'.-my-10/12': { top: '-83.333334%', bottom: '-83.333334%' }
+'.-my-11/12': { top: '-91.666667%', bottom: '-91.666667%' }
+'.-my-full': { top: '-100%', bottom: '-100%' }
+'.-mx-1': { left: -4, right: -4 }
+'.-mx-2': { left: -8, right: -8 }
+'.-mx-3': { left: -12, right: -12 }
+'.-mx-4': { left: -16, right: -16 }
+'.-mx-5': { left: -20, right: -20 }
+'.-mx-6': { left: -24, right: -24 }
+'.-mx-7': { left: -28, right: -28 }
+'.-mx-8': { left: -32, right: -32 }
+'.-mx-9': { left: -36, right: -36 }
+'.-mx-10': { left: -40, right: -40 }
+'.-mx-11': { left: -44, right: -44 }
+'.-mx-12': { left: -48, right: -48 }
+'.-mx-13': { left: -52, right: -52 }
+'.-mx-14': { left: -56, right: -56 }
+'.-mx-15': { left: -60, right: -60 }
+'.-mx-16': { left: -64, right: -64 }
+'.-mx-20': { left: -80, right: -80 }
+'.-mx-24': { left: -96, right: -96 }
+'.-mx-28': { left: -112, right: -112 }
+'.-mx-32': { left: -128, right: -128 }
+'.-mx-36': { left: -144, right: -144 }
+'.-mx-40': { left: -160, right: -160 }
+'.-mx-44': { left: -176, right: -176 }
+'.-mx-48': { left: -192, right: -192 }
+'.-mx-52': { left: -208, right: -208 }
+'.-mx-56': { left: -224, right: -224 }
+'.-mx-60': { left: -240, right: -240 }
+'.-mx-64': { left: -256, right: -256 }
+'.-mx-72': { left: -288, right: -288 }
+'.-mx-80': { left: -320, right: -320 }
+'.-mx-96': { left: -384, right: -384 }
+'.-mx-px': { left: '-1px', right: '-1px' }
+'.-mx-0.5': { left: -2, right: -2 }
+'.-mx-1.5': { left: -6, right: -6 }
+'.-mx-2.5': { left: -10, right: -10 }
+'.-mx-3.5': { left: -14, right: -14 }
+'.-mx-1/2': { left: '-50%', right: '-50%' }
+'.-mx-1/3': { left: '-33.333334%', right: '-33.333334%' }
+'.-mx-2/3': { left: '-66.666667%', right: '-66.666667%' }
+'.-mx-1/4': { left: '-25%', right: '-25%' }
+'.-mx-2/4': { left: '-50%', right: '-50%' }
+'.-mx-3/4': { left: '-75%', right: '-75%' }
+'.-mx-1/5': { left: '-20%', right: '-20%' }
+'.-mx-2/5': { left: '-40%', right: '-40%' }
+'.-mx-3/5': { left: '-60%', right: '-60%' }
+'.-mx-4/5': { left: '-80%', right: '-80%' }
+'.-mx-1/6': { left: '-16.666667%', right: '-16.666667%' }
+'.-mx-2/6': { left: '-33.333334%', right: '-33.333334%' }
+'.-mx-3/6': { left: '-50%', right: '-50%' }
+'.-mx-4/6': { left: '-66.666667%', right: '-66.666667%' }
+'.-mx-5/6': { left: '-83.333334%', right: '-83.333334%' }
+'.-mx-1/12': { left: '-8.333334%', right: '-8.333334%' }
+'.-mx-2/12': { left: '-16.666667%', right: '-16.666667%' }
+'.-mx-3/12': { left: '-25%', right: '-25%' }
+'.-mx-4/12': { left: '-33.333334%', right: '-33.333334%' }
+'.-mx-5/12': { left: '-41.666667%', right: '-41.666667%' }
+'.-mx-6/12': { left: '-50%', right: '-50%' }
+'.-mx-7/12': { left: '-58.333334%', right: '-58.333334%' }
+'.-mx-8/12': { left: '-66.666667%', right: '-66.666667%' }
+'.-mx-9/12': { left: '-75%', right: '-75%' }
+'.-mx-10/12': { left: '-83.333334%', right: '-83.333334%' }
+'.-mx-11/12': { left: '-91.666667%', right: '-91.666667%' }
+'.-mx-full': { left: '-100%', right: '-100%' }
+'.-mt-1': { top: -4 }
+'.-mt-2': { top: -8 }
+'.-mt-3': { top: -12 }
+'.-mt-4': { top: -16 }
+'.-mt-5': { top: -20 }
+'.-mt-6': { top: -24 }
+'.-mt-7': { top: -28 }
+'.-mt-8': { top: -32 }
+'.-mt-9': { top: -36 }
+'.-mt-10': { top: -40 }
+'.-mt-11': { top: -44 }
+'.-mt-12': { top: -48 }
+'.-mt-13': { top: -52 }
+'.-mt-14': { top: -56 }
+'.-mt-15': { top: -60 }
+'.-mt-16': { top: -64 }
+'.-mt-20': { top: -80 }
+'.-mt-24': { top: -96 }
+'.-mt-28': { top: -112 }
+'.-mt-32': { top: -128 }
+'.-mt-36': { top: -144 }
+'.-mt-40': { top: -160 }
+'.-mt-44': { top: -176 }
+'.-mt-48': { top: -192 }
+'.-mt-52': { top: -208 }
+'.-mt-56': { top: -224 }
+'.-mt-60': { top: -240 }
+'.-mt-64': { top: -256 }
+'.-mt-72': { top: -288 }
+'.-mt-80': { top: -320 }
+'.-mt-96': { top: -384 }
+'.-mt-px': { top: '-1px' }
+'.-mt-0.5': { top: -2 }
+'.-mt-1.5': { top: -6 }
+'.-mt-2.5': { top: -10 }
+'.-mt-3.5': { top: -14 }
+'.-mt-1/2': { top: '-50%' }
+'.-mt-1/3': { top: '-33.333334%' }
+'.-mt-2/3': { top: '-66.666667%' }
+'.-mt-1/4': { top: '-25%' }
+'.-mt-2/4': { top: '-50%' }
+'.-mt-3/4': { top: '-75%' }
+'.-mt-1/5': { top: '-20%' }
+'.-mt-2/5': { top: '-40%' }
+'.-mt-3/5': { top: '-60%' }
+'.-mt-4/5': { top: '-80%' }
+'.-mt-1/6': { top: '-16.666667%' }
+'.-mt-2/6': { top: '-33.333334%' }
+'.-mt-3/6': { top: '-50%' }
+'.-mt-4/6': { top: '-66.666667%' }
+'.-mt-5/6': { top: '-83.333334%' }
+'.-mt-1/12': { top: '-8.333334%' }
+'.-mt-2/12': { top: '-16.666667%' }
+'.-mt-3/12': { top: '-25%' }
+'.-mt-4/12': { top: '-33.333334%' }
+'.-mt-5/12': { top: '-41.666667%' }
+'.-mt-6/12': { top: '-50%' }
+'.-mt-7/12': { top: '-58.333334%' }
+'.-mt-8/12': { top: '-66.666667%' }
+'.-mt-9/12': { top: '-75%' }
+'.-mt-10/12': { top: '-83.333334%' }
+'.-mt-11/12': { top: '-91.666667%' }
+'.-mt-full': { top: '-100%' }
+'.-mr-1': { right: -4 }
+'.-mr-2': { right: -8 }
+'.-mr-3': { right: -12 }
+'.-mr-4': { right: -16 }
+'.-mr-5': { right: -20 }
+'.-mr-6': { right: -24 }
+'.-mr-7': { right: -28 }
+'.-mr-8': { right: -32 }
+'.-mr-9': { right: -36 }
+'.-mr-10': { right: -40 }
+'.-mr-11': { right: -44 }
+'.-mr-12': { right: -48 }
+'.-mr-13': { right: -52 }
+'.-mr-14': { right: -56 }
+'.-mr-15': { right: -60 }
+'.-mr-16': { right: -64 }
+'.-mr-20': { right: -80 }
+'.-mr-24': { right: -96 }
+'.-mr-28': { right: -112 }
+'.-mr-32': { right: -128 }
+'.-mr-36': { right: -144 }
+'.-mr-40': { right: -160 }
+'.-mr-44': { right: -176 }
+'.-mr-48': { right: -192 }
+'.-mr-52': { right: -208 }
+'.-mr-56': { right: -224 }
+'.-mr-60': { right: -240 }
+'.-mr-64': { right: -256 }
+'.-mr-72': { right: -288 }
+'.-mr-80': { right: -320 }
+'.-mr-96': { right: -384 }
+'.-mr-px': { right: '-1px' }
+'.-mr-0.5': { right: -2 }
+'.-mr-1.5': { right: -6 }
+'.-mr-2.5': { right: -10 }
+'.-mr-3.5': { right: -14 }
+'.-mr-1/2': { right: '-50%' }
+'.-mr-1/3': { right: '-33.333334%' }
+'.-mr-2/3': { right: '-66.666667%' }
+'.-mr-1/4': { right: '-25%' }
+'.-mr-2/4': { right: '-50%' }
+'.-mr-3/4': { right: '-75%' }
+'.-mr-1/5': { right: '-20%' }
+'.-mr-2/5': { right: '-40%' }
+'.-mr-3/5': { right: '-60%' }
+'.-mr-4/5': { right: '-80%' }
+'.-mr-1/6': { right: '-16.666667%' }
+'.-mr-2/6': { right: '-33.333334%' }
+'.-mr-3/6': { right: '-50%' }
+'.-mr-4/6': { right: '-66.666667%' }
+'.-mr-5/6': { right: '-83.333334%' }
+'.-mr-1/12': { right: '-8.333334%' }
+'.-mr-2/12': { right: '-16.666667%' }
+'.-mr-3/12': { right: '-25%' }
+'.-mr-4/12': { right: '-33.333334%' }
+'.-mr-5/12': { right: '-41.666667%' }
+'.-mr-6/12': { right: '-50%' }
+'.-mr-7/12': { right: '-58.333334%' }
+'.-mr-8/12': { right: '-66.666667%' }
+'.-mr-9/12': { right: '-75%' }
+'.-mr-10/12': { right: '-83.333334%' }
+'.-mr-11/12': { right: '-91.666667%' }
+'.-mr-full': { right: '-100%' }
+'.-mb-1': { bottom: -4 }
+'.-mb-2': { bottom: -8 }
+'.-mb-3': { bottom: -12 }
+'.-mb-4': { bottom: -16 }
+'.-mb-5': { bottom: -20 }
+'.-mb-6': { bottom: -24 }
+'.-mb-7': { bottom: -28 }
+'.-mb-8': { bottom: -32 }
+'.-mb-9': { bottom: -36 }
+'.-mb-10': { bottom: -40 }
+'.-mb-11': { bottom: -44 }
+'.-mb-12': { bottom: -48 }
+'.-mb-13': { bottom: -52 }
+'.-mb-14': { bottom: -56 }
+'.-mb-15': { bottom: -60 }
+'.-mb-16': { bottom: -64 }
+'.-mb-20': { bottom: -80 }
+'.-mb-24': { bottom: -96 }
+'.-mb-28': { bottom: -112 }
+'.-mb-32': { bottom: -128 }
+'.-mb-36': { bottom: -144 }
+'.-mb-40': { bottom: -160 }
+'.-mb-44': { bottom: -176 }
+'.-mb-48': { bottom: -192 }
+'.-mb-52': { bottom: -208 }
+'.-mb-56': { bottom: -224 }
+'.-mb-60': { bottom: -240 }
+'.-mb-64': { bottom: -256 }
+'.-mb-72': { bottom: -288 }
+'.-mb-80': { bottom: -320 }
+'.-mb-96': { bottom: -384 }
+'.-mb-px': { bottom: '-1px' }
+'.-mb-0.5': { bottom: -2 }
+'.-mb-1.5': { bottom: -6 }
+'.-mb-2.5': { bottom: -10 }
+'.-mb-3.5': { bottom: -14 }
+'.-mb-1/2': { bottom: '-50%' }
+'.-mb-1/3': { bottom: '-33.333334%' }
+'.-mb-2/3': { bottom: '-66.666667%' }
+'.-mb-1/4': { bottom: '-25%' }
+'.-mb-2/4': { bottom: '-50%' }
+'.-mb-3/4': { bottom: '-75%' }
+'.-mb-1/5': { bottom: '-20%' }
+'.-mb-2/5': { bottom: '-40%' }
+'.-mb-3/5': { bottom: '-60%' }
+'.-mb-4/5': { bottom: '-80%' }
+'.-mb-1/6': { bottom: '-16.666667%' }
+'.-mb-2/6': { bottom: '-33.333334%' }
+'.-mb-3/6': { bottom: '-50%' }
+'.-mb-4/6': { bottom: '-66.666667%' }
+'.-mb-5/6': { bottom: '-83.333334%' }
+'.-mb-1/12': { bottom: '-8.333334%' }
+'.-mb-2/12': { bottom: '-16.666667%' }
+'.-mb-3/12': { bottom: '-25%' }
+'.-mb-4/12': { bottom: '-33.333334%' }
+'.-mb-5/12': { bottom: '-41.666667%' }
+'.-mb-6/12': { bottom: '-50%' }
+'.-mb-7/12': { bottom: '-58.333334%' }
+'.-mb-8/12': { bottom: '-66.666667%' }
+'.-mb-9/12': { bottom: '-75%' }
+'.-mb-10/12': { bottom: '-83.333334%' }
+'.-mb-11/12': { bottom: '-91.666667%' }
+'.-mb-full': { bottom: '-100%' }
 '.-ml-1': { left: -4 }
 '.-ml-2': { left: -8 }
 '.-ml-3': { left: -12 }
@@ -2183,7 +2846,7 @@
 '.-ml-2.5': { left: -10 }
 '.-ml-3.5': { left: -14 }
 '.-ml-1/2': { left: '-50%' }
-'.-ml-1/3': { left: '-33.333333%' }
+'.-ml-1/3': { left: '-33.333334%' }
 '.-ml-2/3': { left: '-66.666667%' }
 '.-ml-1/4': { left: '-25%' }
 '.-ml-2/4': { left: '-50%' }
@@ -2193,20 +2856,20 @@
 '.-ml-3/5': { left: '-60%' }
 '.-ml-4/5': { left: '-80%' }
 '.-ml-1/6': { left: '-16.666667%' }
-'.-ml-2/6': { left: '-33.333333%' }
+'.-ml-2/6': { left: '-33.333334%' }
 '.-ml-3/6': { left: '-50%' }
 '.-ml-4/6': { left: '-66.666667%' }
-'.-ml-5/6': { left: '-83.333333%' }
-'.-ml-1/12': { left: '-8.333333%' }
+'.-ml-5/6': { left: '-83.333334%' }
+'.-ml-1/12': { left: '-8.333334%' }
 '.-ml-2/12': { left: '-16.666667%' }
 '.-ml-3/12': { left: '-25%' }
-'.-ml-4/12': { left: '-33.333333%' }
+'.-ml-4/12': { left: '-33.333334%' }
 '.-ml-5/12': { left: '-41.666667%' }
 '.-ml-6/12': { left: '-50%' }
-'.-ml-7/12': { left: '-58.333333%' }
+'.-ml-7/12': { left: '-58.333334%' }
 '.-ml-8/12': { left: '-66.666667%' }
 '.-ml-9/12': { left: '-75%' }
-'.-ml-10/12': { left: '-83.333333%' }
+'.-ml-10/12': { left: '-83.333334%' }
 '.-ml-11/12': { left: '-91.666667%' }
 '.-ml-full': { left: '-100%' }
 
@@ -2226,6 +2889,21 @@
 '.opacity-90': { opacity: 0.9 }
 '.opacity-95': { opacity: 0.95 }
 '.opacity-100': { opacity: 1 }
+
+// anchorPoint Properties
+'.origin-center': { anchorPoint: { x: 0.5, y: 0.5 } }
+'.origin-top': { anchorPoint: { x: 0.5, y: 0 } }
+'.origin-top-right': { anchorPoint: { x: 1, y: 0 } }
+'.origin-right': { anchorPoint: { x: 0.5, y: 1 } }
+'.origin-bottom-right': { anchorPoint: { x: 1, y: 1 } }
+'.origin-bottom': { anchorPoint: { x: 0.5, y: 1 } }
+'.origin-bottom-left': { anchorPoint: { x: 0, y: 1 } }
+'.origin-left': { anchorPoint: { x: 0, y: 0.5 } }
+'.origin-top-left': { anchorPoint: { x: 0, y: 0 } }
+
+// overlayEnabled Property
+'.overlay-enabled[platform=ios]': { overlayEnabled: true }
+'.overlay-disabled[platform=ios]': { overlayEnabled: false }
 
 // padding Property
 '.p-0': { padding: { top: 0, right: 0, bottom: 0, left: 0 } }
@@ -2266,7 +2944,7 @@
 '.p-2.5': { padding: { top: 10, right: 10, bottom: 10, left: 10 } }
 '.p-3.5': { padding: { top: 14, right: 14, bottom: 14, left: 14 } }
 '.p-1/2': { padding: { top: '50%', right: '50%', bottom: '50%', left: '50%' } }
-'.p-1/3': { padding: { top: '33.333333%', right: '33.333333%', bottom: '33.333333%', left: '33.333333%' } }
+'.p-1/3': { padding: { top: '33.333334%', right: '33.333334%', bottom: '33.333334%', left: '33.333334%' } }
 '.p-2/3': { padding: { top: '66.666667%', right: '66.666667%', bottom: '66.666667%', left: '66.666667%' } }
 '.p-1/4': { padding: { top: '25%', right: '25%', bottom: '25%', left: '25%' } }
 '.p-2/4': { padding: { top: '50%', right: '50%', bottom: '50%', left: '50%' } }
@@ -2276,20 +2954,20 @@
 '.p-3/5': { padding: { top: '60%', right: '60%', bottom: '60%', left: '60%' } }
 '.p-4/5': { padding: { top: '80%', right: '80%', bottom: '80%', left: '80%' } }
 '.p-1/6': { padding: { top: '16.666667%', right: '16.666667%', bottom: '16.666667%', left: '16.666667%' } }
-'.p-2/6': { padding: { top: '33.333333%', right: '33.333333%', bottom: '33.333333%', left: '33.333333%' } }
+'.p-2/6': { padding: { top: '33.333334%', right: '33.333334%', bottom: '33.333334%', left: '33.333334%' } }
 '.p-3/6': { padding: { top: '50%', right: '50%', bottom: '50%', left: '50%' } }
 '.p-4/6': { padding: { top: '66.666667%', right: '66.666667%', bottom: '66.666667%', left: '66.666667%' } }
-'.p-5/6': { padding: { top: '83.333333%', right: '83.333333%', bottom: '83.333333%', left: '83.333333%' } }
-'.p-1/12': { padding: { top: '8.333333%', right: '8.333333%', bottom: '8.333333%', left: '8.333333%' } }
+'.p-5/6': { padding: { top: '83.333334%', right: '83.333334%', bottom: '83.333334%', left: '83.333334%' } }
+'.p-1/12': { padding: { top: '8.333334%', right: '8.333334%', bottom: '8.333334%', left: '8.333334%' } }
 '.p-2/12': { padding: { top: '16.666667%', right: '16.666667%', bottom: '16.666667%', left: '16.666667%' } }
 '.p-3/12': { padding: { top: '25%', right: '25%', bottom: '25%', left: '25%' } }
-'.p-4/12': { padding: { top: '33.333333%', right: '33.333333%', bottom: '33.333333%', left: '33.333333%' } }
+'.p-4/12': { padding: { top: '33.333334%', right: '33.333334%', bottom: '33.333334%', left: '33.333334%' } }
 '.p-5/12': { padding: { top: '41.666667%', right: '41.666667%', bottom: '41.666667%', left: '41.666667%' } }
 '.p-6/12': { padding: { top: '50%', right: '50%', bottom: '50%', left: '50%' } }
-'.p-7/12': { padding: { top: '58.333333%', right: '58.333333%', bottom: '58.333333%', left: '58.333333%' } }
+'.p-7/12': { padding: { top: '58.333334%', right: '58.333334%', bottom: '58.333334%', left: '58.333334%' } }
 '.p-8/12': { padding: { top: '66.666667%', right: '66.666667%', bottom: '66.666667%', left: '66.666667%' } }
 '.p-9/12': { padding: { top: '75%', right: '75%', bottom: '75%', left: '75%' } }
-'.p-10/12': { padding: { top: '83.333333%', right: '83.333333%', bottom: '83.333333%', left: '83.333333%' } }
+'.p-10/12': { padding: { top: '83.333334%', right: '83.333334%', bottom: '83.333334%', left: '83.333334%' } }
 '.p-11/12': { padding: { top: '91.666667%', right: '91.666667%', bottom: '91.666667%', left: '91.666667%' } }
 '.p-full': { padding: { top: '100%', right: '100%', bottom: '100%', left: '100%' } }
 '.py-0': { padding: { top: 0, bottom: 0 } }
@@ -2330,7 +3008,7 @@
 '.py-2.5': { padding: { top: 10, bottom: 10 } }
 '.py-3.5': { padding: { top: 14, bottom: 14 } }
 '.py-1/2': { padding: { top: '50%', bottom: '50%' } }
-'.py-1/3': { padding: { top: '33.333333%', bottom: '33.333333%' } }
+'.py-1/3': { padding: { top: '33.333334%', bottom: '33.333334%' } }
 '.py-2/3': { padding: { top: '66.666667%', bottom: '66.666667%' } }
 '.py-1/4': { padding: { top: '25%', bottom: '25%' } }
 '.py-2/4': { padding: { top: '50%', bottom: '50%' } }
@@ -2340,20 +3018,20 @@
 '.py-3/5': { padding: { top: '60%', bottom: '60%' } }
 '.py-4/5': { padding: { top: '80%', bottom: '80%' } }
 '.py-1/6': { padding: { top: '16.666667%', bottom: '16.666667%' } }
-'.py-2/6': { padding: { top: '33.333333%', bottom: '33.333333%' } }
+'.py-2/6': { padding: { top: '33.333334%', bottom: '33.333334%' } }
 '.py-3/6': { padding: { top: '50%', bottom: '50%' } }
 '.py-4/6': { padding: { top: '66.666667%', bottom: '66.666667%' } }
-'.py-5/6': { padding: { top: '83.333333%', bottom: '83.333333%' } }
-'.py-1/12': { padding: { top: '8.333333%', bottom: '8.333333%' } }
+'.py-5/6': { padding: { top: '83.333334%', bottom: '83.333334%' } }
+'.py-1/12': { padding: { top: '8.333334%', bottom: '8.333334%' } }
 '.py-2/12': { padding: { top: '16.666667%', bottom: '16.666667%' } }
 '.py-3/12': { padding: { top: '25%', bottom: '25%' } }
-'.py-4/12': { padding: { top: '33.333333%', bottom: '33.333333%' } }
+'.py-4/12': { padding: { top: '33.333334%', bottom: '33.333334%' } }
 '.py-5/12': { padding: { top: '41.666667%', bottom: '41.666667%' } }
 '.py-6/12': { padding: { top: '50%', bottom: '50%' } }
-'.py-7/12': { padding: { top: '58.333333%', bottom: '58.333333%' } }
+'.py-7/12': { padding: { top: '58.333334%', bottom: '58.333334%' } }
 '.py-8/12': { padding: { top: '66.666667%', bottom: '66.666667%' } }
 '.py-9/12': { padding: { top: '75%', bottom: '75%' } }
-'.py-10/12': { padding: { top: '83.333333%', bottom: '83.333333%' } }
+'.py-10/12': { padding: { top: '83.333334%', bottom: '83.333334%' } }
 '.py-11/12': { padding: { top: '91.666667%', bottom: '91.666667%' } }
 '.py-full': { padding: { top: '100%', bottom: '100%' } }
 '.px-0': { padding: { right: 0, left: 0 } }
@@ -2394,7 +3072,7 @@
 '.px-2.5': { padding: { right: 10, left: 10 } }
 '.px-3.5': { padding: { right: 14, left: 14 } }
 '.px-1/2': { padding: { right: '50%', left: '50%' } }
-'.px-1/3': { padding: { right: '33.333333%', left: '33.333333%' } }
+'.px-1/3': { padding: { right: '33.333334%', left: '33.333334%' } }
 '.px-2/3': { padding: { right: '66.666667%', left: '66.666667%' } }
 '.px-1/4': { padding: { right: '25%', left: '25%' } }
 '.px-2/4': { padding: { right: '50%', left: '50%' } }
@@ -2404,20 +3082,20 @@
 '.px-3/5': { padding: { right: '60%', left: '60%' } }
 '.px-4/5': { padding: { right: '80%', left: '80%' } }
 '.px-1/6': { padding: { right: '16.666667%', left: '16.666667%' } }
-'.px-2/6': { padding: { right: '33.333333%', left: '33.333333%' } }
+'.px-2/6': { padding: { right: '33.333334%', left: '33.333334%' } }
 '.px-3/6': { padding: { right: '50%', left: '50%' } }
 '.px-4/6': { padding: { right: '66.666667%', left: '66.666667%' } }
-'.px-5/6': { padding: { right: '83.333333%', left: '83.333333%' } }
-'.px-1/12': { padding: { right: '8.333333%', left: '8.333333%' } }
+'.px-5/6': { padding: { right: '83.333334%', left: '83.333334%' } }
+'.px-1/12': { padding: { right: '8.333334%', left: '8.333334%' } }
 '.px-2/12': { padding: { right: '16.666667%', left: '16.666667%' } }
 '.px-3/12': { padding: { right: '25%', left: '25%' } }
-'.px-4/12': { padding: { right: '33.333333%', left: '33.333333%' } }
+'.px-4/12': { padding: { right: '33.333334%', left: '33.333334%' } }
 '.px-5/12': { padding: { right: '41.666667%', left: '41.666667%' } }
 '.px-6/12': { padding: { right: '50%', left: '50%' } }
-'.px-7/12': { padding: { right: '58.333333%', left: '58.333333%' } }
+'.px-7/12': { padding: { right: '58.333334%', left: '58.333334%' } }
 '.px-8/12': { padding: { right: '66.666667%', left: '66.666667%' } }
 '.px-9/12': { padding: { right: '75%', left: '75%' } }
-'.px-10/12': { padding: { right: '83.333333%', left: '83.333333%' } }
+'.px-10/12': { padding: { right: '83.333334%', left: '83.333334%' } }
 '.px-11/12': { padding: { right: '91.666667%', left: '91.666667%' } }
 '.px-full': { padding: { right: '100%', left: '100%' } }
 '.pt-0': { padding: { top: 0 } }
@@ -2458,7 +3136,7 @@
 '.pt-2.5': { padding: { top: 10 } }
 '.pt-3.5': { padding: { top: 14 } }
 '.pt-1/2': { padding: { top: '50%' } }
-'.pt-1/3': { padding: { top: '33.333333%' } }
+'.pt-1/3': { padding: { top: '33.333334%' } }
 '.pt-2/3': { padding: { top: '66.666667%' } }
 '.pt-1/4': { padding: { top: '25%' } }
 '.pt-2/4': { padding: { top: '50%' } }
@@ -2468,20 +3146,20 @@
 '.pt-3/5': { padding: { top: '60%' } }
 '.pt-4/5': { padding: { top: '80%' } }
 '.pt-1/6': { padding: { top: '16.666667%' } }
-'.pt-2/6': { padding: { top: '33.333333%' } }
+'.pt-2/6': { padding: { top: '33.333334%' } }
 '.pt-3/6': { padding: { top: '50%' } }
 '.pt-4/6': { padding: { top: '66.666667%' } }
-'.pt-5/6': { padding: { top: '83.333333%' } }
-'.pt-1/12': { padding: { top: '8.333333%' } }
+'.pt-5/6': { padding: { top: '83.333334%' } }
+'.pt-1/12': { padding: { top: '8.333334%' } }
 '.pt-2/12': { padding: { top: '16.666667%' } }
 '.pt-3/12': { padding: { top: '25%' } }
-'.pt-4/12': { padding: { top: '33.333333%' } }
+'.pt-4/12': { padding: { top: '33.333334%' } }
 '.pt-5/12': { padding: { top: '41.666667%' } }
 '.pt-6/12': { padding: { top: '50%' } }
-'.pt-7/12': { padding: { top: '58.333333%' } }
+'.pt-7/12': { padding: { top: '58.333334%' } }
 '.pt-8/12': { padding: { top: '66.666667%' } }
 '.pt-9/12': { padding: { top: '75%' } }
-'.pt-10/12': { padding: { top: '83.333333%' } }
+'.pt-10/12': { padding: { top: '83.333334%' } }
 '.pt-11/12': { padding: { top: '91.666667%' } }
 '.pt-full': { padding: { top: '100%' } }
 '.pr-0': { padding: { right: 0 } }
@@ -2522,7 +3200,7 @@
 '.pr-2.5': { padding: { right: 10 } }
 '.pr-3.5': { padding: { right: 14 } }
 '.pr-1/2': { padding: { right: '50%' } }
-'.pr-1/3': { padding: { right: '33.333333%' } }
+'.pr-1/3': { padding: { right: '33.333334%' } }
 '.pr-2/3': { padding: { right: '66.666667%' } }
 '.pr-1/4': { padding: { right: '25%' } }
 '.pr-2/4': { padding: { right: '50%' } }
@@ -2532,20 +3210,20 @@
 '.pr-3/5': { padding: { right: '60%' } }
 '.pr-4/5': { padding: { right: '80%' } }
 '.pr-1/6': { padding: { right: '16.666667%' } }
-'.pr-2/6': { padding: { right: '33.333333%' } }
+'.pr-2/6': { padding: { right: '33.333334%' } }
 '.pr-3/6': { padding: { right: '50%' } }
 '.pr-4/6': { padding: { right: '66.666667%' } }
-'.pr-5/6': { padding: { right: '83.333333%' } }
-'.pr-1/12': { padding: { right: '8.333333%' } }
+'.pr-5/6': { padding: { right: '83.333334%' } }
+'.pr-1/12': { padding: { right: '8.333334%' } }
 '.pr-2/12': { padding: { right: '16.666667%' } }
 '.pr-3/12': { padding: { right: '25%' } }
-'.pr-4/12': { padding: { right: '33.333333%' } }
+'.pr-4/12': { padding: { right: '33.333334%' } }
 '.pr-5/12': { padding: { right: '41.666667%' } }
 '.pr-6/12': { padding: { right: '50%' } }
-'.pr-7/12': { padding: { right: '58.333333%' } }
+'.pr-7/12': { padding: { right: '58.333334%' } }
 '.pr-8/12': { padding: { right: '66.666667%' } }
 '.pr-9/12': { padding: { right: '75%' } }
-'.pr-10/12': { padding: { right: '83.333333%' } }
+'.pr-10/12': { padding: { right: '83.333334%' } }
 '.pr-11/12': { padding: { right: '91.666667%' } }
 '.pr-full': { padding: { right: '100%' } }
 '.pb-0': { padding: { bottom: 0 } }
@@ -2586,7 +3264,7 @@
 '.pb-2.5': { padding: { bottom: 10 } }
 '.pb-3.5': { padding: { bottom: 14 } }
 '.pb-1/2': { padding: { bottom: '50%' } }
-'.pb-1/3': { padding: { bottom: '33.333333%' } }
+'.pb-1/3': { padding: { bottom: '33.333334%' } }
 '.pb-2/3': { padding: { bottom: '66.666667%' } }
 '.pb-1/4': { padding: { bottom: '25%' } }
 '.pb-2/4': { padding: { bottom: '50%' } }
@@ -2596,20 +3274,20 @@
 '.pb-3/5': { padding: { bottom: '60%' } }
 '.pb-4/5': { padding: { bottom: '80%' } }
 '.pb-1/6': { padding: { bottom: '16.666667%' } }
-'.pb-2/6': { padding: { bottom: '33.333333%' } }
+'.pb-2/6': { padding: { bottom: '33.333334%' } }
 '.pb-3/6': { padding: { bottom: '50%' } }
 '.pb-4/6': { padding: { bottom: '66.666667%' } }
-'.pb-5/6': { padding: { bottom: '83.333333%' } }
-'.pb-1/12': { padding: { bottom: '8.333333%' } }
+'.pb-5/6': { padding: { bottom: '83.333334%' } }
+'.pb-1/12': { padding: { bottom: '8.333334%' } }
 '.pb-2/12': { padding: { bottom: '16.666667%' } }
 '.pb-3/12': { padding: { bottom: '25%' } }
-'.pb-4/12': { padding: { bottom: '33.333333%' } }
+'.pb-4/12': { padding: { bottom: '33.333334%' } }
 '.pb-5/12': { padding: { bottom: '41.666667%' } }
 '.pb-6/12': { padding: { bottom: '50%' } }
-'.pb-7/12': { padding: { bottom: '58.333333%' } }
+'.pb-7/12': { padding: { bottom: '58.333334%' } }
 '.pb-8/12': { padding: { bottom: '66.666667%' } }
 '.pb-9/12': { padding: { bottom: '75%' } }
-'.pb-10/12': { padding: { bottom: '83.333333%' } }
+'.pb-10/12': { padding: { bottom: '83.333334%' } }
 '.pb-11/12': { padding: { bottom: '91.666667%' } }
 '.pb-full': { padding: { bottom: '100%' } }
 '.pl-0': { padding: { left: 0 } }
@@ -2650,7 +3328,7 @@
 '.pl-2.5': { padding: { left: 10 } }
 '.pl-3.5': { padding: { left: 14 } }
 '.pl-1/2': { padding: { left: '50%' } }
-'.pl-1/3': { padding: { left: '33.333333%' } }
+'.pl-1/3': { padding: { left: '33.333334%' } }
 '.pl-2/3': { padding: { left: '66.666667%' } }
 '.pl-1/4': { padding: { left: '25%' } }
 '.pl-2/4': { padding: { left: '50%' } }
@@ -2660,22 +3338,573 @@
 '.pl-3/5': { padding: { left: '60%' } }
 '.pl-4/5': { padding: { left: '80%' } }
 '.pl-1/6': { padding: { left: '16.666667%' } }
-'.pl-2/6': { padding: { left: '33.333333%' } }
+'.pl-2/6': { padding: { left: '33.333334%' } }
 '.pl-3/6': { padding: { left: '50%' } }
 '.pl-4/6': { padding: { left: '66.666667%' } }
-'.pl-5/6': { padding: { left: '83.333333%' } }
-'.pl-1/12': { padding: { left: '8.333333%' } }
+'.pl-5/6': { padding: { left: '83.333334%' } }
+'.pl-1/12': { padding: { left: '8.333334%' } }
 '.pl-2/12': { padding: { left: '16.666667%' } }
 '.pl-3/12': { padding: { left: '25%' } }
-'.pl-4/12': { padding: { left: '33.333333%' } }
+'.pl-4/12': { padding: { left: '33.333334%' } }
 '.pl-5/12': { padding: { left: '41.666667%' } }
 '.pl-6/12': { padding: { left: '50%' } }
-'.pl-7/12': { padding: { left: '58.333333%' } }
+'.pl-7/12': { padding: { left: '58.333334%' } }
 '.pl-8/12': { padding: { left: '66.666667%' } }
 '.pl-9/12': { padding: { left: '75%' } }
-'.pl-10/12': { padding: { left: '83.333333%' } }
+'.pl-10/12': { padding: { left: '83.333334%' } }
 '.pl-11/12': { padding: { left: '91.666667%' } }
 '.pl-full': { padding: { left: '100%' } }
+
+// pageIndicatorColor Property
+'.page-transparent': { pageIndicatorColor: 'transparent' }
+'.page-black': { pageIndicatorColor: '#000000' }
+'.page-white': { pageIndicatorColor: '#ffffff' }
+'.page-rose-50': { pageIndicatorColor: '#fff1f2' }
+'.page-rose-100': { pageIndicatorColor: '#ffe4e6' }
+'.page-rose-200': { pageIndicatorColor: '#fecdd3' }
+'.page-rose-300': { pageIndicatorColor: '#fda4af' }
+'.page-rose-400': { pageIndicatorColor: '#fb7185' }
+'.page-rose-500': { pageIndicatorColor: '#f43f5e' }
+'.page-rose-600': { pageIndicatorColor: '#e11d48' }
+'.page-rose-700': { pageIndicatorColor: '#be123c' }
+'.page-rose-800': { pageIndicatorColor: '#9f1239' }
+'.page-rose-900': { pageIndicatorColor: '#881337' }
+'.page-pink-50': { pageIndicatorColor: '#fdf2f8' }
+'.page-pink-100': { pageIndicatorColor: '#fce7f3' }
+'.page-pink-200': { pageIndicatorColor: '#fbcfe8' }
+'.page-pink-300': { pageIndicatorColor: '#f9a8d4' }
+'.page-pink-400': { pageIndicatorColor: '#f472b6' }
+'.page-pink-500': { pageIndicatorColor: '#ec4899' }
+'.page-pink-600': { pageIndicatorColor: '#db2777' }
+'.page-pink-700': { pageIndicatorColor: '#be185d' }
+'.page-pink-800': { pageIndicatorColor: '#9d174d' }
+'.page-pink-900': { pageIndicatorColor: '#831843' }
+'.page-fuchsia-50': { pageIndicatorColor: '#fdf4ff' }
+'.page-fuchsia-100': { pageIndicatorColor: '#fae8ff' }
+'.page-fuchsia-200': { pageIndicatorColor: '#f5d0fe' }
+'.page-fuchsia-300': { pageIndicatorColor: '#f0abfc' }
+'.page-fuchsia-400': { pageIndicatorColor: '#e879f9' }
+'.page-fuchsia-500': { pageIndicatorColor: '#d946ef' }
+'.page-fuchsia-600': { pageIndicatorColor: '#c026d3' }
+'.page-fuchsia-700': { pageIndicatorColor: '#a21caf' }
+'.page-fuchsia-800': { pageIndicatorColor: '#86198f' }
+'.page-fuchsia-900': { pageIndicatorColor: '#701a75' }
+'.page-purple-50': { pageIndicatorColor: '#faf5ff' }
+'.page-purple-100': { pageIndicatorColor: '#f3e8ff' }
+'.page-purple-200': { pageIndicatorColor: '#e9d5ff' }
+'.page-purple-300': { pageIndicatorColor: '#d8b4fe' }
+'.page-purple-400': { pageIndicatorColor: '#c084fc' }
+'.page-purple-500': { pageIndicatorColor: '#a855f7' }
+'.page-purple-600': { pageIndicatorColor: '#9333ea' }
+'.page-purple-700': { pageIndicatorColor: '#7e22ce' }
+'.page-purple-800': { pageIndicatorColor: '#6b21a8' }
+'.page-purple-900': { pageIndicatorColor: '#581c87' }
+'.page-violet-50': { pageIndicatorColor: '#f5f3ff' }
+'.page-violet-100': { pageIndicatorColor: '#ede9fe' }
+'.page-violet-200': { pageIndicatorColor: '#ddd6fe' }
+'.page-violet-300': { pageIndicatorColor: '#c4b5fd' }
+'.page-violet-400': { pageIndicatorColor: '#a78bfa' }
+'.page-violet-500': { pageIndicatorColor: '#8b5cf6' }
+'.page-violet-600': { pageIndicatorColor: '#7c3aed' }
+'.page-violet-700': { pageIndicatorColor: '#6d28d9' }
+'.page-violet-800': { pageIndicatorColor: '#5b21b6' }
+'.page-violet-900': { pageIndicatorColor: '#4c1d95' }
+'.page-indigo-50': { pageIndicatorColor: '#eef2ff' }
+'.page-indigo-100': { pageIndicatorColor: '#e0e7ff' }
+'.page-indigo-200': { pageIndicatorColor: '#c7d2fe' }
+'.page-indigo-300': { pageIndicatorColor: '#a5b4fc' }
+'.page-indigo-400': { pageIndicatorColor: '#818cf8' }
+'.page-indigo-500': { pageIndicatorColor: '#6366f1' }
+'.page-indigo-600': { pageIndicatorColor: '#4f46e5' }
+'.page-indigo-700': { pageIndicatorColor: '#4338ca' }
+'.page-indigo-800': { pageIndicatorColor: '#3730a3' }
+'.page-indigo-900': { pageIndicatorColor: '#312e81' }
+'.page-blue-50': { pageIndicatorColor: '#eff6ff' }
+'.page-blue-100': { pageIndicatorColor: '#dbeafe' }
+'.page-blue-200': { pageIndicatorColor: '#bfdbfe' }
+'.page-blue-300': { pageIndicatorColor: '#93c5fd' }
+'.page-blue-400': { pageIndicatorColor: '#60a5fa' }
+'.page-blue-500': { pageIndicatorColor: '#3b82f6' }
+'.page-blue-600': { pageIndicatorColor: '#2563eb' }
+'.page-blue-700': { pageIndicatorColor: '#1d4ed8' }
+'.page-blue-800': { pageIndicatorColor: '#1e40af' }
+'.page-blue-900': { pageIndicatorColor: '#1e3a8a' }
+'.page-sky-50': { pageIndicatorColor: '#f0f9ff' }
+'.page-sky-100': { pageIndicatorColor: '#e0f2fe' }
+'.page-sky-200': { pageIndicatorColor: '#bae6fd' }
+'.page-sky-300': { pageIndicatorColor: '#7dd3fc' }
+'.page-sky-400': { pageIndicatorColor: '#38bdf8' }
+'.page-sky-500': { pageIndicatorColor: '#0ea5e9' }
+'.page-sky-600': { pageIndicatorColor: '#0284c7' }
+'.page-sky-700': { pageIndicatorColor: '#0369a1' }
+'.page-sky-800': { pageIndicatorColor: '#075985' }
+'.page-sky-900': { pageIndicatorColor: '#0c4a6e' }
+'.page-cyan-50': { pageIndicatorColor: '#ecfeff' }
+'.page-cyan-100': { pageIndicatorColor: '#cffafe' }
+'.page-cyan-200': { pageIndicatorColor: '#a5f3fc' }
+'.page-cyan-300': { pageIndicatorColor: '#67e8f9' }
+'.page-cyan-400': { pageIndicatorColor: '#22d3ee' }
+'.page-cyan-500': { pageIndicatorColor: '#06b6d4' }
+'.page-cyan-600': { pageIndicatorColor: '#0891b2' }
+'.page-cyan-700': { pageIndicatorColor: '#0e7490' }
+'.page-cyan-800': { pageIndicatorColor: '#155e75' }
+'.page-cyan-900': { pageIndicatorColor: '#164e63' }
+'.page-teal-50': { pageIndicatorColor: '#f0fdfa' }
+'.page-teal-100': { pageIndicatorColor: '#ccfbf1' }
+'.page-teal-200': { pageIndicatorColor: '#99f6e4' }
+'.page-teal-300': { pageIndicatorColor: '#5eead4' }
+'.page-teal-400': { pageIndicatorColor: '#2dd4bf' }
+'.page-teal-500': { pageIndicatorColor: '#14b8a6' }
+'.page-teal-600': { pageIndicatorColor: '#0d9488' }
+'.page-teal-700': { pageIndicatorColor: '#0f766e' }
+'.page-teal-800': { pageIndicatorColor: '#115e59' }
+'.page-teal-900': { pageIndicatorColor: '#134e4a' }
+'.page-emerald-50': { pageIndicatorColor: '#ecfdf5' }
+'.page-emerald-100': { pageIndicatorColor: '#d1fae5' }
+'.page-emerald-200': { pageIndicatorColor: '#a7f3d0' }
+'.page-emerald-300': { pageIndicatorColor: '#6ee7b7' }
+'.page-emerald-400': { pageIndicatorColor: '#34d399' }
+'.page-emerald-500': { pageIndicatorColor: '#10b981' }
+'.page-emerald-600': { pageIndicatorColor: '#059669' }
+'.page-emerald-700': { pageIndicatorColor: '#047857' }
+'.page-emerald-800': { pageIndicatorColor: '#065f46' }
+'.page-emerald-900': { pageIndicatorColor: '#064e3b' }
+'.page-green-50': { pageIndicatorColor: '#f0fdf4' }
+'.page-green-100': { pageIndicatorColor: '#dcfce7' }
+'.page-green-200': { pageIndicatorColor: '#bbf7d0' }
+'.page-green-300': { pageIndicatorColor: '#86efac' }
+'.page-green-400': { pageIndicatorColor: '#4ade80' }
+'.page-green-500': { pageIndicatorColor: '#22c55e' }
+'.page-green-600': { pageIndicatorColor: '#16a34a' }
+'.page-green-700': { pageIndicatorColor: '#15803d' }
+'.page-green-800': { pageIndicatorColor: '#166534' }
+'.page-green-900': { pageIndicatorColor: '#14532d' }
+'.page-lime-50': { pageIndicatorColor: '#f7fee7' }
+'.page-lime-100': { pageIndicatorColor: '#ecfccb' }
+'.page-lime-200': { pageIndicatorColor: '#d9f99d' }
+'.page-lime-300': { pageIndicatorColor: '#bef264' }
+'.page-lime-400': { pageIndicatorColor: '#a3e635' }
+'.page-lime-500': { pageIndicatorColor: '#84cc16' }
+'.page-lime-600': { pageIndicatorColor: '#65a30d' }
+'.page-lime-700': { pageIndicatorColor: '#4d7c0f' }
+'.page-lime-800': { pageIndicatorColor: '#3f6212' }
+'.page-lime-900': { pageIndicatorColor: '#365314' }
+'.page-yellow-50': { pageIndicatorColor: '#fefce8' }
+'.page-yellow-100': { pageIndicatorColor: '#fef9c3' }
+'.page-yellow-200': { pageIndicatorColor: '#fef08a' }
+'.page-yellow-300': { pageIndicatorColor: '#fde047' }
+'.page-yellow-400': { pageIndicatorColor: '#facc15' }
+'.page-yellow-500': { pageIndicatorColor: '#eab308' }
+'.page-yellow-600': { pageIndicatorColor: '#ca8a04' }
+'.page-yellow-700': { pageIndicatorColor: '#a16207' }
+'.page-yellow-800': { pageIndicatorColor: '#854d0e' }
+'.page-yellow-900': { pageIndicatorColor: '#713f12' }
+'.page-amber-50': { pageIndicatorColor: '#fffbeb' }
+'.page-amber-100': { pageIndicatorColor: '#fef3c7' }
+'.page-amber-200': { pageIndicatorColor: '#fde68a' }
+'.page-amber-300': { pageIndicatorColor: '#fcd34d' }
+'.page-amber-400': { pageIndicatorColor: '#fbbf24' }
+'.page-amber-500': { pageIndicatorColor: '#f59e0b' }
+'.page-amber-600': { pageIndicatorColor: '#d97706' }
+'.page-amber-700': { pageIndicatorColor: '#b45309' }
+'.page-amber-800': { pageIndicatorColor: '#92400e' }
+'.page-amber-900': { pageIndicatorColor: '#78350f' }
+'.page-orange-50': { pageIndicatorColor: '#fff7ed' }
+'.page-orange-100': { pageIndicatorColor: '#ffedd5' }
+'.page-orange-200': { pageIndicatorColor: '#fed7aa' }
+'.page-orange-300': { pageIndicatorColor: '#fdba74' }
+'.page-orange-400': { pageIndicatorColor: '#fb923c' }
+'.page-orange-500': { pageIndicatorColor: '#f97316' }
+'.page-orange-600': { pageIndicatorColor: '#ea580c' }
+'.page-orange-700': { pageIndicatorColor: '#c2410c' }
+'.page-orange-800': { pageIndicatorColor: '#9a3412' }
+'.page-orange-900': { pageIndicatorColor: '#7c2d12' }
+'.page-red-50': { pageIndicatorColor: '#fef2f2' }
+'.page-red-100': { pageIndicatorColor: '#fee2e2' }
+'.page-red-200': { pageIndicatorColor: '#fecaca' }
+'.page-red-300': { pageIndicatorColor: '#fca5a5' }
+'.page-red-400': { pageIndicatorColor: '#f87171' }
+'.page-red-500': { pageIndicatorColor: '#ef4444' }
+'.page-red-600': { pageIndicatorColor: '#dc2626' }
+'.page-red-700': { pageIndicatorColor: '#b91c1c' }
+'.page-red-800': { pageIndicatorColor: '#991b1b' }
+'.page-red-900': { pageIndicatorColor: '#7f1d1d' }
+'.page-warmGray-50': { pageIndicatorColor: '#fafaf9' }
+'.page-warmGray-100': { pageIndicatorColor: '#f5f5f4' }
+'.page-warmGray-200': { pageIndicatorColor: '#e7e5e4' }
+'.page-warmGray-300': { pageIndicatorColor: '#d6d3d1' }
+'.page-warmGray-400': { pageIndicatorColor: '#a8a29e' }
+'.page-warmGray-500': { pageIndicatorColor: '#78716c' }
+'.page-warmGray-600': { pageIndicatorColor: '#57534e' }
+'.page-warmGray-700': { pageIndicatorColor: '#44403c' }
+'.page-warmGray-800': { pageIndicatorColor: '#292524' }
+'.page-warmGray-900': { pageIndicatorColor: '#1c1917' }
+'.page-trueGray-50': { pageIndicatorColor: '#fafafa' }
+'.page-trueGray-100': { pageIndicatorColor: '#f5f5f5' }
+'.page-trueGray-200': { pageIndicatorColor: '#e5e5e5' }
+'.page-trueGray-300': { pageIndicatorColor: '#d4d4d4' }
+'.page-trueGray-400': { pageIndicatorColor: '#a3a3a3' }
+'.page-trueGray-500': { pageIndicatorColor: '#737373' }
+'.page-trueGray-600': { pageIndicatorColor: '#525252' }
+'.page-trueGray-700': { pageIndicatorColor: '#404040' }
+'.page-trueGray-800': { pageIndicatorColor: '#262626' }
+'.page-trueGray-900': { pageIndicatorColor: '#171717' }
+'.page-gray-50': { pageIndicatorColor: '#fafafa' }
+'.page-gray-100': { pageIndicatorColor: '#f4f4f5' }
+'.page-gray-200': { pageIndicatorColor: '#e4e4e7' }
+'.page-gray-300': { pageIndicatorColor: '#d4d4d8' }
+'.page-gray-400': { pageIndicatorColor: '#a1a1aa' }
+'.page-gray-500': { pageIndicatorColor: '#71717a' }
+'.page-gray-600': { pageIndicatorColor: '#52525b' }
+'.page-gray-700': { pageIndicatorColor: '#3f3f46' }
+'.page-gray-800': { pageIndicatorColor: '#27272a' }
+'.page-gray-900': { pageIndicatorColor: '#18181b' }
+'.page-coolGray-50': { pageIndicatorColor: '#f9fafb' }
+'.page-coolGray-100': { pageIndicatorColor: '#f3f4f6' }
+'.page-coolGray-200': { pageIndicatorColor: '#e5e7eb' }
+'.page-coolGray-300': { pageIndicatorColor: '#d1d5db' }
+'.page-coolGray-400': { pageIndicatorColor: '#9ca3af' }
+'.page-coolGray-500': { pageIndicatorColor: '#6b7280' }
+'.page-coolGray-600': { pageIndicatorColor: '#4b5563' }
+'.page-coolGray-700': { pageIndicatorColor: '#374151' }
+'.page-coolGray-800': { pageIndicatorColor: '#1f2937' }
+'.page-coolGray-900': { pageIndicatorColor: '#111827' }
+'.page-blueGray-50': { pageIndicatorColor: '#f8fafc' }
+'.page-blueGray-100': { pageIndicatorColor: '#f1f5f9' }
+'.page-blueGray-200': { pageIndicatorColor: '#e2e8f0' }
+'.page-blueGray-300': { pageIndicatorColor: '#cbd5e1' }
+'.page-blueGray-400': { pageIndicatorColor: '#94a3b8' }
+'.page-blueGray-500': { pageIndicatorColor: '#64748b' }
+'.page-blueGray-600': { pageIndicatorColor: '#475569' }
+'.page-blueGray-700': { pageIndicatorColor: '#334155' }
+'.page-blueGray-800': { pageIndicatorColor: '#1e293b' }
+'.page-blueGray-900': { pageIndicatorColor: '#0f172a' }
+'.page-rojo': { pageIndicatorColor: '#b0100f' }
+'.page-beige': { pageIndicatorColor: '#f9f5ec' }
+'.page-marron': { pageIndicatorColor: '#800020' }
+'.page-grisNeutroClaro': { pageIndicatorColor: '#CCCCCC' }
+'.page-grisNeutroMediano': { pageIndicatorColor: '#d6d9e8' }
+'.page-grisNeutroOscuro': { pageIndicatorColor: '#d6d9e8' }
+'.page-fondoMenus': { pageIndicatorColor: '#2C2F32' }
+'.page-fondoTablero': { pageIndicatorColor: '#4E5356' }
+'.page-labelTablero': { pageIndicatorColor: '#2C2F32' }
+'.page-fondoVentanaMenus': { pageIndicatorColor: '#3D4144' }
+
+// showPagingControl Property
+'.show-paging': { showPagingControl: true }
+'.hide-paging': { showPagingControl: false }
+
+// pagingControlAlpha Property
+'.paging-alpha-0': { pagingControlAlpha: 0 }
+'.paging-alpha-5': { pagingControlAlpha: 0.05 }
+'.paging-alpha-10': { pagingControlAlpha: 0.1 }
+'.paging-alpha-20': { pagingControlAlpha: 0.2 }
+'.paging-alpha-25': { pagingControlAlpha: 0.25 }
+'.paging-alpha-30': { pagingControlAlpha: 0.3 }
+'.paging-alpha-40': { pagingControlAlpha: 0.4 }
+'.paging-alpha-50': { pagingControlAlpha: 0.5 }
+'.paging-alpha-60': { pagingControlAlpha: 0.6 }
+'.paging-alpha-70': { pagingControlAlpha: 0.7 }
+'.paging-alpha-75': { pagingControlAlpha: 0.75 }
+'.paging-alpha-80': { pagingControlAlpha: 0.8 }
+'.paging-alpha-90': { pagingControlAlpha: 0.9 }
+'.paging-alpha-95': { pagingControlAlpha: 0.95 }
+'.paging-alpha-100': { pagingControlAlpha: 1 }
+
+// pagingControlColor Property
+'.paging-transparent': { pagingControlColor: 'transparent' }
+'.paging-black': { pagingControlColor: '#000000' }
+'.paging-white': { pagingControlColor: '#ffffff' }
+'.paging-rose-50': { pagingControlColor: '#fff1f2' }
+'.paging-rose-100': { pagingControlColor: '#ffe4e6' }
+'.paging-rose-200': { pagingControlColor: '#fecdd3' }
+'.paging-rose-300': { pagingControlColor: '#fda4af' }
+'.paging-rose-400': { pagingControlColor: '#fb7185' }
+'.paging-rose-500': { pagingControlColor: '#f43f5e' }
+'.paging-rose-600': { pagingControlColor: '#e11d48' }
+'.paging-rose-700': { pagingControlColor: '#be123c' }
+'.paging-rose-800': { pagingControlColor: '#9f1239' }
+'.paging-rose-900': { pagingControlColor: '#881337' }
+'.paging-pink-50': { pagingControlColor: '#fdf2f8' }
+'.paging-pink-100': { pagingControlColor: '#fce7f3' }
+'.paging-pink-200': { pagingControlColor: '#fbcfe8' }
+'.paging-pink-300': { pagingControlColor: '#f9a8d4' }
+'.paging-pink-400': { pagingControlColor: '#f472b6' }
+'.paging-pink-500': { pagingControlColor: '#ec4899' }
+'.paging-pink-600': { pagingControlColor: '#db2777' }
+'.paging-pink-700': { pagingControlColor: '#be185d' }
+'.paging-pink-800': { pagingControlColor: '#9d174d' }
+'.paging-pink-900': { pagingControlColor: '#831843' }
+'.paging-fuchsia-50': { pagingControlColor: '#fdf4ff' }
+'.paging-fuchsia-100': { pagingControlColor: '#fae8ff' }
+'.paging-fuchsia-200': { pagingControlColor: '#f5d0fe' }
+'.paging-fuchsia-300': { pagingControlColor: '#f0abfc' }
+'.paging-fuchsia-400': { pagingControlColor: '#e879f9' }
+'.paging-fuchsia-500': { pagingControlColor: '#d946ef' }
+'.paging-fuchsia-600': { pagingControlColor: '#c026d3' }
+'.paging-fuchsia-700': { pagingControlColor: '#a21caf' }
+'.paging-fuchsia-800': { pagingControlColor: '#86198f' }
+'.paging-fuchsia-900': { pagingControlColor: '#701a75' }
+'.paging-purple-50': { pagingControlColor: '#faf5ff' }
+'.paging-purple-100': { pagingControlColor: '#f3e8ff' }
+'.paging-purple-200': { pagingControlColor: '#e9d5ff' }
+'.paging-purple-300': { pagingControlColor: '#d8b4fe' }
+'.paging-purple-400': { pagingControlColor: '#c084fc' }
+'.paging-purple-500': { pagingControlColor: '#a855f7' }
+'.paging-purple-600': { pagingControlColor: '#9333ea' }
+'.paging-purple-700': { pagingControlColor: '#7e22ce' }
+'.paging-purple-800': { pagingControlColor: '#6b21a8' }
+'.paging-purple-900': { pagingControlColor: '#581c87' }
+'.paging-violet-50': { pagingControlColor: '#f5f3ff' }
+'.paging-violet-100': { pagingControlColor: '#ede9fe' }
+'.paging-violet-200': { pagingControlColor: '#ddd6fe' }
+'.paging-violet-300': { pagingControlColor: '#c4b5fd' }
+'.paging-violet-400': { pagingControlColor: '#a78bfa' }
+'.paging-violet-500': { pagingControlColor: '#8b5cf6' }
+'.paging-violet-600': { pagingControlColor: '#7c3aed' }
+'.paging-violet-700': { pagingControlColor: '#6d28d9' }
+'.paging-violet-800': { pagingControlColor: '#5b21b6' }
+'.paging-violet-900': { pagingControlColor: '#4c1d95' }
+'.paging-indigo-50': { pagingControlColor: '#eef2ff' }
+'.paging-indigo-100': { pagingControlColor: '#e0e7ff' }
+'.paging-indigo-200': { pagingControlColor: '#c7d2fe' }
+'.paging-indigo-300': { pagingControlColor: '#a5b4fc' }
+'.paging-indigo-400': { pagingControlColor: '#818cf8' }
+'.paging-indigo-500': { pagingControlColor: '#6366f1' }
+'.paging-indigo-600': { pagingControlColor: '#4f46e5' }
+'.paging-indigo-700': { pagingControlColor: '#4338ca' }
+'.paging-indigo-800': { pagingControlColor: '#3730a3' }
+'.paging-indigo-900': { pagingControlColor: '#312e81' }
+'.paging-blue-50': { pagingControlColor: '#eff6ff' }
+'.paging-blue-100': { pagingControlColor: '#dbeafe' }
+'.paging-blue-200': { pagingControlColor: '#bfdbfe' }
+'.paging-blue-300': { pagingControlColor: '#93c5fd' }
+'.paging-blue-400': { pagingControlColor: '#60a5fa' }
+'.paging-blue-500': { pagingControlColor: '#3b82f6' }
+'.paging-blue-600': { pagingControlColor: '#2563eb' }
+'.paging-blue-700': { pagingControlColor: '#1d4ed8' }
+'.paging-blue-800': { pagingControlColor: '#1e40af' }
+'.paging-blue-900': { pagingControlColor: '#1e3a8a' }
+'.paging-sky-50': { pagingControlColor: '#f0f9ff' }
+'.paging-sky-100': { pagingControlColor: '#e0f2fe' }
+'.paging-sky-200': { pagingControlColor: '#bae6fd' }
+'.paging-sky-300': { pagingControlColor: '#7dd3fc' }
+'.paging-sky-400': { pagingControlColor: '#38bdf8' }
+'.paging-sky-500': { pagingControlColor: '#0ea5e9' }
+'.paging-sky-600': { pagingControlColor: '#0284c7' }
+'.paging-sky-700': { pagingControlColor: '#0369a1' }
+'.paging-sky-800': { pagingControlColor: '#075985' }
+'.paging-sky-900': { pagingControlColor: '#0c4a6e' }
+'.paging-cyan-50': { pagingControlColor: '#ecfeff' }
+'.paging-cyan-100': { pagingControlColor: '#cffafe' }
+'.paging-cyan-200': { pagingControlColor: '#a5f3fc' }
+'.paging-cyan-300': { pagingControlColor: '#67e8f9' }
+'.paging-cyan-400': { pagingControlColor: '#22d3ee' }
+'.paging-cyan-500': { pagingControlColor: '#06b6d4' }
+'.paging-cyan-600': { pagingControlColor: '#0891b2' }
+'.paging-cyan-700': { pagingControlColor: '#0e7490' }
+'.paging-cyan-800': { pagingControlColor: '#155e75' }
+'.paging-cyan-900': { pagingControlColor: '#164e63' }
+'.paging-teal-50': { pagingControlColor: '#f0fdfa' }
+'.paging-teal-100': { pagingControlColor: '#ccfbf1' }
+'.paging-teal-200': { pagingControlColor: '#99f6e4' }
+'.paging-teal-300': { pagingControlColor: '#5eead4' }
+'.paging-teal-400': { pagingControlColor: '#2dd4bf' }
+'.paging-teal-500': { pagingControlColor: '#14b8a6' }
+'.paging-teal-600': { pagingControlColor: '#0d9488' }
+'.paging-teal-700': { pagingControlColor: '#0f766e' }
+'.paging-teal-800': { pagingControlColor: '#115e59' }
+'.paging-teal-900': { pagingControlColor: '#134e4a' }
+'.paging-emerald-50': { pagingControlColor: '#ecfdf5' }
+'.paging-emerald-100': { pagingControlColor: '#d1fae5' }
+'.paging-emerald-200': { pagingControlColor: '#a7f3d0' }
+'.paging-emerald-300': { pagingControlColor: '#6ee7b7' }
+'.paging-emerald-400': { pagingControlColor: '#34d399' }
+'.paging-emerald-500': { pagingControlColor: '#10b981' }
+'.paging-emerald-600': { pagingControlColor: '#059669' }
+'.paging-emerald-700': { pagingControlColor: '#047857' }
+'.paging-emerald-800': { pagingControlColor: '#065f46' }
+'.paging-emerald-900': { pagingControlColor: '#064e3b' }
+'.paging-green-50': { pagingControlColor: '#f0fdf4' }
+'.paging-green-100': { pagingControlColor: '#dcfce7' }
+'.paging-green-200': { pagingControlColor: '#bbf7d0' }
+'.paging-green-300': { pagingControlColor: '#86efac' }
+'.paging-green-400': { pagingControlColor: '#4ade80' }
+'.paging-green-500': { pagingControlColor: '#22c55e' }
+'.paging-green-600': { pagingControlColor: '#16a34a' }
+'.paging-green-700': { pagingControlColor: '#15803d' }
+'.paging-green-800': { pagingControlColor: '#166534' }
+'.paging-green-900': { pagingControlColor: '#14532d' }
+'.paging-lime-50': { pagingControlColor: '#f7fee7' }
+'.paging-lime-100': { pagingControlColor: '#ecfccb' }
+'.paging-lime-200': { pagingControlColor: '#d9f99d' }
+'.paging-lime-300': { pagingControlColor: '#bef264' }
+'.paging-lime-400': { pagingControlColor: '#a3e635' }
+'.paging-lime-500': { pagingControlColor: '#84cc16' }
+'.paging-lime-600': { pagingControlColor: '#65a30d' }
+'.paging-lime-700': { pagingControlColor: '#4d7c0f' }
+'.paging-lime-800': { pagingControlColor: '#3f6212' }
+'.paging-lime-900': { pagingControlColor: '#365314' }
+'.paging-yellow-50': { pagingControlColor: '#fefce8' }
+'.paging-yellow-100': { pagingControlColor: '#fef9c3' }
+'.paging-yellow-200': { pagingControlColor: '#fef08a' }
+'.paging-yellow-300': { pagingControlColor: '#fde047' }
+'.paging-yellow-400': { pagingControlColor: '#facc15' }
+'.paging-yellow-500': { pagingControlColor: '#eab308' }
+'.paging-yellow-600': { pagingControlColor: '#ca8a04' }
+'.paging-yellow-700': { pagingControlColor: '#a16207' }
+'.paging-yellow-800': { pagingControlColor: '#854d0e' }
+'.paging-yellow-900': { pagingControlColor: '#713f12' }
+'.paging-amber-50': { pagingControlColor: '#fffbeb' }
+'.paging-amber-100': { pagingControlColor: '#fef3c7' }
+'.paging-amber-200': { pagingControlColor: '#fde68a' }
+'.paging-amber-300': { pagingControlColor: '#fcd34d' }
+'.paging-amber-400': { pagingControlColor: '#fbbf24' }
+'.paging-amber-500': { pagingControlColor: '#f59e0b' }
+'.paging-amber-600': { pagingControlColor: '#d97706' }
+'.paging-amber-700': { pagingControlColor: '#b45309' }
+'.paging-amber-800': { pagingControlColor: '#92400e' }
+'.paging-amber-900': { pagingControlColor: '#78350f' }
+'.paging-orange-50': { pagingControlColor: '#fff7ed' }
+'.paging-orange-100': { pagingControlColor: '#ffedd5' }
+'.paging-orange-200': { pagingControlColor: '#fed7aa' }
+'.paging-orange-300': { pagingControlColor: '#fdba74' }
+'.paging-orange-400': { pagingControlColor: '#fb923c' }
+'.paging-orange-500': { pagingControlColor: '#f97316' }
+'.paging-orange-600': { pagingControlColor: '#ea580c' }
+'.paging-orange-700': { pagingControlColor: '#c2410c' }
+'.paging-orange-800': { pagingControlColor: '#9a3412' }
+'.paging-orange-900': { pagingControlColor: '#7c2d12' }
+'.paging-red-50': { pagingControlColor: '#fef2f2' }
+'.paging-red-100': { pagingControlColor: '#fee2e2' }
+'.paging-red-200': { pagingControlColor: '#fecaca' }
+'.paging-red-300': { pagingControlColor: '#fca5a5' }
+'.paging-red-400': { pagingControlColor: '#f87171' }
+'.paging-red-500': { pagingControlColor: '#ef4444' }
+'.paging-red-600': { pagingControlColor: '#dc2626' }
+'.paging-red-700': { pagingControlColor: '#b91c1c' }
+'.paging-red-800': { pagingControlColor: '#991b1b' }
+'.paging-red-900': { pagingControlColor: '#7f1d1d' }
+'.paging-warmGray-50': { pagingControlColor: '#fafaf9' }
+'.paging-warmGray-100': { pagingControlColor: '#f5f5f4' }
+'.paging-warmGray-200': { pagingControlColor: '#e7e5e4' }
+'.paging-warmGray-300': { pagingControlColor: '#d6d3d1' }
+'.paging-warmGray-400': { pagingControlColor: '#a8a29e' }
+'.paging-warmGray-500': { pagingControlColor: '#78716c' }
+'.paging-warmGray-600': { pagingControlColor: '#57534e' }
+'.paging-warmGray-700': { pagingControlColor: '#44403c' }
+'.paging-warmGray-800': { pagingControlColor: '#292524' }
+'.paging-warmGray-900': { pagingControlColor: '#1c1917' }
+'.paging-trueGray-50': { pagingControlColor: '#fafafa' }
+'.paging-trueGray-100': { pagingControlColor: '#f5f5f5' }
+'.paging-trueGray-200': { pagingControlColor: '#e5e5e5' }
+'.paging-trueGray-300': { pagingControlColor: '#d4d4d4' }
+'.paging-trueGray-400': { pagingControlColor: '#a3a3a3' }
+'.paging-trueGray-500': { pagingControlColor: '#737373' }
+'.paging-trueGray-600': { pagingControlColor: '#525252' }
+'.paging-trueGray-700': { pagingControlColor: '#404040' }
+'.paging-trueGray-800': { pagingControlColor: '#262626' }
+'.paging-trueGray-900': { pagingControlColor: '#171717' }
+'.paging-gray-50': { pagingControlColor: '#fafafa' }
+'.paging-gray-100': { pagingControlColor: '#f4f4f5' }
+'.paging-gray-200': { pagingControlColor: '#e4e4e7' }
+'.paging-gray-300': { pagingControlColor: '#d4d4d8' }
+'.paging-gray-400': { pagingControlColor: '#a1a1aa' }
+'.paging-gray-500': { pagingControlColor: '#71717a' }
+'.paging-gray-600': { pagingControlColor: '#52525b' }
+'.paging-gray-700': { pagingControlColor: '#3f3f46' }
+'.paging-gray-800': { pagingControlColor: '#27272a' }
+'.paging-gray-900': { pagingControlColor: '#18181b' }
+'.paging-coolGray-50': { pagingControlColor: '#f9fafb' }
+'.paging-coolGray-100': { pagingControlColor: '#f3f4f6' }
+'.paging-coolGray-200': { pagingControlColor: '#e5e7eb' }
+'.paging-coolGray-300': { pagingControlColor: '#d1d5db' }
+'.paging-coolGray-400': { pagingControlColor: '#9ca3af' }
+'.paging-coolGray-500': { pagingControlColor: '#6b7280' }
+'.paging-coolGray-600': { pagingControlColor: '#4b5563' }
+'.paging-coolGray-700': { pagingControlColor: '#374151' }
+'.paging-coolGray-800': { pagingControlColor: '#1f2937' }
+'.paging-coolGray-900': { pagingControlColor: '#111827' }
+'.paging-blueGray-50': { pagingControlColor: '#f8fafc' }
+'.paging-blueGray-100': { pagingControlColor: '#f1f5f9' }
+'.paging-blueGray-200': { pagingControlColor: '#e2e8f0' }
+'.paging-blueGray-300': { pagingControlColor: '#cbd5e1' }
+'.paging-blueGray-400': { pagingControlColor: '#94a3b8' }
+'.paging-blueGray-500': { pagingControlColor: '#64748b' }
+'.paging-blueGray-600': { pagingControlColor: '#475569' }
+'.paging-blueGray-700': { pagingControlColor: '#334155' }
+'.paging-blueGray-800': { pagingControlColor: '#1e293b' }
+'.paging-blueGray-900': { pagingControlColor: '#0f172a' }
+'.paging-rojo': { pagingControlColor: '#b0100f' }
+'.paging-beige': { pagingControlColor: '#f9f5ec' }
+'.paging-marron': { pagingControlColor: '#800020' }
+'.paging-grisNeutroClaro': { pagingControlColor: '#CCCCCC' }
+'.paging-grisNeutroMediano': { pagingControlColor: '#d6d9e8' }
+'.paging-grisNeutroOscuro': { pagingControlColor: '#d6d9e8' }
+'.paging-fondoMenus': { pagingControlColor: '#2C2F32' }
+'.paging-fondoTablero': { pagingControlColor: '#4E5356' }
+'.paging-labelTablero': { pagingControlColor: '#2C2F32' }
+'.paging-fondoVentanaMenus': { pagingControlColor: '#3D4144' }
+
+// pagingControlHeight Property
+'.paging-h-0': { pagingControlHeight: 0 }
+'.paging-h-1': { pagingControlHeight: 4 }
+'.paging-h-2': { pagingControlHeight: 8 }
+'.paging-h-3': { pagingControlHeight: 12 }
+'.paging-h-4': { pagingControlHeight: 16 }
+'.paging-h-5': { pagingControlHeight: 20 }
+'.paging-h-6': { pagingControlHeight: 24 }
+'.paging-h-7': { pagingControlHeight: 28 }
+'.paging-h-8': { pagingControlHeight: 32 }
+'.paging-h-9': { pagingControlHeight: 36 }
+'.paging-h-10': { pagingControlHeight: 40 }
+'.paging-h-11': { pagingControlHeight: 44 }
+'.paging-h-12': { pagingControlHeight: 48 }
+'.paging-h-13': { pagingControlHeight: 52 }
+'.paging-h-14': { pagingControlHeight: 56 }
+'.paging-h-15': { pagingControlHeight: 60 }
+'.paging-h-16': { pagingControlHeight: 64 }
+'.paging-h-20': { pagingControlHeight: 80 }
+'.paging-h-24': { pagingControlHeight: 96 }
+'.paging-h-28': { pagingControlHeight: 112 }
+'.paging-h-32': { pagingControlHeight: 128 }
+'.paging-h-36': { pagingControlHeight: 144 }
+'.paging-h-40': { pagingControlHeight: 160 }
+'.paging-h-44': { pagingControlHeight: 176 }
+'.paging-h-48': { pagingControlHeight: 192 }
+'.paging-h-52': { pagingControlHeight: 208 }
+'.paging-h-56': { pagingControlHeight: 224 }
+'.paging-h-60': { pagingControlHeight: 240 }
+'.paging-h-64': { pagingControlHeight: 256 }
+'.paging-h-72': { pagingControlHeight: 288 }
+'.paging-h-80': { pagingControlHeight: 320 }
+'.paging-h-96': { pagingControlHeight: 384 }
+'.paging-h-px': { pagingControlHeight: '1px' }
+'.paging-h-0.5': { pagingControlHeight: 2 }
+'.paging-h-1.5': { pagingControlHeight: 6 }
+'.paging-h-2.5': { pagingControlHeight: 10 }
+'.paging-h-3.5': { pagingControlHeight: 14 }
+
+// pagingControlOnTop Property
+'.paging-on-top': { pagingControlOnTop: true }
+'.paging-on-bottom': { pagingControlOnTop: false }
+
+// pagingControlTimeout Property
+'.paging-timeout-0': { pagingControlTimeout: 0 }
+'.paging-timeout-25': { pagingControlTimeout: 25 }
+'.paging-timeout-50': { pagingControlTimeout: 50 }
+'.paging-timeout-75': { pagingControlTimeout: 75 }
+'.paging-timeout-100': { pagingControlTimeout: 100 }
+'.paging-timeout-150': { pagingControlTimeout: 150 }
+'.paging-timeout-200': { pagingControlTimeout: 200 }
+'.paging-timeout-300': { pagingControlTimeout: 300 }
+'.paging-timeout-500': { pagingControlTimeout: 500 }
+'.paging-timeout-700': { pagingControlTimeout: 700 }
+'.paging-timeout-1000': { pagingControlTimeout: 1000 }
+'.paging-timeout-2000': { pagingControlTimeout: 2000 }
+'.paging-timeout-3000': { pagingControlTimeout: 3000 }
+'.paging-timeout-4000': { pagingControlTimeout: 4000 }
+'.paging-timeout-5000': { pagingControlTimeout: 5000 }
 
 // hintTextColor Property
 '.placeholder-transparent': { hintTextColor: 'transparent' }
@@ -2751,16 +3980,16 @@
 '.placeholder-blue-700': { hintTextColor: '#1d4ed8' }
 '.placeholder-blue-800': { hintTextColor: '#1e40af' }
 '.placeholder-blue-900': { hintTextColor: '#1e3a8a' }
-'.placeholder-lightBlue-50': { hintTextColor: '#f0f9ff' }
-'.placeholder-lightBlue-100': { hintTextColor: '#e0f2fe' }
-'.placeholder-lightBlue-200': { hintTextColor: '#bae6fd' }
-'.placeholder-lightBlue-300': { hintTextColor: '#7dd3fc' }
-'.placeholder-lightBlue-400': { hintTextColor: '#38bdf8' }
-'.placeholder-lightBlue-500': { hintTextColor: '#0ea5e9' }
-'.placeholder-lightBlue-600': { hintTextColor: '#0284c7' }
-'.placeholder-lightBlue-700': { hintTextColor: '#0369a1' }
-'.placeholder-lightBlue-800': { hintTextColor: '#075985' }
-'.placeholder-lightBlue-900': { hintTextColor: '#0c4a6e' }
+'.placeholder-sky-50': { hintTextColor: '#f0f9ff' }
+'.placeholder-sky-100': { hintTextColor: '#e0f2fe' }
+'.placeholder-sky-200': { hintTextColor: '#bae6fd' }
+'.placeholder-sky-300': { hintTextColor: '#7dd3fc' }
+'.placeholder-sky-400': { hintTextColor: '#38bdf8' }
+'.placeholder-sky-500': { hintTextColor: '#0ea5e9' }
+'.placeholder-sky-600': { hintTextColor: '#0284c7' }
+'.placeholder-sky-700': { hintTextColor: '#0369a1' }
+'.placeholder-sky-800': { hintTextColor: '#075985' }
+'.placeholder-sky-900': { hintTextColor: '#0c4a6e' }
 '.placeholder-cyan-50': { hintTextColor: '#ecfeff' }
 '.placeholder-cyan-100': { hintTextColor: '#cffafe' }
 '.placeholder-cyan-200': { hintTextColor: '#a5f3fc' }
@@ -2901,38 +4130,121 @@
 '.placeholder-blueGray-700': { hintTextColor: '#334155' }
 '.placeholder-blueGray-800': { hintTextColor: '#1e293b' }
 '.placeholder-blueGray-900': { hintTextColor: '#0f172a' }
+'.placeholder-rojo': { hintTextColor: '#b0100f' }
+'.placeholder-beige': { hintTextColor: '#f9f5ec' }
+'.placeholder-marron': { hintTextColor: '#800020' }
+'.placeholder-grisNeutroClaro': { hintTextColor: '#CCCCCC' }
+'.placeholder-grisNeutroMediano': { hintTextColor: '#d6d9e8' }
+'.placeholder-grisNeutroOscuro': { hintTextColor: '#d6d9e8' }
+'.placeholder-fondoMenus': { hintTextColor: '#2C2F32' }
+'.placeholder-fondoTablero': { hintTextColor: '#4E5356' }
+'.placeholder-labelTablero': { hintTextColor: '#2C2F32' }
+'.placeholder-fondoVentanaMenus': { hintTextColor: '#3D4144' }
 
 // Top / Right / Bottom / Left
 '.top-0': { top: 0 }
 '.left-0': { left: 0 }
 '.right-0': { right: 0 }
 '.bottom-0': { bottom: 0 }
-'.top-auto': { top: null }
-'.left-auto': { left: null }
-'.right-auto': { right: null }
-'.bottom-auto': { bottom: null }
-'.inset-0': { top: 0, right: 0, bottom: 0, left: 0 }
-'.inset-y-0': { top: 0, bottom: 0 }
+'.top-auto': { top: Ti.UI.SIZE }
+'.left-auto': { left: Ti.UI.SIZE }
+'.right-auto': { right: Ti.UI.SIZE }
+'.bottom-auto': { bottom: Ti.UI.SIZE }
 '.inset-x-0': { right: 0, left: 0 }
-'.inset-auto': { top: null, right: null, bottom: null, left: null }
-'.inset-y-auto': { top: null, bottom: null }
-'.inset-x-auto': { right: null, left: null }
+'.inset-y-0': { top: 0, bottom: 0 }
+'.inset-0': { top: 0, right: 0, bottom: 0, left: 0 }
+'.inset-x-auto': { right: Ti.UI.SIZE, left: Ti.UI.SIZE }
+'.inset-y-auto': { top: Ti.UI.SIZE, bottom: Ti.UI.SIZE }
+'.inset-auto': { top: Ti.UI.SIZE, right: Ti.UI.SIZE, bottom: Ti.UI.SIZE, left: Ti.UI.SIZE }
+
+// Ti.Platform Property
+'.platform-w': { width: Ti.Platform.displayCaps.platformWidth }
+'.platform-h': { height: Ti.Platform.displayCaps.platformHeight }
+'.inverted-platform-w': { width: Ti.Platform.displayCaps.platformHeight }
+'.inverted-platform-h': { height: Ti.Platform.displayCaps.platformWidth }
+'.inverted-platform-w[platform=android]': { width: Ti.Platform.displayCaps.platformWidth }
+'.inverted-platform-h[platform=android]': { height: Ti.Platform.displayCaps.platformHeight }
+
+// Radial backgroundGradient Property [iOS]
+'.bg-radial[platform=ios]': { backgroundGradient: { type: 'radial', startRadius: '125%', endRadius: '0%', backfillStart: true, backfillEnd: true } }
+'.bg-radial-to-b[platform=ios]': { backgroundGradient: { type: 'radial', startPoint: { x: '50%', y: '0%' }, endPoint: { x: '50%', y: '0%' }, startRadius: '150%', endRadius: '0%', backfillStart: true, backfillEnd: true } }
+'.bg-radial-to-bl[platform=ios]': { backgroundGradient: { type: 'radial', startPoint: { x: '100%', y: '0%' }, endPoint: { x: '100%', y: '0%' }, startRadius: '150%', endRadius: '0%', backfillStart: true, backfillEnd: true } }
+'.bg-radial-to-l[platform=ios]': { backgroundGradient: { type: 'radial', startPoint: { x: '100%', y: '50%' }, endPoint: { x: '100%', y: '50%' }, startRadius: '150%', endRadius: '0%', backfillStart: true, backfillEnd: true } }
+'.bg-radial-to-tl[platform=ios]': { backgroundGradient: { type: 'radial', startPoint: { x: '100%', y: '100%' }, endPoint: { x: '100%', y: '100%' }, startRadius: '150%', endRadius: '0%', backfillStart: true, backfillEnd: true } }
+'.bg-radial-to-t[platform=ios]': { backgroundGradient: { type: 'radial', startPoint: { x: '50%', y: '100%' }, endPoint: { x: '50%', y: '100%' }, startRadius: '150%', endRadius: '0%', backfillStart: true, backfillEnd: true } }
+'.bg-radial-to-tr[platform=ios]': { backgroundGradient: { type: 'radial', startPoint: { x: '0%', y: '100%' }, endPoint: { x: '0%', y: '100%' }, startRadius: '150%', endRadius: '0%', backfillStart: true, backfillEnd: true } }
+'.bg-radial-to-r[platform=ios]': { backgroundGradient: { type: 'radial', startPoint: { x: '0%', y: '50%' }, endPoint: { x: '0%', y: '50%' }, startRadius: '150%', endRadius: '0%', backfillStart: true, backfillEnd: true } }
+'.bg-radial-to-br[platform=ios]': { backgroundGradient: { type: 'radial', startPoint: { x: '0%', y: '0%' }, endPoint: { x: '0%', y: '0%' }, startRadius: '150%', endRadius: '0%', backfillStart: true, backfillEnd: true } }
+
+// repeat Property
+'.repeat-1': { repeat: 1 }
+'.repeat-2': { repeat: 2 }
+'.repeat-3': { repeat: 3 }
+'.repeat-4': { repeat: 4 }
+'.repeat-5': { repeat: 5 }
+'.repeat-6': { repeat: 6 }
+'.repeat-7': { repeat: 7 }
+'.repeat-8': { repeat: 8 }
+'.repeat-9': { repeat: 9 }
+'.repeat-10': { repeat: 10 }
+
+// rotate Property
+'.rotate-0': { rotate: 0 }
+'.rotate-1': { rotate: 1 }
+'.rotate-2': { rotate: 2 }
+'.rotate-3': { rotate: 3 }
+'.rotate-6': { rotate: 6 }
+'.rotate-12': { rotate: 12 }
+'.rotate-45': { rotate: 45 }
+'.rotate-90': { rotate: 90 }
+'.rotate-180': { rotate: 180 }
+'.-rotate-180': { rotate: -180 }
+'.-rotate-90': { rotate: -90 }
+'.-rotate-45': { rotate: -45 }
+'.-rotate-12': { rotate: -12 }
+'.-rotate-6': { rotate: -6 }
+'.-rotate-3': { rotate: -3 }
+'.-rotate-2': { rotate: -2 }
+'.-rotate-1': { rotate: -1 }
+
+// scale Property
+'.scale-0': { scale: '0' }
+'.scale-5': { scale: '0.05' }
+'.scale-10': { scale: '0.1' }
+'.scale-25': { scale: '0.25' }
+'.scale-50': { scale: '.5' }
+'.scale-75': { scale: '.75' }
+'.scale-90': { scale: '.9' }
+'.scale-95': { scale: '.95' }
+'.scale-100': { scale: '1' }
+'.scale-105': { scale: '1.05' }
+'.scale-110': { scale: '1.1' }
+'.scale-125': { scale: '1.25' }
+'.scale-150': { scale: '1.5' }
 
 // Scroll Indicators ( for ScrollViews )
+'.overflow-x-scroll': { showHorizontalScrollIndicator: true }
+'.overflow-y-scroll': { showVerticalScrollIndicator: true }
+'.overflow-x-hidden': { showHorizontalScrollIndicator: false }
+'.overflow-y-hidden': { showVerticalScrollIndicator: false }
 '.overflow-scroll': { showHorizontalScrollIndicator: true, showVerticalScrollIndicator: true }
 '.overflow-hidden': { showHorizontalScrollIndicator: false, showVerticalScrollIndicator: false }
-'.overflow-x-scroll': { showHorizontalScrollIndicator: true }
-'.overflow-x-hidden': { showHorizontalScrollIndicator: false }
-'.overflow-y-scroll': { showVerticalScrollIndicator: true }
-'.overflow-y-hidden': { showVerticalScrollIndicator: false }
 
-// Content Width & Height ( for ScrollViews )
-'.content-auto': { contentWidth: Ti.UI.SIZE, contentHeight: Ti.UI.SIZE }
-'.content-screen': { contentWidth: Ti.UI.FILL, contentHeight: Ti.UI.FILL }
+// scrollType Property
+'.scroll-horizontal[platform=android]': { scrollType: 'horizontal' }
+'.scroll-vertical[platform=android]': { scrollType: 'vertical' }
+
+// contentWidth & contentHeight ( for ScrollViews )
 '.content-w-auto': { contentWidth: Ti.UI.SIZE }
 '.content-w-screen': { contentWidth: Ti.UI.FILL }
 '.content-h-auto': { contentHeight: Ti.UI.SIZE }
 '.content-h-screen': { contentHeight: Ti.UI.FILL }
+'.content-auto': { contentWidth: Ti.UI.SIZE, contentHeight: Ti.UI.SIZE }
+'.content-screen': { contentWidth: Ti.UI.FILL, contentHeight: Ti.UI.FILL }
+
+// scrollingEnabled Property
+'.scrolling-enabled': { scrollingEnabled: true }
+'.scrolling-disabled': { scrollingEnabled: false }
 
 // Box Shadow
 '.shadow-xs': { viewShadowOffset: { x: 0, y: 0 }, viewShadowRadius: 1, viewShadowColor: '#80000000' }
@@ -3026,16 +4338,16 @@
 '.text-blue-700': { color: '#1d4ed8' }
 '.text-blue-800': { color: '#1e40af' }
 '.text-blue-900': { color: '#1e3a8a' }
-'.text-lightBlue-50': { color: '#f0f9ff' }
-'.text-lightBlue-100': { color: '#e0f2fe' }
-'.text-lightBlue-200': { color: '#bae6fd' }
-'.text-lightBlue-300': { color: '#7dd3fc' }
-'.text-lightBlue-400': { color: '#38bdf8' }
-'.text-lightBlue-500': { color: '#0ea5e9' }
-'.text-lightBlue-600': { color: '#0284c7' }
-'.text-lightBlue-700': { color: '#0369a1' }
-'.text-lightBlue-800': { color: '#075985' }
-'.text-lightBlue-900': { color: '#0c4a6e' }
+'.text-sky-50': { color: '#f0f9ff' }
+'.text-sky-100': { color: '#e0f2fe' }
+'.text-sky-200': { color: '#bae6fd' }
+'.text-sky-300': { color: '#7dd3fc' }
+'.text-sky-400': { color: '#38bdf8' }
+'.text-sky-500': { color: '#0ea5e9' }
+'.text-sky-600': { color: '#0284c7' }
+'.text-sky-700': { color: '#0369a1' }
+'.text-sky-800': { color: '#075985' }
+'.text-sky-900': { color: '#0c4a6e' }
 '.text-cyan-50': { color: '#ecfeff' }
 '.text-cyan-100': { color: '#cffafe' }
 '.text-cyan-200': { color: '#a5f3fc' }
@@ -3176,6 +4488,16 @@
 '.text-blueGray-700': { color: '#334155' }
 '.text-blueGray-800': { color: '#1e293b' }
 '.text-blueGray-900': { color: '#0f172a' }
+'.text-rojo': { color: '#b0100f' }
+'.text-beige': { color: '#f9f5ec' }
+'.text-marron': { color: '#800020' }
+'.text-grisNeutroClaro': { color: '#CCCCCC' }
+'.text-grisNeutroMediano': { color: '#d6d9e8' }
+'.text-grisNeutroOscuro': { color: '#d6d9e8' }
+'.text-fondoMenus': { color: '#2C2F32' }
+'.text-fondoTablero': { color: '#4E5356' }
+'.text-labelTablero': { color: '#2C2F32' }
+'.text-fondoVentanaMenus': { color: '#3D4144' }
 
 // tintColor Property
 '.tint-transparent': { tintColor: 'transparent' }
@@ -3251,16 +4573,16 @@
 '.tint-blue-700': { tintColor: '#1d4ed8' }
 '.tint-blue-800': { tintColor: '#1e40af' }
 '.tint-blue-900': { tintColor: '#1e3a8a' }
-'.tint-lightBlue-50': { tintColor: '#f0f9ff' }
-'.tint-lightBlue-100': { tintColor: '#e0f2fe' }
-'.tint-lightBlue-200': { tintColor: '#bae6fd' }
-'.tint-lightBlue-300': { tintColor: '#7dd3fc' }
-'.tint-lightBlue-400': { tintColor: '#38bdf8' }
-'.tint-lightBlue-500': { tintColor: '#0ea5e9' }
-'.tint-lightBlue-600': { tintColor: '#0284c7' }
-'.tint-lightBlue-700': { tintColor: '#0369a1' }
-'.tint-lightBlue-800': { tintColor: '#075985' }
-'.tint-lightBlue-900': { tintColor: '#0c4a6e' }
+'.tint-sky-50': { tintColor: '#f0f9ff' }
+'.tint-sky-100': { tintColor: '#e0f2fe' }
+'.tint-sky-200': { tintColor: '#bae6fd' }
+'.tint-sky-300': { tintColor: '#7dd3fc' }
+'.tint-sky-400': { tintColor: '#38bdf8' }
+'.tint-sky-500': { tintColor: '#0ea5e9' }
+'.tint-sky-600': { tintColor: '#0284c7' }
+'.tint-sky-700': { tintColor: '#0369a1' }
+'.tint-sky-800': { tintColor: '#075985' }
+'.tint-sky-900': { tintColor: '#0c4a6e' }
 '.tint-cyan-50': { tintColor: '#ecfeff' }
 '.tint-cyan-100': { tintColor: '#cffafe' }
 '.tint-cyan-200': { tintColor: '#a5f3fc' }
@@ -3401,6 +4723,16 @@
 '.tint-blueGray-700': { tintColor: '#334155' }
 '.tint-blueGray-800': { tintColor: '#1e293b' }
 '.tint-blueGray-900': { tintColor: '#0f172a' }
+'.tint-rojo': { tintColor: '#b0100f' }
+'.tint-beige': { tintColor: '#f9f5ec' }
+'.tint-marron': { tintColor: '#800020' }
+'.tint-grisNeutroClaro': { tintColor: '#CCCCCC' }
+'.tint-grisNeutroMediano': { tintColor: '#d6d9e8' }
+'.tint-grisNeutroOscuro': { tintColor: '#d6d9e8' }
+'.tint-fondoMenus': { tintColor: '#2C2F32' }
+'.tint-fondoTablero': { tintColor: '#4E5356' }
+'.tint-labelTablero': { tintColor: '#2C2F32' }
+'.tint-fondoVentanaMenus': { tintColor: '#3D4144' }
 
 // touchFeedbackColor Property
 '.feedback-transparent': { touchFeedback: true, touchFeedbackColor: 'transparent' }
@@ -3476,16 +4808,16 @@
 '.feedback-blue-700': { touchFeedback: true, touchFeedbackColor: '#1d4ed8' }
 '.feedback-blue-800': { touchFeedback: true, touchFeedbackColor: '#1e40af' }
 '.feedback-blue-900': { touchFeedback: true, touchFeedbackColor: '#1e3a8a' }
-'.feedback-lightBlue-50': { touchFeedback: true, touchFeedbackColor: '#f0f9ff' }
-'.feedback-lightBlue-100': { touchFeedback: true, touchFeedbackColor: '#e0f2fe' }
-'.feedback-lightBlue-200': { touchFeedback: true, touchFeedbackColor: '#bae6fd' }
-'.feedback-lightBlue-300': { touchFeedback: true, touchFeedbackColor: '#7dd3fc' }
-'.feedback-lightBlue-400': { touchFeedback: true, touchFeedbackColor: '#38bdf8' }
-'.feedback-lightBlue-500': { touchFeedback: true, touchFeedbackColor: '#0ea5e9' }
-'.feedback-lightBlue-600': { touchFeedback: true, touchFeedbackColor: '#0284c7' }
-'.feedback-lightBlue-700': { touchFeedback: true, touchFeedbackColor: '#0369a1' }
-'.feedback-lightBlue-800': { touchFeedback: true, touchFeedbackColor: '#075985' }
-'.feedback-lightBlue-900': { touchFeedback: true, touchFeedbackColor: '#0c4a6e' }
+'.feedback-sky-50': { touchFeedback: true, touchFeedbackColor: '#f0f9ff' }
+'.feedback-sky-100': { touchFeedback: true, touchFeedbackColor: '#e0f2fe' }
+'.feedback-sky-200': { touchFeedback: true, touchFeedbackColor: '#bae6fd' }
+'.feedback-sky-300': { touchFeedback: true, touchFeedbackColor: '#7dd3fc' }
+'.feedback-sky-400': { touchFeedback: true, touchFeedbackColor: '#38bdf8' }
+'.feedback-sky-500': { touchFeedback: true, touchFeedbackColor: '#0ea5e9' }
+'.feedback-sky-600': { touchFeedback: true, touchFeedbackColor: '#0284c7' }
+'.feedback-sky-700': { touchFeedback: true, touchFeedbackColor: '#0369a1' }
+'.feedback-sky-800': { touchFeedback: true, touchFeedbackColor: '#075985' }
+'.feedback-sky-900': { touchFeedback: true, touchFeedbackColor: '#0c4a6e' }
 '.feedback-cyan-50': { touchFeedback: true, touchFeedbackColor: '#ecfeff' }
 '.feedback-cyan-100': { touchFeedback: true, touchFeedbackColor: '#cffafe' }
 '.feedback-cyan-200': { touchFeedback: true, touchFeedbackColor: '#a5f3fc' }
@@ -3626,6 +4958,57 @@
 '.feedback-blueGray-700': { touchFeedback: true, touchFeedbackColor: '#334155' }
 '.feedback-blueGray-800': { touchFeedback: true, touchFeedbackColor: '#1e293b' }
 '.feedback-blueGray-900': { touchFeedback: true, touchFeedbackColor: '#0f172a' }
+'.feedback-rojo': { touchFeedback: true, touchFeedbackColor: '#b0100f' }
+'.feedback-beige': { touchFeedback: true, touchFeedbackColor: '#f9f5ec' }
+'.feedback-marron': { touchFeedback: true, touchFeedbackColor: '#800020' }
+'.feedback-grisNeutroClaro': { touchFeedback: true, touchFeedbackColor: '#CCCCCC' }
+'.feedback-grisNeutroMediano': { touchFeedback: true, touchFeedbackColor: '#d6d9e8' }
+'.feedback-grisNeutroOscuro': { touchFeedback: true, touchFeedbackColor: '#d6d9e8' }
+'.feedback-fondoMenus': { touchFeedback: true, touchFeedbackColor: '#2C2F32' }
+'.feedback-fondoTablero': { touchFeedback: true, touchFeedbackColor: '#4E5356' }
+'.feedback-labelTablero': { touchFeedback: true, touchFeedbackColor: '#2C2F32' }
+'.feedback-fondoVentanaMenus': { touchFeedback: true, touchFeedbackColor: '#3D4144' }
+
+// curve Property
+'.ease-in': { curve: Ti.UI.ANIMATION_CURVE_EASE_IN }
+'.ease-out': { curve: Ti.UI.ANIMATION_CURVE_EASE_OUT }
+'.ease-linear': { curve: Ti.UI.ANIMATION_CURVE_LINEAR }
+'.ease-in-out': { curve: Ti.UI.ANIMATION_CURVE_EASE_IN_OUT }
+
+// Debug Mode Property
+'.debug-on': { debug: true }
+'.debug-off': { debug: false }
+
+// delay Property
+'.delay-0': { delay: 0 }
+'.delay-25': { delay: 25 }
+'.delay-50': { delay: 50 }
+'.delay-75': { delay: 75 }
+'.delay-100': { delay: 100 }
+'.delay-150': { delay: 150 }
+'.delay-200': { delay: 200 }
+'.delay-300': { delay: 300 }
+'.delay-500': { delay: 500 }
+'.delay-700': { delay: 700 }
+'.delay-1000': { delay: 1000 }
+'.delay-2000': { delay: 2000 }
+'.delay-3000': { delay: 3000 }
+'.delay-4000': { delay: 4000 }
+'.delay-5000': { delay: 5000 }
+
+// duration Property
+'.duration-0': { duration: 0 }
+'.duration-25': { duration: 25 }
+'.duration-50': { duration: 50 }
+'.duration-75': { duration: 75 }
+'.duration-100': { duration: 100 }
+'.duration-150': { duration: 150 }
+'.duration-200': { duration: 200 }
+'.duration-300': { duration: 300 }
+'.duration-500': { duration: 500 }
+'.duration-700': { duration: 700 }
+'.duration-1000': { duration: 1000 }
+'.duration': { duration: 150 }
 
 // verticalAlign Property
 '.align-top': { verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_TOP }
@@ -3671,7 +5054,7 @@
 '.w-2.5': { width: 10 }
 '.w-3.5': { width: 14 }
 '.w-1/2': { width: '50%' }
-'.w-1/3': { width: '33.333333%' }
+'.w-1/3': { width: '33.333334%' }
 '.w-2/3': { width: '66.666667%' }
 '.w-1/4': { width: '25%' }
 '.w-2/4': { width: '50%' }
@@ -3681,21 +5064,29 @@
 '.w-3/5': { width: '60%' }
 '.w-4/5': { width: '80%' }
 '.w-1/6': { width: '16.666667%' }
-'.w-2/6': { width: '33.333333%' }
+'.w-2/6': { width: '33.333334%' }
 '.w-3/6': { width: '50%' }
 '.w-4/6': { width: '66.666667%' }
-'.w-5/6': { width: '83.333333%' }
-'.w-1/12': { width: '8.333333%' }
+'.w-5/6': { width: '83.333334%' }
+'.w-1/12': { width: '8.333334%' }
 '.w-2/12': { width: '16.666667%' }
 '.w-3/12': { width: '25%' }
-'.w-4/12': { width: '33.333333%' }
+'.w-4/12': { width: '33.333334%' }
 '.w-5/12': { width: '41.666667%' }
 '.w-6/12': { width: '50%' }
-'.w-7/12': { width: '58.333333%' }
+'.w-7/12': { width: '58.333334%' }
 '.w-8/12': { width: '66.666667%' }
 '.w-9/12': { width: '75%' }
-'.w-10/12': { width: '83.333333%' }
+'.w-10/12': { width: '83.333334%' }
 '.w-11/12': { width: '91.666667%' }
 '.w-full': { width: '100%' }
 '.w-auto': { width: Ti.UI.SIZE }
 '.w-screen': { width: Ti.UI.FILL }
+
+// zIndex Property
+'.z-0': { zIndex: 0 }
+'.z-10': { zIndex: 10 }
+'.z-20': { zIndex: 20 }
+'.z-30': { zIndex: 30 }
+'.z-40': { zIndex: 40 }
+'.z-50': { zIndex: 50 }
