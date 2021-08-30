@@ -172,10 +172,6 @@
 '.w-auto': { width: Ti.UI.SIZE }
 '.w-screen': { width: Ti.UI.FILL }
 
-// Classes with arbitrary values
-// Property not yet supported: (111)
-// Property not yet supported: (555)
-
 // Default Font Awesome styles
 '.fa':{ font: { fontFamily: 'FontAwesome5Free-Solid' } }
 '.fa-align-left': { text: '\uf036', title: '\uf036' }
