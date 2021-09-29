@@ -1,26 +1,26 @@
 {
-  "name": "tailwind-tss",
-  "version": "1.0.0",
-  "description": "A [Titanium App](https://www.appcelerator.com/mobile-app-development-products/) showcasing [Tailwind CSS](https://tailwindcss.com/) styles applied with [purgeTSS](https://github.com/macCesar/purgeTSS/).",
-  "main": "tailwind.config.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/macCesar/tailwind.tss-sample-app.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/macCesar/tailwind.tss-sample-app/issues"
-  },
-  "homepage": "https://github.com/macCesar/tailwind.tss-sample-app#readme",
-  "devDependencies": {
-    "@tailwindcss/ui": "^0.7.2",
-    "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.5",
-    "tailwindcss": "^2.2.2"
-  }
+	"name": "tailwind-tss",
+	"version": "1.0.0",
+	"description": "A [Titanium App](https://www.appcelerator.com/mobile-app-development-products/) showcasing [Tailwind CSS](https://tailwindcss.com/) styles applied with [purgeTSS](https://github.com/macCesar/purgeTSS/).",
+	"main": "tailwind.config.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/macCesar/tailwind.tss-sample-app.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/macCesar/tailwind.tss-sample-app/issues"
+	},
+	"homepage": "https://github.com/macCesar/tailwind.tss-sample-app#readme",
+	"devDependencies": {
+		"@tailwindcss/ui": "^0.7.2",
+		"autoprefixer": "^10.3.6",
+		"postcss": "^8.3.8",
+		"tailwindcss": "^2.2.16"
+	}
 }
