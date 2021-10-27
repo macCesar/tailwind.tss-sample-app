@@ -1,11 +1,11 @@
-// Tailwind CSS v2.2.16: A utility-first CSS framework for rapidly building custom designs. ( https://tailwindcss.com )
+// Tailwind CSS v2.2.17: A utility-first CSS framework for rapidly building custom designs. ( https://tailwindcss.com )
 // Tailwind UI Plugin v0.7.2 ( https://www.npmjs.com/package/@tailwindcss/ui ).
 // Created by Adam Wathan ( https://twitter.com/adamwathan ).
 
 // Custom Tailwind Styles
 // Generated with purgetss
 // https://github.com/macCesar/purgeTSS
-// Updated At: Thu Aug 05 2021 17:34:22 GMT-0500 (hora de verano central)
+// Updated At: Tue Oct 26 2021 13:44:57 GMT-0500 (hora de verano central)
 
 // Custom Styles and Resets
 'ImageView[platform=ios]': { hires: true }
@@ -240,16 +240,6 @@
 '.bg-blueGray-700': { backgroundColor: '#334155' }
 '.bg-blueGray-800': { backgroundColor: '#1e293b' }
 '.bg-blueGray-900': { backgroundColor: '#0f172a' }
-'.bg-rojo': { backgroundColor: '#b0100f' }
-'.bg-beige': { backgroundColor: '#f9f5ec' }
-'.bg-marron': { backgroundColor: '#800020' }
-'.bg-grisNeutroClaro': { backgroundColor: '#CCCCCC' }
-'.bg-grisNeutroMediano': { backgroundColor: '#d6d9e8' }
-'.bg-grisNeutroOscuro': { backgroundColor: '#d6d9e8' }
-'.bg-fondoMenus': { backgroundColor: '#2C2F32' }
-'.bg-fondoTablero': { backgroundColor: '#4E5356' }
-'.bg-labelTablero': { backgroundColor: '#2C2F32' }
-'.bg-fondoVentanaMenus': { backgroundColor: '#3D4144' }
 
 // backgroundSelectedColor Property
 '.bg-selected-transparent': { backgroundSelectedColor: 'transparent' }
@@ -475,16 +465,6 @@
 '.bg-selected-blueGray-700': { backgroundSelectedColor: '#334155' }
 '.bg-selected-blueGray-800': { backgroundSelectedColor: '#1e293b' }
 '.bg-selected-blueGray-900': { backgroundSelectedColor: '#0f172a' }
-'.bg-selected-rojo': { backgroundSelectedColor: '#b0100f' }
-'.bg-selected-beige': { backgroundSelectedColor: '#f9f5ec' }
-'.bg-selected-marron': { backgroundSelectedColor: '#800020' }
-'.bg-selected-grisNeutroClaro': { backgroundSelectedColor: '#CCCCCC' }
-'.bg-selected-grisNeutroMediano': { backgroundSelectedColor: '#d6d9e8' }
-'.bg-selected-grisNeutroOscuro': { backgroundSelectedColor: '#d6d9e8' }
-'.bg-selected-fondoMenus': { backgroundSelectedColor: '#2C2F32' }
-'.bg-selected-fondoTablero': { backgroundSelectedColor: '#4E5356' }
-'.bg-selected-labelTablero': { backgroundSelectedColor: '#2C2F32' }
-'.bg-selected-fondoVentanaMenus': { backgroundSelectedColor: '#3D4144' }
 
 // borderColor Property
 '.border-transparent': { borderColor: 'transparent' }
@@ -710,16 +690,6 @@
 '.border-blueGray-700': { borderColor: '#334155' }
 '.border-blueGray-800': { borderColor: '#1e293b' }
 '.border-blueGray-900': { borderColor: '#0f172a' }
-'.border-rojo': { borderColor: '#b0100f' }
-'.border-beige': { borderColor: '#f9f5ec' }
-'.border-marron': { borderColor: '#800020' }
-'.border-grisNeutroClaro': { borderColor: '#CCCCCC' }
-'.border-grisNeutroMediano': { borderColor: '#d6d9e8' }
-'.border-grisNeutroOscuro': { borderColor: '#d6d9e8' }
-'.border-fondoMenus': { borderColor: '#2C2F32' }
-'.border-fondoTablero': { borderColor: '#4E5356' }
-'.border-labelTablero': { borderColor: '#2C2F32' }
-'.border-fondoVentanaMenus': { borderColor: '#3D4144' }
 
 // borderRadius - ( With Extra Styles ) Property
 '.rounded-0': { borderRadius: 0 }
@@ -1007,16 +977,6 @@
 '.current-page-blueGray-700': { currentPageIndicatorColor: '#334155' }
 '.current-page-blueGray-800': { currentPageIndicatorColor: '#1e293b' }
 '.current-page-blueGray-900': { currentPageIndicatorColor: '#0f172a' }
-'.current-page-rojo': { currentPageIndicatorColor: '#b0100f' }
-'.current-page-beige': { currentPageIndicatorColor: '#f9f5ec' }
-'.current-page-marron': { currentPageIndicatorColor: '#800020' }
-'.current-page-grisNeutroClaro': { currentPageIndicatorColor: '#CCCCCC' }
-'.current-page-grisNeutroMediano': { currentPageIndicatorColor: '#d6d9e8' }
-'.current-page-grisNeutroOscuro': { currentPageIndicatorColor: '#d6d9e8' }
-'.current-page-fondoMenus': { currentPageIndicatorColor: '#2C2F32' }
-'.current-page-fondoTablero': { currentPageIndicatorColor: '#4E5356' }
-'.current-page-labelTablero': { currentPageIndicatorColor: '#2C2F32' }
-'.current-page-fondoVentanaMenus': { currentPageIndicatorColor: '#3D4144' }
 
 // preventDefaultImage Property
 '.prevent-default-image[platform=ios]': { preventDefaultImage: true }
@@ -1572,16 +1532,6 @@
 '.from-blueGray-700': { backgroundGradient: { colors: [ '#00334155', '#334155' ] } }
 '.from-blueGray-800': { backgroundGradient: { colors: [ '#001e293b', '#1e293b' ] } }
 '.from-blueGray-900': { backgroundGradient: { colors: [ '#000f172a', '#0f172a' ] } }
-'.from-rojo': { backgroundGradient: { colors: [ '#00b0100f', '#b0100f' ] } }
-'.from-beige': { backgroundGradient: { colors: [ '#00f9f5ec', '#f9f5ec' ] } }
-'.from-marron': { backgroundGradient: { colors: [ '#00800020', '#800020' ] } }
-'.from-grisNeutroClaro': { backgroundGradient: { colors: [ '#00CCCCCC', '#CCCCCC' ] } }
-'.from-grisNeutroMediano': { backgroundGradient: { colors: [ '#00d6d9e8', '#d6d9e8' ] } }
-'.from-grisNeutroOscuro': { backgroundGradient: { colors: [ '#00d6d9e8', '#d6d9e8' ] } }
-'.from-fondoMenus': { backgroundGradient: { colors: [ '#002C2F32', '#2C2F32' ] } }
-'.from-fondoTablero': { backgroundGradient: { colors: [ '#004E5356', '#4E5356' ] } }
-'.from-labelTablero': { backgroundGradient: { colors: [ '#002C2F32', '#2C2F32' ] } }
-'.from-fondoVentanaMenus': { backgroundGradient: { colors: [ '#003D4144', '#3D4144' ] } }
 
 // To Color
 '.to-transparent': { backgroundGradient: { colors: [ 'transparent' ] } }
@@ -1807,16 +1757,6 @@
 '.to-blueGray-700': { backgroundGradient: { colors: [ '#334155' ] } }
 '.to-blueGray-800': { backgroundGradient: { colors: [ '#1e293b' ] } }
 '.to-blueGray-900': { backgroundGradient: { colors: [ '#0f172a' ] } }
-'.to-rojo': { backgroundGradient: { colors: [ '#b0100f' ] } }
-'.to-beige': { backgroundGradient: { colors: [ '#f9f5ec' ] } }
-'.to-marron': { backgroundGradient: { colors: [ '#800020' ] } }
-'.to-grisNeutroClaro': { backgroundGradient: { colors: [ '#CCCCCC' ] } }
-'.to-grisNeutroMediano': { backgroundGradient: { colors: [ '#d6d9e8' ] } }
-'.to-grisNeutroOscuro': { backgroundGradient: { colors: [ '#d6d9e8' ] } }
-'.to-fondoMenus': { backgroundGradient: { colors: [ '#2C2F32' ] } }
-'.to-fondoTablero': { backgroundGradient: { colors: [ '#4E5356' ] } }
-'.to-labelTablero': { backgroundGradient: { colors: [ '#2C2F32' ] } }
-'.to-fondoVentanaMenus': { backgroundGradient: { colors: [ '#3D4144' ] } }
 
 // Grid Column Start / End Property
 '.col-span-1': { width: '8.333334%' }
@@ -3583,16 +3523,6 @@
 '.page-blueGray-700': { pageIndicatorColor: '#334155' }
 '.page-blueGray-800': { pageIndicatorColor: '#1e293b' }
 '.page-blueGray-900': { pageIndicatorColor: '#0f172a' }
-'.page-rojo': { pageIndicatorColor: '#b0100f' }
-'.page-beige': { pageIndicatorColor: '#f9f5ec' }
-'.page-marron': { pageIndicatorColor: '#800020' }
-'.page-grisNeutroClaro': { pageIndicatorColor: '#CCCCCC' }
-'.page-grisNeutroMediano': { pageIndicatorColor: '#d6d9e8' }
-'.page-grisNeutroOscuro': { pageIndicatorColor: '#d6d9e8' }
-'.page-fondoMenus': { pageIndicatorColor: '#2C2F32' }
-'.page-fondoTablero': { pageIndicatorColor: '#4E5356' }
-'.page-labelTablero': { pageIndicatorColor: '#2C2F32' }
-'.page-fondoVentanaMenus': { pageIndicatorColor: '#3D4144' }
 
 // showPagingControl Property
 '.show-paging': { showPagingControl: true }
@@ -3839,16 +3769,6 @@
 '.paging-blueGray-700': { pagingControlColor: '#334155' }
 '.paging-blueGray-800': { pagingControlColor: '#1e293b' }
 '.paging-blueGray-900': { pagingControlColor: '#0f172a' }
-'.paging-rojo': { pagingControlColor: '#b0100f' }
-'.paging-beige': { pagingControlColor: '#f9f5ec' }
-'.paging-marron': { pagingControlColor: '#800020' }
-'.paging-grisNeutroClaro': { pagingControlColor: '#CCCCCC' }
-'.paging-grisNeutroMediano': { pagingControlColor: '#d6d9e8' }
-'.paging-grisNeutroOscuro': { pagingControlColor: '#d6d9e8' }
-'.paging-fondoMenus': { pagingControlColor: '#2C2F32' }
-'.paging-fondoTablero': { pagingControlColor: '#4E5356' }
-'.paging-labelTablero': { pagingControlColor: '#2C2F32' }
-'.paging-fondoVentanaMenus': { pagingControlColor: '#3D4144' }
 
 // pagingControlHeight Property
 '.paging-h-0': { pagingControlHeight: 0 }
@@ -4134,16 +4054,6 @@
 '.placeholder-blueGray-700': { hintTextColor: '#334155' }
 '.placeholder-blueGray-800': { hintTextColor: '#1e293b' }
 '.placeholder-blueGray-900': { hintTextColor: '#0f172a' }
-'.placeholder-rojo': { hintTextColor: '#b0100f' }
-'.placeholder-beige': { hintTextColor: '#f9f5ec' }
-'.placeholder-marron': { hintTextColor: '#800020' }
-'.placeholder-grisNeutroClaro': { hintTextColor: '#CCCCCC' }
-'.placeholder-grisNeutroMediano': { hintTextColor: '#d6d9e8' }
-'.placeholder-grisNeutroOscuro': { hintTextColor: '#d6d9e8' }
-'.placeholder-fondoMenus': { hintTextColor: '#2C2F32' }
-'.placeholder-fondoTablero': { hintTextColor: '#4E5356' }
-'.placeholder-labelTablero': { hintTextColor: '#2C2F32' }
-'.placeholder-fondoVentanaMenus': { hintTextColor: '#3D4144' }
 
 // Top / Right / Bottom / Left
 '.top-0': { top: 0 }
@@ -4225,6 +4135,18 @@
 '.scale-110': { scale: '1.1' }
 '.scale-125': { scale: '1.25' }
 '.scale-150': { scale: '1.5' }
+
+// scalingMode Property
+'.scaling-auto': { scalingMode: Ti.Media.IMAGE_SCALING_AUTO }
+'.scaling-none': { scalingMode: Ti.Media.IMAGE_SCALING_NONE }
+'.scaling-fill': { scalingMode: Ti.Media.IMAGE_SCALING_FILL }
+'.scaling-aspect-fit': { scalingMode: Ti.Media.IMAGE_SCALING_ASPECT_FIT }
+'.scaling-aspect-fill': { scalingMode: Ti.Media.IMAGE_SCALING_ASPECT_FILL }
+
+// Background Size ( for compatibility with Tailwind’s classes )
+'.bg-auto': { scalingMode: Ti.Media.IMAGE_SCALING_NONE }
+'.bg-cover': { scalingMode: Ti.Media.IMAGE_SCALING_ASPECT_FILL }
+'.bg-contain': { scalingMode: Ti.Media.IMAGE_SCALING_ASPECT_FIT }
 
 // Scroll Indicators ( for ScrollViews )
 '.overflow-x-scroll': { showHorizontalScrollIndicator: true }
@@ -4492,16 +4414,6 @@
 '.text-blueGray-700': { color: '#334155' }
 '.text-blueGray-800': { color: '#1e293b' }
 '.text-blueGray-900': { color: '#0f172a' }
-'.text-rojo': { color: '#b0100f' }
-'.text-beige': { color: '#f9f5ec' }
-'.text-marron': { color: '#800020' }
-'.text-grisNeutroClaro': { color: '#CCCCCC' }
-'.text-grisNeutroMediano': { color: '#d6d9e8' }
-'.text-grisNeutroOscuro': { color: '#d6d9e8' }
-'.text-fondoMenus': { color: '#2C2F32' }
-'.text-fondoTablero': { color: '#4E5356' }
-'.text-labelTablero': { color: '#2C2F32' }
-'.text-fondoVentanaMenus': { color: '#3D4144' }
 
 // tintColor Property
 '.tint-transparent': { tintColor: 'transparent' }
@@ -4727,16 +4639,6 @@
 '.tint-blueGray-700': { tintColor: '#334155' }
 '.tint-blueGray-800': { tintColor: '#1e293b' }
 '.tint-blueGray-900': { tintColor: '#0f172a' }
-'.tint-rojo': { tintColor: '#b0100f' }
-'.tint-beige': { tintColor: '#f9f5ec' }
-'.tint-marron': { tintColor: '#800020' }
-'.tint-grisNeutroClaro': { tintColor: '#CCCCCC' }
-'.tint-grisNeutroMediano': { tintColor: '#d6d9e8' }
-'.tint-grisNeutroOscuro': { tintColor: '#d6d9e8' }
-'.tint-fondoMenus': { tintColor: '#2C2F32' }
-'.tint-fondoTablero': { tintColor: '#4E5356' }
-'.tint-labelTablero': { tintColor: '#2C2F32' }
-'.tint-fondoVentanaMenus': { tintColor: '#3D4144' }
 
 // touchFeedbackColor Property
 '.feedback-transparent': { touchFeedback: true, touchFeedbackColor: 'transparent' }
@@ -4962,16 +4864,6 @@
 '.feedback-blueGray-700': { touchFeedback: true, touchFeedbackColor: '#334155' }
 '.feedback-blueGray-800': { touchFeedback: true, touchFeedbackColor: '#1e293b' }
 '.feedback-blueGray-900': { touchFeedback: true, touchFeedbackColor: '#0f172a' }
-'.feedback-rojo': { touchFeedback: true, touchFeedbackColor: '#b0100f' }
-'.feedback-beige': { touchFeedback: true, touchFeedbackColor: '#f9f5ec' }
-'.feedback-marron': { touchFeedback: true, touchFeedbackColor: '#800020' }
-'.feedback-grisNeutroClaro': { touchFeedback: true, touchFeedbackColor: '#CCCCCC' }
-'.feedback-grisNeutroMediano': { touchFeedback: true, touchFeedbackColor: '#d6d9e8' }
-'.feedback-grisNeutroOscuro': { touchFeedback: true, touchFeedbackColor: '#d6d9e8' }
-'.feedback-fondoMenus': { touchFeedback: true, touchFeedbackColor: '#2C2F32' }
-'.feedback-fondoTablero': { touchFeedback: true, touchFeedbackColor: '#4E5356' }
-'.feedback-labelTablero': { touchFeedback: true, touchFeedbackColor: '#2C2F32' }
-'.feedback-fondoVentanaMenus': { touchFeedback: true, touchFeedbackColor: '#3D4144' }
 
 // curve Property
 '.ease-in': { curve: Ti.UI.ANIMATION_CURVE_EASE_IN }
