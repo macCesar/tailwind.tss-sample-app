@@ -1,7 +1,7 @@
 <Alloy>
 	<Window class="bg-orange-100">
 		<View class="h-auto mx-3 bg-blue-200 border-4 border-blue-600 rounded-lg">
-			<View class="h-auto" layout="vertical">
+			<View class="h-auto vertical">
 
 				<Button class="mt-3 text-base text-indigo-700">This is an Indigo Button</Button>
 
@@ -13,7 +13,7 @@
 
 				<Button class="w-1/2 h-10 mt-4 mr-4 text-base text-white bg-blue-700 border-2 border-blue-800 rounded-lg">MR-4 Button</Button>
 
-				<View class="h-auto mt-4 mb-1" layout="horizontal">
+				<View class="h-auto mt-4 mb-1 horizontal">
 					<Label class="w-1/4 h-8 text-xs text-center text-white bg-blue-900 opacity-25">opacity-25</Label>
 					<Label class="w-1/4 h-8 text-xs text-center text-white bg-blue-900 opacity-50">opacity-50</Label>
 					<Label class="w-1/4 h-8 text-xs text-center text-white bg-blue-900 opacity-75">opacity-75</Label>
