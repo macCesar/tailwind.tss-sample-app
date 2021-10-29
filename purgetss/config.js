@@ -3,13 +3,13 @@ module.exports = {
 	purge: {
 		mode: 'all',
 
-		// These options are passed through directly to purgeTSS
+		// These options are passed through directly to PurgeTSS
 		options: {
-			safelist: ['Window', 'View', 'ImageView'],
+			safelist: []
 		}
 	},
 	theme: {
 		extend: {}
 	},
-	corePlugins: {},
+	corePlugins: {}
 };
