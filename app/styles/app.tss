@@ -132,6 +132,8 @@
 '.opacity-75': { opacity: 0.75 }
 '.opacity-100': { opacity: 1 }
 '.pl-2': { padding: { left: 8 } }
+'.show-paging': { showPagingControl: true }
+'.paging-gray-200': { pagingControlColor: '#e4e4e7' }
 '.shadow-xs': { viewShadowOffset: { x: 0, y: 0 }, viewShadowRadius: 1, viewShadowColor: '#80000000' }
 '.shadow-sm': { viewShadowOffset: { x: 0, y: 1 }, viewShadowRadius: 1, viewShadowColor: '#80000000' }
 '.shadow': { viewShadowOffset: { x: 0, y: 2 }, viewShadowRadius: 2, viewShadowColor: '#80000000' }
@@ -171,6 +173,9 @@
 '.w-full': { width: '100%' }
 '.w-auto': { width: Ti.UI.SIZE }
 '.w-screen': { width: Ti.UI.FILL }
+
+// Classes with arbitrary values
+'.cache-size-(9)': { cacheSize: 9 }
 
 // Default Font Awesome styles
 '.fa':{ font: { fontFamily: 'FontAwesome5Free-Solid' } }
