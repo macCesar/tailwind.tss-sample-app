@@ -2,46 +2,13 @@
 // Created by César Estrada
 // https://github.com/macCesar/purgeTSS
 
-// Styles from _app.tss
-// This is my original app.tss file
-'ScrollView': {
-	contentWidth: Ti.UI.FILL,
-	contentHeight: Ti.UI.SIZE
-}
-
-'ScrollView[platform=android]': {
-	scrollType: 'vertical'
-}
-
-'Button[platform=android]': {
-	backgroundColor: 'transparent'
-}
-
-'Label': {
-	touchEnabled: false
-}
-
-'TextArea': {
-	touchEnabled: false
-}
-
-'.customClass': {
-	color: '#cecece'
-}
-
-'.anotherCustomClass': {
-	backgroundColor: 'red'
-}
-
-'.isPlaceHolder': {
-	color: '#e5e7eb',
-	title: '#e5e7eb',
-	borderColor: '#e5e7eb',
-	backgroundColor: '#e5e7eb'
-}
-
-// Custom Tailwind Styles
+// Tailwind styles
+'Button[platform=android]': { backgroundColor: 'transparent' }
 'ImageView[platform=ios]': { hires: true }
+'Label': { touchEnabled: false }
+'ScrollView': { contentWidth: Ti.UI.FILL, contentHeight: Ti.UI.SIZE }
+'ScrollView[platform=android]': { scrollType: 'vertical' }
+'TextArea': { touchEnabled: false }
 'View': { width: Ti.UI.SIZE, height: Ti.UI.SIZE }
 'Window': { backgroundColor: '#ffffff' }
 '.bg-white': { backgroundColor: '#ffffff' }
@@ -174,7 +141,7 @@
 '.w-auto': { width: Ti.UI.SIZE }
 '.w-screen': { width: Ti.UI.FILL }
 
-// Classes with arbitrary values
+// Styles with arbitrary values
 '.cache-size-(9)': { cacheSize: 9 }
 
 // Default Font Awesome styles
