@@ -8,7 +8,7 @@
 			<View class="w-screen h-px bg-gray-500"></View>
 			<View class="w-screen m-4 horizontal">
 				<View class="w-1/5 mt-0">
-					<Button class="w-12 h-12 ml-0 text-2xl text-white bg-indigo-500 rounded-12 fa fa-code"></Button>
+					<Button class="w-12 h-12 ml-0 text-2xl text-white bg-indigo-500 rounded-12 fa-solid fa-code"></Button>
 				</View>
 
 				<View class="w-4/5 vertical">
@@ -18,17 +18,17 @@
 
 					<View class="w-screen horizontal">
 						<View class="w-1/3 h-6 horizontal">
-							<Button class="w-6 text-gray-500 far fa-user"/>
+							<Button class="w-6 text-gray-500 fa-regular fa-user"/>
 							<Label class="ml-1 text-sm font-bold text-gray-700">4</Label>
 						</View>
 
 						<View class="w-1/3 h-6 horizontal">
-							<Button class="w-6 text-gray-500 far fa-comment-alt"/>
+							<Button class="w-6 text-gray-500 fa-regular fa-comment-alt"/>
 							<Label class="ml-1 text-sm font-bold text-gray-700">12</Label>
 						</View>
 
 						<View class="w-1/3 h-6 horizontal">
-							<Button class="w-6 text-gray-500 fa fa-align-left"/>
+							<Button class="w-6 text-gray-500 fa-solid fa-align-left"/>
 							<Label class="ml-1 text-sm font-bold text-gray-700">20</Label>
 						</View>
 					</View>
@@ -38,7 +38,7 @@
 			<View class="w-screen h-px bg-gray-500"></View>
 			<View class="w-screen m-4 horizontal">
 				<View class="w-1/5 mt-0">
-					<Button class="w-12 h-12 ml-0 text-2xl text-white bg-green-500 rounded-12 fa fa-suitcase"></Button>
+					<Button class="w-12 h-12 ml-0 text-2xl text-white bg-green-500 rounded-12 fa-regular fa-suitcase"></Button>
 				</View>
 
 				<View class="w-4/5 vertical">
@@ -48,17 +48,17 @@
 
 					<View class="w-screen horizontal">
 						<View class="w-1/3 h-6 horizontal">
-							<Button class="w-6 text-gray-500 far fa-user"/>
+							<Button class="w-6 text-gray-500 fa-regular fa-user"/>
 							<Label class="ml-1 text-sm font-bold text-gray-700">6</Label>
 						</View>
 
 						<View class="w-1/3 h-6 horizontal">
-							<Button class="w-6 text-gray-500 far fa-comment-alt"/>
+							<Button class="w-6 text-gray-500 fa-regular fa-comment-alt"/>
 							<Label class="ml-1 text-sm font-bold text-gray-700">5</Label>
 						</View>
 
 						<View class="w-1/3 h-6 horizontal">
-							<Button class="w-6 text-gray-500 fa fa-align-left"/>
+							<Button class="w-6 text-gray-500 fa-solid fa-align-left"/>
 							<Label class="ml-1 text-sm font-bold text-gray-700">30</Label>
 						</View>
 					</View>

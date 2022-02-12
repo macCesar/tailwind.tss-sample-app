@@ -4,16 +4,16 @@
 			<ImageView class="w-56 mt-3" image="/images/welcome.png" />
 
 			<Label class="w-full mt-2 ml-1 text-sm text-left text-gray-900">Your Login</Label>
-			<TextField class="w-screen h-10 pl-2 mt-1 text-base text-gray-800 border-gray-400 rounded-md bg-gray-50" returnKeyType="Ti.UI.RETURNKEY_NEXT" keyboardType="Ti.UI.KEYBOARD_TYPE_EMAIL" hintText="Email" />
+			<TextField class="w-screen h-10 pl-2 mt-1 text-base text-gray-800 border-gray-400 rounded-md bg-gray-50 returnkey-next" keyboardType="Ti.UI.KEYBOARD_TYPE_EMAIL" hintText="Email" />
 
 			<Label class="w-full mt-4 ml-1 text-sm text-left text-gray-900">Your Password</Label>
-			<TextField class="w-screen h-10 pl-2 mt-1 text-base text-gray-800 border-gray-400 rounded-md bg-gray-50" returnKeyType="Ti.UI.RETURNKEY_NEXT" hintText="Password" passwordMask="true" />
+			<TextField class="w-screen h-10 pl-2 mt-1 text-base text-gray-800 border-gray-400 rounded-md bg-gray-50 returnkey-next" hintText="Password" passwordMask="true" />
 
 			<Button class="w-screen h-10 mt-4 text-base text-white bg-gray-800 rounded-md">Login</Button>
 
 			<View class="w-screen mt-2 horizontal">
 				<View class="w-1/2 mx-0 horizontal" android:onClick="changeActive" ios:onSingletap="changeActive">
-					<Button class="w-6 text-gray-800 far fa-check-square fa-square" id="rememberMe" active='false' />
+					<Button class="w-6 text-gray-800 fa-regular fa-check-square fa-square" id="rememberMe" active='false' />
 					<Button class="ml-0 text-sm text-gray-800">Remember me</Button>
 				</View>
 
