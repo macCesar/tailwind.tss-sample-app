@@ -10,7 +10,7 @@ Please checkout my new [`purgeTSS`](https://github.com/macCesar/purgeTSS) CLI.
 > [sudo] npm i -g purgetss
 ```
 
-2. Use any [tailwind.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/tailwind.tss), [fontawesome.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/fontawesome.tss), [materialicons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/materialdesignicons.tss), [lineicons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/lineicons.tss), [boxicons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/boxicons.tss) or your [custom.tss](https://github.com/macCesar/purgeTSS/blob/master/docs/configuring-guide.md) classes in your views.
+2. Use any [tailwind.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/tailwind.tss), [fontawesome.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/fontawesome.tss), [materialicons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/materialdesignicons.tss), [lineicons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/lineicons.tss), [boxicons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/boxicons.tss) , [tablericons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/tablericons.tss) or your [custom.tss](https://github.com/macCesar/purgeTSS/blob/master/docs/configuring-guide.md) classes in your views.
 
 3. Run `purgetss` inside your project’s root folder before compiling your App.
 ```bash
