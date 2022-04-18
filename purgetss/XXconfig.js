@@ -5,9 +5,7 @@ module.exports = {
 
 		// These options are passed through directly to PurgeTSS
 		options: {
-			widgets: false, // Purge widgets
-			missing: true, // Report missing classes
-			safelist: [] // Array of classes to keep
+			safelist: []
 		}
 	},
 	theme: {

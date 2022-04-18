@@ -1,7 +1,7 @@
 <Alloy>
 	<NavigationWindow id="navWindow">
 		<Window title="tailwind tss">
-			<ScrollableView class="w-full h-full bg-white show-paging paging-gray-200 cache-size-(9)">
+			<ScrollableView class="w-full h-full bg-white show-paging-control paging-control-gray-200 cache-size-(9)">
 				<Require src="examples/nike" />
 
 				<Require src="examples/register" />

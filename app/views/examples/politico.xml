@@ -11,7 +11,7 @@
 
 			<ImageView class="mt-2" image="https://static.politico.com/dims4/default/fcd6d6a/2147483647/resize/1920x/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F22%2F87%2F2259ffd444678054896b9fa32b4d%2Fgettyimages-1221513169.jpg" />
 
-			<Label class="w-screen h-auto my-2 text-sm text-gray-600 border-b text-normal">Georgia Gov. Brian Kemp speaks to the media during a press conference. | Kevin C. Cox/Getty Images</Label>
+			<Label class="w-screen h-auto my-2 text-sm font-normal text-gray-600 border-b">Georgia Gov. Brian Kemp speaks to the media during a press conference. | Kevin C. Cox/Getty Images</Label>
 
 			<TextArea class="w-screen -mx-1 text-xs italic font-thin text-gray-600 bg-white">By Quint Forgey
 07/17/2020 09:57 AM EDT

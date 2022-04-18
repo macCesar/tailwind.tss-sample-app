@@ -4,10 +4,10 @@
 			<ImageView class="w-56 mt-3" image="/images/welcome.png" />
 
 			<Label class="w-full mt-2 ml-1 text-sm text-left text-gray-900">Your Login</Label>
-			<TextField class="w-screen h-10 pl-2 mt-1 text-base text-gray-800 border-gray-400 rounded-md bg-gray-50 returnkey-next" keyboardType="Ti.UI.KEYBOARD_TYPE_EMAIL" hintText="Email" />
+			<TextField class="w-screen h-10 pl-2 mt-1 text-base text-gray-800 border-gray-400 rounded-md bg-gray-50 return-key-type-next" keyboardType="Ti.UI.KEYBOARD_TYPE_EMAIL" hintText="Email" />
 
 			<Label class="w-full mt-4 ml-1 text-sm text-left text-gray-900">Your Password</Label>
-			<TextField class="w-screen h-10 pl-2 mt-1 text-base text-gray-800 border-gray-400 rounded-md bg-gray-50 returnkey-next" hintText="Password" passwordMask="true" />
+			<TextField class="w-screen h-10 pl-2 mt-1 text-base text-gray-800 border-gray-400 rounded-md bg-gray-50 return-key-type-next" hintText="Password" passwordMask="true" />
 
 			<Button class="w-screen h-10 mt-4 text-base text-white bg-gray-800 rounded-md">Login</Button>
 
