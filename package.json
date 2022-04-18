@@ -1,6 +1,6 @@
 {
 	"name": "tailwind-tss",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "A [Titanium App](https://www.appcelerator.com/mobile-app-development-products/) showcasing [Tailwind CSS](https://tailwindcss.com/) styles applied with [purgeTSS](https://github.com/macCesar/purgeTSS/).",
 	"main": "tailwind.config.js",
 	"scripts": {
