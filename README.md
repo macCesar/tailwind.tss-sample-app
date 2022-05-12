@@ -1,16 +1,16 @@
 # tailwindTSS Sample App
 
-A [Titanium App](https://www.appcelerator.com/mobile-app-development-products/) showcasing [Tailwind CSS](https://tailwindcss.com/) styles applied with [purgeTSS](https://github.com/macCesar/purgeTSS/).
+A [Titanium App](https://www.appcelerator.com/mobile-app-development-products/) showcasing [Tailwind-like](https://tailwindcss.com/) styles applied with [PurgeTSS](https://github.com/macCesar/purgeTSS/).
 
 ## UPDATE!!!
-Please checkout my new [`purgeTSS`](https://github.com/macCesar/purgeTSS) CLI.
+Please checkout my [`PurgeTSS`](https://github.com/macCesar/purgeTSS) CLI package.
 
 1. Install it globally on your machine.
 ```bash
 > [sudo] npm i -g purgetss
 ```
 
-2. Use any [tailwind.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/tailwind.tss), [fontawesome.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/fontawesome.tss), [materialicons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/materialdesignicons.tss), [lineicons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/lineicons.tss), [boxicons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/boxicons.tss) , [tablericons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/tablericons.tss) or your [custom.tss](https://github.com/macCesar/purgeTSS/blob/master/docs/configuring-guide.md) classes in your views.
+2. Use any [tailwind.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/tailwind.tss), [fontawesome.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/fontawesome.tss), [materialicons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/materialdesignicons.tss), [framework7icons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/framework7icons.tss) or your [Custom Classes](https://github.com/macCesar/purgeTSS/blob/master/docs/configuring-guide.md) in your views.
 
 3. Run `purgetss` inside your project’s root folder before compiling your App.
 ```bash
@@ -22,7 +22,7 @@ Please checkout my new [`purgeTSS`](https://github.com/macCesar/purgeTSS) CLI.
 ### Important Notice!
 > When you run `purgeTSS` for the first time, it will backup your `app.tss` file to `_app.tss`.
 >
-> It will use it together with `tailwind.tss`, `fontawesome.tss`, `materialicons.tss`, `lineicons.tss` and your `custom.tss` file to create a new purged `app.tss` file.
+> It will use it together with `tailwind.tss`, `fontawesome.tss`, `materialicons.tss`, `framework7icons.tss` and your `config.js` file to create a new purged `app.tss` file.
 >
 > From now on, add, update or remove your custom classes in `_app.tss.`
 
