@@ -1,6 +1,6 @@
 # tailwindTSS Sample App
 
-A [Titanium App](https://www.appcelerator.com/mobile-app-development-products/) showcasing [Tailwind-like](https://tailwindcss.com/) styles applied with [PurgeTSS](https://github.com/macCesar/purgeTSS/).
+A [Titanium App](https://www.appcelerator.com/mobile-app-development-products/) showcasing [Tailwind-like](https://tailwindcss.com/) styles applied with [PurgeTSS](https://purgetss.com/).
 
 ## UPDATE!!!
 Please checkout my [`PurgeTSS`](https://github.com/macCesar/purgeTSS) CLI package.
@@ -10,7 +10,7 @@ Please checkout my [`PurgeTSS`](https://github.com/macCesar/purgeTSS) CLI packag
 > [sudo] npm i -g purgetss
 ```
 
-2. Use any [tailwind.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/tailwind.tss), [fontawesome.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/fontawesome.tss), [materialicons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/materialdesignicons.tss), [framework7icons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/framework7icons.tss) or your [Custom Classes](https://github.com/macCesar/purgeTSS/blob/master/docs/configuring-guide.md) in your views.
+2. Use any [tailwind.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/tailwind.tss), [fontawesome.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/fontawesome.tss), [materialicons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/materialdesignicons.tss), [framework7icons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/framework7icons.tss) or your [Custom Classes](https://purgetss.com/docs/customization/the-config-file) in your views.
 
 3. Run `purgetss` inside your project’s root folder before compiling your App.
 ```bash
