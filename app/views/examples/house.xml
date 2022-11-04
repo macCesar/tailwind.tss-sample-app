@@ -5,7 +5,7 @@
 
 			<View class="w-screen m-4 vertical">
 				<Label class="ml-0 text-sm font-bold text-gray-700">Detached house • 5y old</Label>
-				<Label class="ml-0 text-3xl text-gray-900">$750,000</Label>
+				<Label class="ml-0 text-3xl font-bold text-gray-900">$750,000</Label>
 				<Label class="ml-0 text-gray-700">742 Evergreen Terrace</Label>
 			</View>
 
@@ -31,7 +31,7 @@
 
 					<View class="w-screen vertical">
 						<Label class="ml-3 font-bold text-gray-900">Catherine Heffner</Label>
-						<Label class="ml-3 text-sm text-gray-700">(111) 111-1111</Label>
+						<Label class="ml-3 text-sm text-gray-700">(555) 123-4567</Label>
 					</View>
 				</View>
 			</View>

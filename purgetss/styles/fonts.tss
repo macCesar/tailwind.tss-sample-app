@@ -4,8 +4,8 @@
 /**
  * BRUX
  * Version 1.000;PS 001.000;hotconv 1.0.70;makeotf.lib2.5.58329 DEVELOPMENT
- * Marcelo Reis Melo
  * freegoodiesfordesigners.com
+ * Marcelo Reis Melo - freegoodiesfordesigners.com
  * Marcelo Reis Melo
  */
 '.brux-regular': { font: { fontFamily: 'BRUX-Regular' } }
@@ -13,41 +13,38 @@
 /**
  * Roboto
  * Version 2.137; 2017
- * Google
  * Google.com
+ * Google - Christian Robertson
  * Copyright 2011 Google Inc. All Rights Reserved.
  * Roboto is a trademark of Google.
- * Licensed under the Apache License, Version 2.0
- * http://www.apache.org/licenses/LICENSE-2.0
+ * Licensed under the Apache License, Version 2.0 - http://www.apache.org/licenses/LICENSE-2.0
  */
 '.roboto-regular': { font: { fontFamily: 'Roboto-Regular' } }
 
 /**
  * Interface-Line-Icon-2
  * Version 1.0
- * Worawaluns
  * https://iconfonts.gumroad.com/l/rsvlq
+ * Worawaluns - https://dribbble.com/worawaluns
  * Copyright 2022. All rights reserved
- * End User License Agreement (EULA)
- * https://iconfonts.gumroad.com/l/rsvlq
+ * End User License Agreement (EULA) - https://iconfonts.gumroad.com/l/rsvlq
  */
 '.ili': { font: { fontFamily: 'Interface-Line-Icon-2' } }
 
 /**
  * Liquid-Container-Icons
  * Version 1.1
- * Erix Subyarko
  * https://iconfonts.gumroad.com/l/ftmll
+ * Erix Subyarko - https://twitter.com/erix_arko
  * Copyright 2022. All rights reserved
- * End User License Agreement (EULA)
- * https://iconfonts.gumroad.com/l/ftmll
+ * End User License Agreement (EULA) - https://iconfonts.gumroad.com/l/ftmll
  */
 '.lci': { font: { fontFamily: 'Liquid-Container-Icons' } }
 
 // Unicode Characters
 // To use your Icon Fonts in Buttons AND Labels each class sets 'text' and 'title' properties
 
-// style.css
+// interface-line-icon/style.css
 '.ili-archive': { text: '\ue900', title: '\ue900' }
 '.ili-attachment': { text: '\ue901', title: '\ue901' }
 '.ili-calander': { text: '\ue902', title: '\ue902' }
@@ -73,7 +70,7 @@
 '.ili-stats': { text: '\ue916', title: '\ue916' }
 '.ili-time': { text: '\ue917', title: '\ue917' }
 
-// style.css
+// liquid-container/style.css
 '.lci-aerosol-bottle-chemical': { text: '\ue900', title: '\ue900' }
 '.lci-alcohol-bottle-glass': { text: '\ue901', title: '\ue901' }
 '.lci-baby-bottle': { text: '\ue902', title: '\ue902' }

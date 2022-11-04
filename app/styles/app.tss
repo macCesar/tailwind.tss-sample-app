@@ -1,82 +1,19 @@
-// PurgeTSS
+// PurgeTSS v6.2.11
 // Created by César Estrada
 // https://github.com/macCesar/purgeTSS
 
-// Main styles
-'Label': { touchEnabled: false }
-'TextArea': { touchEnabled: false }
+// Ti Elements
 'Button[platform=android]': { backgroundColor: 'transparent' }
+'ImageView[platform=ios]': { hires: true }
+'Label': { touchEnabled: false }
 'ScrollView': { contentWidth: Ti.UI.FILL, contentHeight: Ti.UI.SIZE }
 'ScrollView[platform=android]': { scrollType: 'vertical' }
-'Window': { backgroundColor: '#ffffff' }
-'ImageView[platform=ios]': { hires: true }
+'TextArea': { touchEnabled: false }
 'View': { width: Ti.UI.SIZE, height: Ti.UI.SIZE }
-'.h-6': { height: 24 }
-'.h-8': { height: 32 }
-'.h-10': { height: 40 }
-'.h-12': { height: 48 }
-'.h-16': { height: 64 }
-'.h-20': { height: 80 }
-'.h-24': { height: 96 }
-'.h-auto': { height: Ti.UI.SIZE }
-'.h-px': { height: '1px' }
-'.h-full': { height: '100%' }
-'.h-screen': { height: Ti.UI.FILL }
-'.w-4': { width: 16 }
-'.w-6': { width: 24 }
-'.w-8': { width: 32 }
-'.w-10': { width: 40 }
-'.w-12': { width: 48 }
-'.w-16': { width: 64 }
-'.w-20': { width: 80 }
-'.w-24': { width: 96 }
-'.w-56': { width: 224 }
-'.w-auto': { width: Ti.UI.SIZE }
-'.w-1/2': { width: '50%' }
-'.w-1/3': { width: '33.333334%' }
-'.w-1/4': { width: '25%' }
-'.w-1/5': { width: '20%' }
-'.w-4/5': { width: '80%' }
-'.w-11/12': { width: '91.666667%' }
-'.w-full': { width: '100%' }
-'.w-screen': { width: Ti.UI.FILL }
-'.m-3': { top: 12, right: 12, bottom: 12, left: 12 }
-'.m-4': { top: 16, right: 16, bottom: 16, left: 16 }
-'.my-1': { top: 4, bottom: 4 }
-'.my-2': { top: 8, bottom: 8 }
-'.my-10': { top: 40, bottom: 40 }
-'.my-0.5': { top: 2, bottom: 2 }
-'.mx-0': { right: 0, left: 0 }
-'.mx-2': { right: 8, left: 8 }
-'.mx-3': { right: 12, left: 12 }
-'.mx-4': { right: 16, left: 16 }
-'.mx-6': { right: 24, left: 24 }
-'.mx-8': { right: 32, left: 32 }
-'.mx-10': { right: 40, left: 40 }
-'.mx-auto': { right: null, left: null }
-'.mt-0': { top: 0 }
-'.mt-1': { top: 4 }
-'.mt-2': { top: 8 }
-'.mt-3': { top: 12 }
-'.mt-4': { top: 16 }
-'.mr-0': { right: 0 }
-'.mr-3': { right: 12 }
-'.mr-4': { right: 16 }
-'.mr-12': { right: 48 }
-'.mr-1.5': { right: 6 }
-'.mb-1': { bottom: 4 }
-'.mb-3': { bottom: 12 }
-'.mb-4': { bottom: 16 }
-'.mb-8': { bottom: 32 }
-'.ml-0': { left: 0 }
-'.ml-1': { left: 4 }
-'.ml-3': { left: 12 }
-'.ml-4': { left: 16 }
-'.ml-8': { left: 32 }
-'.ml-12': { left: 48 }
-'.ml-2.5': { left: 10 }
-'.-mx-1': { left: -4, right: -4 }
-'.-mt-0.5': { top: -2 }
+'Window': { backgroundColor: '#ffffff' }
+
+// Main Styles
+'.-ml-1': { left: -4 }
 '.-mr-1': { right: -4 }
 '.-mr-2': { right: -8 }
 '.-mr-3': { right: -12 }
@@ -84,149 +21,213 @@
 '.-mr-5': { right: -20 }
 '.-mr-7': { right: -28 }
 '.-mr-8': { right: -32 }
-'.-ml-1': { left: -4 }
-'.bg-gradient-to-b': { backgroundGradient: { type: 'linear', backfillStart: true, startPoint: { x: '100%', y: '100%' }, endPoint: { x: '100%', y: '0%' } } }
-'.clip-enabled[platform=ios]': { clipMode: Ti.UI.iOS.CLIP_MODE_ENABLED }
-'.italic': { font: { fontStyle: 'italic' } }
-'.horizontal': { layout: 'horizontal' }
-'.vertical': { layout: 'vertical' }
-'.return-key-type-next': { returnKeyType: Ti.UI.RETURNKEY_NEXT }
-'.show-paging-control': { showPagingControl: true }
-'.text-left': { textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT }
-'.text-right': { textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT }
-'.text-center': { textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER }
-'.pointer-events-none': { touchEnabled: false }
-'.shadow-xs[platform=android]': { elevation: 4 }
-'.shadow-sm[platform=android]': { elevation: 8 }
-'.shadow[platform=android]': { elevation: 16 }
-'.shadow-md[platform=android]': { elevation: 24 }
-'.shadow-lg[platform=android]': { elevation: 26 }
-'.shadow-xl[platform=android]': { elevation: 34 }
-'.shadow-2xl[platform=android]': { elevation: 38 }
-'.shadow-inner[platform=android]': { elevation: 0 }
-'.shadow-outline[platform=android]': { elevation: 16 }
-'.shadow-xs[platform=ios]': { viewShadowOffset: { x: 0, y: 0 }, viewShadowRadius: 1, viewShadowColor: '#80000000' }
-'.shadow-sm[platform=ios]': { viewShadowOffset: { x: 0, y: 1 }, viewShadowRadius: 2, viewShadowColor: '#80000000' }
-'.shadow[platform=ios]': { viewShadowOffset: { x: 0, y: 2 }, viewShadowRadius: 4, viewShadowColor: '#80000000' }
-'.shadow-md[platform=ios]': { viewShadowOffset: { x: 0, y: 3 }, viewShadowRadius: 6, viewShadowColor: '#80000000' }
-'.shadow-lg[platform=ios]': { viewShadowOffset: { x: 0, y: 4 }, viewShadowRadius: 8, viewShadowColor: '#80000000' }
-'.shadow-xl[platform=ios]': { viewShadowOffset: { x: 0, y: 6 }, viewShadowRadius: 12, viewShadowColor: '#80000000' }
-'.shadow-2xl[platform=ios]': { viewShadowOffset: { x: 0, y: 8 }, viewShadowRadius: 14, viewShadowColor: '#80000000' }
-'.shadow-inner[platform=ios]': { viewShadowOffset: { x: 0, y: 0 }, viewShadowRadius: null, viewShadowColor: null }
-'.shadow-outline[platform=ios]': { viewShadowOffset: { x: 0, y: 0 }, viewShadowRadius: 4, viewShadowColor: '#80000000' }
-'.block': { visible: true }
-'.rounded-2': { borderRadius: 4 }
-'.rounded-6': { borderRadius: 12 }
-'.rounded-8': { borderRadius: 16 }
-'.rounded-10': { borderRadius: 20 }
-'.rounded-12': { borderRadius: 24 }
-'.rounded-16': { borderRadius: 32 }
-'.rounded-20': { borderRadius: 40 }
-'.rounded-24': { borderRadius: 48 }
-'.rounded': { borderRadius: 4 }
-'.rounded-md': { borderRadius: 6 }
-'.rounded-lg': { borderRadius: 8 }
-'.border-1': { borderWidth: 1 }
-'.border-2': { borderWidth: 2 }
-'.border-4': { borderWidth: 4 }
-'.text-xs': { font: { fontSize: 12 } }
-'.ios:text-xs[platform=ios]': { font: { fontSize: 12 } }
-'.text-sm': { font: { fontSize: 14 } }
-'.ios:text-sm[platform=ios]': { font: { fontSize: 14 } }
-'.android:text-sm[platform=android]': { font: { fontSize: 14 } }
-'.text-base': { font: { fontSize: 16 } }
-'.android:text-base[platform=android]': { font: { fontSize: 16 } }
-'.text-lg': { font: { fontSize: 18 } }
-'.text-xl': { font: { fontSize: 20 } }
-'.text-2xl': { font: { fontSize: 24 } }
-'.text-3xl': { font: { fontSize: 30 } }
-'.text-4xl': { font: { fontSize: 36 } }
-'.font-thin': { font: { fontWeight: 'thin' } }
-'.font-normal': { font: { fontWeight: 'normal' } }
-'.font-semibold': { font: { fontWeight: 'semibold' } }
-'.font-bold': { font: { fontWeight: 'bold' } }
-'.opacity-0': { opacity: 0 }
-'.opacity-25': { opacity: 0.25 }
-'.opacity-50': { opacity: 0.5 }
-'.opacity-75': { opacity: 0.75 }
-'.opacity-100': { opacity: 1 }
-'.pl-2': { padding: { left: 8 } }
-'.bg-white': { backgroundColor: '#ffffff' }
-'.bg-gray-50': { backgroundColor: '#f9fafb' }
-'.bg-gray-100': { backgroundColor: '#f3f4f6' }
-'.bg-gray-200': { backgroundColor: '#e5e7eb' }
-'.bg-gray-300': { backgroundColor: '#d1d5db' }
-'.bg-gray-500': { backgroundColor: '#6b7280' }
-'.bg-gray-800': { backgroundColor: '#1f2937' }
-'.bg-gray-900': { backgroundColor: '#111827' }
-'.bg-red-50': { backgroundColor: '#fef2f2' }
-'.bg-red-500': { backgroundColor: '#ef4444' }
-'.bg-orange-100': { backgroundColor: '#ffedd5' }
-'.bg-yellow-50': { backgroundColor: '#fefce8' }
-'.bg-yellow-500': { backgroundColor: '#eab308' }
-'.bg-green-50': { backgroundColor: '#f0fdf4' }
-'.bg-green-500': { backgroundColor: '#22c55e' }
-'.bg-blue-50': { backgroundColor: '#eff6ff' }
+'.-mt-0.5': { top: -2 }
+'.-mx-1': { left: -4, right: -4 }
 '.bg-blue-200': { backgroundColor: '#bfdbfe' }
+'.bg-blue-50': { backgroundColor: '#eff6ff' }
 '.bg-blue-500': { backgroundColor: '#3b82f6' }
 '.bg-blue-700': { backgroundColor: '#1d4ed8' }
 '.bg-blue-900': { backgroundColor: '#1e3a8a' }
+'.bg-gradient-to-b': { backgroundGradient: { type: 'linear', backfillStart: true, startPoint: { x: '100%', y: '100%' }, endPoint: { x: '100%', y: '0%' } } }
+'.bg-gray-100': { backgroundColor: '#f3f4f6' }
+'.bg-gray-200': { backgroundColor: '#e5e7eb' }
+'.bg-gray-300': { backgroundColor: '#d1d5db' }
+'.bg-gray-50': { backgroundColor: '#f9fafb' }
+'.bg-gray-500': { backgroundColor: '#6b7280' }
+'.bg-gray-800': { backgroundColor: '#1f2937' }
+'.bg-gray-900': { backgroundColor: '#111827' }
+'.bg-green-50': { backgroundColor: '#f0fdf4' }
+'.bg-green-500': { backgroundColor: '#22c55e' }
 '.bg-indigo-500': { backgroundColor: '#6366f1' }
-'.from-red-400': { backgroundGradient: { colors: [ '#00f87171', '#f87171' ] } }
-'.from-yellow-400': { backgroundGradient: { colors: [ '#00facc15', '#facc15' ] } }
-'.from-green-400': { backgroundGradient: { colors: [ '#004ade80', '#4ade80' ] } }
-'.from-blue-400': { backgroundGradient: { colors: [ '#0060a5fa', '#60a5fa' ] } }
-'.to-red-600': { backgroundGradient: { colors: [ '#dc2626' ] } }
-'.to-yellow-600': { backgroundGradient: { colors: [ '#ca8a04' ] } }
-'.to-green-600': { backgroundGradient: { colors: [ '#16a34a' ] } }
-'.to-blue-600': { backgroundGradient: { colors: [ '#2563eb' ] } }
+'.bg-orange-100': { backgroundColor: '#ffedd5' }
+'.bg-red-50': { backgroundColor: '#fef2f2' }
+'.bg-red-500': { backgroundColor: '#ef4444' }
+'.bg-selected-blue-50': { backgroundSelectedColor: '#eff6ff' }
+'.bg-selected-blue-600': { backgroundSelectedColor: '#2563eb' }
+'.bg-selected-green-50': { backgroundSelectedColor: '#f0fdf4' }
+'.bg-selected-green-600': { backgroundSelectedColor: '#16a34a' }
 '.bg-selected-red-50': { backgroundSelectedColor: '#fef2f2' }
 '.bg-selected-red-600': { backgroundSelectedColor: '#dc2626' }
 '.bg-selected-yellow-50': { backgroundSelectedColor: '#fefce8' }
 '.bg-selected-yellow-600': { backgroundSelectedColor: '#ca8a04' }
-'.bg-selected-green-50': { backgroundSelectedColor: '#f0fdf4' }
-'.bg-selected-green-600': { backgroundSelectedColor: '#16a34a' }
-'.bg-selected-blue-50': { backgroundSelectedColor: '#eff6ff' }
-'.bg-selected-blue-600': { backgroundSelectedColor: '#2563eb' }
-'.border-white': { borderColor: '#ffffff' }
-'.border-gray-400': { borderColor: '#9ca3af' }
-'.border-gray-500': { borderColor: '#6b7280' }
-'.border-red-500': { borderColor: '#ef4444' }
-'.border-yellow-500': { borderColor: '#eab308' }
-'.border-green-500': { borderColor: '#22c55e' }
+'.bg-white': { backgroundColor: '#ffffff' }
+'.bg-yellow-50': { backgroundColor: '#fefce8' }
+'.bg-yellow-500': { backgroundColor: '#eab308' }
+'.block': { visible: true }
+'.border-1': { borderWidth: 1 }
+'.border-2': { borderWidth: 2 }
+'.border-4': { borderWidth: 4 }
 '.border-blue-500': { borderColor: '#3b82f6' }
 '.border-blue-600': { borderColor: '#2563eb' }
 '.border-blue-800': { borderColor: '#1e40af' }
-'.paging-control-gray-200[platform=ios]': { pagingControlColor: '#e5e7eb' }
-'.text-white': { color: '#ffffff', textColor: '#ffffff' }
+'.border-gray-400': { borderColor: '#9ca3af' }
+'.border-gray-500': { borderColor: '#6b7280' }
+'.border-green-500': { borderColor: '#22c55e' }
+'.border-red-500': { borderColor: '#ef4444' }
+'.border-white': { borderColor: '#ffffff' }
+'.border-yellow-500': { borderColor: '#eab308' }
+'.clip-enabled[platform=ios]': { clipMode: Ti.UI.iOS.CLIP_MODE_ENABLED }
+'.font-bold': { font: { fontWeight: 'bold' } }
+'.font-normal': { font: { fontWeight: 'normal' } }
+'.font-semibold': { font: { fontWeight: 'semibold' } }
+'.font-thin': { font: { fontWeight: 'thin' } }
+'.from-blue-400': { backgroundGradient: { colors: [ '#0060a5fa', '#60a5fa' ] } }
+'.from-green-400': { backgroundGradient: { colors: [ '#004ade80', '#4ade80' ] } }
+'.from-red-400': { backgroundGradient: { colors: [ '#00f87171', '#f87171' ] } }
+'.from-yellow-400': { backgroundGradient: { colors: [ '#00facc15', '#facc15' ] } }
+'.h-10': { height: 40 }
+'.h-12': { height: 48 }
+'.h-16': { height: 64 }
+'.h-20': { height: 80 }
+'.h-24': { height: 96 }
+'.h-6': { height: 24 }
+'.h-8': { height: 32 }
+'.h-auto': { height: Ti.UI.SIZE }
+'.h-full': { height: '100%' }
+'.h-px': { height: '1px' }
+'.h-screen': { height: Ti.UI.FILL }
+'.horizontal': { layout: 'horizontal' }
+'.importance[platform=android]': { importance: Ti.Android.IMPORTANCE_DEFAULT }
+'.italic': { font: { fontStyle: 'italic' } }
+'.m-3': { top: 12, right: 12, bottom: 12, left: 12 }
+'.m-4': { top: 16, right: 16, bottom: 16, left: 16 }
+'.mb-1': { bottom: 4 }
+'.mb-3': { bottom: 12 }
+'.mb-4': { bottom: 16 }
+'.mb-8': { bottom: 32 }
+'.ml-0': { left: 0 }
+'.ml-1': { left: 4 }
+'.ml-12': { left: 48 }
+'.ml-2.5': { left: 10 }
+'.ml-3': { left: 12 }
+'.ml-4': { left: 16 }
+'.ml-8': { left: 32 }
+'.mr-0': { right: 0 }
+'.mr-1.5': { right: 6 }
+'.mr-12': { right: 48 }
+'.mr-3': { right: 12 }
+'.mr-4': { right: 16 }
+'.mt-0': { top: 0 }
+'.mt-1': { top: 4 }
+'.mt-2': { top: 8 }
+'.mt-3': { top: 12 }
+'.mt-4': { top: 16 }
+'.mx-0': { right: 0, left: 0 }
+'.mx-10': { right: 40, left: 40 }
+'.mx-2': { right: 8, left: 8 }
+'.mx-3': { right: 12, left: 12 }
+'.mx-4': { right: 16, left: 16 }
+'.mx-6': { right: 24, left: 24 }
+'.mx-8': { right: 32, left: 32 }
+'.mx-auto': { right: null, left: null }
+'.my-0.5': { top: 2, bottom: 2 }
+'.my-1': { top: 4, bottom: 4 }
+'.my-10': { top: 40, bottom: 40 }
+'.my-2': { top: 8, bottom: 8 }
+'.opacity-0': { opacity: 0 }
+'.opacity-100': { opacity: 1 }
+'.opacity-25': { opacity: 0.25 }
+'.opacity-50': { opacity: 0.5 }
+'.opacity-75': { opacity: 0.75 }
+'.paging-control-gray-200': { pagingControlColor: '#e5e7eb' }
+'.pl-2': { padding: { left: 8 } }
+'.pointer-events-none': { touchEnabled: false }
+'.return-key-type-next': { returnKeyType: Ti.UI.RETURNKEY_NEXT }
+'.rounded': { borderRadius: 4 }
+'.rounded-10': { borderRadius: 20 }
+'.rounded-12': { borderRadius: 24 }
+'.rounded-16': { borderRadius: 32 }
+'.rounded-2': { borderRadius: 4 }
+'.rounded-20': { borderRadius: 40 }
+'.rounded-24': { borderRadius: 48 }
+'.rounded-6': { borderRadius: 12 }
+'.rounded-8': { borderRadius: 16 }
+'.rounded-lg': { borderRadius: 8 }
+'.rounded-md': { borderRadius: 6 }
+'.running': { running: true }
+'.shadow': { viewShadowOffset: { x: 0, y: 2 }, viewShadowRadius: 4, viewShadowColor: '#80000000', elevation: 16 }
+'.shadow-2xl': { viewShadowOffset: { x: 0, y: 8 }, viewShadowRadius: 14, viewShadowColor: '#80000000', elevation: 38 }
+'.shadow-inner': { viewShadowOffset: { x: 0, y: 0 }, viewShadowRadius: null, viewShadowColor: null, elevation: 0 }
+'.shadow-lg': { viewShadowOffset: { x: 0, y: 4 }, viewShadowRadius: 8, viewShadowColor: '#80000000', elevation: 26 }
+'.shadow-md': { viewShadowOffset: { x: 0, y: 3 }, viewShadowRadius: 6, viewShadowColor: '#80000000', elevation: 24 }
+'.shadow-outline': { viewShadowOffset: { x: 0, y: 0 }, viewShadowRadius: 4, viewShadowColor: '#80000000', elevation: 16 }
+'.shadow-sm': { viewShadowOffset: { x: 0, y: 1 }, viewShadowRadius: 2, viewShadowColor: '#80000000', elevation: 8 }
+'.shadow-xl': { viewShadowOffset: { x: 0, y: 6 }, viewShadowRadius: 12, viewShadowColor: '#80000000', elevation: 34 }
+'.shadow-xs': { viewShadowOffset: { x: 0, y: 0 }, viewShadowRadius: 1, viewShadowColor: '#80000000', elevation: 4 }
+'.show-paging-control': { showPagingControl: true }
+'.text-2xl': { font: { fontSize: 24 } }
+'.text-3xl': { font: { fontSize: 30 } }
+'.text-4xl': { font: { fontSize: 36 } }
+'.text-base': { font: { fontSize: 16 } }
+'.text-blue-100': { color: '#dbeafe', textColor: '#dbeafe' }
+'.text-blue-50': { color: '#eff6ff', textColor: '#eff6ff' }
+'.text-blue-500': { color: '#3b82f6', textColor: '#3b82f6' }
+'.text-blue-700': { color: '#1d4ed8', textColor: '#1d4ed8' }
+'.text-center': { textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER }
 '.text-gray-200': { color: '#e5e7eb', textColor: '#e5e7eb' }
 '.text-gray-500': { color: '#6b7280', textColor: '#6b7280' }
 '.text-gray-600': { color: '#4b5563', textColor: '#4b5563' }
 '.text-gray-700': { color: '#374151', textColor: '#374151' }
 '.text-gray-800': { color: '#1f2937', textColor: '#1f2937' }
 '.text-gray-900': { color: '#111827', textColor: '#111827' }
-'.text-red-50': { color: '#fef2f2', textColor: '#fef2f2' }
+'.text-green-100': { color: '#dcfce7', textColor: '#dcfce7' }
+'.text-green-50': { color: '#f0fdf4', textColor: '#f0fdf4' }
+'.text-green-500': { color: '#22c55e', textColor: '#22c55e' }
+'.text-indigo-700': { color: '#4338ca', textColor: '#4338ca' }
+'.text-left': { textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT }
+'.text-lg': { font: { fontSize: 18 } }
+'.text-purple-500': { color: '#a855f7', textColor: '#a855f7' }
 '.text-red-100': { color: '#fee2e2', textColor: '#fee2e2' }
+'.text-red-50': { color: '#fef2f2', textColor: '#fef2f2' }
 '.text-red-500': { color: '#ef4444', textColor: '#ef4444' }
 '.text-red-600': { color: '#dc2626', textColor: '#dc2626' }
 '.text-red-700': { color: '#b91c1c', textColor: '#b91c1c' }
-'.text-yellow-50': { color: '#fefce8', textColor: '#fefce8' }
+'.text-right': { textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT }
+'.text-sm': { font: { fontSize: 14 } }
+'.text-white': { color: '#ffffff', textColor: '#ffffff' }
+'.text-xl': { font: { fontSize: 20 } }
+'.text-xs': { font: { fontSize: 12 } }
 '.text-yellow-100': { color: '#fef9c3', textColor: '#fef9c3' }
+'.text-yellow-50': { color: '#fefce8', textColor: '#fefce8' }
 '.text-yellow-500': { color: '#eab308', textColor: '#eab308' }
-'.text-green-50': { color: '#f0fdf4', textColor: '#f0fdf4' }
-'.text-green-100': { color: '#dcfce7', textColor: '#dcfce7' }
-'.text-green-500': { color: '#22c55e', textColor: '#22c55e' }
-'.text-blue-50': { color: '#eff6ff', textColor: '#eff6ff' }
-'.text-blue-100': { color: '#dbeafe', textColor: '#dbeafe' }
-'.text-blue-500': { color: '#3b82f6', textColor: '#3b82f6' }
-'.text-blue-700': { color: '#1d4ed8', textColor: '#1d4ed8' }
-'.text-indigo-700': { color: '#4338ca', textColor: '#4338ca' }
-'.text-purple-500': { color: '#a855f7', textColor: '#a855f7' }
+'.to-blue-600': { backgroundGradient: { colors: [ '#2563eb' ] } }
+'.to-green-600': { backgroundGradient: { colors: [ '#16a34a' ] } }
+'.to-red-600': { backgroundGradient: { colors: [ '#dc2626' ] } }
+'.to-yellow-600': { backgroundGradient: { colors: [ '#ca8a04' ] } }
+'.touch-feedback-blue-600': { touchFeedbackColor: '#2563eb' }
+'.touch-feedback-green-600': { touchFeedbackColor: '#16a34a' }
+'.touch-feedback-red-600': { touchFeedbackColor: '#dc2626' }
+'.touch-feedback-yellow-600': { touchFeedbackColor: '#ca8a04' }
+'.vertical': { layout: 'vertical' }
+'.w-1/2': { width: '50%' }
+'.w-1/3': { width: '33.333334%' }
+'.w-1/4': { width: '25%' }
+'.w-1/5': { width: '20%' }
+'.w-10': { width: 40 }
+'.w-11/12': { width: '91.666667%' }
+'.w-12': { width: 48 }
+'.w-16': { width: 64 }
+'.w-20': { width: 80 }
+'.w-24': { width: 96 }
+'.w-4': { width: 16 }
+'.w-4/5': { width: '80%' }
+'.w-56': { width: 224 }
+'.w-6': { width: 24 }
+'.w-8': { width: 32 }
+'.w-auto': { width: Ti.UI.SIZE }
+'.w-full': { width: '100%' }
+'.w-screen': { width: Ti.UI.FILL }
 
-// Styles with arbitrary values
+// Platform and Device Modifiers
+'.android:text-base[platform=android]': { font: { fontSize: 16 } }
+'.android:text-sm[platform=android]': { font: { fontSize: 14 } }
+'.ios:text-sm[platform=ios]': { font: { fontSize: 14 } }
+'.ios:text-xs[platform=ios]': { font: { fontSize: 12 } }
+
+// Arbitrary Values
 '.cache-size-(9)': { cacheSize: 9 }
 
-// Default Font Awesome styles
+// Default Font Awesome
 '.fa-align-left': { text: '\uf036', title: '\uf036' }
 '.fa-bath': { text: '\uf2cd', title: '\uf2cd' }
 '.fa-bed': { text: '\uf236', title: '\uf236' }
@@ -244,9 +245,3 @@
 '.fa-times': { text: '\uf00d', title: '\uf00d' }
 '.fa-user': { text: '\uf007', title: '\uf007' }
 '.fas': { font: { fontFamily: 'FontAwesome6Free-Solid' } }
-
-// Unused or unsupported classes
-// '.feedback-blue-600': { }
-// '.feedback-green-600': { }
-// '.feedback-red-600': { }
-// '.feedback-yellow-600': { }
