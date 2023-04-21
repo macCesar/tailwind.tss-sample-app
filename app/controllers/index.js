@@ -1,5 +1,1 @@
-(function constructor() {
-	'use strict';
-
-	$.navWindow.open();
-}());
+$.navWindow.open()
