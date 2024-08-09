@@ -1,23 +1,23 @@
 <Alloy>
-	<NavigationWindow id="navWindow">
-		<Window title="tailwind tss">
-			<ScrollableView class="w-full h-full bg-white show-paging-control paging-control-gray-200 cache-size-(9)">
-				<Require src="examples/nike" />
+  <NavigationWindow id="navWindow">
+    <Window title="tailwind tss">
+      <ScrollableView class="show-paging-control paging-control-gray-200 cache-size-(9) h-full w-full bg-white">
+        <Require src="examples/nike" />
 
-				<Require src="examples/register" />
+        <Require src="examples/register" />
 
-				<Require src="examples/customer" />
+        <Require src="examples/customer" />
 
-				<Require src="examples/villa" />
+        <Require src="examples/villa" />
 
-				<Require src="examples/card" />
+        <Require src="examples/card" />
 
-				<Require src="examples/politico" />
+        <Require src="examples/politico" />
 
-				<Require src="examples/projects" />
+        <Require src="examples/projects" />
 
-				<Require src="examples/house" />
-			</ScrollableView>
-		</Window>
-	</NavigationWindow>
+        <Require src="examples/house" />
+      </ScrollableView>
+    </Window>
+  </NavigationWindow>
 </Alloy>

@@ -1,40 +1,40 @@
 <Alloy>
-	<ScrollView>
-		<View class="w-11/12 bg-white border-gray-400 rounded-lg vertical clip-enabled">
-			<ImageView class="w-screen" image="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3067&amp;q=80" />
+  <ScrollView>
+    <View class="vertical clip-enabled w-11/12 rounded-lg border-gray-400 bg-white">
+      <ImageView class="w-screen" image="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3067&amp;q=80" />
 
-			<View class="w-screen m-4 vertical">
-				<Label class="ml-0 text-sm font-bold text-gray-700">Detached house • 5y old</Label>
-				<Label class="ml-0 text-3xl font-bold text-gray-900">$750,000</Label>
-				<Label class="ml-0 text-gray-700">742 Evergreen Terrace</Label>
-			</View>
+      <View class="vertical m-4 w-screen">
+        <Label class="ml-0 text-sm font-bold text-gray-700">Detached house • 5y old</Label>
+        <Label class="ml-0 text-3xl font-bold text-gray-900">$750,000</Label>
+        <Label class="ml-0 text-gray-700">742 Evergreen Terrace</Label>
+      </View>
 
-			<View class="w-screen h-px bg-gray-300"></View>
-			<View class="horizontal">
-				<View class="w-auto h-20 mx-2 horizontal">
-					<Label class="w-auto h-20 text-gray-800 fa-solid fa-bed" />
-					<Label class="w-auto h-20 ml-1 font-bold text-gray-800 ">3 Bedrooms</Label>
-				</View>
+      <View class="h-px w-screen bg-gray-300"></View>
+      <View class="horizontal">
+        <View class="horizontal mx-2 h-20 w-auto">
+          <Label class="fa-solid fa-bed h-20 w-auto text-gray-800" />
+          <Label class="ml-1 h-20 w-auto font-bold text-gray-800">3 Bedrooms</Label>
+        </View>
 
-				<View class="w-auto h-20 mx-2 horizontal">
-					<Label class="h-20 text-gray-800 fa-solid fa-bath" />
-					<Label class="h-20 ml-1 font-bold text-gray-800">2 Bathrooms</Label>
-				</View>
-			</View>
+        <View class="horizontal mx-2 h-20 w-auto">
+          <Label class="fa-solid fa-bath h-20 text-gray-800" />
+          <Label class="ml-1 h-20 font-bold text-gray-800">2 Bathrooms</Label>
+        </View>
+      </View>
 
-			<View class="w-screen h-px bg-gray-300"></View>
-			<View class="w-screen bg-gray-100 vertical">
-				<Label class="mx-4 mt-3 text-xs font-bold text-gray-600">REALTOR</Label>
+      <View class="h-px w-screen bg-gray-300"></View>
+      <View class="vertical w-screen bg-gray-100">
+        <Label class="mx-4 mt-3 text-xs font-bold text-gray-600">REALTOR</Label>
 
-				<View class="m-4 horizontal">
-					<ImageView class="w-10 h-10 rounded-10" image="https://randomuser.me/api/portraits/women/17.jpg" />
+        <View class="horizontal m-4">
+          <ImageView class="rounded-10 h-10 w-10" image="https://randomuser.me/api/portraits/women/17.jpg" />
 
-					<View class="w-screen vertical">
-						<Label class="ml-3 font-bold text-gray-900">Catherine Heffner</Label>
-						<Label class="ml-3 text-sm text-gray-700">(555) 123-4567</Label>
-					</View>
-				</View>
-			</View>
-		</View>
-	</ScrollView>
+          <View class="vertical w-screen">
+            <Label class="ml-3 font-bold text-gray-900">Catherine Heffner</Label>
+            <Label class="ml-3 text-sm text-gray-700">(555) 123-4567</Label>
+          </View>
+        </View>
+      </View>
+    </View>
+  </ScrollView>
 </Alloy>

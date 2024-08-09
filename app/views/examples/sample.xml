@@ -1,25 +1,25 @@
 <Alloy>
-	<Window class="bg-orange-100">
-		<View class="h-auto mx-3 bg-blue-200 border-4 border-blue-600 rounded-lg">
-			<View class="h-auto vertical">
+  <Window class="bg-orange-100">
+    <View class="mx-3 h-auto rounded-lg border-4 border-blue-600 bg-blue-200">
+      <View class="vertical h-auto">
 
-				<Button class="mt-3 text-base text-indigo-700">This is an Indigo Button</Button>
+        <Button class="mt-3 text-base text-indigo-700">This is an Indigo Button</Button>
 
-				<Button class="text-xl text-red-700">This is an XL Red Button</Button>
+        <Button class="text-xl text-red-700">This is an XL Red Button</Button>
 
-				<Label class="text-2xl text-blue-700">This is a 2XL Blue Label</Label>
+        <Label class="text-2xl text-blue-700">This is a 2XL Blue Label</Label>
 
-				<Button class="w-1/2 h-10 mt-4 ml-4 text-base text-white bg-blue-500 border-2 border-blue-600 rounded-lg">ML-4 Button</Button>
+        <Button class="ml-4 mt-4 h-10 w-1/2 rounded-lg border-2 border-blue-600 bg-blue-500 text-base text-white">ML-4 Button</Button>
 
-				<Button class="w-1/2 h-10 mt-4 mr-4 text-base text-white bg-blue-700 border-2 border-blue-800 rounded-lg">MR-4 Button</Button>
+        <Button class="mr-4 mt-4 h-10 w-1/2 rounded-lg border-2 border-blue-800 bg-blue-700 text-base text-white">MR-4 Button</Button>
 
-				<View class="h-auto mt-4 mb-1 horizontal">
-					<Label class="w-1/4 h-8 text-xs text-center text-white bg-blue-900 opacity-25">opacity-25</Label>
-					<Label class="w-1/4 h-8 text-xs text-center text-white bg-blue-900 opacity-50">opacity-50</Label>
-					<Label class="w-1/4 h-8 text-xs text-center text-white bg-blue-900 opacity-75">opacity-75</Label>
-					<Label class="w-1/4 h-8 text-xs text-center text-white bg-blue-900 opacity-100">opacity-100</Label>
-				</View>
-			</View>
-		</View>
-	</Window>
+        <View class="horizontal mb-1 mt-4 h-auto">
+          <Label class="h-8 w-1/4 bg-blue-900 text-center text-xs text-white opacity-25">opacity-25</Label>
+          <Label class="h-8 w-1/4 bg-blue-900 text-center text-xs text-white opacity-50">opacity-50</Label>
+          <Label class="h-8 w-1/4 bg-blue-900 text-center text-xs text-white opacity-75">opacity-75</Label>
+          <Label class="h-8 w-1/4 bg-blue-900 text-center text-xs text-white opacity-100">opacity-100</Label>
+        </View>
+      </View>
+    </View>
+  </Window>
 </Alloy>

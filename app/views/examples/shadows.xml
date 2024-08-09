@@ -1,15 +1,15 @@
 <Alloy>
-	<ScrollView class="bg-blue-900">
-		<View class="horizontal">
-			<View class="w-16 h-16 mx-6 my-10 bg-blue-500 shadow-xs" />
-			<View class="w-16 h-16 mx-6 my-10 bg-blue-500 shadow-sm" />
-			<View class="w-16 h-16 mx-6 my-10 bg-blue-500 shadow" />
-			<View class="w-16 h-16 mx-6 my-10 bg-blue-500 shadow-md" />
-			<View class="w-16 h-16 mx-6 my-10 bg-blue-500 shadow-lg" />
-			<View class="w-16 h-16 mx-6 my-10 bg-blue-500 shadow-xl" />
-			<View class="w-16 h-16 mx-6 my-10 bg-blue-500 shadow-2xl" />
-			<View class="w-16 h-16 mx-6 my-10 bg-blue-500 shadow-inner" />
-			<View class="w-16 h-16 mx-6 my-10 bg-blue-500 shadow-outline" />
-		</View>
-	</ScrollView>
+  <ScrollView class="bg-blue-900">
+    <View class="horizontal">
+      <View class="shadow-xs mx-6 my-10 h-16 w-16 bg-blue-500" />
+      <View class="mx-6 my-10 h-16 w-16 bg-blue-500 shadow-sm" />
+      <View class="mx-6 my-10 h-16 w-16 bg-blue-500 shadow" />
+      <View class="mx-6 my-10 h-16 w-16 bg-blue-500 shadow-md" />
+      <View class="mx-6 my-10 h-16 w-16 bg-blue-500 shadow-lg" />
+      <View class="mx-6 my-10 h-16 w-16 bg-blue-500 shadow-xl" />
+      <View class="mx-6 my-10 h-16 w-16 bg-blue-500 shadow-2xl" />
+      <View class="mx-6 my-10 h-16 w-16 bg-blue-500 shadow-inner" />
+      <View class="shadow-outline mx-6 my-10 h-16 w-16 bg-blue-500" />
+    </View>
+  </ScrollView>
 </Alloy>
