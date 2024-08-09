@@ -1,320 +1,406 @@
-function Animation(args) {
-	let param = {
-		id: args.id,
-		open: false,
-		draggables: [],
-		playing: false,
-		delay: args.delay,
-		debug: args.debug ?? false,
-		hasTransformation: (args.scale !== undefined || args.rotate !== undefined),
-	};
+// PurgeTSS v6.3.4
+// Created by César Estrada
+// https://purgetss.com
 
-	logger('Create Animation View:');
+function Animation(args = {}) {
+  const param = {
+    id: args.id,
+    open: false,
+    draggables: [],
+    playing: false,
+    delay: args.delay ?? 0,
+    debug: args.debug ?? false,
+    moveByAnimation: args.moveByAnimation ?? false,
+    moveByProperties: args.moveByProperties ?? false,
+    hasTransformation: (args.scale !== undefined || args.rotate !== undefined)
+  }
 
-	const animationView = Ti.UI.createView({ width: 0, height: 0, touchEnabled: false });
+  logger('Create Animation View: ' + param.id)
 
-	if (args.scale || args.rotate || args.anchorPoint) {
-		logger('   Creating transform');
-		args.transform = Ti.UI.createMatrix2D({ scale, rotate, anchorPoint } = args);
-	}
+  const animationView = Ti.UI.createView({ width: 0, height: 0, touchEnabled: false })
 
-	delete args.id;
-	delete args.scale;
-	delete args.rotate;
+  delete args.id
 
-	if (args.animation && args.animation.open && (args.animation.open.anchorPoint || args.animation.open.rotate || args.animation.open.scale)) {
-		logger('   Creating transformOnOpen');
-		args.transformOnOpen = Ti.UI.createMatrix2D({ anchorPoint, rotate, scale } = args.animation.open);
-		delete args.animation.open.scale;
-		delete args.animation.open.rotate;
-		delete args.animation.open.anchorPoint;
-	}
+  handleTransformations(args)
 
-	if (args.animation && args.animation.close && (args.animation.close.anchorPoint || args.animation.close.rotate || args.animation.close.scale)) {
-		logger('   Creating transformOnClose');
-		args.transformOnClose = Ti.UI.createMatrix2D({ anchorPoint, rotate, scale } = args.animation.close);
-		delete args.animation.close.scale;
-		delete args.animation.close.rotate;
-		delete args.animation.close.anchorPoint;
-	}
+  animationView.play = (_views, _cb) => {
+    if (param.debug) { console.log('') }
+    logger('`play` method called on: ' + param.id)
+    param.playing ? logger(`$.${param.view.id}: is playing...`) : mainPlayApplyFn(_views, _cb)
+  }
 
-	// TODO: A library of useful animations
-	animationView.play = (_views, _cb) => {
-		logger('-> play Called');
-		(param.playing) ? logger(`$.${param.view.id}: is playing...`) : play(_views, _cb);
-	};
+  animationView.toggle = animationView.play
 
-	animationView.toggle = animationView.play;
+  animationView.apply = (_views, _cb) => {
+    if (param.debug) { console.log('') }
+    logger('`apply` method called on: ' + param.id)
+    mainPlayApplyFn(_views, _cb, 'apply')
+  }
 
-	animationView.apply = (_views, _cb) => {
-		logger('-> apply Called');
-		play(_views, _cb, 'apply')
-	};
+  animationView.draggable = (_views) => {
+    if (param.debug) { console.log('') }
+    logger('`draggable` method called on: ' + param.id)
+    makeViewsDraggable(_views)
+  }
 
-	animationView.draggable = (_views) => {
-		logger('-> draggable Called');
-		if (Array.isArray(_views)) {
-			_views.forEach((_view, key) => {
-				_view.zIndex = key;
-				draggable(_view);
-			});
-		} else {
-			draggable(_views);
-		}
-	};
+  animationView.open = (_views, _cb) => {
+    if (param.debug) { console.log('') }
+    logger('`open` method called on: ' + param.id)
+    mainPlayApplyFn(_views, _cb, 'play', 'open')
+  }
 
-	//! Helper Functions
-	function play(_views, _cb, action = 'play') {
-		logger('     Helper Function');
+  animationView.close = (_views, _cb) => {
+    if (param.debug) { console.log('') }
+    logger('`close` method called on: ' + param.id)
+    mainPlayApplyFn(_views, _cb, 'play', 'close')
+  }
 
-		checkAnimation(action);
+  function handleTransformations(args) {
+    if ('anchorPoint' in args || 'rotate' in args || 'scale' in args) {
+      logger('   -> Creating transform')
+      args.transform = Ti.UI.createMatrix2D(args)
+      delete args.scale
+      delete args.rotate
+      delete args.anchorPoint
+    }
 
-		if (Array.isArray(_views)) {
-			args.delay = param.delay;
-			_views.forEach(_view => {
-				(action === 'play') ? playView(_view, _cb, action) : applyView(_view, _cb, action);
-				args.delay += param.delay;
-			});
-		} else if (action === 'play') {
-			playView(_views, _cb, action);
-		} else if (action === 'apply') {
-			applyView(_views, _cb, action);
-		}
-	}
+    if (args.animationProperties) {
+      if ('open' in args.animationProperties) {
+        handleTransformOnOpenClose(args, 'open')
+      }
+      if ('close' in args.animationProperties) {
+        handleTransformOnOpenClose(args, 'close')
+      }
+    }
+  }
 
-	function draggable(_view) {
-		if (_view) {
-			logger('    draggable helper function');
+  function handleTransformOnOpenClose(args, state) {
+    const properties = args.animationProperties[state]
+    if ('anchorPoint' in properties || 'rotate' in properties || 'scale' in properties) {
+      logger(`   -> Creating transformOn${capitalize(state)}`)
+      args[`transformOn${capitalize(state)}`] = Ti.UI.createMatrix2D(properties)
+    }
+  }
 
-			let offsetX, offsetY;
+  function mainPlayApplyFn(_views, _cb, action = 'play', state) {
+    logger('   -> `mainPlayApplyFn` helper')
 
-			if (args.bounds) {
-				if (_view.bounds) {
-					_view.bounds = { ...args.bounds, ..._view.bounds };
-				} else {
-					_view.bounds = args.bounds;
-				}
-			}
+    if (state) {
+      param.open = state === 'open'
+    } else {
+      param.open = !param.open
+    }
 
-			param.draggables.push(_view);
+    chooseAnimationBasedOnState(action)
 
-			Ti.Gesture.addEventListener('orientationchange', (e) => {
-				if (OS_ANDROID) {
-					setTimeout(() => {
-						checkBoundaries(_view);
-					}, 1000);
-				} else {
-					checkBoundaries(_view);
-				}
-			});
+    const applyOrPlayView = (view) => {
+      action === 'play' ? playView(view, _cb, action) : applyView(view, _cb, action)
+    }
 
-			_view.addEventListener('touchstart', function(e) {
-				offsetX = e.x;
-				offsetY = e.y;
+    if (Array.isArray(_views)) {
+      args.delay = param.delay
+      _views.forEach((view) => {
+        applyOrPlayView(view)
+        args.delay += param.delay
+      })
+    } else {
+      applyOrPlayView(_views)
+    }
+  }
 
-				param.draggables.push(param.draggables.splice(realSourceView(e.source).zIndex, 1)[0]);
+  function makeViewsDraggable(_views) {
+    if (Array.isArray(_views)) {
+      _views.forEach((view, key) => {
+        view.zIndex = key
+        makeDraggable(view)
+      })
+    } else {
+      makeDraggable(_views)
+    }
+  }
 
-				param.draggables.forEach((draggable, key) => {
-					draggable.zIndex = key;
-				});
+  function makeDraggable(draggableView) {
+    if (draggableView) {
+      logger('   -> `draggable` helper')
 
-				checkDraggable(_view, 'drag');
-			});
+      let offsetX, offsetY
+      setBounds(draggableView, args.bounds)
 
-			_view.addEventListener('touchend', e => {
-				checkDraggable(_view, 'drop');
-			});
+      draggableView.addEventListener('touchstart', (event) => {
+        offsetX = event.x
+        offsetY = event.y
 
-			_view.addEventListener('touchmove', function(e) {
-				if (!e.source.transform && !param.hasTransformation && !_view.transform) {
-					let convertedPoint = _view.convertPointToView({ x: e.x, y: e.y }, _view.parent);
+        updateDraggableZIndex(event)
+        checkDraggable(draggableView, 'drag')
+      })
 
-					let top = Math.round(convertedPoint.y - offsetY);
-					let left = Math.round(convertedPoint.x - offsetX);
+      draggableView.addEventListener('touchend', () => checkDraggable(draggableView, 'drop'))
 
-					if (_view.bounds) {
-						if (_view.bounds.top !== undefined && top < _view.bounds.top) top = _view.bounds.top;
-						if (_view.bounds.left !== undefined && left < _view.bounds.left) left = _view.bounds.left;
-						if (_view.bounds.right !== undefined && left > _view.parent.rect.width - _view.rect.width - _view.bounds.right) left = _view.parent.rect.width - _view.rect.width - _view.bounds.right;
-						if (_view.bounds.bottom !== undefined && top > _view.parent.rect.height - _view.rect.height - _view.bounds.bottom) top = _view.parent.rect.height - _view.rect.height - _view.bounds.bottom;
-					}
+      draggableView.addEventListener('touchmove', (event) => handleTouchMove(event, draggableView, offsetX, offsetY))
 
-					let moveValues = { top: top, left: left, duration: 0 }
+      Ti.Gesture.addEventListener('orientationchange', () => checkBoundaries(draggableView))
 
-					if (_view.constraint === 'vertical') {
-						delete moveValues.left;
-					} else if (_view.constraint === 'horizontal') {
-						delete moveValues.top;
-					}
+      param.draggables.push(draggableView)
+    } else {
+      notFound()
+    }
+  }
 
-					_view.animate(moveValues);
-				}
-			});
-		} else {
-			notFound();
-		}
-	}
+  function handleTouchMove(event, draggableView, offsetX, offsetY) {
+    const convertedPoint = draggableView.convertPointToView({ x: event.x, y: event.y }, draggableView.parent)
+    let top = Math.round(convertedPoint.y - offsetY)
+    let left = Math.round(convertedPoint.x - offsetX)
 
-	function realSourceView(_source) {
-		if (param.draggables.map(a => a.id).includes(_source.id)) {
-			return _source;
-		} else {
-			return realSourceView(_source.parent);
-		}
-	}
+    const parentViewRect = draggableView.parent.rect
 
-	function checkBoundaries(_view) {
-		if (_view.bounds) {
-			if (_view.bounds.right !== undefined && _view.left > _view.parent.rect.width - _view.rect.width - _view.bounds.right) _view.left = _view.parent.rect.width - _view.rect.width - _view.bounds.right;
-			if (_view.bounds.bottom !== undefined && _view.top > _view.parent.rect.height - _view.rect.height - _view.bounds.bottom) _view.top = _view.parent.rect.height - _view.rect.height - _view.bounds.bottom;
-		}
-	}
+    if (draggableView.bounds) {
+      if (draggableView.bounds.top !== undefined && top < draggableView.bounds.top) {
+        top = draggableView.bounds.top
+      }
+      if (draggableView.bounds.left !== undefined && left < draggableView.bounds.left) {
+        left = draggableView.bounds.left
+      }
+      if (draggableView.bounds.right !== undefined && left > parentViewRect.width - draggableView.rect.width - draggableView.bounds.right) {
+        left = parentViewRect.width - draggableView.rect.width - draggableView.bounds.right
+      }
+      if (draggableView.bounds.bottom !== undefined && top > parentViewRect.height - draggableView.rect.height - draggableView.bounds.bottom) {
+        top = parentViewRect.height - draggableView.rect.height - draggableView.bounds.bottom
+      }
+    }
 
-	function checkAnimation(action) {
-		if (args.animation) {
-			logger('       Check Animation');
-			param.open = !param.open;
+    const { x, y } = calculateTranslation(draggableView, parentViewRect, left, top)
 
-			// For regular animations, including extra animations with open and close states.
-			args = param.open ? { ...args, ...args.animation.open } : { ...args, ...args.animation.close };
+    if (param.moveByProperties) {
+      draggableView.applyProperties({ duration: 0, transform: Ti.UI.createMatrix2D().translate(x, y) })
+    } else if (param.moveByAnimation) {
+      draggableView.animate(Ti.UI.createAnimation({ top, left, duration: 0 }))
+    } else {
+      draggableView.animate({ top, left, duration: 0 })
+    }
+  }
 
-			if (action === 'play') {
-				if (param.open && args.transformOnOpen) {
-					logger('       Set args.transform = args.transformOnOpen');
-					args.transform = args.transformOnOpen;
-				} else if (args.transformOnClose) {
-					logger('       Set args.transform = args.transformOnClose');
-					args.transform = args.transformOnClose;
-				}
+  function calculateTranslation(draggableView, parentViewRect, left, top) {
+    let x = left - parentViewRect.width / 2 + draggableView.rect.width / 2
+    let y = top - parentViewRect.height / 2 + draggableView.rect.height / 2
 
-				param.open = (args.autoreverse) ? !param.open : param.open;
-			}
-		}
-	}
+    if (draggableView.left) {
+      x = left - draggableView.left
+    } else if (draggableView.right) {
+      x = left - (parentViewRect.width - draggableView.right - draggableView.rect.width)
+    }
 
-	function logger(_message, forceLog = false) {
-		if (param.debug || forceLog) console.warn(`:: ti.animation :: ${_message}`);
-	}
+    if (draggableView.top) {
+      y = top - draggableView.top
+    } else if (draggableView.bottom) {
+      y = top - (parentViewRect.height - draggableView.bottom - draggableView.rect.height)
+    }
 
-	function notFound(source) {
-		console.error('The provided target can’t be found!');
-	}
+    if (draggableView.constraint === 'vertical') {
+      x = 0
+    } else if (draggableView.constraint === 'horizontal') {
+      y = 0
+    }
 
-	//! Needs refactor!! It's so ugly right now!!
-	function checkDraggable(_view, _action) {
-		logger('   Check Draggable');
-		let draggingType = (_view.draggingType) ? _view.draggingType : args.draggingType;
-		if (_action === 'drag' && _view.draggable && _view.draggable.drag) {
-			let theArgs = (args.draggable) ? { ...args.draggable.drag, ..._view.draggable.drag } : _view.draggable.drag;
-			(draggingType === 'apply') ? _view.applyProperties(theArgs) : _view.animate(Ti.UI.createAnimation(theArgs));
-		} else if (_action === 'drop' && _view.draggable && _view.draggable.drop) {
-			let theArgs = (args.draggable) ? { ...args.draggable.drop, ..._view.draggable.drop } : _view.draggable.drop;
-			(draggingType === 'apply') ? _view.applyProperties(theArgs) : _view.animate(Ti.UI.createAnimation(theArgs));
-		} else if (args.draggable) {
-			if (_action === 'drag') {
-				(draggingType === 'apply') ? _view.applyProperties(args.draggable.drag) : _view.animate(Ti.UI.createAnimation(args.draggable.drag));
-			} else if (_action === 'drop') {
-				(draggingType === 'apply') ? _view.applyProperties(args.draggable.drop) : _view.animate(Ti.UI.createAnimation(args.draggable.drop));
-			}
-		}
-	}
+    return { x, y }
+  }
 
-	function checkComplete(view, action) {
-		if (args.animation && args.animation.complete) {
-			logger('       check `complete` args');
-			if (action === 'play') {
-				param.playing = true;
-				view.animate(Ti.UI.createAnimation(args.animation.complete), () => {
-					param.playing = false;
-				});
-			} else {
-				view.applyProperties(args.animation.complete);
-			}
-		}
-	}
+  function setBounds(view, bounds) {
+    if (bounds) {
+      view.bounds = view.bounds ? { ...bounds, ...view.bounds } : bounds
+    }
+  }
 
-	function playView(view, _cb, action) {
-		if (view) {
-			logger('---> Animate args to View');
-			// if (args && args.constructor === Object && Object.keys(args).length === 0) {
-			param.view = view;
-			param.playing = true;
-			view.animate(Ti.UI.createAnimation(args), e => {
-				checkComplete(view, action);
+  function updateDraggableZIndex(event) {
+    param.draggables.push(param.draggables.splice(realSourceView(event.source).zIndex, 1)[0])
+    param.draggables.forEach((draggable, key) => { draggable.zIndex = key })
+  }
 
-				(typeof _cb === 'function') ? _cb(e) : e => {
-					logger('Animation complete on object: ' + JSON.stringify(e));
-				};
+  function realSourceView(_source) {
+    return param.draggables.map(a => a.id).includes(_source.id) ? _source : realSourceView(_source.parent)
+  }
 
-				param.playing = false;
-			});
-			// }
-		} else {
-			notFound(args);
-		}
-	}
+  function chooseAnimationBasedOnState(action) {
+    if (args.animationProperties) {
+      args = param.open ? { ...args, ...args.animationProperties.open } : { ...args, ...args.animationProperties.close }
+      if (action === 'play') {
+        logger(`   -> '${action}' Check Animation`)
+        args.transform = param.open ? args.transformOnOpen : args.transformOnClose
+        param.open = args.autoreverse ? !param.open : param.open
+      }
+    }
+  }
 
-	function applyView(view, _cb, action) {
-		if (view) {
-			logger('---> Apply Properties to View');
-			view.applyProperties(args);
+  function checkBoundaries(_view) {
+    const bounds = _view.bounds
+    const parentRect = _view.parent.rect
+    if (bounds) {
+      if (bounds.right !== undefined && _view.left > parentRect.width - _view.rect.width - bounds.right) {
+        _view.left = parentRect.width - _view.rect.width - bounds.right
+      }
+      if (bounds.bottom !== undefined && _view.top > parentRect.height - _view.rect.height - bounds.bottom) {
+        _view.top = parentRect.height - _view.rect.height - bounds.bottom
+      }
+    }
+  }
 
-			checkComplete(view, action);
+  function checkComplete(view, action) {
+    if (args.animationProperties?.complete) {
+      logger('   -> `complete` Animation')
+      if (action === 'play') {
+        param.playing = true
+        view.animate(Ti.UI.createAnimation({ ...args, ...args.animationProperties.complete, transform: Ti.UI.createMatrix2D(args.animationProperties.complete) }), () => {
+          param.playing = false
+        })
+      } else {
+        view.applyProperties(args.animationProperties.complete)
+      }
+    }
+  }
 
-			(typeof _cb === 'function') ? _cb() : () => {
-				logger('Animation complete on objects: ' + JSON.stringify(e));
-				param.playing = false;
-			};
-		} else {
-			notFound(args);
-		}
-	}
+  function logger(_message, forceLog = false) {
+    if (param.debug || forceLog) { console.warn(`::ti.animation:: ${_message}`) }
+  }
 
-	return animationView;
+  function notFound() {
+    console.error('The provided target can’t be found!')
+  }
+
+  function createAnimationObject(_child, type) {
+    return Ti.UI.createAnimation({
+      ...(args.animationProperties?.children ?? {}),
+      ..._child.animationProperties?.child ?? {},
+      ..._child.animationProperties?.[type] ?? {},
+      transform: Ti.UI.createMatrix2D(_child.animationProperties?.[type] ?? {})
+    })
+  }
+
+  function checkDraggable(_view, _action) {
+    logger('Check Draggable')
+    logger('   -> `' + _action + '`')
+
+    const draggingType = _view.draggingType ?? args.draggingType
+    const argsActions = args.draggable ? args.draggable[_action] : null
+    const draggableActions = _view.draggable ? _view.draggable[_action] : null
+    const theArgs = draggableActions ? { ...argsActions, ...draggableActions } : argsActions
+
+    if (theArgs) {
+      if (draggingType === 'apply') {
+        _view.applyProperties(theArgs)
+      } else {
+        _view.animate(Ti.UI.createAnimation(theArgs))
+      }
+    }
+  }
+
+  function playView(view, _cb, action) {
+    if (view) {
+      logger('   -> `animate` View')
+      param.view = view
+      param.playing = true
+
+      const animation = Ti.UI.createAnimation(args)
+      const onComplete = (event) => {
+        checkComplete(view, action)
+        if (typeof _cb === 'function') {
+          _cb(event)
+        } else {
+          logger('Animation complete on object: ' + JSON.stringify(args))
+        }
+        param.playing = false
+      }
+
+      animation.addEventListener('complete', onComplete)
+      view.animate(animation)
+
+      innerAnimations(view, action)
+    } else {
+      notFound()
+    }
+  }
+
+  function applyView(view, _cb, action) {
+    if (view) {
+      logger('   -> `apply` View')
+      view.applyProperties(args)
+      innerAnimations(view, action)
+      checkComplete(view, action)
+      if (typeof _cb === 'function') { _cb() }
+    } else {
+      notFound()
+    }
+  }
+
+  function innerAnimations(_view, _action) {
+    _view.children.forEach((child) => {
+      const state = param.open ? 'open' : 'close'
+      if (child.animationProperties?.[state]) {
+        if (_action === 'play') {
+          child.animate(createAnimationObject(child, state), () => {
+            if (child.animationProperties.complete) {
+              child.animate(createAnimationObject(child, 'complete'))
+            }
+          })
+        } else {
+          child.applyProperties({ transform: Ti.UI.createMatrix2D(child.animationProperties[state]), ...child.animationProperties[state] })
+        }
+      }
+    })
+  }
+
+  function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1)
+  }
+
+  return animationView
 }
-exports.Animation = Animation;
+
+exports.AnimationProperties = Animation
 
 function deviceInfo() {
-	console.warn('------------------- DEVICE INFO -------------------');
+  console.warn('------------------- DEVICE INFO -------------------')
+  const platform = Ti.Platform
+  const displayCaps = platform.displayCaps
+  console.warn(`
+  version: ${platform.version}
+  name: ${platform.name}
+  username: ${platform.username}
+  locale: ${platform.locale}
+  osname: ${platform.osname}
+  ostype: ${platform.ostype}
+  model: ${platform.model}
+  manufacturer: ${platform.manufacturer}
+  architecture: ${platform.architecture}
+  availableMemory: ${platform.availableMemory}
+  isTablet: ${Alloy.isTablet}
+  isHandheld: ${Alloy.isHandheld}
+  Ti.Platform.displayCaps.dpi: ${displayCaps.dpi}
+  Ti.Platform.displayCaps.density: ${displayCaps.density}
+  Ti.Platform.displayCaps.platformWidth: ${displayCaps.platformWidth}
+  Ti.Platform.displayCaps.platformHeight: ${displayCaps.platformHeight}`)
 
-	console.warn('');
-	console.warn('version:', Ti.Platform.version);
-	console.warn('name:', Ti.Platform.name);
-	console.warn('username:', Ti.Platform.username);
-	console.warn('locale:', Ti.Platform.locale);
-	console.warn('osname:', Ti.Platform.osname);
-	console.warn('ostype:', Ti.Platform.ostype);
-	console.warn('model:', Ti.Platform.model);
-	console.warn('manufacturer:', Ti.Platform.manufacturer);
-	console.warn('architecture:', Ti.Platform.architecture);
-	console.warn('availableMemory:', Ti.Platform.availableMemory);
+  if (platform.osname === 'android') {
+    console.warn(`
+  Ti.Platform.displayCaps.xdpi: ${displayCaps.xdpi}
+  Ti.Platform.displayCaps.ydpi: ${displayCaps.ydpi}`)
+  }
 
-	console.warn('');
-	console.warn('isTablet:', Alloy.isTablet);
-	console.warn('isHandheld:', Alloy.isHandheld);
+  if (['iphone', 'ipad', 'android'].includes(platform.osname)) {
+    console.warn(`
+  Ti.Platform.displayCaps.logicalDensityFactor: ${displayCaps.logicalDensityFactor}`)
+  }
 
-	console.warn('');
-	console.warn('Ti.Platform.displayCaps.dpi:', Ti.Platform.displayCaps.dpi);
-	console.warn('Ti.Platform.displayCaps.density:', Ti.Platform.displayCaps.density);
-	console.warn('Ti.Platform.displayCaps.platformWidth:', Ti.Platform.displayCaps.platformWidth);
-	console.warn('Ti.Platform.displayCaps.platformHeight:', Ti.Platform.displayCaps.platformHeight);
-
-	if (Ti.Platform.osname === 'android') {
-		console.warn('');
-		console.warn('Ti.Platform.displayCaps.xdpi:', Ti.Platform.displayCaps.xdpi);
-		console.warn('Ti.Platform.displayCaps.ydpi:', Ti.Platform.displayCaps.ydpi);
-	}
-
-	if ((Ti.Platform.osname === 'iphone') || (Ti.Platform.osname === 'ipad') || (Ti.Platform.osname === 'android')) {
-		console.warn('');
-		console.warn('Ti.Platform.displayCaps.logicalDensityFactor:', Ti.Platform.displayCaps.logicalDensityFactor);
-	}
-
-	console.warn('');
-	console.warn('----------------- END DEVICE INFO -----------------');
+  console.warn('')
+  console.warn('----------------- END DEVICE INFO -----------------')
 }
-exports.deviceInfo = deviceInfo;
 
-exports.createAnimation = (args) => {
-	return new Animation(args);
-};
+exports.deviceInfo = deviceInfo
+
+function saveComponent({ source, directory = Ti.Filesystem.tempDirectory }) {
+  const componentImage = source.toImage()
+  const md5 = `${Ti.Utils.md5HexDigest(componentImage)}.png`
+  Ti.Filesystem.getFile(directory, md5).write(componentImage)
+  Ti.Media.saveToPhotoGallery(componentImage)
+}
+exports.saveComponent = saveComponent
+
+exports.createAnimation = (args) => new Animation(args)
