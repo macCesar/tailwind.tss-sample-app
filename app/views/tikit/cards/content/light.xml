@@ -1,0 +1,13 @@
+<Alloy>
+  <TikitCard module="tikit.ui" component="card" class="vertical h-auto w-screen" classes="$.args.classes">
+    <View class="vertical touch-enabled-false mb-4 mt-2 h-auto w-full">
+      <Label id="title" text="$.args.title" class="touch-enabled-false mx-4 h-auto text-left text-3xl font-bold text-gray-500/90" />
+
+      <View class="touch-enabled-false mx-4 ml-0 mt-0.5 h-auto w-auto rounded bg-gray-500/10">
+        <Label id="subtitle" text="$.args.subtitle" class="touch-enabled-false mx-1.5 my-0.5 h-auto w-auto text-base font-bold text-gray-500/90" />
+      </View>
+
+      <Label id="text" text="$.args.text" class="font-regular touch-enabled-false mx-4 mt-1 h-auto text-base text-gray-500/90" />
+    </View>
+  </TikitCard>
+</Alloy>

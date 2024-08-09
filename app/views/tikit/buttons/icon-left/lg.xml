@@ -1,0 +1,6 @@
+<Alloy>
+  <TikitButton module="tikit.ui" component="button" classes="$.args.classes" class="ios:bg-selected-black/10 touch-feedback h-9 w-auto rounded-md bg-gray-500">
+    <Icon module="tikit.ui" icon="$.args.icon" class="touch-enabled-false fa fa-check-circle ml-0 h-9 w-8 text-center text-lg text-white/90" />
+    <Label module="tikit.ui" text="$.args.title" classes="$.args.classes" class="font-regular touch-enabled-false ml-8 mr-2 h-9 w-auto text-left text-lg text-white/90" />
+  </TikitButton>
+</Alloy>
