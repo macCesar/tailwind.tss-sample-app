@@ -27,7 +27,7 @@
         <Label class="mx-4 mt-3 text-xs font-bold text-gray-600">REALTOR</Label>
 
         <View class="horizontal m-4">
-          <ImageView class="rounded-10 h-10 w-10" image="https://randomuser.me/api/portraits/women/17.jpg" />
+          <ImageView class="rounded-10 wh-10" image="https://randomuser.me/api/portraits/women/17.jpg" />
 
           <View class="vertical w-screen">
             <Label class="ml-3 font-bold text-gray-900">Catherine Heffner</Label>

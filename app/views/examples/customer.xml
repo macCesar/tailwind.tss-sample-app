@@ -1,7 +1,7 @@
 <Alloy>
   <ScrollView>
     <View class="vertical mx-4 w-screen rounded-lg border-gray-400 bg-white shadow-lg">
-      <ImageView class="to rounded-16 mt-3 h-16 w-16" image="https://randomuser.me/api/portraits/women/17.jpg" />
+      <ImageView class="to rounded-16 wh-16 mt-3" image="https://randomuser.me/api/portraits/women/17.jpg" />
 
       <View class="vertical mb-3 mt-3">
         <Label class="text-xl text-gray-800">Erin Lindford</Label>

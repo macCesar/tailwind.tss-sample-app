@@ -81,6 +81,7 @@
 '.horizontal': { layout: 'horizontal' }
 '.importance[platform=android]': { importance: Ti.Android.IMPORTANCE_DEFAULT }
 '.italic': { font: { fontStyle: 'italic' } }
+'.m-2': { top: 8, right: 8, bottom: 8, left: 8 }
 '.m-3': { top: 12, right: 12, bottom: 12, left: 12 }
 '.m-4': { top: 16, right: 16, bottom: 16, left: 16 }
 '.mb-0': { bottom: 0 }
@@ -109,7 +110,6 @@
 '.mr-10': { right: 40 }
 '.mr-16': { right: 64 }
 '.mr-2': { right: 8 }
-'.mr-3': { right: 12 }
 '.mr-4': { right: 16 }
 '.mr-6': { right: 24 }
 '.mr-7': { right: 28 }
@@ -233,6 +233,9 @@
 '.w-auto': { width: Ti.UI.SIZE }
 '.w-full': { width: '100%' }
 '.w-screen': { width: Ti.UI.FILL }
+'.wh-10': { width: 40, height: 40 }
+'.wh-12': { width: 48, height: 48 }
+'.wh-16': { width: 64, height: 64 }
 '.wh-auto': { width: Ti.UI.SIZE, height: Ti.UI.SIZE }
 
 // Platform and Device Modifiers

@@ -10,7 +10,7 @@
         <ImageView class="mt-2 h-auto w-full" image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80" alt="NIKE AIR"/>
 
         <View class="w-screen bg-gray-900">
-          <View class="mx-2 my-2 w-screen">
+          <View class="m-2 w-screen">
             <Label class="ml-0 text-xl font-bold text-gray-200">$129</Label>
             <Button class="mr-0 w-24 rounded bg-gray-200 text-sm font-semibold text-gray-900">Add to cart</Button>
           </View>

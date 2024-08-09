@@ -23,9 +23,9 @@
       </View>
 
       <View class="vertical mb-8 mt-2 h-auto w-screen rounded-md bg-gray-100">
-        <Label class="ml-3 mr-3 mt-2 h-auto text-center text-xs text-gray-600">By creating an account you agree to our</Label>
+        <Label class="mx-3 mt-2 h-auto text-center text-xs text-gray-600">By creating an account you agree to our</Label>
 
-        <Button class="mb-1 ml-3 mr-3 h-auto text-center text-xs font-semibold text-gray-800">Terms and Conditions</Button>
+        <Button class="mx-3 mb-1 h-auto text-center text-xs font-semibold text-gray-800">Terms and Conditions</Button>
       </View>
     </View>
   </ScrollView>

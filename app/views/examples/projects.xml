@@ -8,7 +8,7 @@
       <View class="h-px w-screen bg-gray-500"></View>
       <View class="horizontal m-4 w-screen">
         <View class="mt-0 w-1/5">
-          <Button class="rounded-12 fa-solid fa-code ml-0 h-12 w-12 bg-indigo-500 text-2xl text-white"></Button>
+          <Button class="rounded-12 fa-solid fa-code wh-12 ml-0 bg-indigo-500 text-2xl text-white"></Button>
         </View>
 
         <View class="vertical w-4/5">
@@ -38,7 +38,7 @@
       <View class="h-px w-screen bg-gray-500"></View>
       <View class="horizontal m-4 w-screen">
         <View class="mt-0 w-1/5">
-          <Button class="rounded-12 fa-regular fa-suitcase ml-0 h-12 w-12 bg-green-500 text-2xl text-white"></Button>
+          <Button class="rounded-12 fa-regular fa-suitcase wh-12 ml-0 bg-green-500 text-2xl text-white"></Button>
         </View>
 
         <View class="vertical w-4/5">
