@@ -3,7 +3,12 @@
 // https://purgetss.com
 
 // Ti Elements
+'Button[platform=android]': { backgroundColor: 'transparent' }
 'ImageView[platform=ios]': { hires: true }
+'Label': { touchEnabled: false }
+'ScrollView': { contentWidth: Ti.UI.FILL, contentHeight: Ti.UI.SIZE }
+'ScrollView[platform=android]': { scrollType: 'vertical' }
+'TextArea': { touchEnabled: false }
 'View': { width: Ti.UI.SIZE, height: Ti.UI.SIZE }
 'Window': { backgroundColor: '#FFFFFF' }
 
