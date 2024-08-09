@@ -24,9 +24,7 @@ Optionally, you can run `npm install` to install the recommended dev dependencie
 > Alternatively, a better approach is to include your custom values in `config.js`. Further information is available in the [Configuration Section](customization/the-config-file).
 
 
-Check out all available classes in: [tailwind.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/tailwind.tss), [fontawesome.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/fontawesome.tss), [materialicons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/materialicons.tss), [framework7icons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/framework7icons.tss).
-
-Or, create your own [Custom Classes](https://purgetss.com/docs/customization/the-config-file).
+Check out all available classes in: [tailwind.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/tailwind.tss), [fontawesome.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/fontawesome.tss), [materialicons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/materialicons.tss), [framework7icons.tss](https://github.com/macCesar/purgeTSS/blob/master/dist/framework7icons.tss). Or, create your own [Custom Classes](https://purgetss.com/docs/customization/the-config-file).
 
 
 **For more information, visit the [official documentation](https://github.com/macCesar/purgeTSS).**
