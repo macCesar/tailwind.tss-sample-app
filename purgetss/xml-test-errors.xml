@@ -1,0 +1,47 @@
+<Alloy>
+  <Window class="bg-slate-900" title="Error Tests">
+
+    <!-- ERROR 1: Opening tag missing its name -->
+    < class="mx-6 mb-1 mt-4 h-auto w-auto">
+      <Label text="test" />
+    </View>
+
+    <!-- ERROR 2: Double slash in closing tag -->
+    <View class="mx-6">
+      <Label text="test" />
+    <//View>
+
+    <!-- ERROR 3: Tag missing opening < -->
+    View class="mx-6 mb-3 h-auto w-screen" onClick="doSomething">
+      <Label text="test" />
+    </View>
+
+    <!-- ERROR 4: Closing tag with extra trailing slash -->
+    <View class="mx-6">
+      <Label text="test" />
+    </View/>
+
+    <!-- ERROR 5: Unclosed opening tag (missing >) -->
+    <Label class="text-sm text-slate-400" text="broken"
+    <View class="mx-6" />
+
+    <!-- ERROR 6: Double closing bracket >> -->
+    <View class="mx-6">>
+      <Label text="test" />
+    </View>
+
+    <!-- ERROR 7: Attribute missing = sign -->
+    <View class"mx-6">
+      <Label text="test" />
+    </View>
+
+    <!-- ERROR 8: Backslash instead of forward slash in self-closing tag -->
+    <Label text="hi" \>
+
+    <!-- ERROR 9: Extra space between < and tag name -->
+    < View class="mx-6">
+      <Label text="test" />
+    </View>
+
+  </Window>
+</Alloy>
