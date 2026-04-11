@@ -1,69 +1,73 @@
 <Alloy>
-  <ScrollView>
-    <View class="vertical clip-enabled mx-4 w-screen rounded-lg border-gray-500 bg-white">
-      <View class="w-screen bg-gray-500">
-        <Label class="mx-3 my-2 h-auto text-xl font-semibold text-white">PROJECTS</Label>
-      </View>
-
-      <View class="h-px w-screen bg-gray-500"></View>
-      <View class="horizontal m-4 w-screen">
-        <View class="mt-0 w-1/5">
-          <Button class="rounded-12 fa-solid fa-code wh-12 ml-0 bg-indigo-500 text-2xl text-white"></Button>
+  <Window class="title-attributes-white bar-slate-900 nav-tint-blue-400 android:display-home-as-up bg-slate-900" title="Project List" backButtonTitle="">
+    <ScrollView class="vertical content-h-auto content-w-screen w-screen">
+      <View class="vertical clip-enabled mx-4 mt-6 w-screen rounded-xl bg-slate-800">
+        <View class="w-screen bg-slate-700">
+          <Label class="mx-4 my-3 h-auto text-xl font-semibold text-white">PROJECTS</Label>
         </View>
 
-        <View class="vertical w-4/5">
-          <Label class="w-screen text-sm text-gray-500">Engineering</Label>
-          <Label class="mt-1 w-screen text-base font-semibold text-gray-900">GraphQL API</Label>
-          <TextArea class="-ml-1 -mr-1 w-screen bg-white text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic, porro voluptatem totam nulla suscipit!</TextArea>
+        <View class="h-px w-screen bg-slate-700" />
 
-          <View class="horizontal w-screen">
-            <View class="horizontal h-6 w-1/3">
-              <Button class="fa-regular fa-user w-6 text-gray-500"/>
-              <Label class="ml-1 text-sm font-bold text-gray-700">4</Label>
+        <View class="horizontal m-4 w-screen">
+          <View class="mt-0 w-1/5">
+            <Button class="rounded-12 fa-solid fa-code wh-12 ml-0 bg-indigo-500/20 text-2xl text-indigo-400" />
+          </View>
+
+          <View class="vertical w-4/5">
+            <Label class="w-screen text-sm text-slate-400">Engineering</Label>
+            <Label class="mt-1 w-screen text-base font-semibold text-white">GraphQL API</Label>
+            <Label class="mt-1 h-auto w-screen text-sm text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic.</Label>
+
+            <View class="horizontal mt-2 w-screen">
+              <View class="horizontal h-6 w-1/3">
+                <Button class="fa-regular fa-user w-6 text-slate-500" />
+                <Label class="ml-1 text-sm font-bold text-slate-300">4</Label>
+              </View>
+
+              <View class="horizontal h-6 w-1/3">
+                <Button class="fa-regular fa-comment-alt w-6 text-slate-500" />
+                <Label class="ml-1 text-sm font-bold text-slate-300">12</Label>
+              </View>
+
+              <View class="horizontal h-6 w-1/3">
+                <Button class="fa-solid fa-align-left w-6 text-slate-500" />
+                <Label class="ml-1 text-sm font-bold text-slate-300">20</Label>
+              </View>
             </View>
+          </View>
+        </View>
 
-            <View class="horizontal h-6 w-1/3">
-              <Button class="fa-regular fa-comment-alt w-6 text-gray-500"/>
-              <Label class="ml-1 text-sm font-bold text-gray-700">12</Label>
-            </View>
+        <View class="h-px w-screen bg-slate-700" />
 
-            <View class="horizontal h-6 w-1/3">
-              <Button class="fa-solid fa-align-left w-6 text-gray-500"/>
-              <Label class="ml-1 text-sm font-bold text-gray-700">20</Label>
+        <View class="horizontal m-4 w-screen">
+          <View class="mt-0 w-1/5">
+            <Button class="rounded-12 fa-regular fa-suitcase wh-12 ml-0 bg-green-500/20 text-2xl text-green-400" />
+          </View>
+
+          <View class="vertical w-4/5">
+            <Label class="w-screen text-sm text-slate-400">Human Resources</Label>
+            <Label class="mt-1 w-screen text-base font-semibold text-white">Profit sharing program</Label>
+            <Label class="mt-1 h-auto w-screen text-sm text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic.</Label>
+
+            <View class="horizontal mt-2 w-screen">
+              <View class="horizontal h-6 w-1/3">
+                <Button class="fa-regular fa-user w-6 text-slate-500" />
+                <Label class="ml-1 text-sm font-bold text-slate-300">6</Label>
+              </View>
+
+              <View class="horizontal h-6 w-1/3">
+                <Button class="fa-regular fa-comment-alt w-6 text-slate-500" />
+                <Label class="ml-1 text-sm font-bold text-slate-300">5</Label>
+              </View>
+
+              <View class="horizontal h-6 w-1/3">
+                <Button class="fa-solid fa-align-left w-6 text-slate-500" />
+                <Label class="ml-1 text-sm font-bold text-slate-300">30</Label>
+              </View>
             </View>
           </View>
         </View>
       </View>
-
-      <View class="h-px w-screen bg-gray-500"></View>
-      <View class="horizontal m-4 w-screen">
-        <View class="mt-0 w-1/5">
-          <Button class="rounded-12 fa-regular fa-suitcase wh-12 ml-0 bg-green-500 text-2xl text-white"></Button>
-        </View>
-
-        <View class="vertical w-4/5">
-          <Label class="w-screen text-sm text-gray-500">Human Resources</Label>
-          <Label class="mt-1 w-screen text-base font-semibold text-gray-900">Profit sharing program</Label>
-          <TextArea class="-ml-1 -mr-1 w-screen bg-white text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic, porro voluptatem totam nulla suscipit!</TextArea>
-
-          <View class="horizontal w-screen">
-            <View class="horizontal h-6 w-1/3">
-              <Button class="fa-regular fa-user w-6 text-gray-500"/>
-              <Label class="ml-1 text-sm font-bold text-gray-700">6</Label>
-            </View>
-
-            <View class="horizontal h-6 w-1/3">
-              <Button class="fa-regular fa-comment-alt w-6 text-gray-500"/>
-              <Label class="ml-1 text-sm font-bold text-gray-700">5</Label>
-            </View>
-
-            <View class="horizontal h-6 w-1/3">
-              <Button class="fa-solid fa-align-left w-6 text-gray-500"/>
-              <Label class="ml-1 text-sm font-bold text-gray-700">30</Label>
-            </View>
-          </View>
-        </View>
-      </View>
-    </View>
-  </ScrollView>
+    </ScrollView>
+  </Window>
 </Alloy>

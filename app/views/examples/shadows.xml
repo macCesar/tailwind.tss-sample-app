@@ -1,15 +1,105 @@
 <Alloy>
-  <ScrollView class="bg-blue-900">
-    <View class="horizontal">
-      <View class="shadow-xs mx-6 my-10 h-16 w-16 bg-blue-500" />
-      <View class="mx-6 my-10 h-16 w-16 bg-blue-500 shadow-sm" />
-      <View class="mx-6 my-10 h-16 w-16 bg-blue-500 shadow" />
-      <View class="mx-6 my-10 h-16 w-16 bg-blue-500 shadow-md" />
-      <View class="mx-6 my-10 h-16 w-16 bg-blue-500 shadow-lg" />
-      <View class="mx-6 my-10 h-16 w-16 bg-blue-500 shadow-xl" />
-      <View class="mx-6 my-10 h-16 w-16 bg-blue-500 shadow-2xl" />
-      <View class="mx-6 my-10 h-16 w-16 bg-blue-500 shadow-inner" />
-      <View class="shadow-outline mx-6 my-10 h-16 w-16 bg-blue-500" />
-    </View>
-  </ScrollView>
+  <Window class="title-attributes-white bar-slate-900 nav-tint-blue-400 android:display-home-as-up bg-slate-900" title="Shadows &amp; Depth" backButtonTitle="">
+    <ScrollView class="vertical content-h-auto content-w-screen w-screen">
+
+      <!-- Shadow Levels -->
+      <Label class="section mt-6" text="SHADOW LEVELS" />
+
+      <View class="horizontal wh-auto mb-4">
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="shadow-xs wh-16 m-4 rounded-lg bg-slate-700" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="xs" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 m-4 rounded-lg bg-slate-700 shadow-sm" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="sm" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 m-4 rounded-lg bg-slate-700 shadow" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="base" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 m-4 rounded-lg bg-slate-700 shadow-md" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="md" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 m-4 rounded-lg bg-slate-700 shadow-lg" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="lg" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 m-4 rounded-lg bg-slate-700 shadow-xl" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="xl" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 m-4 rounded-lg bg-slate-700 shadow-2xl" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="2xl" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 shadow-outline m-4 rounded-lg bg-slate-700" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="outline" />
+        </View>
+      </View>
+
+      <!-- Opacity -->
+      <Label class="section" text="OPACITY LEVELS" />
+
+      <View class="horizontal mx-3 mb-4 h-auto w-screen">
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 rounded-lg bg-blue-500/100" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="100" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 rounded-lg bg-blue-500/80" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="80" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 rounded-lg bg-blue-500/60" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="60" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 rounded-lg bg-blue-500/40" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="40" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 rounded-lg bg-blue-500/20" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="20" />
+        </View>
+      </View>
+
+      <!-- Border Radius -->
+      <Label class="section" text="BORDER RADIUS" />
+
+      <View class="horizontal mx-3 mb-4 h-auto w-screen">
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 rounded-none bg-blue-500" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="none" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 rounded bg-blue-500" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="base" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 rounded-lg bg-blue-500" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="lg" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 rounded-xl bg-blue-500" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="xl" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 rounded-2xl bg-blue-500" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="2xl" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="wh-16 rounded-3xl bg-blue-500" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="3xl" />
+        </View>
+        <View class="vertical wh-auto mx-1 mb-4">
+          <View class="rounded-full-16 bg-blue-500" />
+          <Label class="mt-1 text-center text-xs text-slate-500" text="full" />
+        </View>
+      </View>
+
+    </ScrollView>
+  </Window>
 </Alloy>

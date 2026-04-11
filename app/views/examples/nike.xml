@@ -1,21 +1,23 @@
 <Alloy>
-  <ScrollView>
-    <View class="mx-10 shadow-lg">
-      <View class="vertical clip-enabled rounded-lg border-gray-400 bg-white">
-        <View class="vertical mx-4 my-2 h-auto">
-          <Label class="w-full text-3xl font-bold text-gray-900">NIKE AIR</Label>
-          <Label class="mt-1 w-full text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</Label>
+  <Window class="title-attributes-white bar-slate-900 nav-tint-blue-400 android:display-home-as-up bg-slate-900" title="Product Card" backButtonTitle="">
+    <ScrollView class="vertical content-h-auto content-w-screen w-screen">
+      <View class="vertical clip-enabled mx-4 mt-6 w-screen rounded-xl bg-slate-800">
+        <ImageView class="h-auto w-full" image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80" />
+
+        <View class="vertical mx-4 my-4 h-auto">
+          <Label class="w-full text-3xl font-bold text-white">NIKE AIR</Label>
+          <Label class="mt-2 w-full text-sm text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</Label>
         </View>
 
-        <ImageView class="mt-2 h-auto w-full" image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80" alt="NIKE AIR"/>
+        <View class="h-px w-screen bg-slate-700" />
 
-        <View class="w-screen bg-gray-900">
-          <View class="m-2 w-screen">
-            <Label class="ml-0 text-xl font-bold text-gray-200">$129</Label>
-            <Button class="mr-0 w-24 rounded bg-gray-200 text-sm font-semibold text-gray-900">Add to cart</Button>
+        <View class="w-screen bg-slate-800">
+          <View class="m-4 w-screen">
+            <Label class="ml-0 text-2xl font-bold text-white">$129</Label>
+            <Button class="mr-0 w-28 rounded-lg bg-blue-500 text-sm font-semibold text-white">Add to cart</Button>
           </View>
         </View>
       </View>
-    </View>
-  </ScrollView>
+    </ScrollView>
+  </Window>
 </Alloy>
