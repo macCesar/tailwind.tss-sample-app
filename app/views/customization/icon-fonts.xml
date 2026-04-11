@@ -1,0 +1,157 @@
+<Alloy>
+  <Window class="title-attributes-white bar-slate-900 nav-tint-blue-400 android:display-home-as-up bg-slate-900" title="Icon Font Libraries" backButtonTitle="">
+    <ScrollView class="vertical content-h-auto content-w-screen w-screen">
+
+      <!-- Section: Official Fonts -->
+      <Label class="section" text="OFFICIAL ICON FONTS" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 h-auto text-sm text-slate-300">PurgeTSS supports these icon font libraries:</Label>
+
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Font Awesome 7 Free</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Install/update: `purgetss il -v=fa`</Label>
+
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Framework7</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Install/update: `purgetss il -v=f7`</Label>
+
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Material Icons</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Install/update: `purgetss il -v=mi`</Label>
+
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Material Symbols</Label>
+        <Label class="mx-4 mb-4 mt-1 h-auto text-xs text-slate-500">Install/update: `purgetss il -v=ms`</Label>
+      </View>
+
+      <!-- Section: Using Icons -->
+      <Label class="section mt-6" text="USING ICONS IN XML" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Font Awesome Examples</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Use the icon class on Labels or Buttons:</Label>
+
+        <View class="horizontal mx-4 mt-4 h-auto w-screen">
+          <Label class="fas fa-house text-2xl text-blue-400" />
+          <Label class="ml-3 text-sm text-slate-400">fas fa-house</Label>
+        </View>
+
+        <View class="horizontal mx-4 mt-3 h-auto w-screen">
+          <Label class="fas fa-gear text-2xl text-green-400" />
+          <Label class="ml-3 text-sm text-slate-400">fas fa-gear</Label>
+        </View>
+
+        <View class="horizontal mx-4 mt-3 h-auto w-screen">
+          <Label class="fas fa-heart text-2xl text-red-400" />
+          <Label class="ml-3 text-sm text-slate-400">fas fa-heart</Label>
+        </View>
+
+        <View class="horizontal mx-4 mb-4 mt-3 h-auto w-screen">
+          <Label class="fab fa-github text-2xl text-slate-300" />
+          <Label class="ml-3 text-sm text-slate-400">fab fa-github</Label>
+        </View>
+      </View>
+
+      <!-- Section: Custom Font Libraries -->
+      <Label class="section mt-6" text="CUSTOM FONT LIBRARIES" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">The `build-fonts` Command</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Recreate removed libraries or add your own icon fonts:</Label>
+
+        <View class="mx-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-green-400" readonly="true">
+# 1. Put font files in purgetss/fonts/
+purgetss/
+└─ fonts/
+   └─ boxicons/
+      ├─ boxicons.css
+      └─ boxicons.ttf
+
+# 2. Run build-fonts
+purgetss build-fonts
+# alias: purgetss bf
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Generated Output</Label>
+
+        <View class="mx-4 mb-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-slate-400" readonly="true">
+// purgetss/styles/fonts.tss
+'.boxicons': {
+  font: { fontFamily: 'boxicons' }
+}
+'.bxl-meta': {
+  text: '\uef27', title: '\uef27'
+}
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+      </View>
+
+      <!-- Section: `modules` Option -->
+      <Label class="section mt-6" text="THE --MODULES OPTION" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">JavaScript Module Export</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Generate a CommonJS module for programmatic access:</Label>
+
+        <View class="mx-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-cyan-400" readonly="true">
+purgetss build-fonts --modules
+# alias: purgetss bf -m
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+
+        <View class="mx-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-purple-400" readonly="true">
+// app/lib/purgetss.fonts.js
+const icons = {
+  boxicons: {
+    bxlMeta: '\uef27',
+    bxLemon: '\uef28'
+  }
+}
+exports.icons = icons
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+
+        <Label class="mx-4 mb-4 mt-2 h-auto text-xs text-slate-400">Use in controllers: `require('purgetss.fonts').icons.boxicons.bxlMeta`</Label>
+      </View>
+
+      <!-- Section: Rename Prefix -->
+      <Label class="section mt-6" text="CUSTOM PREFIXES" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">`--prefix` Option</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Rename the `.css` file to change the class prefix:</Label>
+
+        <View class="mx-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-green-400" readonly="true">
+# Rename lineicons.css → li.css
+purgetss/fonts/lineicons/li.css
+
+# Classes become:
+'.li-zoom-out': { text: '\uea02' }
+'.li-zoom-in': { text: '\uea03' }
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+
+        <Label class="mx-4 mb-4 mt-2 h-auto text-xs text-amber-400">Make sure the prefix is unique to avoid conflicts with other class prefixes.</Label>
+      </View>
+
+      <!-- Section: Assets -->
+      <Label class="section mt-6" text="HOW FONTS ARE INSTALLED" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 h-auto text-sm text-slate-300">The `build-fonts` command copies font files to `app/assets/fonts/` and renames them to their PostScript names so they work on both iOS and Android.</Label>
+        <Label class="mx-4 mb-4 mt-2 h-auto text-xs text-slate-500">The style rule name is based on the font file name. Rename the `.ttf` file to change it.</Label>
+      </View>
+
+      <View class="mb-8" />
+
+    </ScrollView>
+  </Window>
+</Alloy>

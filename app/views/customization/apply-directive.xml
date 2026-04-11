@@ -1,0 +1,201 @@
+<Alloy>
+  <Window class="title-attributes-white bar-slate-900 nav-tint-blue-400 android:display-home-as-up bg-slate-900" title="Apply Directive" backButtonTitle="">
+    <ScrollView class="vertical content-h-auto content-w-screen w-screen">
+
+      <!-- Section: What Is Apply -->
+      <Label class="section" text="WHAT IS THE APPLY DIRECTIVE" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 h-auto text-sm text-slate-300">Bundle multiple utility classes into a reusable class, ID, or Ti Element. Use it in `config.cjs` on any target.</Label>
+        <Label class="mx-4 mb-4 mt-2 h-auto text-xs text-slate-500">Works with default classes, arbitrary values, newly defined classes, platform blocks, and more.</Label>
+      </View>
+
+      <!-- Section: String Syntax -->
+      <Label class="section mt-6" text="STRING SYNTAX" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Action Buttons (.actionBtn)</Label>
+
+        <View class="mx-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-green-400" readonly="true">
+'.actionBtn': {
+  apply: 'mb-2 mr-2 h-8 w-20 rounded-lg
+    text-xs font-semibold text-white'
+}
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+
+        <View class="horizontal mx-4 mb-2 mt-4 w-screen">
+          <Button class="actionBtn bg-blue-500">Save</Button>
+          <Button class="actionBtn bg-green-500">Export</Button>
+          <Button class="actionBtn bg-red-500">Delete</Button>
+        </View>
+
+        <Label class="mx-4 mb-4 mt-2 h-auto text-xs text-slate-400">Just add `actionBtn` + a color in XML — all shared styles come from the `apply`.</Label>
+      </View>
+
+      <!-- Section: Array Syntax -->
+      <Label class="section mt-6" text="ARRAY SYNTAX" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Same Result, Different Format</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Use an array instead of a string — PurgeTSS generates identical output:</Label>
+
+        <View class="mx-4 mb-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-blue-400" readonly="true">
+'.btn-corporate': {
+  apply: [
+    'bg-corporate-500',
+    'text-corporate-100',
+    'border-corporate-200'
+  ]
+}
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+      </View>
+
+      <!-- Section: Apply on Ti Elements -->
+      <Label class="section mt-6" text="APPLY ON TI ELEMENTS" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Global Element Styling</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">`apply` works on Ti Elements too — every instance gets the styles:</Label>
+
+        <View class="mx-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-cyan-400" readonly="true">
+// Every Label gets these styles
+Label: {
+  apply: 'text-base font-bold text-gray-700'
+}
+
+// Windows on iOS get large title setup
+Window: {
+  ios: {
+    apply: 'auto-adjust-scroll-view-insets
+      extend-edges-all large-title-enabled
+      status-bar-style-light-content'
+  }
+}
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+
+        <Label class="mx-4 mb-4 mt-2 h-auto text-xs text-slate-400">Combine `apply` with direct properties — they merge in the generated output.</Label>
+      </View>
+
+      <!-- Section: Apply on IDs -->
+      <Label class="section mt-6" text="APPLY ON IDS" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">#carrousel</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Target a specific element by ID:</Label>
+
+        <View class="mx-4 mb-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-amber-400" readonly="true">
+'#carrousel': {
+  apply: 'w-screen h-auto bg-teal-200
+    mx-2 my-4 horizontal'
+}
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+      </View>
+
+      <!-- Section: Using Newly Defined Classes -->
+      <Label class="section mt-6" text="USE NEWLY DEFINED COLORS" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Define, Then Reference</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Create custom colors in `extend`, then use them inside `apply`:</Label>
+
+        <View class="mx-4 mb-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-green-400" readonly="true">
+extend: {
+  colors: {
+    corporate: {
+      100: '#dddfe1', 200: '#babfc4',
+      500: '#53606b'
+    }
+  }
+},
+'.btn-corporate': {
+  apply: 'bg-corporate-500
+    text-corporate-100
+    border-corporate-200'
+}
+// → bg, text, and border all use
+//   the newly created colors
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+      </View>
+
+      <!-- Section: Platform Blocks in Apply -->
+      <Label class="section mt-6" text="PLATFORM BLOCKS IN APPLY" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Combine All Block Types</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">`default`, `ios`, `android`, `handheld`, `tablet`, and conditional blocks:</Label>
+
+        <View class="mx-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-purple-400" readonly="true">
+'.btn': {
+  apply: 'font-bold border-2 rounded
+    wh-auto my-0.5',
+
+  ios: { apply: 'w-screen mx-4' },
+  handheld: { apply: 'h-20' },
+
+  '[if=Alloy.Globals.iPhoneX]': {
+    apply: 'mb-12'
+  }
+}
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Platform-Specific Classes</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Classes like `clip-enabled` only exist with `[platform=ios]`. Use the `ios:` block:</Label>
+
+        <View class="mx-4 mb-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-cyan-400" readonly="true">
+'.my-view': {
+  apply: 'wh-32 bg-green-500',
+  ios: { apply: 'clip-enabled' }
+}
+// → '.my-view[platform=ios]': {
+//     clipMode: Ti.UI.iOS.CLIP_MODE_ENABLED,
+//     ... }
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+      </View>
+
+      <!-- Section: Arbitrary Values -->
+      <Label class="section mt-6" text="ARBITRARY VALUES IN APPLY" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Parentheses Notation</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Use arbitrary values inside `apply` for one-off dimensions:</Label>
+
+        <View class="mx-4 mb-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-amber-400" readonly="true">
+'.progress': {
+  apply: 'h-(1rem) horizontal
+    bg-(#e9ecef) text-(.75rem)
+    rounded-(.25rem)'
+}
+// → height: 16, layout: 'horizontal',
+//   fontSize: 12, borderRadius: 4
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+      </View>
+
+      <View class="mb-8" />
+
+    </ScrollView>
+  </Window>
+</Alloy>

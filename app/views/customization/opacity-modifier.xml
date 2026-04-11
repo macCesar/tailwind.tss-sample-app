@@ -1,0 +1,116 @@
+<Alloy>
+  <Window class="title-attributes-white bar-slate-900 nav-tint-blue-400 android:display-home-as-up bg-slate-900" title="Opacity Modifier" backButtonTitle="">
+    <ScrollView class="vertical content-h-auto content-w-screen w-screen">
+
+      <!-- Section: How It Works -->
+      <Label class="section" text="HOW IT WORKS" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 h-auto text-sm text-slate-300">Append a `/` and a value (0–100) to any color class to set its opacity. Works on `bg`, `text`, `border`, and all color properties.</Label>
+
+        <View class="mx-4 mb-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-green-400" readonly="true">
+bg-sky-500/50    → #800ea5e9 (50% opacity)
+text-purple-900/75 → #bf581c87 (75% opacity)
+bg-red-500/25    → #40ef4444 (25% opacity)
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+      </View>
+
+      <!-- Section: In XML -->
+      <Label class="section mt-6" text="IN YOUR XML FILES" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Live Examples</Label>
+
+        <View class="mx-4 mt-4 h-10 w-screen rounded-lg bg-sky-500 text-center">
+          <Label class="text-sm font-semibold text-white">bg-sky-500 (100%)</Label>
+        </View>
+
+        <View class="mx-4 mt-2 h-10 w-screen rounded-lg bg-sky-500/75 text-center">
+          <Label class="text-sm font-semibold text-white">bg-sky-500/75</Label>
+        </View>
+
+        <View class="mx-4 mt-2 h-10 w-screen rounded-lg bg-sky-500/50 text-center">
+          <Label class="text-sm font-semibold text-white">bg-sky-500/50</Label>
+        </View>
+
+        <View class="mx-4 mb-4 mt-2 h-10 w-screen rounded-lg bg-sky-500/25 text-center">
+          <Label class="text-sm font-semibold text-white">bg-sky-500/25</Label>
+        </View>
+      </View>
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">XML Usage</Label>
+
+        <View class="mx-4 mb-4 mt-4 h-auto w-screen">
+          <TextArea id="codeXmlUsage" class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-blue-400" readonly="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+      </View>
+
+      <!-- Section: In Apply -->
+      <Label class="section mt-6" text="IN THE APPLY DIRECTIVE" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Use with Custom Colors</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Define a color in `extend`, then apply opacity in the `apply` directive:</Label>
+
+        <View class="mx-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-green-400" readonly="true">
+extend: {
+  colors: { primary: '#ce10cc' }
+},
+'.main-banner': {
+  apply: [
+    'bg-primary/35',
+    'border-primary/75'
+  ]
+}
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+
+        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Generated Output</Label>
+
+        <View class="mx-4 mb-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-slate-400" readonly="true">
+'.main-banner': {
+  backgroundColor: '#59ce10cc',  // 35%
+  borderColor: '#bfce10cc'       // 75%
+}
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+      </View>
+
+      <!-- Section: With Fractions -->
+      <Label class="section mt-6" text="OPACITY VS WIDTH FRACTIONS" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 h-auto text-sm text-slate-300">The slash in `w-11/12` is a fraction (width: 91.6%). The slash in `bg-sky-500/50` is opacity. PurgeTSS resolves this automatically.</Label>
+
+        <View class="mx-4 mb-4 mt-4 h-auto w-screen">
+          <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-cyan-400" readonly="true">
+w-11/12       → width: '91.666667%'
+bg-sky-500/50 → backgroundColor: '#800ea5e9'
+// PurgeTSS knows the difference!
+          </TextArea>
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+        </View>
+      </View>
+
+      <!-- Section: Caution -->
+      <Label class="section mt-6" text="LIMITATIONS" />
+
+      <View class="cardDark vertical">
+        <Label class="mx-4 mt-4 h-auto text-sm text-amber-400">Semantic Colors</Label>
+        <Label class="mx-4 mb-4 mt-1 h-auto text-xs text-slate-500">Semantic colors (from `semantic.colors.json`) cannot use the opacity modifier because they are defined as objects with light/dark values, not hex strings.</Label>
+      </View>
+
+      <View class="mb-8" />
+
+    </ScrollView>
+  </Window>
+</Alloy>
