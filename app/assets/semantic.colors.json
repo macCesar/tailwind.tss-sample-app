@@ -1,0 +1,30 @@
+{
+	"surfaceColor": {
+		"light": "#F9FAFB",
+		"dark": "#0f172a"
+	},
+	"surfaceHighColor": {
+		"light": "#FFFFFF",
+		"dark": "#1e293b"
+	},
+	"textColor": {
+		"light": "#111827",
+		"dark": "#f1f5f9"
+	},
+	"textSecondaryColor": {
+		"light": "#6B7280",
+		"dark": "#94a3b8"
+	},
+	"textMutedColor": {
+		"light": "#9CA3AF",
+		"dark": "#64748b"
+	},
+	"borderColor": {
+		"light": "#E5E7EB",
+		"dark": "#334155"
+	},
+	"accentColor": {
+		"light": "#3B82F6",
+		"dark": "#60a5fa"
+	}
+}
