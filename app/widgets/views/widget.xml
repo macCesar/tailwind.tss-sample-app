@@ -1,0 +1,25 @@
+<Alloy>
+  <View class="vertical h-auto w-screen">
+    <View id="themeSystemBtn" class="horizontal mx-4 h-12 w-screen">
+      <Label class="fa-solid fa-mobile-screen ml-0 h-12 w-8 text-blue-500" />
+      <Label class="h-12 text-sm font-semibold" text="System" />
+      <Label id="themeSystemCheck" class="fa-solid fa-circle-check mr-0 h-12 w-screen text-right text-green-500" />
+    </View>
+
+    <View class="h-px w-screen bg-gray-200" />
+
+    <View id="themeLightBtn" class="horizontal mx-4 h-12 w-screen">
+      <Label class="fa-solid fa-sun ml-0 h-12 w-8 text-amber-500" />
+      <Label class="h-12 text-sm font-semibold" text="Light" />
+      <Label id="themeLightCheck" class="fa-solid fa-circle-check mr-0 hidden h-12 w-screen text-right text-green-500" />
+    </View>
+
+    <View class="h-px w-screen bg-gray-200" />
+
+    <View id="themeDarkBtn" class="horizontal mx-4 h-12 w-screen">
+      <Label class="fa-solid fa-moon ml-0 h-12 w-8 text-purple-500" />
+      <Label class="h-12 text-sm font-semibold" text="Dark" />
+      <Label id="themeDarkCheck" class="fa-solid fa-circle-check mr-0 hidden h-12 w-screen text-right text-green-500" />
+    </View>
+  </View>
+</Alloy>

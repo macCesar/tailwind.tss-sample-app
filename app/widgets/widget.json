@@ -1,0 +1,9 @@
+{
+  "id": "purgetss.theme-picker",
+  "name": "PurgeTSS Theme Picker",
+  "description": "Light/Dark/System theme selector widget",
+  "author": "Cesar Estrada",
+  "version": "1.0",
+  "license": "MIT",
+  "platforms": "android,ios"
+}
