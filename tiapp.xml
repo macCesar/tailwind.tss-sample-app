@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
   <id>com.tailwindtss.app</id>
-  <name>PurgeTSS - Sample App</name>
+  <name>PurgeTSS Showcase</name>
   <version>1.0</version>
   <publisher>not specified</publisher>
   <url>''</url>
@@ -54,8 +54,6 @@
 
   <android xmlns:android="http://schemas.android.com/apk/res/android">
     <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1">
-      <uses-sdk android:minSdkVersion="21"/>
-      <uses-sdk android:targetSdkVersion="29"/>
       <supports-screens android:anyDensity="true"/>
     </manifest>
   </android>
@@ -69,7 +67,7 @@
     <target device="android">true</target>
   </deployment-targets>
 
-  <sdk-version>12.7.0.GA</sdk-version>
+  <sdk-version>13.2.0.GA</sdk-version>
 
   <plugins>
     <plugin version="1.0">ti.alloy</plugin>
