@@ -1,6 +1,6 @@
 {
   "name": "purgetss-sample-app",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A [Titanium App](https://www.appcelerator.com/mobile-app-development-products/) showcasing [Tailwind-like](https://tailwindcss.com/) styles applied with [PurgeTSS](https://purgetss.com/).",
   "main": ".eslintrc.js",
   "scripts": {
