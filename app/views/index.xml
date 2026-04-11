@@ -1,23 +1,192 @@
 <Alloy>
-  <NavigationWindow id="navWindow">
-    <Window title="PurgeTSS - Sample App">
-      <ScrollableView class="show-paging-control paging-control-gray-200 cache-size-(9) h-full w-full bg-white">
-        <Require src="examples/nike" />
+  <NavigationWindow id="navWin" class="bg-slate-900">
+    <Window class="title-attributes-white bar-slate-900 nav-tint-blue-400 android:display-home-as-up bg-slate-900" title="PurgeTSS Showcase">
+      <ScrollView class="vertical content-h-auto content-w-screen show-vertical-scroll-indicator-false w-screen">
 
-        <Require src="examples/register" />
+        <!-- Header -->
+        <View class="mx-6 mb-1 mt-4 h-auto w-auto">
+          <Label class="text-sm text-slate-400" text="v7.5 — PurgeTSS Showcase" />
+        </View>
 
-        <Require src="examples/customer" />
+        <!-- Divider -->
+        <View class="mx-6 mb-2 mt-4 h-1 w-auto bg-slate-700" />
 
-        <Require src="examples/villa" />
+        <!-- Section: Dark Theme -->
+        <View class="mx-6 mb-4 mt-2 h-auto w-auto">
+          <Label class="text-sm text-slate-400" text="Dark Theme" />
+        </View>
 
-        <Require src="examples/card" />
+        <!-- 1. Product Card (nike) -->
+        <View class="mx-6 mb-3 h-auto w-screen rounded-xl bg-slate-800" onClick="openNike">
+          <View class="wh-12 my-4 ml-4 rounded-lg bg-red-500/20">
+            <Label class="text-xl font-bold text-red-400" text="▶" />
+          </View>
+          <View class="vertical my-4 ml-16 mr-0 h-auto w-screen">
+            <Label class="text-base font-semibold text-white" text="Product Card" />
+            <Label class="mt-1 text-xs text-slate-400" text="E-commerce card with dark styling" />
+          </View>
+        </View>
 
-        <Require src="examples/politico" />
+        <!-- 2. Project List (projects) -->
+        <View class="mx-6 mb-3 h-auto w-screen rounded-xl bg-slate-800" onClick="openProjects">
+          <View class="wh-12 my-4 ml-4 rounded-lg bg-indigo-500/20">
+            <Label class="text-xl font-bold text-indigo-400" text="◆" />
+          </View>
+          <View class="vertical my-4 ml-16 mr-0 h-auto w-screen">
+            <Label class="text-base font-semibold text-white" text="Project List" />
+            <Label class="mt-1 text-xs text-slate-400" text="Structured list with icons &amp; metadata" />
+          </View>
+        </View>
 
-        <Require src="examples/projects" />
+        <!-- 3. Login Form (register) -->
+        <View class="mx-6 mb-3 h-auto w-screen rounded-xl bg-slate-800" onClick="openRegister">
+          <View class="wh-12 my-4 ml-4 rounded-lg bg-green-500/20">
+            <Label class="text-xl font-bold text-green-400" text="~" />
+          </View>
+          <View class="vertical my-4 ml-16 mr-0 h-auto w-screen">
+            <Label class="text-base font-semibold text-white" text="Login Form" />
+            <Label class="mt-1 text-xs text-slate-400" text="Auth form with validation patterns" />
+          </View>
+        </View>
 
-        <Require src="examples/house" />
-      </ScrollableView>
+        <!-- 4. Shadows & Depth (shadows) -->
+        <View class="mx-6 mb-6 h-auto w-screen rounded-xl bg-slate-800" onClick="openShadows">
+          <View class="wh-12 my-4 ml-4 rounded-lg bg-cyan-500/20">
+            <Label class="text-xl font-bold text-cyan-400" text="◇" />
+          </View>
+          <View class="vertical my-4 ml-16 mr-0 h-auto w-screen">
+            <Label class="text-base font-semibold text-white" text="Shadows &amp; Depth" />
+            <Label class="mt-1 text-xs text-slate-400" text="Shadow levels, opacity, border radius" />
+          </View>
+        </View>
+
+        <!-- Divider -->
+        <View class="mx-6 mb-2 mt-2 h-1 w-auto bg-slate-700" />
+
+        <!-- Section: Light Theme -->
+        <View class="mx-6 mb-4 mt-4 h-auto w-auto">
+          <Label class="text-sm text-slate-400" text="Light Theme" />
+        </View>
+
+        <!-- 5. Article Layout (politico) -->
+        <View class="mx-6 mb-3 h-auto w-screen rounded-xl bg-slate-800" onClick="openPolitico">
+          <View class="wh-12 my-4 ml-4 rounded-lg bg-amber-500/20">
+            <Label class="text-xl font-bold text-amber-400" text="¶" />
+          </View>
+          <View class="vertical my-4 ml-16 mr-0 h-auto w-screen">
+            <Label class="text-base font-semibold text-white" text="Article Layout" />
+            <Label class="mt-1 text-xs text-slate-400" text="Editorial content with typography" />
+          </View>
+        </View>
+
+        <!-- 6. Property Listing (house) -->
+        <View class="mx-6 mb-3 h-auto w-screen rounded-xl bg-slate-800" onClick="openHouse">
+          <View class="wh-12 my-4 ml-4 rounded-lg bg-blue-500/20">
+            <Label class="text-xl font-bold text-blue-400" text="⌂" />
+          </View>
+          <View class="vertical my-4 ml-16 mr-0 h-auto w-screen">
+            <Label class="text-base font-semibold text-white" text="Property Listing" />
+            <Label class="mt-1 text-xs text-slate-400" text="Real estate card with sections" />
+          </View>
+        </View>
+
+        <!-- 7. Settings Screen (settings) -->
+        <View class="mx-6 mb-6 h-auto w-screen rounded-xl bg-slate-800" onClick="openSettings">
+          <View class="wh-12 my-4 ml-4 rounded-lg bg-slate-500/20">
+            <Label class="text-xl font-bold text-slate-400" text="≡" />
+          </View>
+          <View class="vertical my-4 ml-16 mr-0 h-auto w-screen">
+            <Label class="text-base font-semibold text-white" text="Settings Screen" />
+            <Label class="mt-1 text-xs text-slate-400" text="Toggles, grouped rows, form patterns" />
+          </View>
+        </View>
+
+        <!-- Divider -->
+        <View class="mx-6 mb-2 mt-2 h-1 w-auto bg-slate-700" />
+
+        <!-- Section: Customization -->
+        <View class="mx-6 mb-4 mt-4 h-auto w-auto">
+          <Label class="text-sm text-slate-400" text="Customization" />
+        </View>
+
+        <!-- 8. The Config File -->
+        <View class="mx-6 mb-3 h-auto w-screen rounded-xl bg-slate-800" onClick="openConfigFile">
+          <View class="wh-12 my-4 ml-4 rounded-lg bg-purple-500/20">
+            <Label class="text-xl font-bold text-purple-400" text="⚙" />
+          </View>
+          <View class="vertical my-4 ml-16 mr-0 h-auto w-screen">
+            <Label class="text-base font-semibold text-white" text="The Config File" />
+            <Label class="mt-1 text-xs text-slate-400" text="Structure, purge, colors &amp; spacing" />
+          </View>
+        </View>
+
+        <!-- 9. Custom Rules -->
+        <View class="mx-6 mb-3 h-auto w-screen rounded-xl bg-slate-800" onClick="openCustomRules">
+          <View class="wh-12 my-4 ml-4 rounded-lg bg-orange-500/20">
+            <Label class="text-xl font-bold text-orange-400" text="✎" />
+          </View>
+          <View class="vertical my-4 ml-16 mr-0 h-auto w-screen">
+            <Label class="text-base font-semibold text-white" text="Custom Rules" />
+            <Label class="mt-1 text-xs text-slate-400" text="Ti Elements, IDs &amp; direct properties" />
+          </View>
+        </View>
+
+        <!-- 10. Apply Directive -->
+        <View class="mx-6 mb-3 h-auto w-screen rounded-xl bg-slate-800" onClick="openApplyDirective">
+          <View class="wh-12 my-4 ml-4 rounded-lg bg-teal-500/20">
+            <Label class="text-xl font-bold text-teal-400" text="↻" />
+          </View>
+          <View class="vertical my-4 ml-16 mr-0 h-auto w-screen">
+            <Label class="text-base font-semibold text-white" text="The Apply Directive" />
+            <Label class="mt-1 text-xs text-slate-400" text="Bundle classes into reusable rules" />
+          </View>
+        </View>
+
+        <!-- 11. Opacity Modifier -->
+        <View class="mx-6 mb-3 h-auto w-screen rounded-xl bg-slate-800" onClick="openOpacityModifier">
+          <View class="wh-12 my-4 ml-4 rounded-lg bg-pink-500/20">
+            <Label class="text-xl font-bold text-pink-400" text="◐" />
+          </View>
+          <View class="vertical my-4 ml-16 mr-0 h-auto w-screen">
+            <Label class="text-base font-semibold text-white" text="The Opacity Modifier" />
+            <Label class="mt-1 text-xs text-slate-400" text="Color transparency with /50 syntax" />
+          </View>
+        </View>
+
+        <!-- 12. Arbitrary Values -->
+        <View class="mx-6 mb-3 h-auto w-screen rounded-xl bg-slate-800" onClick="openArbitraryValues">
+          <View class="wh-12 my-4 ml-4 rounded-lg bg-emerald-500/20">
+            <Label class="text-xl font-bold text-emerald-400" text="( )" />
+          </View>
+          <View class="vertical my-4 ml-16 mr-0 h-auto w-screen">
+            <Label class="text-base font-semibold text-white" text="Arbitrary Values" />
+            <Label class="mt-1 text-xs text-slate-400" text="One-off values with parentheses" />
+          </View>
+        </View>
+
+        <!-- 13. Platform Modifiers -->
+        <View class="mx-6 mb-3 h-auto w-screen rounded-xl bg-slate-800" onClick="openPlatformModifiers">
+          <View class="wh-12 my-4 ml-4 rounded-lg bg-sky-500/20">
+            <Label class="text-xl font-bold text-sky-400" text="⊞" />
+          </View>
+          <View class="vertical my-4 ml-16 mr-0 h-auto w-screen">
+            <Label class="text-base font-semibold text-white" text="Platform &amp; Device Modifiers" />
+            <Label class="mt-1 text-xs text-slate-400" text="ios:, android:, tablet:, handheld:" />
+          </View>
+        </View>
+
+        <!-- 14. Icon Font Libraries -->
+        <View class="mx-6 mb-6 h-auto w-screen rounded-xl bg-slate-800" onClick="openIconFonts">
+          <View class="wh-12 my-4 ml-4 rounded-lg bg-violet-500/20">
+            <Label class="text-xl font-bold text-violet-400" text="★" />
+          </View>
+          <View class="vertical my-4 ml-16 mr-0 h-auto w-screen">
+            <Label class="text-base font-semibold text-white" text="Icon Font Libraries" />
+            <Label class="mt-1 text-xs text-slate-400" text="Font Awesome, Material, custom fonts" />
+          </View>
+        </View>
+
+      </ScrollView>
     </Window>
   </NavigationWindow>
 </Alloy>
