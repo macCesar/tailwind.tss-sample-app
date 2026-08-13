@@ -11,6 +11,72 @@
 '.brux-regular': { font: { fontFamily: 'BRUX-Regular' } }
 
 /**
+ * Fira Code Bold
+ * Version 6.002
+ * https://tonsky.me
+ * Carrois Corporate, Edenspiekermann AG, Nikita Prokopov - https://tonsky.me
+ * Copyright 2014-2021 The Fira Code Project Authors (https://github.com/tonsky/FiraCode)
+ * Fira Mono is a trademark of The Mozilla Corporation.
+ * This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL - http://scripts.sil.org/OFL
+ */
+'.firacode-bold': { font: { fontFamily: 'FiraCode-Bold' } }
+
+/**
+ * Fira Code Light
+ * Version 6.002
+ * https://tonsky.me
+ * Carrois Corporate, Edenspiekermann AG, Nikita Prokopov - https://tonsky.me
+ * Copyright 2014-2021 The Fira Code Project Authors (https://github.com/tonsky/FiraCode)
+ * Fira Mono is a trademark of The Mozilla Corporation.
+ * This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL - http://scripts.sil.org/OFL
+ */
+'.firacode-light': { font: { fontFamily: 'FiraCode-Light' } }
+
+/**
+ * Fira Code Medium
+ * Version 6.002
+ * https://tonsky.me
+ * Carrois Corporate, Edenspiekermann AG, Nikita Prokopov - https://tonsky.me
+ * Copyright 2014-2021 The Fira Code Project Authors (https://github.com/tonsky/FiraCode)
+ * Fira Mono is a trademark of The Mozilla Corporation.
+ * This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL - http://scripts.sil.org/OFL
+ */
+'.firacode-medium': { font: { fontFamily: 'FiraCode-Medium' } }
+
+/**
+ * Fira Code Regular
+ * Version 6.002
+ * https://tonsky.me
+ * Carrois Corporate, Edenspiekermann AG, Nikita Prokopov - https://tonsky.me
+ * Copyright 2014-2021 The Fira Code Project Authors (https://github.com/tonsky/FiraCode)
+ * Fira Mono is a trademark of The Mozilla Corporation.
+ * This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL - http://scripts.sil.org/OFL
+ */
+'.firacode-regular': { font: { fontFamily: 'FiraCode-Regular' } }
+
+/**
+ * Fira Code Retina
+ * Version 6.002
+ * https://tonsky.me
+ * Carrois Corporate, Edenspiekermann AG, Nikita Prokopov - https://tonsky.me
+ * Copyright 2014-2021 The Fira Code Project Authors (https://github.com/tonsky/FiraCode)
+ * Fira Mono is a trademark of The Mozilla Corporation.
+ * This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL - http://scripts.sil.org/OFL
+ */
+'.firacode-retina': { font: { fontFamily: 'FiraCode-Retina' } }
+
+/**
+ * Fira Code SemiBold
+ * Version 6.002
+ * https://tonsky.me
+ * Carrois Corporate, Edenspiekermann AG, Nikita Prokopov - https://tonsky.me
+ * Copyright 2014-2021 The Fira Code Project Authors (https://github.com/tonsky/FiraCode)
+ * Fira Mono is a trademark of The Mozilla Corporation.
+ * This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL - http://scripts.sil.org/OFL
+ */
+'.firacode-semibold': { font: { fontFamily: 'FiraCode-SemiBold' } }
+
+/**
  * Roboto
  * Version 2.137; 2017
  * Google.com
