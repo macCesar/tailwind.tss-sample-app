@@ -35,19 +35,21 @@ Each documentation screen includes copyable code examples with tap-to-copy funct
 ## Key Features
 
 - **Dark & Light Themes** with semantic colors via `semantic.colors.json`
-- **PurgeTSS UI Module** (v7.5) for appearance management
+- **PurgeTSS UI Module** (v7.12.1) for appearance management
 - **Theme Picker Widget** for light/dark/system selection
+- **English & Spanish localization** with an in-app language selector
 - **Font Awesome 7** icon integration
+- **Fira Code** monospace font for code examples
 - **Copy-to-clipboard** on all code examples
 - **Platform-aware** event handling (`ios:onSingletap` / `android:onClick`)
 - **Mac Catalyst** support — runs natively on macOS
-- **Custom `apply` rules** for reusable component styles (`cardDark`, `cardLight`, `section`, `actionBtn`, etc.)
+- **Custom `apply` rules** for reusable component styles (`card`, `field`, `section`, `actionBtn`, etc.)
 
 ## Getting Started
 
 ### Prerequisites
 
-- [Titanium SDK](https://titaniumsdk.com/) 13.2.0+ (Mac Catalyst support with 13.1.1+)
+- [Titanium SDK](https://titaniumsdk.com/) 13.4.0+ (Mac Catalyst support with 13.1.1+)
 - [PurgeTSS](https://purgetss.com/) installed globally:
 
 ```bash
@@ -83,7 +85,7 @@ app/
 │   ├── examples/                   # Design example controllers
 │   └── customization/              # Documentation view controllers
 ├── lib/
-│   ├── purgetss.ui.js              # PurgeTSS UI module (v7.5)
+│   ├── purgetss.ui.js              # PurgeTSS UI module (v7.12.1)
 │   ├── purgetss.fonts.js           # Font module
 │   ├── fontawesome.js              # Font Awesome 7 definitions
 │   └── clipboard.js                # Copy-to-clipboard utility
@@ -107,8 +109,11 @@ app/
 │       └── icon-fonts.xml          # Icon Font Libraries
 ├── widgets/
 │   └── purgetss.theme-picker/      # Light/Dark/System theme widget
+├── i18n/
+│   ├── en/strings.xml              # English strings
+│   └── es/strings.xml              # Spanish strings
 └── assets/
-    ├── fonts/                      # Font Awesome 7 font files
+    ├── fonts/                      # Font Awesome 7 and Fira Code font files
     └── semantic.colors.json        # Light/dark color definitions
 
 purgetss/
