@@ -1,12 +1,12 @@
 <Alloy>
-  <Window class="title-attributes-white bar-slate-900 nav-tint-blue-400 android:display-home-as-up bg-slate-900" title="Opacity Modifier" backButtonTitle="">
+  <Window class="title-attributes-on-surface bar-surface nav-tint-accent android:display-home-as-up bg-surface" titleid="opacity_title" backButtonTitle="">
     <ScrollView class="vertical content-h-auto content-w-screen w-screen">
 
       <!-- Section: How It Works -->
-      <Label class="section" text="HOW IT WORKS" />
+      <Label class="section" textid="opacity_section_how" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 h-auto text-sm text-slate-300">Append a `/` and a value (0–100) to any color class to set its opacity. Works on `bg`, `text`, `border`, and all color properties.</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 h-auto text-sm text-on-surface" textid="opacity_how_desc" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-green-400" readonly="true">
@@ -14,15 +14,15 @@ bg-sky-500/50    → #800ea5e9 (50% opacity)
 text-purple-900/75 → #bf581c87 (75% opacity)
 bg-red-500/25    → #40ef4444 (25% opacity)
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 
       <!-- Section: In XML -->
-      <Label class="section mt-6" text="IN YOUR XML FILES" />
+      <Label class="section mt-6" textid="opacity_section_xml" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Live Examples</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="opacity_live_title" />
 
         <View class="mx-4 mt-4 h-10 w-screen rounded-lg bg-sky-500 text-center">
           <Label class="text-sm font-semibold text-white">bg-sky-500 (100%)</Label>
@@ -41,21 +41,21 @@ bg-red-500/25    → #40ef4444 (25% opacity)
         </View>
       </View>
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">XML Usage</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="opacity_xml_title" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea id="codeXmlUsage" class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-blue-400" readonly="true" />
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 
       <!-- Section: In Apply -->
-      <Label class="section mt-6" text="IN THE APPLY DIRECTIVE" />
+      <Label class="section mt-6" textid="opacity_section_apply" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Use with Custom Colors</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Define a color in `extend`, then apply opacity in the `apply` directive:</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="opacity_apply_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="opacity_apply_desc" />
 
         <View class="mx-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-green-400" readonly="true">
@@ -69,10 +69,10 @@ extend: {
   ]
 }
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
 
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Generated Output</Label>
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="rules_generated_output" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-slate-400" readonly="true">
@@ -81,15 +81,15 @@ extend: {
   borderColor: '#bfce10cc'       // 75%
 }
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 
       <!-- Section: With Fractions -->
-      <Label class="section mt-6" text="OPACITY VS WIDTH FRACTIONS" />
+      <Label class="section mt-6" textid="opacity_section_fractions" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 h-auto text-sm text-slate-300">The slash in `w-11/12` is a fraction (width: 91.6%). The slash in `bg-sky-500/50` is opacity. PurgeTSS resolves this automatically.</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 h-auto text-sm text-on-surface" textid="opacity_fractions_desc" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-cyan-400" readonly="true">
@@ -97,16 +97,16 @@ w-11/12       → width: '91.666667%'
 bg-sky-500/50 → backgroundColor: '#800ea5e9'
 // PurgeTSS knows the difference!
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 
       <!-- Section: Caution -->
-      <Label class="section mt-6" text="LIMITATIONS" />
+      <Label class="section mt-6" textid="opacity_section_limits" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 h-auto text-sm text-amber-400">Semantic Colors</Label>
-        <Label class="mx-4 mb-4 mt-1 h-auto text-xs text-slate-500">Semantic colors (from `semantic.colors.json`) cannot use the opacity modifier because they are defined as objects with light/dark values, not hex strings.</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 h-auto text-sm text-amber-400" textid="opacity_semantic_title" />
+        <Label class="mx-4 mb-4 mt-1 h-auto text-xs text-on-surface-variant" textid="opacity_semantic_desc" />
       </View>
 
       <View class="mb-8" />

@@ -1,48 +1,48 @@
 <Alloy>
-  <Window class="title-attributes-on-surface bar-surface nav-tint-accent android:display-home-as-up bg-surface" title="Settings" backButtonTitle="">
+  <Window class="title-attributes-on-surface bar-surface nav-tint-accent android:display-home-as-up bg-surface" titleid="settings_title" backButtonTitle="">
     <ScrollView class="vertical content-h-auto content-w-screen w-screen">
 
       <!-- Account Section -->
-      <Label class="mx-4 mb-2 mt-6 h-auto text-xs font-semibold text-on-surface-variant">ACCOUNT</Label>
+      <Label class="mx-4 mb-2 mt-6 h-auto text-xs font-semibold text-on-surface-variant" textid="settings_account" />
 
-      <View class="cardLight vertical clip-enabled">
+      <View class="card vertical clip-enabled">
         <View class="horizontal mx-4 h-12 w-screen">
-          <Label class="ml-0 h-12 w-20 text-sm text-on-surface-variant">Name</Label>
+          <Label class="ml-0 h-12 w-20 text-sm text-on-surface-variant" textid="settings_name" />
           <TextField class="h-12 w-screen border-transparent bg-transparent pl-0 text-right text-sm text-on-surface" value="Jane Cooper" />
         </View>
 
         <View class="h-px w-screen bg-border" />
 
         <View class="horizontal mx-4 h-12 w-screen">
-          <Label class="ml-0 h-12 w-20 text-sm text-on-surface-variant">Email</Label>
+          <Label class="ml-0 h-12 w-20 text-sm text-on-surface-variant" textid="settings_email" />
           <TextField class="h-12 w-screen border-transparent bg-transparent pl-0 text-right text-sm text-on-surface" value="jane@example.com" keyboardType="Ti.UI.KEYBOARD_TYPE_EMAIL" />
         </View>
       </View>
 
       <!-- Preferences Section -->
-      <Label class="mx-4 mb-2 mt-6 h-auto text-xs font-semibold text-on-surface-variant">PREFERENCES</Label>
+      <Label class="mx-4 mb-2 mt-6 h-auto text-xs font-semibold text-on-surface-variant" textid="settings_preferences" />
 
-      <View class="cardLight vertical clip-enabled">
+      <View class="card vertical clip-enabled">
         <View class="horizontal mx-4 h-12 w-screen">
-          <Label class="ml-0 h-12 w-40 text-sm text-on-surface">Notifications</Label>
+          <Label class="ml-0 h-12 w-40 text-sm text-on-surface" textid="settings_notifications" />
           <Switch class="mr-0 h-12 w-screen" id="notifSwitch" value="true" />
         </View>
 
         <View class="h-px w-screen bg-border" />
 
         <View class="horizontal mx-4 h-12 w-screen">
-          <Label class="ml-0 h-12 w-40 text-sm text-on-surface">Auto-Update</Label>
+          <Label class="ml-0 h-12 w-40 text-sm text-on-surface" textid="settings_auto_update" />
           <Switch class="mr-0 h-12 w-screen" id="updateSwitch" value="true" />
         </View>
       </View>
 
       <!-- Appearance Section -->
-      <Label class="mx-4 mb-2 mt-6 h-auto text-xs font-semibold text-on-surface-variant">APPEARANCE</Label>
+      <Label class="mx-4 mb-2 mt-6 h-auto text-xs font-semibold text-on-surface-variant" textid="settings_appearance" />
 
-      <View class="cardLight vertical clip-enabled">
+      <View class="card vertical clip-enabled">
         <View class="horizontal mx-4 h-12 w-screen" onClick="selectSystem">
           <Label class="fa-solid fa-mobile-screen ml-0 h-12 w-8 text-blue-500" />
-          <Label class="h-12 text-sm font-semibold text-on-surface">System</Label>
+          <Label class="h-12 text-sm font-semibold text-on-surface" textid="settings_system" />
           <Label id="themeSystemCheck" class="fa-solid fa-circle-check mr-0 h-12 w-screen text-right text-green-500" />
         </View>
 
@@ -50,7 +50,7 @@
 
         <View class="horizontal mx-4 h-12 w-screen" onClick="selectLight">
           <Label class="fa-solid fa-sun ml-0 h-12 w-8 text-amber-500" />
-          <Label class="h-12 text-sm font-semibold text-on-surface">Light</Label>
+          <Label class="h-12 text-sm font-semibold text-on-surface" textid="settings_light" />
           <Label id="themeLightCheck" class="fa-solid fa-circle-check mr-0 hidden h-12 w-screen text-right text-green-500" />
         </View>
 
@@ -58,31 +58,50 @@
 
         <View class="horizontal mx-4 h-12 w-screen" onClick="selectDark">
           <Label class="fa-solid fa-moon ml-0 h-12 w-8 text-purple-500" />
-          <Label class="h-12 text-sm font-semibold text-on-surface">Dark</Label>
+          <Label class="h-12 text-sm font-semibold text-on-surface" textid="settings_dark" />
           <Label id="themeDarkCheck" class="fa-solid fa-circle-check mr-0 hidden h-12 w-screen text-right text-green-500" />
         </View>
       </View>
 
-      <!-- About Section -->
-      <Label class="mx-4 mb-2 mt-6 h-auto text-xs font-semibold text-on-surface-variant">ABOUT</Label>
+      <!-- Language Section -->
+      <Label class="mx-4 mb-2 mt-6 h-auto text-xs font-semibold text-on-surface-variant" textid="settings_language" />
 
-      <View class="cardLight vertical clip-enabled">
+      <View class="card vertical clip-enabled">
+        <View class="horizontal mx-4 h-12 w-screen" onClick="selectEnglish">
+          <Label class="ml-0 h-12 w-8 text-center text-on-surface-variant" text="EN" />
+          <Label class="h-12 text-sm font-semibold text-on-surface" textid="settings_lang_english" />
+          <Label id="langEnglishCheck" class="fa-solid fa-circle-check mr-0 h-12 w-screen text-right text-green-500" />
+        </View>
+
+        <View class="h-px w-screen bg-border" />
+
+        <View class="horizontal mx-4 h-12 w-screen" onClick="selectSpanish">
+          <Label class="ml-0 h-12 w-8 text-center text-on-surface-variant" text="ES" />
+          <Label class="h-12 text-sm font-semibold text-on-surface" textid="settings_lang_spanish" />
+          <Label id="langSpanishCheck" class="fa-solid fa-circle-check mr-0 hidden h-12 w-screen text-right text-green-500" />
+        </View>
+      </View>
+
+      <!-- About Section -->
+      <Label class="mx-4 mb-2 mt-6 h-auto text-xs font-semibold text-on-surface-variant" textid="settings_about" />
+
+      <View class="card vertical clip-enabled">
         <View class="horizontal mx-4 h-12 w-screen">
-          <Label class="ml-0 h-12 w-20 text-sm text-on-surface">Version</Label>
+          <Label class="ml-0 h-12 w-20 text-sm text-on-surface" textid="settings_version" />
           <Label class="mr-0 h-12 w-screen text-right text-sm text-on-surface-variant">7.5.2</Label>
         </View>
 
         <View class="h-px w-screen bg-border" />
 
         <View class="horizontal mx-4 h-12 w-screen">
-          <Label class="ml-0 h-12 w-20 text-sm text-on-surface">SDK</Label>
+          <Label class="ml-0 h-12 w-20 text-sm text-on-surface" textid="settings_sdk" />
           <Label class="mr-0 h-12 w-screen text-right text-sm text-on-surface-variant">Titanium 13.2.0</Label>
         </View>
 
         <View class="h-px w-screen bg-border" />
 
         <View class="horizontal mx-4 h-12 w-screen">
-          <Label class="ml-0 h-12 w-20 text-sm text-on-surface">License</Label>
+          <Label class="ml-0 h-12 w-20 text-sm text-on-surface" textid="settings_license" />
           <Label class="mr-0 h-12 w-screen text-right text-sm text-on-surface-variant">MIT</Label>
         </View>
       </View>

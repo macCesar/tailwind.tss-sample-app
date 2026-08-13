@@ -1,35 +1,35 @@
 <Alloy>
-  <Window class="title-attributes-white bar-slate-900 nav-tint-blue-400 android:display-home-as-up bg-slate-900" title="Platform Modifiers" backButtonTitle="">
+  <Window class="title-attributes-on-surface bar-surface nav-tint-accent android:display-home-as-up bg-surface" titleid="platform_title" backButtonTitle="">
     <ScrollView class="vertical content-h-auto content-w-screen w-screen">
 
       <!-- Section: Overview -->
-      <Label class="section" text="PLATFORM &amp; DEVICE MODIFIERS" />
+      <Label class="section" textid="platform_section_overview" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 h-auto text-sm text-slate-300">Apply styles conditionally based on platform or device type using prefixes in your XML classes.</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 h-auto text-sm text-on-surface" textid="platform_overview_desc" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-green-400" readonly="true">
 Platform: `ios:`, `android:`
 Device:    `tablet:`, `handheld:`
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 
       <!-- Section: Platform Classes -->
-      <Label class="section mt-6" text="PLATFORM-SPECIFIC CLASSES" />
+      <Label class="section mt-6" textid="platform_section_classes" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Different Styles Per Platform</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Prefix any utility class with `ios:` or `android:`:</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="platform_classes_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="platform_classes_desc" />
 
         <View class="mx-4 mt-4 h-auto w-screen">
           <TextArea id="codePlatformClasses" class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-cyan-400" readonly="true" />
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
 
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Generated Output</Label>
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="rules_generated_output" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-slate-400" readonly="true">
@@ -37,23 +37,23 @@ Device:    `tablet:`, `handheld:`
   { font: { fontSize: 20 } } '.android:text-2xl[platform=android]':
   { font: { fontSize: 24 } }
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 
       <!-- Section: Device Classes -->
-      <Label class="section mt-6" text="DEVICE-SPECIFIC CLASSES" />
+      <Label class="section mt-6" textid="platform_section_device" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">`tablet:` and `handheld:`</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Different layouts or colors for phones vs tablets:</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="platform_device_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="platform_device_desc" />
 
         <View class="mx-4 mt-4 h-auto w-screen">
           <TextArea id="codeDeviceClasses" class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-purple-400" readonly="true" />
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
 
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Generated Output</Label>
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="rules_generated_output" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-slate-400" readonly="true">
@@ -61,51 +61,51 @@ Device:    `tablet:`, `handheld:`
   { backgroundColor: '#22c55e' } '.handheld:bg-blue-500[formFactor=handheld]':
   { backgroundColor: '#3b82f6' }
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 
       <!-- Section: Combining Modifiers -->
-      <Label class="section mt-6" text="COMBINING MODIFIERS" />
+      <Label class="section mt-6" textid="platform_section_combining" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Mix Platform + Device + Arbitrary</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Combine all modifier types freely:</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="platform_combining_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="platform_combining_desc" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea id="codeCombining" class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-green-400" readonly="true" />
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 
       <!-- Section: Platform Events -->
-      <Label class="section mt-6" text="PLATFORM-SPECIFIC EVENTS" />
+      <Label class="section mt-6" textid="platform_section_events" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">ios: / android: on Events</Label>
-        <Label class="mx-4 mb-2 mt-1 h-auto text-xs text-slate-500">Use platform prefixes on event handlers in XML attributes:</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="platform_events_title" />
+        <Label class="mx-4 mb-2 mt-1 h-auto text-xs text-on-surface-variant" textid="platform_events_desc" />
 
         <View class="mx-4 mt-4 h-auto w-screen">
           <TextArea id="codeEvents" class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-blue-400" readonly="true" />
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
 
-        <View class="mx-4 mb-4 mt-4 h-auto w-screen rounded-lg bg-slate-700 p-3">
-          <Button class="h-10 w-screen rounded-lg bg-purple-500 text-sm font-semibold text-white" id="platformBtn" ios:onSingletap="onPlatformTap" android:onClick="onPlatformTap">Tap Me (Live Demo)</Button>
+        <View class="mx-4 mb-4 mt-4 h-auto w-screen rounded-lg bg-surface-high p-3">
+          <Button class="h-10 w-screen rounded-lg bg-purple-500 text-sm font-semibold text-white" id="platformBtn" ios:onSingletap="onPlatformTap" android:onClick="onPlatformTap" titleid="platform_events_btn" />
         </View>
 
-        <Label class="mx-4 mb-4 h-auto text-xs text-slate-500" id="platformLabel" text="Uses ios:onSingletap / android:onClick" />
+        <Label class="mx-4 mb-4 h-auto text-xs text-on-surface-variant" id="platformLabel" textid="platform_events_label" />
       </View>
 
       <!-- Section: Caution -->
-      <Label class="section mt-6" text="IMPORTANT NOTES" />
+      <Label class="section mt-6" textid="platform_section_notes" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 h-auto text-sm text-amber-400">Platform Constants</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Properties using `Ti.UI.iOS.*` or `Ti.UI.Android.*` must be scoped with the matching `ios:` or `android:` prefix to avoid cross-platform compilation errors.</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 h-auto text-sm text-amber-400" textid="platform_constants_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="platform_constants_desc" />
 
-        <Label class="mx-4 mt-4 h-auto text-sm text-amber-400">`w-screen` vs `w-full`</Label>
-        <Label class="mx-4 mb-4 mt-1 h-auto text-xs text-slate-500">Prefer `w-screen` for fill behavior. `w-full` maps to `100%`, not `Ti.UI.FILL`.</Label>
+        <Label class="mx-4 mt-4 h-auto text-sm text-amber-400" textid="platform_wscreen_title" />
+        <Label class="mx-4 mb-4 mt-1 h-auto text-xs text-on-surface-variant" textid="platform_wscreen_desc" />
       </View>
 
       <View class="mb-8" />

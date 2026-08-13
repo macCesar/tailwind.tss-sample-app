@@ -1,12 +1,12 @@
 <Alloy>
-  <Window class="title-attributes-white bar-slate-900 nav-tint-blue-400 android:display-home-as-up bg-slate-900" title="Project List" backButtonTitle="">
+  <Window class="title-attributes-on-surface bar-surface nav-tint-accent android:display-home-as-up bg-surface" titleid="projects_title" backButtonTitle="">
     <ScrollView class="vertical content-h-auto content-w-screen w-screen">
-      <View class="vertical clip-enabled mx-4 mt-6 w-screen rounded-xl bg-slate-800">
-        <View class="w-screen bg-slate-700">
-          <Label class="mx-4 my-3 h-auto text-xl font-semibold text-white">PROJECTS</Label>
+      <View class="vertical clip-enabled mx-4 mt-6 w-screen rounded-xl bg-surface-high">
+        <View class="w-screen bg-border">
+          <Label class="mx-4 my-3 h-auto text-xl font-semibold text-on-surface" textid="projects_header" />
         </View>
 
-        <View class="h-px w-screen bg-slate-700" />
+        <View class="h-px w-screen bg-border" />
 
         <View class="horizontal m-4 w-screen">
           <View class="mt-0 w-1/5">
@@ -14,30 +14,30 @@
           </View>
 
           <View class="vertical w-4/5">
-            <Label class="w-screen text-sm text-slate-400">Engineering</Label>
-            <Label class="mt-1 w-screen text-base font-semibold text-white">GraphQL API</Label>
-            <Label class="mt-1 h-auto w-screen text-sm text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic.</Label>
+            <Label class="w-screen text-sm text-on-surface-variant" textid="projects_engineering" />
+            <Label class="mt-1 w-screen text-base font-semibold text-on-surface" textid="projects_graphql" />
+            <Label class="mt-1 h-auto w-screen text-sm text-on-surface-variant" textid="projects_graphql_desc" />
 
             <View class="horizontal mt-2 w-screen">
               <View class="horizontal h-6 w-1/3">
-                <Button class="fa-regular fa-user w-6 text-slate-500" />
-                <Label class="ml-1 text-sm font-bold text-slate-300">4</Label>
+                <Button class="fa-regular fa-user w-6 text-muted" />
+                <Label class="ml-1 text-sm font-bold text-on-surface-variant">4</Label>
               </View>
 
               <View class="horizontal h-6 w-1/3">
-                <Button class="fa-regular fa-comment-alt w-6 text-slate-500" />
-                <Label class="ml-1 text-sm font-bold text-slate-300">12</Label>
+                <Button class="fa-regular fa-comment-alt w-6 text-muted" />
+                <Label class="ml-1 text-sm font-bold text-on-surface-variant">12</Label>
               </View>
 
               <View class="horizontal h-6 w-1/3">
-                <Button class="fa-solid fa-align-left w-6 text-slate-500" />
-                <Label class="ml-1 text-sm font-bold text-slate-300">20</Label>
+                <Button class="fa-solid fa-align-left w-6 text-muted" />
+                <Label class="ml-1 text-sm font-bold text-on-surface-variant">20</Label>
               </View>
             </View>
           </View>
         </View>
 
-        <View class="h-px w-screen bg-slate-700" />
+        <View class="h-px w-screen bg-border" />
 
         <View class="horizontal m-4 w-screen">
           <View class="mt-0 w-1/5">
@@ -45,24 +45,24 @@
           </View>
 
           <View class="vertical w-4/5">
-            <Label class="w-screen text-sm text-slate-400">Human Resources</Label>
-            <Label class="mt-1 w-screen text-base font-semibold text-white">Profit sharing program</Label>
-            <Label class="mt-1 h-auto w-screen text-sm text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic.</Label>
+            <Label class="w-screen text-sm text-on-surface-variant" textid="projects_hr" />
+            <Label class="mt-1 w-screen text-base font-semibold text-on-surface" textid="projects_profit_sharing" />
+            <Label class="mt-1 h-auto w-screen text-sm text-on-surface-variant" textid="projects_profit_desc" />
 
             <View class="horizontal mt-2 w-screen">
               <View class="horizontal h-6 w-1/3">
-                <Button class="fa-regular fa-user w-6 text-slate-500" />
-                <Label class="ml-1 text-sm font-bold text-slate-300">6</Label>
+                <Button class="fa-regular fa-user w-6 text-muted" />
+                <Label class="ml-1 text-sm font-bold text-on-surface-variant">6</Label>
               </View>
 
               <View class="horizontal h-6 w-1/3">
-                <Button class="fa-regular fa-comment-alt w-6 text-slate-500" />
-                <Label class="ml-1 text-sm font-bold text-slate-300">5</Label>
+                <Button class="fa-regular fa-comment-alt w-6 text-muted" />
+                <Label class="ml-1 text-sm font-bold text-on-surface-variant">5</Label>
               </View>
 
               <View class="horizontal h-6 w-1/3">
-                <Button class="fa-solid fa-align-left w-6 text-slate-500" />
-                <Label class="ml-1 text-sm font-bold text-slate-300">30</Label>
+                <Button class="fa-solid fa-align-left w-6 text-muted" />
+                <Label class="ml-1 text-sm font-bold text-on-surface-variant">30</Label>
               </View>
             </View>
           </View>

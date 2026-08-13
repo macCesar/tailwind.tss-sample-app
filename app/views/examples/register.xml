@@ -1,31 +1,31 @@
 <Alloy>
-  <Window class="title-attributes-white bar-slate-900 nav-tint-blue-400 android:display-home-as-up bg-slate-900" title="Login Form" backButtonTitle="">
+  <Window class="title-attributes-on-surface bar-surface nav-tint-accent android:display-home-as-up bg-surface" titleid="register_title" backButtonTitle="">
     <ScrollView class="vertical content-h-auto content-w-screen w-screen">
       <View class="vertical mx-6 mt-6 h-auto w-screen">
         <ImageView class="w-56" image="/images/welcome.png" />
 
-        <Label class="ml-1 mt-6 w-full text-left text-sm text-slate-400">Email</Label>
-        <TextField class="fieldDark return-key-type-next" keyboardType="Ti.UI.KEYBOARD_TYPE_EMAIL" hintText="you@example.com" hintTextColor="#64748b" />
+        <Label class="ml-1 mt-6 w-full text-left text-sm text-on-surface-variant" textid="register_email_label" />
+        <TextField class="field return-key-type-next" keyboardType="Ti.UI.KEYBOARD_TYPE_EMAIL" hintTextid="register_email_hint" hintTextColor="#64748b" />
 
-        <Label class="ml-1 mt-4 w-full text-left text-sm text-slate-400">Password</Label>
-        <TextField class="fieldDark return-key-type-next" hintText="••••••••" hintTextColor="#64748b" passwordMask="true" />
+        <Label class="ml-1 mt-4 w-full text-left text-sm text-on-surface-variant" textid="register_password_label" />
+        <TextField class="field return-key-type-next" hintText="••••••••" hintTextColor="#64748b" passwordMask="true" />
 
-        <Button class="mt-6 h-10 w-screen rounded-lg bg-blue-500 text-base font-semibold text-white">Login</Button>
+        <Button class="mt-6 h-10 w-screen rounded-lg bg-blue-500 text-base font-semibold text-white" titleid="register_login_btn" />
 
         <View class="horizontal mt-3 w-screen">
           <View class="horizontal mx-0 w-1/2" android:onClick="changeActive" ios:onSingletap="changeActive">
-            <Button class="fa-regular fa-check-square fa-square w-6 text-slate-400" id="rememberMe" active="false" />
-            <Button class="ml-0 text-sm text-slate-400">Remember me</Button>
+            <Button class="fa-regular fa-check-square fa-square w-6 text-on-surface-variant" id="rememberMe" active="false" />
+            <Button class="ml-0 text-sm text-on-surface-variant" titleid="register_remember_me" />
           </View>
 
           <View class="horizontal mx-0 w-1/2">
-            <Button class="w-screen text-right text-sm text-blue-400">Forgot password?</Button>
+            <Button class="w-screen text-right text-sm text-accent" titleid="register_forgot_password" />
           </View>
         </View>
 
-        <View class="vertical mb-8 mt-4 h-auto w-screen rounded-lg bg-slate-800">
-          <Label class="mx-3 mt-2 h-auto text-center text-xs text-slate-500">By creating an account you agree to our</Label>
-          <Button class="mx-3 mb-1 h-auto text-center text-xs font-semibold text-blue-400">Terms and Conditions</Button>
+        <View class="vertical mb-8 mt-4 h-auto w-screen rounded-lg bg-surface-high">
+          <Label class="mx-3 mt-2 h-auto text-center text-xs text-muted" textid="register_terms_intro" />
+          <Button class="mx-3 mb-1 h-auto text-center text-xs font-semibold text-accent" titleid="register_terms_link" />
         </View>
       </View>
     </ScrollView>

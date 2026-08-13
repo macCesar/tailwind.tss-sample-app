@@ -12,6 +12,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      fontFamily: {
+        mono: 'FiraCode-Regular'
+      },
       colors: {
         surface: {
           DEFAULT: 'surfaceColor',
@@ -28,23 +31,17 @@ module.exports = {
       apply: 'mb-2 mr-2 h-8 w-20 rounded-lg text-xs font-semibold text-white'
     },
     '.section': {
-      apply: 'mx-4 mb-1 mt-4 h-auto text-xs font-semibold text-slate-500'
+      apply: 'mx-4 mb-1 mt-4 h-auto text-xs font-semibold text-muted'
     },
-    '.cardDark': {
-      apply: 'mx-4 mb-4 h-auto w-screen rounded-xl bg-slate-800'
+    '.card': {
+      apply: 'mx-4 mb-4 h-auto w-screen rounded-xl bg-surface-high'
     },
-    '.cardLight': {
-      apply: 'bg-surface-high mx-4 mb-4 h-auto w-screen rounded-xl shadow-sm'
-    },
-    '.fieldDark': {
-      apply: 'mt-1 h-10 w-screen rounded-lg border-slate-600 bg-slate-700 pl-3 text-base text-white'
-    },
-    '.fieldLight': {
-      apply: 'mt-1 h-10 w-screen rounded-lg border-gray-300 bg-white pl-3 text-base text-gray-900'
+    '.field': {
+      apply: 'mt-1 h-10 w-screen rounded-lg border-border bg-surface-high pl-3 text-base text-on-surface'
     },
     Window: {
       ios: {
-        apply: 'auto-adjust-scroll-view-insets extend-edges-all large-title-enabled status-bar-style-light-content'
+        apply: 'auto-adjust-scroll-view-insets extend-edges-all large-title-enabled'
       }
     },
     Label: { default: { touchEnabled: false } },

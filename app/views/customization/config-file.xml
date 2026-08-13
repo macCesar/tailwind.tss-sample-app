@@ -1,13 +1,13 @@
 <Alloy>
-  <Window class="title-attributes-white bar-slate-900 nav-tint-blue-400 android:display-home-as-up bg-slate-900" title="The Config File" backButtonTitle="">
+  <Window class="title-attributes-on-surface bar-surface nav-tint-accent android:display-home-as-up bg-surface" titleid="config_title" backButtonTitle="">
     <ScrollView class="vertical content-h-auto content-w-screen w-screen">
 
       <!-- Section: Config Structure -->
-      <Label class="section" text="CONFIG FILE STRUCTURE" />
+      <Label class="section" textid="config_section_structure" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">purgetss/config.cjs</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Two main sections: `purge` (controls unused class removal) and `theme` (defines your design tokens).</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="config_file_path" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="config_file_desc" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-green-400" readonly="true">
@@ -28,41 +28,41 @@ module.exports = {
   }
 }
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 
       <!-- Section: Purge Options -->
-      <Label class="section mt-6" text="PURGE OPTIONS" />
+      <Label class="section mt-6" textid="config_section_purge" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">mode: 'all' vs 'class'</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">`'all'` parses entire XML (needed for Ti Element styling). `'class'` only scans class/ID attributes.</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="config_mode_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="config_mode_desc" />
 
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">options.missing</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Set to `true` to list missing or misspelled classes at the end of `app.tss` — great for catching typos.</Label>
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="config_missing_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="config_missing_desc" />
 
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">options.safelist</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Array of classes to keep even if not found in XML. Useful for dynamically-generated classes.</Label>
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="config_safelist_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="config_safelist_desc" />
 
         <View class="mx-4 mb-2 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-blue-400" readonly="true">
 safelist: ['bg-indigo-50', 'bg-indigo-100',
   'bg-indigo-800', 'bg-indigo-900']
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
 
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">options.plugins</Label>
-        <Label class="mx-4 mb-4 mt-1 h-auto text-xs text-slate-500">Array of properties to disable. E.g., `['opacity', 'borderRadius']` removes those generated classes.</Label>
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="config_plugins_title" />
+        <Label class="mx-4 mb-4 mt-1 h-auto text-xs text-on-surface-variant" textid="config_plugins_desc" />
       </View>
 
       <!-- Section: Override vs Extend -->
-      <Label class="section mt-6" text="OVERRIDE VS EXTEND" />
+      <Label class="section mt-6" textid="config_section_override" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">`theme.X` (Override)</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Replaces ALL default values. Only your defined values will exist.</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="config_override_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="config_override_desc" />
 
         <View class="mx-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-red-400" readonly="true">
@@ -74,11 +74,11 @@ theme: {
   }
 }
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
 
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">`theme.extend.X` (Extend)</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Adds new values while keeping ALL defaults intact.</Label>
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="config_extend_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="config_extend_desc" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-green-400" readonly="true">
@@ -92,16 +92,16 @@ theme: {
 }
 // → bg-primary, text-primary, border-primary
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 
       <!-- Section: Custom Colors -->
-      <Label class="section mt-6" text="CUSTOM COLORS" />
+      <Label class="section mt-6" textid="config_section_colors" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Color Object Syntax</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Nested keys generate modifier classes (`bg-tahiti-400`, `text-tahiti-200`, etc.)</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="config_color_object_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="config_color_object_desc" />
 
         <View class="mx-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-cyan-400" readonly="true">
@@ -115,11 +115,11 @@ extend: {
 }
 // → bg-tahiti-100, text-tahiti-500, etc.
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
 
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">This Project's Colors</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Semantic colors using `semantic.colors.json` references:</Label>
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="config_project_colors_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="config_project_colors_desc" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-purple-400" readonly="true">
@@ -135,16 +135,16 @@ extend: {
 }
 // → bg-surface, bg-surface-high, text-on-surface
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 
       <!-- Section: Custom Spacing -->
-      <Label class="section mt-6" text="CUSTOM SPACING" />
+      <Label class="section mt-6" textid="config_section_spacing" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Named Spacing Scale</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Override or extend the default spacing scale with named keys:</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="config_spacing_named_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="config_spacing_named_desc" />
 
         <View class="mx-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-cyan-400" readonly="true">
@@ -155,10 +155,10 @@ theme: {
 }
 // → m-sm, m-md, w-lg, h-xl, gap-sm, etc.
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
 
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Extend Default Scale</Label>
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="config_spacing_extend_title" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-green-400" readonly="true">
@@ -171,25 +171,25 @@ theme: {
 }
 // → m-72, w-84, h-96 (added to defaults)
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 
       <!-- Section: Key Reminders -->
-      <Label class="section mt-6" text="KEY REMINDERS" />
+      <Label class="section mt-6" textid="config_section_reminders" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 h-auto text-sm text-amber-400">`app.tss` is AUTO-GENERATED</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Never edit `app.tss` directly — it regenerates on every build. Use `_app.tss` for custom styles or define them in `config.cjs`.</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 h-auto text-sm text-amber-400" textid="config_reminder_autogen" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="config_reminder_autogen_desc" />
 
-        <Label class="mx-4 mt-4 h-auto text-sm text-amber-400">`mode: 'all'` for Ti Elements</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Required if you style Ti Elements (`Label`, `Window`, etc.) in `config.cjs`.</Label>
+        <Label class="mx-4 mt-4 h-auto text-sm text-amber-400" textid="config_reminder_mode" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="config_reminder_mode_desc" />
 
-        <Label class="mx-4 mt-4 h-auto text-sm text-amber-400">Check 'Unused Classes' in `app.tss`</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">At the bottom of generated `app.tss` — lists missing or misspelled classes.</Label>
+        <Label class="mx-4 mt-4 h-auto text-sm text-amber-400" textid="config_reminder_unused" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="config_reminder_unused_desc" />
 
-        <Label class="mx-4 mt-4 h-auto text-sm text-amber-400">Platform Constants Need Blocks</Label>
-        <Label class="mx-4 mb-4 mt-1 h-auto text-xs text-slate-500">`Ti.UI.iOS.*` and `Ti.UI.Android.*` must go inside `ios:` or `android:` blocks to avoid cross-platform errors.</Label>
+        <Label class="mx-4 mt-4 h-auto text-sm text-amber-400" textid="config_reminder_platform" />
+        <Label class="mx-4 mb-4 mt-1 h-auto text-xs text-on-surface-variant" textid="config_reminder_platform_desc" />
       </View>
 
       <View class="mb-8" />

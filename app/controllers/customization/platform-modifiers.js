@@ -12,3 +12,4 @@ function onPlatformTap() {
   var platform = Ti.Platform.osname === 'android' ? 'android:onClick' : 'ios:onSingletap'
   $.platformLabel.text = 'Tapped via ' + platform
 }
+

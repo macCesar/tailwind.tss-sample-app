@@ -1,21 +1,21 @@
 <Alloy>
-  <Window class="title-attributes-white bar-slate-900 nav-tint-blue-400 android:display-home-as-up bg-slate-900" title="Arbitrary Values" backButtonTitle="">
+  <Window class="title-attributes-on-surface bar-surface nav-tint-accent android:display-home-as-up bg-surface" titleid="arbitrary_title" backButtonTitle="">
     <ScrollView class="vertical content-h-auto content-w-screen w-screen">
 
       <!-- Section: What Are Arbitrary Values -->
-      <Label class="section" text="WHAT ARE ARBITRARY VALUES" />
+      <Label class="section" textid="arbitrary_section_what" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 h-auto text-sm text-slate-300">When you need a one-off value not in the defaults, use parentheses notation instead of adding it to `config.cjs`.</Label>
-        <Label class="mx-4 mb-4 mt-2 h-auto text-xs text-amber-400">Use parentheses `( )` — NOT square brackets `[ ]`. Titanium uses brackets for platform/conditional statements in `.tss`.</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 h-auto text-sm text-on-surface" textid="arbitrary_what_desc" />
+        <Label class="mx-4 mb-4 mt-2 h-auto text-xs text-amber-400" textid="arbitrary_what_note" />
       </View>
 
       <!-- Section: Color Values -->
-      <Label class="section mt-6" text="COLOR VALUES" />
+      <Label class="section mt-6" textid="arbitrary_section_colors" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Hex, RGB, and RGBA</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Set arbitrary colors on any color property:</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="arbitrary_colors_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="arbitrary_colors_desc" />
 
         <View class="mx-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-green-400" readonly="true">
@@ -25,7 +25,7 @@ bg-(rgba(100,200,50)) → backgroundColor
 from-(#4C61E4)        → gradient start
 to-(#804C61E4)        → gradient end (w/ alpha)
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
 
         <View class="mx-4 mt-4 h-10 w-screen rounded-lg bg-(#4C61E4)">
@@ -42,11 +42,11 @@ to-(#804C61E4)        → gradient end (w/ alpha)
       </View>
 
       <!-- Section: Spacing Values -->
-      <Label class="section mt-6" text="SPACING VALUES" />
+      <Label class="section mt-6" textid="arbitrary_section_spacing" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">rem, px, and Unitless</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">`rem`/`em` values are multiplied by 16. `px`/`%` pass through. Unitless values stay as-is.</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="arbitrary_spacing_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="arbitrary_spacing_desc" />
 
         <View class="mx-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-cyan-400" readonly="true">
@@ -56,7 +56,7 @@ w-(250)      → width: 250
 rounded-(20) → borderRadius: 20
 text-(15)    → font: { fontSize: 15 }
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
 
         <View class="mx-4 mt-4 h-(28) w-screen rounded-(10) bg-blue-800">
@@ -69,11 +69,11 @@ text-(15)    → font: { fontSize: 15 }
       </View>
 
       <!-- Section: Miscellaneous -->
-      <Label class="section mt-6" text="MISCELLANEOUS VALUES" />
+      <Label class="section mt-6" textid="arbitrary_section_misc" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Other Numeric Properties</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Arbitrary values work for many numeric properties:</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="arbitrary_misc_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="arbitrary_misc_desc" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-amber-400" readonly="true">
@@ -88,35 +88,35 @@ z-(10)             → zIndex: 10
 lines-(3)          → lines: 3
 max-lines-(2)      → maxLines: 2
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 
       <!-- Section: Credit Card Example -->
-      <Label class="section mt-6" text="EXAMPLE: CREDIT CARD" />
+      <Label class="section mt-6" textid="arbitrary_section_example" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Arbitrary Values in Action</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="arbitrary_example_title" />
 
         <View class="mx-4 mb-4 mt-4 h-(200) w-screen rounded-(20) bg-(#4C61E4)">
           <View class="ml-4 mt-4 horizontal h-auto w-auto">
             <View class="wh-(40) rounded-(20) opacity-(0.35) bg-white" />
             <View class="-ml-(16) wh-(40) rounded-(20) opacity-(0.25) bg-white" />
-            <Label class="ml-2 font-bold text-white">Mastercard</Label>
+            <Label class="ml-2 font-bold text-white" textid="mastercard" />
           </View>
 
           <View class="bottom-(0) h-16 w-screen bg-(#6D80FB)">
-            <Label class="font-bold text-white text-xl">Pay</Label>
+            <Label class="font-bold text-white text-xl" textid="btn_pay" />
           </View>
         </View>
       </View>
 
       <!-- Section: In Apply -->
-      <Label class="section mt-6" text="IN THE APPLY DIRECTIVE" />
+      <Label class="section mt-6" textid="arbitrary_section_apply" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Use in `config.cjs`</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Arbitrary values work inside `apply` directives too:</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="arbitrary_apply_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="arbitrary_apply_desc" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-green-400" readonly="true">
@@ -128,7 +128,7 @@ max-lines-(2)      → maxLines: 2
 // → height: 16, layout: 'horizontal',
 //   borderRadius: 4, fontSize: 12
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 

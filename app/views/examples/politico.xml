@@ -1,32 +1,22 @@
 <Alloy>
-  <Window class="title-attributes-gray-900 bar-white nav-tint-blue-500 android:display-home-as-up bg-gray-50" title="Article Layout" backButtonTitle="">
+  <Window class="title-attributes-on-surface bar-surface nav-tint-accent android:display-home-as-up bg-surface" titleid="politico_title" backButtonTitle="">
     <ScrollView class="vertical content-h-auto content-w-screen w-screen">
       <View class="vertical mx-4 mt-4 h-auto w-screen">
-        <Label class="w-screen text-sm font-bold text-red-600">CORONAVIRUS</Label>
+        <Label class="w-screen text-sm font-bold text-red-600" textid="politico_category" />
 
-        <Label class="mt-2 w-full text-2xl font-bold text-gray-900">Kemp and Bottoms hurl insults at each other in Georgia mask feud</Label>
+        <Label class="mt-2 w-full text-2xl font-bold text-on-surface" textid="politico_headline" />
 
-        <Label class="mt-2 h-auto w-full text-sm text-gray-500">The war of words comes after the governor sued the Atlanta mayor over her city's mask mandate.</Label>
+        <Label class="mt-2 h-auto w-full text-sm text-on-surface-variant" textid="politico_subheadline" />
 
         <ImageView class="mt-4 h-auto w-full" image="https://static.politico.com/dims4/default/fcd6d6a/2147483647/resize/1920x/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F22%2F87%2F2259ffd444678054896b9fa32b4d%2Fgettyimages-1221513169.jpg" />
 
-        <Label class="mt-2 h-auto w-screen text-xs text-gray-500">Georgia Gov. Brian Kemp speaks to the media during a press conference. | Kevin C. Cox/Getty Images</Label>
+        <Label class="mt-2 h-auto w-screen text-xs text-on-surface-variant" textid="politico_photo_credit" />
 
-        <View class="mt-2 h-px w-screen bg-gray-200" />
+        <View class="mt-2 h-px w-screen bg-border" />
 
-        <Label class="mt-2 h-auto w-screen text-xs italic text-gray-500">By Quint Forgey — 07/17/2020 09:57 AM EDT</Label>
+        <Label class="mt-2 h-auto w-screen text-xs italic text-on-surface-variant" textid="politico_byline" />
 
-        <Label class="mb-6 mt-4 h-auto w-screen text-sm text-gray-700">Georgia Gov. Brian Kemp and Atlanta Mayor Keisha Lance Bottoms hurled insults at one another Friday, as their legal battle over whether to mandate masks in the state's capital city entered its second day.
-
-During dueling appearances at a Capitol news briefing and in an interview with CNN, the Republican governor and the Democratic mayor both accused the other's office of playing politics amid a pandemic that continues to ravage communities across Georgia.
-
-Updating members of the media on the state's coronavirus response, Kemp defended his decision to sue Atlanta's mayor and city council in an effort to block local officials there from enforcing an order requiring residents to wear a mask in public.
-
-"Mayor Bottoms' mask mandate cannot be enforced, but her decision to shutter businesses and undermine economic growth is devastating," Kemp told reporters in Atlanta.
-
-Meanwhile, on CNN, Bottoms dismissed Kemp's unfolding criticism as "propaganda" and "completely inaccurate," and called the escalating controversy over face coverings "very bizarre, quite frankly."
-
-The high-profile clash between two of Georgia's top leaders came after Kemp issued a statewide order Wednesday banning local mask mandates. But Bottoms said her city's order requiring face coverings would continue to apply, provoking Kemp to file his lawsuit in state court Thursday.</Label>
+        <Label class="mb-6 mt-4 h-auto w-screen text-sm text-on-surface" textid="politico_body" />
       </View>
     </ScrollView>
   </Window>

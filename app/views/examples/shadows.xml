@@ -1,102 +1,102 @@
 <Alloy>
-  <Window class="title-attributes-white bar-slate-900 nav-tint-blue-400 android:display-home-as-up bg-slate-900" title="Shadows &amp; Depth" backButtonTitle="">
+  <Window class="title-attributes-on-surface bar-surface nav-tint-accent android:display-home-as-up bg-surface" titleid="shadows_title" backButtonTitle="">
     <ScrollView class="vertical content-h-auto content-w-screen w-screen">
 
       <!-- Shadow Levels -->
-      <Label class="section mt-6" text="SHADOW LEVELS" />
+      <Label class="section mt-6" textid="shadows_section_levels" />
 
       <View class="horizontal wh-auto mb-4">
         <View class="vertical wh-auto mx-1 mb-4">
-          <View class="shadow-xs wh-16 m-4 rounded-lg bg-slate-700" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="xs" />
+          <View class="shadow-xs wh-16 m-4 rounded-lg bg-surface-high" />
+          <Label class="mt-1 text-center text-xs text-muted" text="xs" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
-          <View class="wh-16 m-4 rounded-lg bg-slate-700 shadow-sm" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="sm" />
+          <View class="wh-16 m-4 rounded-lg bg-surface-high shadow-sm" />
+          <Label class="mt-1 text-center text-xs text-muted" text="sm" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
-          <View class="wh-16 m-4 rounded-lg bg-slate-700 shadow" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="base" />
+          <View class="wh-16 m-4 rounded-lg bg-surface-high shadow" />
+          <Label class="mt-1 text-center text-xs text-muted" text="base" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
-          <View class="wh-16 m-4 rounded-lg bg-slate-700 shadow-md" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="md" />
+          <View class="wh-16 m-4 rounded-lg bg-surface-high shadow-md" />
+          <Label class="mt-1 text-center text-xs text-muted" text="md" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
-          <View class="wh-16 m-4 rounded-lg bg-slate-700 shadow-lg" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="lg" />
+          <View class="wh-16 m-4 rounded-lg bg-surface-high shadow-lg" />
+          <Label class="mt-1 text-center text-xs text-muted" text="lg" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
-          <View class="wh-16 m-4 rounded-lg bg-slate-700 shadow-xl" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="xl" />
+          <View class="wh-16 m-4 rounded-lg bg-surface-high shadow-xl" />
+          <Label class="mt-1 text-center text-xs text-muted" text="xl" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
-          <View class="wh-16 m-4 rounded-lg bg-slate-700 shadow-2xl" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="2xl" />
+          <View class="wh-16 m-4 rounded-lg bg-surface-high shadow-2xl" />
+          <Label class="mt-1 text-center text-xs text-muted" text="2xl" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
-          <View class="wh-16 shadow-outline m-4 rounded-lg bg-slate-700" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="outline" />
+          <View class="wh-16 shadow-outline m-4 rounded-lg bg-surface-high" />
+          <Label class="mt-1 text-center text-xs text-muted" text="outline" />
         </View>
       </View>
 
       <!-- Opacity -->
-      <Label class="section" text="OPACITY LEVELS" />
+      <Label class="section" textid="shadows_section_opacity" />
 
       <View class="horizontal mx-3 mb-4 h-auto w-screen">
         <View class="vertical wh-auto mx-1 mb-4">
           <View class="wh-16 rounded-lg bg-blue-500/100" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="100" />
+          <Label class="mt-1 text-center text-xs text-muted" text="100" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
           <View class="wh-16 rounded-lg bg-blue-500/80" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="80" />
+          <Label class="mt-1 text-center text-xs text-muted" text="80" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
           <View class="wh-16 rounded-lg bg-blue-500/60" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="60" />
+          <Label class="mt-1 text-center text-xs text-muted" text="60" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
           <View class="wh-16 rounded-lg bg-blue-500/40" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="40" />
+          <Label class="mt-1 text-center text-xs text-muted" text="40" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
           <View class="wh-16 rounded-lg bg-blue-500/20" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="20" />
+          <Label class="mt-1 text-center text-xs text-muted" text="20" />
         </View>
       </View>
 
       <!-- Border Radius -->
-      <Label class="section" text="BORDER RADIUS" />
+      <Label class="section" textid="shadows_section_radius" />
 
       <View class="horizontal mx-3 mb-4 h-auto w-screen">
         <View class="vertical wh-auto mx-1 mb-4">
           <View class="wh-16 rounded-none bg-blue-500" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="none" />
+          <Label class="mt-1 text-center text-xs text-muted" text="none" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
           <View class="wh-16 rounded bg-blue-500" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="base" />
+          <Label class="mt-1 text-center text-xs text-muted" text="base" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
           <View class="wh-16 rounded-lg bg-blue-500" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="lg" />
+          <Label class="mt-1 text-center text-xs text-muted" text="lg" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
           <View class="wh-16 rounded-xl bg-blue-500" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="xl" />
+          <Label class="mt-1 text-center text-xs text-muted" text="xl" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
           <View class="wh-16 rounded-2xl bg-blue-500" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="2xl" />
+          <Label class="mt-1 text-center text-xs text-muted" text="2xl" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
           <View class="wh-16 rounded-3xl bg-blue-500" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="3xl" />
+          <Label class="mt-1 text-center text-xs text-muted" text="3xl" />
         </View>
         <View class="vertical wh-auto mx-1 mb-4">
           <View class="rounded-full-16 bg-blue-500" />
-          <Label class="mt-1 text-center text-xs text-slate-500" text="full" />
+          <Label class="mt-1 text-center text-xs text-muted" text="full" />
         </View>
       </View>
 

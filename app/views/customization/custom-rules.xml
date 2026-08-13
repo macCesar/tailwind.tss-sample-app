@@ -1,26 +1,26 @@
 <Alloy>
-  <Window class="title-attributes-white bar-slate-900 nav-tint-blue-400 android:display-home-as-up bg-slate-900" title="Custom Rules" backButtonTitle="">
+  <Window class="title-attributes-on-surface bar-surface nav-tint-accent android:display-home-as-up bg-surface" titleid="rules_title" backButtonTitle="">
     <ScrollView class="vertical content-h-auto content-w-screen w-screen">
 
       <!-- Section: What Are Custom Rules -->
-      <Label class="section" text="WHAT ARE CUSTOM RULES" />
+      <Label class="section" textid="rules_section_what" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 h-auto text-sm text-slate-300">Style Ti Elements, IDs, and classes in `config.cjs` using native Titanium properties directly — no `apply` needed.</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 h-auto text-sm text-on-surface" textid="rules_what_desc" />
 
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Naming Conventions</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Ti Elements: exact name (`Label`, `Button`). IDs: camelCase (`#mainBanner`). Classes: kebab-case (`.my-class`).</Label>
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="rules_naming_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="rules_naming_desc" />
 
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Block Types</Label>
-        <Label class="mx-4 mb-4 mt-1 h-auto text-xs text-slate-500">`DEFAULT` (global), `ios`, `android`, `tablet`, `handheld`, `[if=Alloy.Globals.X]` (conditional).</Label>
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="rules_blocks_title" />
+        <Label class="mx-4 mb-4 mt-1 h-auto text-xs text-on-surface-variant" textid="rules_blocks_desc" />
       </View>
 
       <!-- Section: Ti Element Defaults -->
-      <Label class="section mt-6" text="TI ELEMENT DEFAULTS" />
+      <Label class="section mt-6" textid="rules_section_elements" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Style Elements Globally</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Set default properties for any Titanium element:</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="rules_elements_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="rules_elements_desc" />
 
         <View class="mx-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-cyan-400" readonly="true">
@@ -40,18 +40,18 @@ Button: {
   android: { backgroundColor: 'transparent' }
 }
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
 
-        <Label class="mx-4 mb-4 mt-2 h-auto text-xs text-slate-400">These styles apply to EVERY instance of that element — no classes needed in XML.</Label>
+        <Label class="mx-4 mb-4 mt-2 h-auto text-xs text-on-surface-variant" textid="rules_elements_note" />
       </View>
 
       <!-- Section: ID Rules -->
-      <Label class="section mt-6" text="STYLING BY ID" />
+      <Label class="section mt-6" textid="rules_section_id" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">#main-banner</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Set properties on a specific element by its ID:</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface">#main-banner</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="rules_id_desc" />
 
         <View class="mx-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-amber-400" readonly="true">
@@ -65,10 +65,10 @@ Button: {
   }
 }
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
 
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Generated Output</Label>
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="rules_generated_output" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-slate-400" readonly="true">
@@ -77,16 +77,16 @@ Button: {
   clipMode: Ti.UI.iOS.CLIP_MODE_DISABLED
 }
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 
       <!-- Section: Class Rules -->
-      <Label class="section mt-6" text="STYLING BY CLASS" />
+      <Label class="section mt-6" textid="rules_section_class" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">.gallery (Multi-Platform)</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">A class with platform, device, and default blocks:</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="rules_class_title" />
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="rules_class_desc" />
 
         <View class="mx-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-green-400" readonly="true">
@@ -105,10 +105,10 @@ Button: {
   tablet: { width: '500px' }
 }
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
 
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">Generated Output</Label>
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface" textid="rules_generated_output" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-slate-400" readonly="true">
@@ -118,16 +118,16 @@ Button: {
 '.gallery[formFactor=handheld]': { width: '250px' }
 '.gallery[formFactor=tablet]': { width: '500px' }
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 
       <!-- Section: Conditional Blocks -->
-      <Label class="section mt-6" text="CONDITIONAL BLOCKS" />
+      <Label class="section mt-6" textid="rules_section_conditional" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 text-sm font-semibold text-slate-300">[if=Alloy.Globals.X]</Label>
-        <Label class="mx-4 mt-1 h-auto text-xs text-slate-500">Apply styles only when a global variable is truthy:</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 text-sm font-semibold text-on-surface">[if=Alloy.Globals.X]</Label>
+        <Label class="mx-4 mt-1 h-auto text-xs text-on-surface-variant" textid="rules_conditional_desc" />
 
         <View class="mx-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-purple-400" readonly="true">
@@ -142,17 +142,17 @@ TextField: {
   android: { touchFeedback: true }
 }
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
 
-        <Label class="mx-4 mb-4 mt-2 h-auto text-xs text-slate-400">Generates `TextField[if=Alloy.Globals.iPhoneX]` and `TextField[platform=android]` rules.</Label>
+        <Label class="mx-4 mb-4 mt-2 h-auto text-xs text-on-surface-variant" textid="rules_conditional_note" />
       </View>
 
       <!-- Section: Property Values -->
-      <Label class="section mt-6" text="PROPERTY VALUE TYPES" />
+      <Label class="section mt-6" textid="rules_section_values" />
 
-      <View class="cardDark vertical">
-        <Label class="mx-4 mt-4 h-auto text-sm text-slate-300">Titanium constants, Alloy values, and globals must be quoted in `config.cjs`:</Label>
+      <View class="card vertical">
+        <Label class="mx-4 mt-4 h-auto text-sm text-on-surface" textid="rules_values_desc" />
 
         <View class="mx-4 mb-4 mt-4 h-auto w-screen">
           <TextArea class="h-auto w-screen rounded-lg bg-slate-900 p-2 font-mono text-xs text-cyan-400" readonly="true">
@@ -170,7 +170,7 @@ width: '300px'   // passed through
 height: '1.5rem' // → 24 (value × 16)
 top: '10dp'      // → 10 (unit stripped)
           </TextArea>
-          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-slate-600" onClick="copyCode" touchEnabled="true" />
+          <Label class="fas fa-copy mt-0 mr-0 wh-8 text-center text-sm text-muted" onClick="copyCode" touchEnabled="true" />
         </View>
       </View>
 

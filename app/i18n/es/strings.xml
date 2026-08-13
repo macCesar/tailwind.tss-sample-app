@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <!-- === Pantalla Principal === -->
+  <string name="app_title">PurgeTSS Showcase</string>
+  <string name="app_version">v7.5 — PurgeTSS Showcase</string>
+
+  <!-- Index: Encabezados de Sección -->
+  <string name="section_dark_theme">Tema Oscuro</string>
+  <string name="section_light_theme">Tema Claro</string>
+  <string name="section_customization">Personalización</string>
+  <string name="section_more_examples">Más Ejemplos</string>
+
+  <!-- Index: Títulos de Tarjetas -->
+  <string name="card_product_card">Tarjeta de Producto</string>
+  <string name="card_project_list">Lista de Proyectos</string>
+  <string name="card_login_form">Formulario de Login</string>
+  <string name="card_shadows">Sombras y Profundidad</string>
+  <string name="card_article_layout">Diseño de Artículo</string>
+  <string name="card_property_listing">Listado de Propiedad</string>
+  <string name="card_settings_screen">Pantalla de Ajustes</string>
+  <string name="card_config_file">El Archivo de Config</string>
+  <string name="card_custom_rules">Reglas Personalizadas</string>
+  <string name="card_apply_directive">La Directiva Apply</string>
+  <string name="card_opacity_modifier">El Modificador de Opacidad</string>
+  <string name="card_arbitrary_values">Valores Arbitrarios</string>
+  <string name="card_platform_modifiers">Modificadores de Plataforma</string>
+  <string name="card_icon_fonts">Librerías de Iconos</string>
+
+  <!-- Index: Descripciones de Tarjetas -->
+  <string name="desc_product_card">Tarjeta e-commerce con estilo oscuro</string>
+  <string name="desc_project_list">Lista estructurada con iconos y metadata</string>
+  <string name="desc_login_form">Formulario de auth con validación</string>
+  <string name="desc_shadows">Niveles de sombra, opacidad, border radius</string>
+  <string name="desc_article_layout">Contenido editorial con tipografía</string>
+  <string name="desc_property_listing">Tarjeta inmobiliaria con secciones</string>
+  <string name="desc_settings_screen">Toggles, filas agrupadas, formularios</string>
+  <string name="desc_config_file">Estructura, purge, colores y espaciado</string>
+  <string name="desc_custom_rules">Ti Elements, IDs y propiedades directas</string>
+  <string name="desc_apply_directive">Agrupa clases en reglas reutilizables</string>
+  <string name="desc_opacity_modifier">Transparencia de color con sintaxis /50</string>
+  <string name="desc_arbitrary_values">Valores únicos con paréntesis</string>
+  <string name="desc_platform_modifiers">ios:, android:, tablet:, handheld:</string>
+  <string name="desc_icon_fonts">Font Awesome, Material, fuentes custom</string>
+  <string name="desc_coming_soon">Próximamente</string>
+
+  <!-- === Nike (Tarjeta de Producto) === -->
+  <string name="nike_title">Tarjeta de Producto</string>
+  <string name="nike_product_name">NIKE AIR</string>
+  <string name="nike_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</string>
+  <string name="nike_price">$129</string>
+  <string name="nike_add_to_cart">Agregar al carrito</string>
+
+  <!-- === Proyectos === -->
+  <string name="projects_title">Lista de Proyectos</string>
+  <string name="projects_header">PROYECTOS</string>
+  <string name="projects_engineering">Ingeniería</string>
+  <string name="projects_graphql">GraphQL API</string>
+  <string name="projects_graphql_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic.</string>
+  <string name="projects_hr">Recursos Humanos</string>
+  <string name="projects_profit_sharing">Programa de reparto de utilidades</string>
+  <string name="projects_profit_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor a excepturi et minus ipsum hic.</string>
+
+  <!-- === Register (Formulario de Login) === -->
+  <string name="register_title">Formulario de Login</string>
+  <string name="register_email_label">Correo electrónico</string>
+  <string name="register_email_hint">tu@ejemplo.com</string>
+  <string name="register_password_label">Contraseña</string>
+  <string name="register_login_btn">Iniciar sesión</string>
+  <string name="register_remember_me">Recordarme</string>
+  <string name="register_forgot_password">¿Olvidaste tu contraseña?</string>
+  <string name="register_terms_intro">Al crear una cuenta aceptas nuestros</string>
+  <string name="register_terms_link">Términos y Condiciones</string>
+
+  <!-- === Sombras === -->
+  <string name="shadows_title">Sombras y Profundidad</string>
+  <string name="shadows_section_levels">NIVELES DE SOMBRA</string>
+  <string name="shadows_section_opacity">NIVELES DE OPACIDAD</string>
+  <string name="shadows_section_radius">RADIO DE BORDE</string>
+
+  <!-- === Politico (Diseño de Artículo) === -->
+  <string name="politico_title">Diseño de Artículo</string>
+  <string name="politico_category">CORONAVIRUS</string>
+  <string name="politico_headline">Kemp y Bottoms se lanzan insultos mutuos en la disputa por mascarillas en Georgia</string>
+  <string name="politico_subheadline">La guerra de palabras viene después de que el gobernador demandara a la alcaldesa de Atlanta por el mandato de mascarillas de su ciudad.</string>
+  <string name="politico_photo_credit">El gobernador de Georgia Brian Kemp habla a los medios durante una conferencia de prensa. | Kevin C. Cox/Getty Images</string>
+  <string name="politico_byline">Por Quint Forgey — 17/07/2020 09:57 AM EDT</string>
+  <string name="politico_body">El gobernador de Georgia Brian Kemp y la alcaldesa de Atlanta Keisha Lance Bottoms se lanzaron insultos mutuos el viernes, mientras su batalla legal sobre si se debe obligar el uso de mascarillas en la capital del estado entraba en su segundo día.
+
+Durante apariciones simultáneas en una conferencia de prensa en el Capitolio y en una entrevista con CNN, el gobernador republicano y la alcaldesa demócrata se acusaron mutuamente de hacer política en medio de una pandemia que continúa devastando comunidades en todo Georgia.
+
+Actualizando a los medios sobre la respuesta del estado al coronavirus, Kemp defendió su decisión de demandar a la alcaldesa de Atlanta y al consejo de la ciudad en un esfuerzo por bloquear a los funcionarios locales de hacer cumplir una orden que requiere que los residentes usen mascarilla en público.
+
+"El mandato de mascarillas de la alcaldesa Bottoms no puede hacerse cumplir, pero su decisión de cerrar negocios y socavar el crecimiento económico es devastadora," dijo Kemp a los reporteros en Atlanta.
+
+Mientras tanto, en CNN, Bottoms descartó las críticas de Kemp como "propaganda" y "completamente inexactas," y calificó la creciente controversia sobre las mascarillas como "muy bizarra, francamente."
+
+El choque de alto perfil entre dos de los principales líderes de Georgia se produjo después de que Kemp emitiera una orden estatal el miércoles prohibiendo los mandatos locales de mascarillas. Pero Bottoms dijo que la orden de su ciudad que requiere el uso de mascarillas continuaría vigente, provocando que Kemp presentara su demanda en el tribunal estatal el jueves.</string>
+
+  <!-- === Casa (Listado de Propiedad) === -->
+  <string name="house_title">Listado de Propiedad</string>
+  <string name="house_type">Casa independiente • 5 años</string>
+  <string name="house_price">$750,000</string>
+  <string name="house_address">742 Evergreen Terrace</string>
+  <string name="house_bedrooms">3 Habitaciones</string>
+  <string name="house_bathrooms">2 Baños</string>
+  <string name="house_realtor_label">AGENTE</string>
+  <string name="house_realtor_name">Catherine Heffner</string>
+  <string name="house_realtor_phone">(555) 123-4567</string>
+
+  <!-- === Ajustes === -->
+  <string name="settings_title">Ajustes</string>
+  <string name="settings_account">CUENTA</string>
+  <string name="settings_name">Nombre</string>
+  <string name="settings_email">Correo</string>
+  <string name="settings_preferences">PREFERENCIAS</string>
+  <string name="settings_notifications">Notificaciones</string>
+  <string name="settings_auto_update">Actualización automática</string>
+  <string name="settings_appearance">APARIENCIA</string>
+  <string name="settings_system">Sistema</string>
+  <string name="settings_light">Claro</string>
+  <string name="settings_dark">Oscuro</string>
+  <string name="settings_about">ACERCA DE</string>
+  <string name="settings_version">Versión</string>
+  <string name="settings_sdk">SDK</string>
+  <string name="settings_license">Licencia</string>
+  <string name="settings_language">IDIOMA</string>
+  <string name="settings_lang_english">English</string>
+  <string name="settings_lang_spanish">Español</string>
+
+  <!-- === Archivo de Config === -->
+  <string name="config_title">El Archivo de Config</string>
+  <string name="config_section_structure">ESTRUCTURA DEL ARCHIVO</string>
+  <string name="config_file_path">purgetss/config.cjs</string>
+  <string name="config_file_desc">Dos secciones principales: `purge` (controla la eliminación de clases no usadas) y `theme` (define tus design tokens).</string>
+  <string name="config_section_purge">OPCIONES DE PURGE</string>
+  <string name="config_mode_title">mode: \'all\' vs \'class\'</string>
+  <string name="config_mode_desc">`\'all\'` analiza todo el XML (necesario para estilar Ti Elements). `\'class\'` solo escanea atributos class/ID.</string>
+  <string name="config_missing_title">options.missing</string>
+  <string name="config_missing_desc">Ponlo en `true` para listar clases faltantes o mal escritas al final de `app.tss` — ideal para detectar errores.</string>
+  <string name="config_safelist_title">options.safelist</string>
+  <string name="config_safelist_desc">Array de clases a conservar aunque no estén en el XML. Útil para clases generadas dinámicamente.</string>
+  <string name="config_plugins_title">options.plugins</string>
+  <string name="config_plugins_desc">Array de propiedades a desactivar. Ej., `[\'opacity\', \'borderRadius\']` elimina esas clases generadas.</string>
+  <string name="config_section_override">OVERRIDE VS EXTEND</string>
+  <string name="config_override_title">`theme.X` (Override)</string>
+  <string name="config_override_desc">Reemplaza TODOS los valores por defecto. Solo existirán tus valores definidos.</string>
+  <string name="config_extend_title">`theme.extend.X` (Extend)</string>
+  <string name="config_extend_desc">Agrega nuevos valores manteniendo TODOS los defaults intactos.</string>
+  <string name="config_section_colors">COLORES PERSONALIZADOS</string>
+  <string name="config_color_object_title">Sintaxis de Objeto de Color</string>
+  <string name="config_color_object_desc">Las claves anidadas generan clases modificadoras (`bg-tahiti-400`, `text-tahiti-200`, etc.)</string>
+  <string name="config_project_colors_title">Colores de Este Proyecto</string>
+  <string name="config_project_colors_desc">Colores semánticos usando referencias de `semantic.colors.json`:</string>
+  <string name="config_section_spacing">ESPACIADO PERSONALIZADO</string>
+  <string name="config_spacing_named_title">Escala de Espaciado con Nombres</string>
+  <string name="config_spacing_named_desc">Sobrescribe o extiende la escala de espaciado por defecto con claves nombradas:</string>
+  <string name="config_spacing_extend_title">Extender Escala por Defecto</string>
+  <string name="config_section_reminders">RECORDATORIOS CLAVE</string>
+  <string name="config_reminder_autogen">`app.tss` se AUTO-GENERA</string>
+  <string name="config_reminder_autogen_desc">Nunca edites `app.tss` directamente — se regenera en cada build. Usa `_app.tss` para estilos custom o defínelos en `config.cjs`.</string>
+  <string name="config_reminder_mode">`mode: \'all\'` para Ti Elements</string>
+  <string name="config_reminder_mode_desc">Requerido si estilas Ti Elements (`Label`, `Window`, etc.) en `config.cjs`.</string>
+  <string name="config_reminder_unused">Revisa \'Clases No Usadas\' en `app.tss`</string>
+  <string name="config_reminder_unused_desc">Al final del `app.tss` generado — lista clases faltantes o mal escritas.</string>
+  <string name="config_reminder_platform">Las Constantes de Plataforma Necesitan Bloques</string>
+  <string name="config_reminder_platform_desc">`Ti.UI.iOS.*` y `Ti.UI.Android.*` deben ir dentro de bloques `ios:` o `android:` para evitar errores cross-platform.</string>
+
+  <!-- === Reglas Personalizadas === -->
+  <string name="rules_title">Reglas Personalizadas</string>
+  <string name="rules_section_what">QUÉ SON LAS REGLAS PERSONALIZADAS</string>
+  <string name="rules_what_desc">Estila Ti Elements, IDs y clases en `config.cjs` usando propiedades nativas de Titanium directamente — sin necesidad de `apply`.</string>
+  <string name="rules_naming_title">Convenciones de Nombres</string>
+  <string name="rules_naming_desc">Ti Elements: nombre exacto (`Label`, `Button`). IDs: camelCase (`#mainBanner`). Clases: kebab-case (`.my-class`).</string>
+  <string name="rules_blocks_title">Tipos de Bloques</string>
+  <string name="rules_blocks_desc">`DEFAULT` (global), `ios`, `android`, `tablet`, `handheld`, `[if=Alloy.Globals.X]` (condicional).</string>
+  <string name="rules_section_elements">DEFAULTS DE TI ELEMENTS</string>
+  <string name="rules_elements_title">Estilar Elementos Globalmente</string>
+  <string name="rules_elements_desc">Establece propiedades por defecto para cualquier elemento Titanium:</string>
+  <string name="rules_elements_note">Estos estilos aplican a CADA instancia de ese elemento — no se necesitan clases en XML.</string>
+  <string name="rules_section_id">ESTILAR POR ID</string>
+  <string name="rules_id_desc">Establece propiedades en un elemento específico por su ID:</string>
+  <string name="rules_generated_output">Output Generado</string>
+  <string name="rules_section_class">ESTILAR POR CLASE</string>
+  <string name="rules_class_title">.gallery (Multi-Plataforma)</string>
+  <string name="rules_class_desc">Una clase con bloques de plataforma, dispositivo y default:</string>
+  <string name="rules_section_conditional">BLOQUES CONDICIONALES</string>
+  <string name="rules_conditional_desc">Aplica estilos solo cuando una variable global es truthy:</string>
+  <string name="rules_conditional_note">Genera reglas `TextField[if=Alloy.Globals.iPhoneX]` y `TextField[platform=android]`.</string>
+  <string name="rules_section_values">TIPOS DE VALORES DE PROPIEDAD</string>
+  <string name="rules_values_desc">Las constantes de Titanium, valores de Alloy y globals deben ir entre comillas en `config.cjs`:</string>
+
+  <!-- === Directiva Apply === -->
+  <string name="apply_title">Directiva Apply</string>
+  <string name="apply_section_what">QUÉ ES LA DIRECTIVA APPLY</string>
+  <string name="apply_what_desc">Agrupa múltiples clases de utilidad en una clase, ID o Ti Element reutilizable. Úsala en `config.cjs` en cualquier objetivo.</string>
+  <string name="apply_what_note">Funciona con clases default, valores arbitrarios, clases nuevas, bloques de plataforma y más.</string>
+  <string name="apply_section_string">SINTAXIS DE STRING</string>
+  <string name="apply_action_title">Botones de Acción (.actionBtn)</string>
+  <string name="apply_action_note">Solo agrega `actionBtn` + un color en XML — todos los estilos compartidos vienen del `apply`.</string>
+  <string name="apply_section_array">SINTAXIS DE ARRAY</string>
+  <string name="apply_array_title">Mismo Resultado, Diferente Formato</string>
+  <string name="apply_array_desc">Usa un array en lugar de un string — PurgeTSS genera output idéntico:</string>
+  <string name="apply_section_elements">APPLY EN TI ELEMENTS</string>
+  <string name="apply_elements_title">Estilado Global de Elementos</string>
+  <string name="apply_elements_desc">`apply` también funciona en Ti Elements — cada instancia obtiene los estilos:</string>
+  <string name="apply_elements_note">Combina `apply` con propiedades directas — se fusionan en el output generado.</string>
+  <string name="apply_section_ids">APPLY EN IDS</string>
+  <string name="apply_ids_desc">Apunta a un elemento específico por ID:</string>
+  <string name="apply_section_colors">USAR COLORES RECIÉN DEFINIDOS</string>
+  <string name="apply_colors_title">Definir, Luego Referenciar</string>
+  <string name="apply_colors_desc">Crea colores custom en `extend`, luego úsalos dentro de `apply`:</string>
+  <string name="apply_section_platform">BLOQUES DE PLATAFORMA EN APPLY</string>
+  <string name="apply_platform_title">Combinar Todos los Tipos de Bloques</string>
+  <string name="apply_platform_desc">`default`, `ios`, `android`, `handheld`, `tablet` y bloques condicionales:</string>
+  <string name="apply_platform_classes_title">Clases Específicas de Plataforma</string>
+  <string name="apply_platform_classes_desc">Clases como `clip-enabled` solo existen con `[platform=ios]`. Usa el bloque `ios:`:</string>
+  <string name="apply_section_arbitrary">VALORES ARBITRARIOS EN APPLY</string>
+  <string name="apply_arbitrary_title">Notación con Paréntesis</string>
+  <string name="apply_arbitrary_desc">Usa valores arbitrarios dentro de `apply` para dimensiones únicas:</string>
+
+  <!-- === Modificador de Opacidad === -->
+  <string name="opacity_title">Modificador de Opacidad</string>
+  <string name="opacity_section_how">CÓMO FUNCIONA</string>
+  <string name="opacity_how_desc">Agrega un `/` y un valor (0–100) a cualquier clase de color para establecer su opacidad. Funciona en `bg`, `text`, `border` y todas las propiedades de color.</string>
+  <string name="opacity_section_xml">EN TUS ARCHIVOS XML</string>
+  <string name="opacity_live_title">Ejemplos en Vivo</string>
+  <string name="opacity_xml_title">Uso en XML</string>
+  <string name="opacity_section_apply">EN LA DIRECTIVA APPLY</string>
+  <string name="opacity_apply_title">Usar con Colores Custom</string>
+  <string name="opacity_apply_desc">Define un color en `extend`, luego aplica opacidad en la directiva `apply`:</string>
+  <string name="opacity_section_fractions">OPACIDAD VS FRACCIONES DE ANCHO</string>
+  <string name="opacity_fractions_desc">La diagonal en `w-11/12` es una fracción (width: 91.6%). La diagonal en `bg-sky-500/50` es opacidad. PurgeTSS lo resuelve automáticamente.</string>
+  <string name="opacity_section_limits">LIMITACIONES</string>
+  <string name="opacity_semantic_title">Colores Semánticos</string>
+  <string name="opacity_semantic_desc">Los colores semánticos (de `semantic.colors.json`) no pueden usar el modificador de opacidad porque se definen como objetos con valores light/dark, no como strings hex.</string>
+
+  <!-- === Valores Arbitrarios === -->
+  <string name="arbitrary_title">Valores Arbitrarios</string>
+  <string name="arbitrary_section_what">QUÉ SON LOS VALORES ARBITRARIOS</string>
+  <string name="arbitrary_what_desc">Cuando necesitas un valor único que no está en los defaults, usa notación con paréntesis en lugar de agregarlo a `config.cjs`.</string>
+  <string name="arbitrary_what_note">Usa paréntesis `( )` — NO corchetes `[ ]`. Titanium usa corchetes para sentencias de plataforma/condicionales en `.tss`.</string>
+  <string name="arbitrary_section_colors">VALORES DE COLOR</string>
+  <string name="arbitrary_colors_title">Hex, RGB y RGBA</string>
+  <string name="arbitrary_colors_desc">Establece colores arbitrarios en cualquier propiedad de color:</string>
+  <string name="arbitrary_section_spacing">VALORES DE ESPACIADO</string>
+  <string name="arbitrary_spacing_title">rem, px y Sin Unidad</string>
+  <string name="arbitrary_spacing_desc">Los valores `rem`/`em` se multiplican por 16. `px`/`%` pasan directo. Los valores sin unidad se quedan igual.</string>
+  <string name="arbitrary_section_misc">VALORES MISCELÁNEOS</string>
+  <string name="arbitrary_misc_title">Otras Propiedades Numéricas</string>
+  <string name="arbitrary_misc_desc">Los valores arbitrarios funcionan para muchas propiedades numéricas:</string>
+  <string name="arbitrary_section_example">EJEMPLO: TARJETA DE CRÉDITO</string>
+  <string name="arbitrary_example_title">Valores Arbitrarios en Acción</string>
+  <string name="arbitrary_section_apply">EN LA DIRECTIVA APPLY</string>
+  <string name="arbitrary_apply_title">Usar en `config.cjs`</string>
+  <string name="arbitrary_apply_desc">Los valores arbitrarios también funcionan dentro de directivas `apply`:</string>
+
+  <!-- === Modificadores de Plataforma === -->
+  <string name="platform_title">Modificadores de Plataforma</string>
+  <string name="platform_section_overview">MODIFICADORES DE PLATAFORMA Y DISPOSITIVO</string>
+  <string name="platform_overview_desc">Aplica estilos condicionalmente según plataforma o tipo de dispositivo usando prefijos en tus clases XML.</string>
+  <string name="platform_section_classes">CLASES ESPECÍFICAS DE PLATAFORMA</string>
+  <string name="platform_classes_title">Diferentes Estilos por Plataforma</string>
+  <string name="platform_classes_desc">Prefija cualquier clase de utilidad con `ios:` o `android:`:</string>
+  <string name="platform_section_device">CLASES ESPECÍFICAS DE DISPOSITIVO</string>
+  <string name="platform_device_title">`tablet:` y `handheld:`</string>
+  <string name="platform_device_desc">Diferentes layouts o colores para teléfonos vs tablets:</string>
+  <string name="platform_section_combining">COMBINANDO MODIFICADORES</string>
+  <string name="platform_combining_title">Mezclar Plataforma + Dispositivo + Arbitrario</string>
+  <string name="platform_combining_desc">Combina todos los tipos de modificadores libremente:</string>
+  <string name="platform_section_events">EVENTOS ESPECÍFICOS DE PLATAFORMA</string>
+  <string name="platform_events_title">ios: / android: en Eventos</string>
+  <string name="platform_events_desc">Usa prefijos de plataforma en manejadores de eventos en atributos XML:</string>
+  <string name="platform_events_btn">Tócame (Demo en Vivo)</string>
+  <string name="platform_events_label">Usa ios:onSingletap / android:onClick</string>
+  <string name="platform_section_notes">NOTAS IMPORTANTES</string>
+  <string name="platform_constants_title">Constantes de Plataforma</string>
+  <string name="platform_constants_desc">Las propiedades que usan `Ti.UI.iOS.*` o `Ti.UI.Android.*` deben tener el prefijo `ios:` o `android:` correspondiente para evitar errores de compilación cross-platform.</string>
+  <string name="platform_wscreen_title">`w-screen` vs `w-full`</string>
+  <string name="platform_wscreen_desc">Prefiere `w-screen` para comportamiento de fill. `w-full` mapea a `100%`, no a `Ti.UI.FILL`.</string>
+
+  <!-- === Librerías de Iconos === -->
+  <string name="icons_title">Librerías de Iconos</string>
+  <string name="icons_section_official">ICONOS OFICIALES</string>
+  <string name="icons_official_desc">PurgeTSS soporta estas librerías de iconos:</string>
+  <string name="icons_fa_title">Font Awesome 7 Free</string>
+  <string name="icons_fa_desc">Instalar/actualizar: `purgetss il -v=fa`</string>
+  <string name="icons_f7_title">Framework7</string>
+  <string name="icons_f7_desc">Instalar/actualizar: `purgetss il -v=f7`</string>
+  <string name="icons_mi_title">Material Icons</string>
+  <string name="icons_mi_desc">Instalar/actualizar: `purgetss il -v=mi`</string>
+  <string name="icons_ms_title">Material Symbols</string>
+  <string name="icons_ms_desc">Instalar/actualizar: `purgetss il -v=ms`</string>
+  <string name="icons_section_usage">USANDO ICONOS EN XML</string>
+  <string name="icons_usage_title">Ejemplos de Font Awesome</string>
+  <string name="icons_usage_desc">Usa la clase del icono en Labels o Buttons:</string>
+  <string name="icons_section_custom">LIBRERÍAS DE FUENTES CUSTOM</string>
+  <string name="icons_custom_title">El Comando `build-fonts`</string>
+  <string name="icons_custom_desc">Recrea librerías eliminadas o agrega tus propias fuentes de iconos:</string>
+  <string name="icons_section_modules">LA OPCIÓN --MODULES</string>
+  <string name="icons_modules_title">Exportación de Módulo JavaScript</string>
+  <string name="icons_modules_desc">Genera un módulo CommonJS para acceso programático:</string>
+  <string name="icons_modules_usage">Usar en controllers: `require(\'purgetss.fonts\').icons.boxicons.bxlMeta`</string>
+  <string name="icons_section_prefix">PREFIJOS PERSONALIZADOS</string>
+  <string name="icons_prefix_title">Opción `--prefix`</string>
+  <string name="icons_prefix_desc">Renombra el archivo `.css` para cambiar el prefijo de clase:</string>
+  <string name="icons_prefix_note">Asegúrate de que el prefijo sea único para evitar conflictos con otros prefijos de clase.</string>
+  <string name="icons_section_assets">CÓMO SE INSTALAN LAS FUENTES</string>
+  <string name="icons_assets_desc">El comando `build-fonts` copia los archivos de fuente a `app/assets/fonts/` y los renombra a sus nombres PostScript para que funcionen en iOS y Android.</string>
+  <string name="icons_assets_note">El nombre de la regla de estilo se basa en el nombre del archivo de fuente. Renombra el archivo `.ttf` para cambiarlo.</string>
+
+  <!-- === Botones (compartidos) === -->
+  <string name="btn_save">Guardar</string>
+  <string name="btn_export">Exportar</string>
+  <string name="btn_delete">Eliminar</string>
+  <string name="btn_pay">Pagar</string>
+  <string name="mastercard">Mastercard</string>
+</resources>

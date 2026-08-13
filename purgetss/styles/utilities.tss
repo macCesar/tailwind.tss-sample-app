@@ -1,7 +1,7 @@
 // Utility classes for Titanium
 // Generated with PurgeTSS
 // https://purgetss.com
-// config.js file updated on: Thu Apr 09 2026 10:11:07 GMT-0500 (Central Daylight Time)
+// config.js file updated on: Sun Apr 12 2026 15:01:09 GMT-0500 (Central Daylight Time)
 
 // Ti Elements
 // Property: View
@@ -32,15 +32,13 @@
 // Property: Window
 // Description: The Window is an empty drawing surface or container.
 'Window': { backgroundColor: '#FFFFFF' }
-'Window[platform=ios]': { autoAdjustScrollViewInsets: true, extendEdges: [ Ti.UI.EXTEND_EDGE_ALL ], largeTitleEnabled: true, statusBarStyle: Ti.UI.iOS.StatusBar.LIGHT_CONTENT }
+'Window[platform=ios]': { autoAdjustScrollViewInsets: true, extendEdges: [ Ti.UI.EXTEND_EDGE_ALL ], largeTitleEnabled: true }
 
 // Custom Classes
 '.actionBtn': { borderRadius: 8, bottom: 8, color: '#ffffff', textColor: '#ffffff', height: 32, right: 8, width: 80, font: { fontSize: 12, fontWeight: 'semibold' } }
-'.section': { bottom: 4, color: '#64748b', textColor: '#64748b', height: Ti.UI.SIZE, right: 16, left: 16, top: 16, font: { fontSize: 12, fontWeight: 'semibold' } }
-'.cardDark': { backgroundColor: '#1e293b', borderRadius: 12, bottom: 16, height: Ti.UI.SIZE, right: 16, left: 16, width: Ti.UI.FILL }
-'.cardLight': { backgroundColor: 'surfaceHighColor', borderRadius: 12, bottom: 16, height: Ti.UI.SIZE, right: 16, left: 16, viewShadowOffset: { x: 0, y: 1 }, viewShadowRadius: 2, viewShadowColor: '#80000000', elevation: 8, width: Ti.UI.FILL }
-'.fieldDark': { backgroundColor: '#334155', borderColor: '#475569', borderRadius: 8, color: '#ffffff', textColor: '#ffffff', height: 40, top: 4, width: Ti.UI.FILL, padding: { left: 12 }, font: { fontSize: 16 } }
-'.fieldLight': { backgroundColor: '#ffffff', borderColor: '#d1d5db', borderRadius: 8, color: '#111827', textColor: '#111827', height: 40, top: 4, width: Ti.UI.FILL, padding: { left: 12 }, font: { fontSize: 16 } }
+'.section': { bottom: 4, color: 'textMutedColor', textColor: 'textMutedColor', height: Ti.UI.SIZE, right: 16, left: 16, top: 16, font: { fontSize: 12, fontWeight: 'semibold' } }
+'.card': { backgroundColor: 'surfaceHighColor', borderRadius: 12, bottom: 16, height: Ti.UI.SIZE, right: 16, left: 16, width: Ti.UI.FILL }
+'.field': { backgroundColor: 'surfaceHighColor', borderRadius: 8, color: 'textColor', textColor: 'textColor', height: 40, top: 4, width: Ti.UI.FILL, padding: { left: 12 }, font: { fontSize: 16 } }
 // End of Custom Classes
 
 // Utilities for controlling an element's margin.
@@ -2307,7 +2305,7 @@
 
 // Property(ies): fontFamily
 // Component(s): Ti.UI.ActivityIndicator, Ti.UI.Button, Ti.UI.Label, Ti.UI.ListItem, Ti.UI.Picker, Ti.UI.PickerColumn, Ti.UI.PickerRow, Ti.UI.ProgressBar, Ti.UI.Switch, Ti.UI.TableViewRow, Ti.UI.TextArea, Ti.UI.TextField
-'.font-mono': { font: { fontFamily: 'monospace' } }
+'.font-mono': { font: { fontFamily: 'FiraCode-Regular' } }
 '.font-sans[platform=ios]': { font: { fontFamily: 'Helvetica Neue' } }
 '.font-serif[platform=ios]': { font: { fontFamily: 'Georgia' } }
 '.font-sans[platform=android]': { font: { fontFamily: 'sans-serif' } }
